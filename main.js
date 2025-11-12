@@ -266,7 +266,7 @@ async function loadContent(lang) {
         // AGGIORNAMENTO IMMAGINE DI FONDO TESTATA
         const headerImage = document.getElementById('pageImage1');
         if (headerImage && pageData.imageSource1) {
-            headerImage.src = pageData.imageSource1;
+            headerImage.src = `Assets/images/${pageData.imageSource1}`; // CORRETTO
             headerImage.alt = pageData.pageTitle || "Immagine di testata";
         }
 
