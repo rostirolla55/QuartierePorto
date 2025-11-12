@@ -1,0 +1,431 @@
+/* style.css - Versione Finale Completa con Doppio Menu Hamburger e FIX Caricamento */
+
+/* -------------------- RESET & BASE (AGGIORNATO) -------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* Spazio per l'header fisso */
+    padding-top: 60px;
+    background-color: #f4f4f4;
+    /* RIMOSSO: opacity: 0; e transition: opacity... - Ora gestiti da #app-wrapper */
+}
+
+/* RIMOSSO: body.content-loaded { opacity: 1; } - Ora gestito da #app-wrapper */
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    /* Hamburger a sinistra, Gruppo bandiere/POI a destra */
+    justify-content: space-between;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.content-body {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+/* style.css - Aggiunta Cruciale per bloccare lo scroll */
+
+/* -------------------- GESTIONE BLOCCO SCROLL -------------------- */
+/* Questa classe impedisce lo scroll del contenuto principale quando il menu è aperto */
+body.menu-open {
+    overflow: hidden; /* Impedisce lo scorrimento verticale e orizzontale */
+}
+/* -------------------- MENU PRINCIPALE (A Sinistra) -------------------- */
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* Sempre visibile su tutti gli schermi */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+    width: 30px;
+    z-index: 1001;
+    margin-right: 10px;
+}
+
+.menu-toggle .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s linear;
+}
+
+/* Animazione X al click */
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Contenitore Menu Principale (Scivola da Sinistra) */
+#navBarMain {
+    position: fixed;
+    /* FIX: Inizia esattamente sotto l'header */
+    top: 60px;
+    left: 0;
+    width: 100%;
+    max-width: 300px;
+    /* Larghezza massima mobile/tendina */
+    height: calc(100% - 60px);
+    background-color: #000000;
+
+    /* Nascosto */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+
+    z-index: 999;
+    overflow-y: auto;
+}
+
+#navBarMain.active {
+    /* Mostrato */
+    transform: translateX(0);
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* Sempre in colonna */
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Stili per il Menu Principale (navBarMain) */
+
+/* Assicura che la lista interna non abbia pallini */
+#navBarMain .nav-bar-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Stili specifici per i link (testo bianco senza sottolineatura) */
+#navBarMain .nav-bar-content ul li a {
+    color: white; 			/* Testo in bianco */
+    text-decoration: none; 	/* Rimuove la sottolineatura */
+    font-size: 1.2em;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Stile per l'hover (quando il mouse passa sopra) */
+#navBarMain .nav-bar-content ul li a:hover {
+    color: #cccccc; /* Un grigio chiaro per l'effetto hover */
+}
+
+/* -------------------- ELEMENTI DI DESTRA (Bandiere e POI) -------------------- */
+
+.right-header-group {
+    display: flex;
+    align-items: center;
+}
+
+/* Bottone POI Verde */
+#nearbyPoiButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    height: 40px;
+    line-height: 1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    /* Il JS lo mostrerà/nasconderà, ma qui non lo nascondiamo di default */
+    display: block;
+}
+
+/* Contenitore Menu POI (Scivola da Destra) */
+#nearbyMenuPlaceholder {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    /* Ancorato a destra */
+    width: 100%;
+    max-width: 300px;
+    /* Larghezza massima mobile/tendina */
+    height: calc(100% - 60px);
+    background-color: #333333;
+    /* Grigio scuro per distinzione */
+
+    /* Nascosto a destra */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+
+    z-index: 998;
+    overflow-y: auto;
+}
+
+#nearbyMenuPlaceholder.poi-active {
+    /* Mostrato */
+    transform: translateX(0);
+}
+
+.poi-links {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Trova la regola esistente per .poi-links li a */
+.poi-links li a,
+.poi-links li a:visited { /* <-- ASSOLUTAMENTE CRITICO: AGGIUNGI :visited */
+    color: #f4f4f4; /* Colore chiaro per NON visitati E visitati */
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Applichiamo lo stesso colore chiaro anche allo stato hover/focus */
+.poi-links li a:hover,
+.poi-links li a:focus {
+    color: #00ff00; /* Il tuo colore hover originale (verde brillante) */
+    background-color: #444; /* Leggero sfondo per evidenziare */
+}
+
+/* -------------------- SELETTORE LINGUA -------------------- */
+
+.language-selector {
+    display: flex;
+    gap: 5px;
+    margin-right: 15px;
+}
+
+.language-selector button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.language-selector button.active {
+    opacity: 1;
+}
+
+.language-selector img {
+    width: 24px;
+    height: 16px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+
+
+/* -------------------- CONTENUTO (Immagine, Audio, Footer) -------------------- */
+
+/* style.css - Sezione Immagine di Testata e Titolo aggiornata */
+
+/* Contenitore dell'immagine di testata */
+.header-image-container {
+    position: relative;
+    width: 100%;
+
+    /* 🔥 FIX: Usa aspect-ratio per mantenere la proporzione 16:9 su tutti i dispositivi. */
+    aspect-ratio: 16 / 9;
+    height: auto;
+    /* L'altezza è ora gestita dal rapporto, non da un valore fisso */
+
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* L'immagine stessa all'interno del container */
+.header-image-container img {
+    /* L'immagine deve occupare il 100% dell'area definita dall'aspect-ratio */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Il titolo rimane posizionato in modo assoluto sul fondo */
+.header-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    text-align: center; /* 🔥 Mantieni solo la regola che vuoi applicare */
+}
+
+
+
+.content-body img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#playAudio {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 15px 0;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#playAudio.play-style {
+    background-color: #007bff;
+}
+
+#playAudio.pause-style {
+    background-color: #ff8c00;
+}
+
+#audioPlayer {
+    display: none;
+}
+
+.info-footer {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    margin-top: 30px;
+    font-size: 0.85em;
+    color: #666;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* =========================================== */
+/* INIZIO BLOCCO: GESTIONE CARICAMENTO PAGINA (SOLUZIONE AL BLOCCO) */
+/* =========================================== */
+
+/* 1. Stile dell'overlay di caricamento (visibile di default) */
+/* Questo copre lo schermo con un background bianco e centra il messaggio */
+#loading-message {
+    position: fixed; /* Essenziale per coprire l'intera finestra */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 10000; /* Assicurati che sia sopra ogni altro elemento */
+    display: flex; /* Centra il testo "Caricamento in corso..." */
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2. Nascondi il messaggio di caricamento quando il JS è pronto (immediato) */
+/* body.content-loaded è la condizione che fa sparire l'overlay di caricamento */
+body.content-loaded #loading-message {
+    /* Uso 'display: none' per assicurare che sparisca e non blocchi interazioni */
+    display: none; 
+}
+
+
+/* 3. Nascondi il contenuto principale dell'app all'inizio e gestisci il fade-in */
+/* Questo contenitore (#app-wrapper) ha ora la responsabilità dell'effetto di dissolvenza. */
+#app-wrapper {
+    /* Nascosto e pronto per la transizione di fade-in */
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    /* Mettiamo subito display: block per non interferire con l'opacità, 
+       dato che è il #loading-message a nascondere *tutto* all'inizio. */
+    display: block;
+}
+
+/* 4. Mostra il contenuto principale (fade-in) quando il JS è pronto */
+/* body.content-loaded è la condizione per mostrare l'app */
+body.content-loaded #app-wrapper {
+    opacity: 1; /* Il contenuto svanisce (fade-in) */
+}
+
+/* =========================================== */
+/* FINE BLOCCO: GESTIONE CARICAMENTO PAGINA */
+/* =========================================== */
+
+/* =========================================== */
+/* INIZIO BLOCCO: OTTIMIZZAZIONE DESKTOP (Tipografia) */
+/* =========================================== */
+
+@media (min-width: 992px) {
+    
+    /* Aumenta la dimensione base del testo in tutto il corpo */
+    body {
+        font-size: 1.1em; /* Aumenta leggermente il testo base (da 16px a circa 17.6px) */
+    }
+
+    /* Aumenta la dimensione del contenuto principale */
+    .content-body {
+        padding: 40px; /* Più spazio interno sui desktop */
+        font-size: 1.05em; /* Un ulteriore leggero aumento per il testo del corpo */
+    }
+
+    /* Aumenta il titolo della pagina nell'header */
+    .header-title {
+        font-size: 2em; /* Titolo più grande e impattante (era 1.5em) */
+        padding: 15px 25px;
+    }
+
+    /* Aumenta la dimensione dei link nel Menu Principale */
+    #navBarMain .nav-bar-content ul li a {
+        font-size: 1.4em; /* Leggermente più grande (era 1.2em) */
+    }
+
+    /* Aumenta il testo dei POI vicini */
+    .poi-links li a {
+        font-size: 1.1em; /* Leggermente più leggibile (era 1.0em) */
+    }
+
+    /* Aumenta il testo del footer (piccolo testo informativo) */
+    .info-footer {
+        font-size: 0.9em; /* Mantienilo piccolo, ma aumentalo leggermente per leggibilità */
+    }
+}
+
+/* =========================================== */
+/* FINE BLOCCO: OTTIMIZZAZIONE DESKTOP (Tipografia) */
+/* =========================================== */

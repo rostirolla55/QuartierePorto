@@ -1,0 +1,11 @@
+# File temporanei e di sistema
+*.bat
+*.zip
+
+# File sorgenti che NON fanno parte del codice
+# Vanno esclusi se devono essere trasformati in JSON
+# per evitare di tracciare copie obsolete o file di grandi dimensioni.
+data/translations/**/*.pdf
+# Ignora i file di placeholder vuoti
+.gitkeep
+sessione

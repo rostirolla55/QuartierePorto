@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Caricamento...</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E57BP15BBX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        // CONFIGURAZIONE: Associa 'dimension1' al nome parametro 'lingua_pagina'
+        gtag('config', 'G-E57BP15BBX', {
+            'custom_map': { 'dimension1': 'lingua_pagina' }
+        });
+    </script>
+</head>
+
+<body>
+    <div id="loading-message">
+        <p>Caricamento dell'applicazione in corso...</p>
+    </div>
+
+    <div id="app-wrapper">
+        <header class="main-header">
+
+            <button class="menu-toggle" aria-label="Apri menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <div class="right-header-group">
+
+                <div class="language-selector">
+                    <button data-lang="it"><img src="public/flag/it.png" alt="Italiano"></button>
+                    <button data-lang="en"><img src="public/flag/en.png" alt="English"></button>
+                    <button data-lang="es"><img src="public/flag/es.png" alt="Español"></button>
+                    <button data-lang="fr"><img src="public/flag/fr.png" alt="Français"></button>
+                </div>
+
+                <button id="nearbyPoiButton" style="display:none;" aria-label="Punti di interesse vicini"></button>
+            </div>
+
+        </header>
+
+        <nav class="nav-bar-main" id="navBarMain">
+            <div class="nav-bar-content">
+                <ul>
+                    <li><a id="navHome" href="index-it.html">Benvenuto</a></li>
+                    <li><a id="navPugliole" href="pugliole-it.html">Le Pugliole</a></li>
+                    <li><a id="navLastre" href="lastre-it.html">Le Lastre</a></li>
+                    <li><a id="navCarracci" href="carracci-it.html">Casa di Ludovico Carracci</a></li>
+                    <li><a id="navGraziaxx" href="graziaxx-it.html">Grazia Mariana</a></li>
+                    <li><a id="navChiesaSBene" href="chiesasbene-it.html">Chiesa San Benedetto</a></li>
+                    <li><a id="navChiesaPioggia" href="chiesapioggia-it.html">Chiesa della Pioggia</a></li>
+                    <li><a id="navPioggia1" href="pioggia1-it.html">Paesaggio con San Bartolomeo</a></li>></li>
+                    <li><a id="navPioggia2" href="pioggia2-it.html">Scultura San Bartolomeo</a></li>></li>
+                    <li><a id="navPioggia3" href="pioggia3-it.html">Adorazione dei pastori</a></li>
+                        <li><a id="navManifattura" href="manifattura-it.html">Ex Manifattura Tabacchi</a></li>
+        </ul>
+            </div>
+        </nav>
+        <div id="nearbyMenuPlaceholder" class="nav-bar-nearby"></div>
+
+
+        <main class="content-body">
+
+            <div class="header-image-container">
+                <img id="pageImage1" src="" alt="Immagine di sfondo testata">
+                <h1 class="header-title" id="headerTitle"></h1>
+            </div>
+
+            <div class="main-content-area">
+
+                <audio id="audioPlayer"></audio>
+                <button id="playAudio" class="play-style">Ascolta</button>
+
+                <p id="mainText"></p>
+
+                <p id="mainText1"></p>
+                <img id="pageImage2" src="" style="display: none;" alt="Immagine 2 corpo">
+
+                <p id="mainText2"></p>
+                <img id="pageImage3" src="" style="display: none;" alt="Immagine 3 corpo">
+
+                <p id="mainText3"></p>
+                <img id="pageImage4" src="" style="display: none;" alt="Immagine 4 corpo">
+
+                <p id="mainText4"></p>
+                <img id="pageImage5" src="" style="display: none;" alt="Immagine 5 corpo">
+
+                <p id="mainText5"></p>
+
+            </div>
+
+
+            <footer class="info-footer">
+                <p id="infoSource"></p>
+                <p Data Creazione id="infoCreatedDate"></p>
+                <p Data ultimo aggiornamento id="infoUpdatedDate"></p>
+            </footer>
+
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+come cancellare una riga da un file di testo che contiene una stringa di caratteri 
+in questo esempio navManifattura
+Dare questo comando da un teminale git Bash
+find . -type f -name "*.html" -exec sed -i '/<li><a id="navManifattura"/d' {} +
