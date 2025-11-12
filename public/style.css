@@ -1,0 +1,206 @@
+/* ======================================= */
+/* 1. STILI BASE & TIPOGRAFIA */
+/* ======================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding-bottom: 50px; /* Spazio per evitare che il footer si sovrapponga */
+    /* Aggiungi un leggero padding laterale al body */
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px; /* Limita la larghezza del contenuto principale */
+    margin: 0 auto; /* Centra il contenuto principale sulla pagina */
+}
+
+h1.page-title, #pageTitle {
+    color: #004d99; /* Blu scuro */
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+
+/* ======================================= */
+/* 2. MENU DI NAVIGAZIONE */
+/* ======================================= */
+
+.main-header {
+    background-color: #333; /* Sfondo scuro per la barra */
+    padding: 10px 0;
+    margin-bottom: 30px; /* Spazio sotto il menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    display: flex; /* La chiave per l'allineamento orizzontale */
+    justify-content: center; /* Centra i link */
+    gap: 20px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+
+/* ======================================= */
+/* 3. BOTTONE AUDIO (PLAY/PAUSE) */
+/* ======================================= */
+
+#playAudio {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-top: 15px;
+    display: block; /* NUOVA REGOLA: Rende il bottone un blocco per allineamento */
+}
+
+.play-style {
+    background-color: #007bff; /* Blu: pronto a suonare */
+    color: white;
+}
+
+.pause-style {
+    background-color: #dc3545; /* Rosso: sta suonando (metti in pausa) */
+    color: white;
+}
+
+#playAudio:active {
+    transform: scale(0.98);
+}
+
+
+/* ======================================= */
+/* 4. SELETTORE LINGUA */
+/* ======================================= */
+
+.language-selector {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+
+.language-selector button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.language-selector img {
+    width: 30px;
+    height: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ======================================= */
+/* 5. LAYOUT IMMAGINI RESPONSIVE (CRITICO!) */
+/* ======================================= */
+
+/* --- A. REGOLA BASE (DESKTOP: Immagine affiancata) --- */
+
+.image-text-container {
+    /* NUOVA REGOLA: Abilita affiancamento per desktop */
+    display: flex; 
+    gap: 15px; 
+    align-items: flex-start; 
+    margin: 30px 0; /* Spazio sopra e sotto il blocco immagine */
+}
+
+.image-wrapper {
+    /* NUOVA REGOLA: Larghezza fissa per l'immagine su PC */
+    flex: 0 0 350px; 
+    max-width: 350px;
+}
+
+.responsive-image {
+    /* NUOVA REGOLA: Impedisce all'immagine di uscire dal contenitore */
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.text-content {
+    /* NUOVA REGOLA: Il testo occupa il resto dello spazio */
+    flex-grow: 1; 
+    padding: 0; /* Rimuove padding che può causare problemi di allineamento */
+}
+
+/* NUOVA REGOLA: Risoluzione Testo Piccolo (mainText4) */
+.text-content p {
+    font-size: 16px; 
+    line-height: 1.6;
+    margin-top: 0; /* Rimuove lo spazio extra superiore */
+}
+
+
+/* ======================================= */
+/* 6. MEDIA QUERIES (Smartphone) */
+/* ======================================= */
+
+@media screen and (max-width: 768px) {
+    
+    /* NUOVA REGOLA: Menu di navigazione a blocchi */
+    .nav-list {
+        flex-wrap: wrap; 
+        gap: 0;
+    }
+    .nav-list li {
+        flex: 1 1 100%; /* Ogni link su una riga intera */
+        text-align: center;
+    }
+
+    /* NUOVA REGOLA: Layout immagine diventa verticale */
+    .image-text-container {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    
+    .image-wrapper {
+        /* CRUCIALE: Permette all'immagine di occupare il 100% sullo smartphone */
+        flex: 1 1 100%; 
+        max-width: 100%; 
+        order: -1; /* Mette l'immagine sopra il testo */
+    }
+    
+    .text-content {
+        flex: 1 1 100%; /* Il testo torna a larghezza intera */
+        padding: 0; 
+    }
+}
+
+

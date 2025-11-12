@@ -1,0 +1,25 @@
+    "playAudioButton": "Ascolta la storia",
+    "pauseAudioButton": "Metti in pausa",
+    "sourceText": "Archivio Storico del Comune di Bologna.",
+    "creationDate": "2025-08-30",
+    "lastUpdate": "2025-10-01",
+
+    "playAudioButton": "Listen to the audio in English!",
+    "pauseAudioButton": "Pause",
+    "sourceText": "Historical Archives of the Municipality of Bologna.",
+    "creationDate": "2025-08-30",
+    "lastUpdate": "2025-10-01",
+
+    "playAudioButton": "Escucha el audio en español!",
+    "pauseAudioButton": "Pausa",
+    "sourceText": "Archivo Histórico del Ayuntamiento de Bolonia.",
+    "creationDate": "30-08-2025",
+    "lastUpdate": "01-10-2025",
+
+
+    "playAudioButton": "Écoutez l'audio en français!",
+    "pauseAudioButton": "Pause",
+    "sourceText": "Archives historiques de la municipalité de Bologne.",
+    "creationDate": "30-08-2025",
+    "lastUpdate": "01-10-2025",
+

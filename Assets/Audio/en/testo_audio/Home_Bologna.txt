@@ -1,0 +1,10 @@
+Welcome. This page will allow you to access information about the interesting places you encounter while walking through the streets of the Porto neighborhood.
+Here's how to use the pages in this app.
+At the top left, you'll see three horizontal lines representing the menu button for all the pages you can browse.
+On the left, a few seconds after opening the page, a green rectangular button appears, presenting a menu of pages about places near you.
+To the left of the green button are flags that allow you to choose your language.
+Below the page title, you'll find a blue button that lets you listen to a brief description of the page's content.
+When pressed, the button turns orange, and pressing it pauses the audio, turning it blue.
+When you press the blue button again, it resumes where it left off. If you keep the green menu open, the menu will change the list of pages dynamically as you walk.
+The page has more details than the audio.
+Good luck! Keep the app open when you're in the neighborhood!

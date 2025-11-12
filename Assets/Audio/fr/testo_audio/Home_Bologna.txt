@@ -1,0 +1,16 @@
+Bienvenue. Cette page vous permettra d'accéder à des informations sur les lieux intéressants que vous découvrirez en vous promenant dans les rues du quartier portuaire.
+Voici comment utiliser les pages de cette application :
+
+En haut à gauche, vous verrez trois lignes horizontales représentant le menu des pages consultables.
+
+À gauche, quelques secondes après l'ouverture de la page, un bouton rectangulaire vert apparaît, présentant un menu de pages sur les lieux proches de chez vous.
+À gauche du bouton vert se trouvent des drapeaux vous permettant de choisir votre langue.
+
+Sous le titre de la page, vous trouverez un bouton bleu qui vous permet d'écouter une brève description du contenu.
+
+Appuyer dessus fait passer le son en orange et le bouton en pause.
+Appuyer à nouveau sur le bouton bleu reprend là où vous l'aviez laissé. Si vous laissez le menu vert ouvert, la liste des pages changera dynamiquement au fil de votre promenade.
+
+La page est plus détaillée que le son.
+
+Amusez-vous ! Gardez l'application ouverte lorsque vous êtes dans le quartier !

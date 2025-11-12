@@ -1,0 +1,10 @@
+Benvenuto. questa pagina ti permetterà di accedere alle informazioni che riguardano i luoghi interessanti che trovi camminando per le vie del quartiere porto. 
+Ecco come usare le pagine di questa app. 
+In alto a sinistra, vedi tre lineette orrizontali che rappresentano il bottone per il menu di tutte le pagine che puoi consultare. 
+A sinistra dopo pochi secondi da quando apri la pagina compare un bottone rettangolare verde che ti presenta un menu delle pagine che riguardano i luoghi nelle tue vicinanze. 
+Alla sinistra del bottone verde, hai le bandiere che ti permettono di scegliera la lingua. 
+Sotto al titolo della pagina, trovi un bottone blu che ti permette di ascoltare una breve descrizione del contenuto della pagina. 
+Se premuto, ill bottone diventa arancione e premendolo ti permette di sospendere l'audio ed il bottone diventa blu. 
+Nel tornare a premere il pulsante blu riprende da dove si era interrotto. Se tieni aperto il menù verde, camminando il menù cambierà la lista delle pagine dinamicamente.
+La pagina maggiori dettagli rispetto all'audio.
+Buon proseguimento. Tieni aperta l'app quando sei nel quartiere!   
