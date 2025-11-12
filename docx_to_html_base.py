@@ -3,10 +3,10 @@ from docx import Document
 
 # --- CONFIGURAZIONE PERCORSI ---
 # ADATTA QUESTO: la directory dove si trovano i tuoi 12 file .docx
-DOCX_DIR = 'C:/Users/User/Documents/GitHub/QuartierePorto/DOCS_DA_CONVERTIRE' 
+DOCX_DIR = 'C:/Users/User/Documents/GitHub/Quadrilatero/DOCS_DA_CONVERTIRE' 
 
 # ADATTA QUESTO: la directory di output (dove li vuoi salvare, es. la root del progetto)
-HTML_DIR = 'C:/Users/User/Documents/GitHub/QuartierePorto' 
+HTML_DIR = 'C:/Users/User/Documents/GitHub/Quadrilatero' 
 # -------------------------------
 
 def docx_to_html_base():
