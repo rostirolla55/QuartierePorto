@@ -16,7 +16,7 @@ let nearbyPoiButton, nearbyMenuPlaceholder;
 // in C:\Users\User\Documents\salvataggi_github\ARCO_LOCATIONS_PORTICISANLUCA_js.txt
 const POIS_LOCATIONS = [
     { id: 'manifattura', lat: 44.50085, lon: 11.33610, distanceThreshold: 50 },
-// ** MARKER: START NEW POIS **
+    // ** MARKER: START NEW POIS **
     // Lapide_Grazia.jpg
     { id: 'graziaxx', lat: 44.5006638888889, lon: 11.3407694444444, distanceThreshold: 50 },
     // Pugliole.jpg
@@ -235,8 +235,8 @@ async function loadContent(lang) {
                 { id: 'navPioggia1', key: 'navPioggia1', base: 'pioggia1' },
                 { id: 'navPioggia2', key: 'navPioggia2', base: 'pioggia2' },
                 { id: 'navPioggia3', key: 'navPioggia3', base: 'pioggia3' },
-                    { id: 'navManifattura', key: 'navManifattura', base: 'manifattura' },
-// ** MARKER: START NEW NAV LINKS **
+                { id: 'navManifattura', key: 'navManifattura', base: 'manifattura' },
+                // ** MARKER: START NEW NAV LINKS **
             ];
 
             // Aggiorna HREF e Testo per tutti i link del menu principale
@@ -313,16 +313,19 @@ async function loadContent(lang) {
         // AGGIORNAMENTO IMMAGINI DINAMICHE (dalla 2 alla 5)
         for (let i = 2; i <= 5; i++) {
             const imageElement = document.getElementById(`pageImage${i}`);
-            const imageSource = pageData[`imageSource${i}`];
+            const imageSource = pageData[`imageSource${i}`]; // Nome file (es. 'manifattura0.jpg')
+
+            // Costruisce il percorso completo solo se l'immagine è definita
+            const fullImagePath = imageSource ? `Assets/images/${imageSource}` : '';
 
             if (imageElement) {
-                imageElement.src = imageSource || '';
+                // USA IL PERCORSO COMPLETO
+                imageElement.src = fullImagePath;
                 // Nasconde l'elemento se non c'è una sorgente
                 imageElement.style.display = imageSource ? 'block' : 'none';
                 imageElement.alt = pageData.pageTitle || `Immagine ${i}`;
             }
         }
-
         console.log(`✅ Contenuto caricato con successo per la lingua: ${lang} e pagina: ${pageId}`);
 
         // 🔥 NUOVA CHIAMATA: Avvia il monitoraggio GPS DOPO aver caricato il contenuto
