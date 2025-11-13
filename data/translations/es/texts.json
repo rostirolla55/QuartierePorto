@@ -9,7 +9,7 @@
         "mainText5": "",
         "playAudioButton": "¡Escucha el audio en Spanish!",
         "pauseAudioButton": "Pausa",
-        "imageSource1": "Assets/images/Panorama_Bologna.jpg",
+        "imageSource1": "Panorama_Bologna.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -17,7 +17,7 @@
         "sourceText": "Archivo Histórico del Ayuntamiento de Bolonia.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "Assets/Audio/es/Home_Bologna.mp3"
+        "audioSource": "es/Home_Bologna.mp3"
     },
     "nav": {
         "navHome": "Bienvenido",
@@ -42,7 +42,7 @@
         "mainText5": "",
         "playAudioButton": "Escucha la historia",
         "pauseAudioButton": "Pausa",
-        "imageSource1": "Assets/images/viaPolese.jpg",
+        "imageSource1": "viaPolese.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -50,7 +50,7 @@
         "sourceText": "Archivo Histórico del Ayuntamiento de Bolonia.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "Assets/Audio/es/Pugliole.mp3"
+        "audioSource": "es/Pugliole.mp3"
     },
     "graziaxx": {
         "pageTitle": "La Lápida de la Gracia",
@@ -62,15 +62,15 @@
         "mainText5": "<h3>Fuentes Primarias (Originales de la época):</h3> <ol start=\"1\"> <li> <p><strong>Documentación Oficial y Administrativa:</strong></p> <ul> <li> <p><strong>Proclamaciones y Decretos de la Assunteria di Sanità y del Senado Boloñés</strong> (a partir de 1628, para la gestión del contagio, las medidas adoptadas y la organización de los servicios). La mayoría de estos documentos se conservan en el <strong>Archivo Estatal de Bolonia</strong>.</p> </li> <li> <p><strong>Registros de Muertos y Entierros</strong> (para datos sobre víctimas, picos de mortalidad y fosas comunes).</p> </li> <li> <p><strong>Declaraciones de Gastos</strong> (para las sumas asignadas a los pobres, a los médicos policía, al vaciado de casas y a la gestión de los lazaretos).</p> </li> <li> <p><strong>Crónicas contemporáneas e informes oficiales</strong> (por ejemplo, el informe de <strong>Pietro Moratti</strong> – <em>Relato de las órdenes y disposiciones dadas en los lazaretos de Bolonia y su condado durante el contagio del año 1630</em>).</p> </li> </ul> </li> <li> <p><strong>Testimonios artísticos y votivos:</strong></p> <ul> <li> <p><strong>El retablo de la peste de Guido Reni</strong> (1630): testimonio directo del voto cívico y la devoción religiosa.</p> </li> <li> <p><strong>El dosel votivo de 1634</strong> (utilizado en las procesiones de acción de gracias).</p> </li> <li> <p><strong>Pinturas y exvotos</strong> (como La pintura boloñesa anónima sobre la peste en Via San Mamolo, a menudo citada en fuentes secundarias).</p> </li> </ul> </li> </ol> <h3>Fuentes secundarias (estudios históricos posteriores):</h3> <ol start=\"1\"> <li> <p><strong>Estudios históricos específicos sobre Bolonia y la peste de 1630:</strong></p> <ul> <li> <p>Estudios demográficos históricos que han elaborado datos sobre las muertes y la población (por ejemplo, <strong>Marco Poli</strong>, autor de estudios sobre epidemias en Bolonia, o estudios demográficos más antiguos como los de <strong>P.L. Da Gatteo</strong> y <strong>A. Brighetti</strong>).</p> </li> <li> <p>Monografías y ensayos que reconstruyen la propagación, la gestión sanitaria (el papel del cardenal Bernardino Spada y los Camilos) y las consecuencias sociales de la epidemia.</p> </li> </ul> </li> <li> <p><strong>Contexto histórico general:</strong></p> <ul> <li> <p>Las fuentes que tratan de la <strong>Guerra de Sucesión de Mantova</strong> y el paso de los <strong>Lansquenetes</strong>, responsables de la propagación del contagio por todo el norte de Italia (como también se menciona en <em>Los novios</em> de Alessandro Manzoni, que aunque no es una fuente histórica primaria para Bolonia, da testimonio del contexto general de la epidemia de 1630 en el norte de Italia)</p> </li> </ul> </li> </ol>",
         "playAudioButton": "Escucha la historia",
         "pauseAudioButton": "Pausa",
-        "imageSource1": "Assets/images/Panorama_Bologna.jpg",
-        "imageSource2": "Assets/images/lapideMariana.jpg",
+        "imageSource1": "Panorama_Bologna.jpg",
+        "imageSource2": "lapideMariana.jpg",
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "Assets/Audio/it/Pugliole.mp3"
+        "audioSource": "it/Pugliole.mp3"
     },
     "lastre": {
         "pageTitle": "Las losas y los números",
@@ -82,7 +82,7 @@
         "mainText5": "En el número 11 de Via Tanari Vecchia, encontramos la placa de arenisca con el número 1202 (número par), mientras que el número actual de la calle es el 11 (impar) número), estando a la derecha en dirección de números crecientes, según lo exige la normativa toponimia vigente.",
         "playAudioButton": "Escuchar la historia",
         "pauseAudioButton": "Pausa",
-        "imageSource1": "Assets/images/foto_targa_T_1202.jpg",
+        "imageSource1": "foto_targa_T_1202.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -90,7 +90,7 @@
         "sourceText": "Archivo Histórico del Ayuntamiento de Bolonia.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "Assets/Audio/es/Lastre.mp3"
+        "audioSource": "es/Lastre.mp3"
     },
     "carracci": {
         "pageTitle": "Carracci",
@@ -101,7 +101,7 @@
         "mainText4": "",
         "mainText5": "",
         "playAudioButton": "Escucha la historia",
-        "imageSource1": "Assets/images/Panorama_Bologna.jpg",
+        "imageSource1": "Panorama_Bologna.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -110,7 +110,7 @@
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
         "pauseAudioButton": "Pausa",
-        "audioSource": "Assets/Audio/es/Carracci.mp3"
+        "audioSource": "es/Carracci.mp3"
     },
     "chiesasbene": {
         "pageTitle": "Iglesia de San Benedicto",
@@ -121,7 +121,7 @@
         "mainText4": "",
         "mainText5": "Fuentes históricas de la Iglesia de San Benedicto <h2></h2> <p>&nbsp;</p> <ol start=\"1\"> <li> <p><strong>Fuentes de toponimia e historia urbana de Bolonia:</strong></p> <ul> <li> <p><strong>Archivos y estudios sobre la historia de la Via Indipendenza:</strong> Estos documentos (a menudo vinculados al Archivo Estatal o a la Biblioteca Archiginnasio) son cruciales para datar con precisión la gran transformación de <strong>1892</strong>, año en que la iglesia fue <strong>\"girada\"</strong> y la fachada reorientada para dar a la recién creada Via Indipendenza.</p> </li> <li> <p><strong>Estudios sobre las iglesias de Bolonia:</strong> Textos académicos y monografías que dan fe de sus <strong>orígenes en el siglo XIII</strong> y la posterior <strong>reconstrucción en el siglo XVII</strong> (fechado en <strong>1606</strong>), especificando el papel del arquitecto <strong>Giovanni Battista Ballerini</strong>.</p> </li> </ul> </li> <li> <p><strong>Fuentes de la Historia del Arte y la Arquitectura de Bolonia:</strong></p> <ul> <li> <p><strong>Guías y Catálogos de Arte:</strong> Para la lista de obras internas y artistas. Estas fuentes confirman la presencia de pinturas de maestros del Barroco y del Manierismo, como <strong>Giacomo Cavedoni</strong>, <strong>Alessandro Tiarini</strong> y <strong>Lucio Massari</strong>.</p> </li> <li> <p><strong>Textos sobre los Complejos Religiosos:</strong> Para identificar la Orden que los gestionaba, es decir, los <strong>Mini Frailes de San Francesco di Paola</strong> (los \"Paolotti\").</p> </li> </ul> </li> <li> <p><strong>Sitios Institucionales y Portales Culturales (Web):</strong></p> <ul> <li> <p><strong>Portales Oficiales de Turismo y Cultura del Ayuntamiento de Bolonia (p. ej., <em>Bologna Welcome</em> o <em>Historia y Memoria de Bolonia</em>):</strong> Estos sitios resumen y validan los datos históricos clave (siglo XIII, reconstrucción del siglo XVII, finales Reorientación del siglo XIX) Siglo XIX) para uso público.</p> </li> </ul> </li> </ol> <p>En resumen, la información proviene de la concordancia de datos presentes en archivos históricos, estudios de historia del arte y fuentes institucionales que trazan la evolución de este importante lugar de culto boloñés.</p>",
         "playAudioButton": "Escucha la historia",
-        "imageSource1": "Assets/images/Panorama_Bologna.jpg",
+        "imageSource1": "Panorama_Bologna.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -130,7 +130,7 @@
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
         "pauseAudioButton": "Pausa",
-        "audioSource": "Assets/Audio/es/Carracci.mp3"
+        "audioSource": "es/Carracci.mp3"
     },
     "chiesapioggia": {
         "pageTitle": "Chiesa della Pioggia",
@@ -140,7 +140,7 @@
         "mainText4": "",
         "mainText5": "<p>Fuentes públicas e institucionales sobre la historia y los lugares de culto en Bolonia:</p> <ul> <li><strong>Sitios oficiales de turismo y cultura:</strong> como <em>Bologna Welcome</em> y <em>BolognaBO</em>, que proporcionan detalles sobre la ubicación, el horario de apertura y la historia de la iglesia.</li> <li><strong>Enciclopedias en línea y archivos históricos:</strong> como <em>Wikipedia</em> y <em>Bologna Online/Biblioteca Salaborsa</em>, que ofrecen información sobre los orígenes del siglo XIII, la reconstrucción, el milagro de la lluvia de 1561 que dio nombre al Santuario y la lista de obras de arte que alberga (como las de Agostino Carracci, Francesco Monti, Ludovico Mattioli y Alfonso Lombardi).</li> <li><strong>Guías y portales de arte:</strong> que confirman los nombres completos (Santuario della Madonna della Pioggia, Chiesa di Santa Maria della Pioggia y de San Bartolomeo di Reno) y las obras de arte más importantes.</li> </ul> <p>Estas fuentes coinciden en información clave sobre la ubicación (en la intersección de Via Galliera y Via Riva di Reno), el nombre original (San Bartolomeo di Reno) y la doble dedicación tras el milagro de la lluvia.</p>",
         "playAudioButton": "Escucha la historia",
-        "imageSource1": "Assets/images/ChiesaPioggia.jpg",
+        "imageSource1": "ChiesaPioggia.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -149,7 +149,7 @@
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
         "pauseAudioButton": "Pausa",
-        "audioSource": "Assets/Audio/es/Carracci.mp3"
+        "audioSource": "es/Carracci.mp3"
     },
     "pioggia1": {
         "pageTitle": "Paisaje con San Bartolomé",
@@ -161,7 +161,7 @@
         "mainText5": "",
         "playAudioButton": "Escuchar con auriculares",
         "pauseAudioButton": "Pausa",
-        "imageSource1": "Assets/images/ChiesaPioggia.jpg",
+        "imageSource1": "ChiesaPioggia.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -169,7 +169,7 @@
         "sourceText": "Archivos históricos del municipio de Bolonia.",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-01",
-        "audioSource": "Assets/Audio/es/Chiesa_Pioggia.mp3"
+        "audioSource": "es/Chiesa_Pioggia.mp3"
     },
     "pioggia2": {
         "pageTitle": "Escultura de San Bartolomé",
@@ -181,7 +181,7 @@
         "mainText5": "",
         "playAudioButton": "Escuchar con auriculares",
         "pauseAudioButton": "Pausa",
-        "imageSource1": "Assets/images/ChiesaPioggia.jpg",
+        "imageSource1": "ChiesaPioggia.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -189,7 +189,7 @@
         "sourceText": "Archivos históricos del municipio de Bolonia.",
         "creationDate": "2025-10-26",
         "lastUpdate": "26-10-2025",
-        "audioSource": "Assets/Audio/es/Chiesa_Pioggia.mp3"
+        "audioSource": "es/Chiesa_Pioggia.mp3"
     },
     "pioggia3": {
         "pageTitle": "Adoración de los pastores",
@@ -201,15 +201,15 @@
         "mainText5": "",
         "playAudioButton": "Escuchar con auriculares",
         "pauseAudioButton": "Pausa",
-        "imageSource1": "Assets/images/ChiesaPioggia.jpg",
-        "imageSource2": "Assets/images/Pioggia3.jpg",
+        "imageSource1": "ChiesaPioggia.jpg",
+        "imageSource2": "Pioggia3.jpg",
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "Archivos históricos del municipio de Bolonia.",
         "creationDate": "2025-10-26",
         "lastUpdate": "26-10-2025",
-        "audioSource": "Assets/Audio/es/Chiesa_Pioggia.mp3"
+        "audioSource": "es/Chiesa_Pioggia.mp3"
     },
     "manifattura": {
         "pageTitle": "Ex Fabrica de Tabaco",
@@ -229,6 +229,6 @@
         "sourceText": "",
         "creationDate": "2025-11-06",
         "lastUpdate": "2025-11-06",
-        "audioSource": "Assets/Audio/es/manifattura.mp3"
+        "audioSource": "es/manifattura.mp3"
     }
 }

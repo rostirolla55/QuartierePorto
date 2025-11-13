@@ -2,7 +2,7 @@
 // ====================================================================
 // DICHIARAZIONE VARIABILI GLOBALI (NECESSARIE)
 // ====================================================================
-const APP_VERSION = '1.2.14 - Fix POI Multipli';
+const APP_VERSION = '1.2.15 - inserito directory audio ed images';
 
 const LANGUAGES = ['it', 'en', 'fr', 'es'];
 const LAST_LANG_KEY = 'porticiSanLuca_lastLang'; // Chiave per salvare l'ultima lingua in localStorage (Coerente con index.html)
@@ -301,7 +301,7 @@ async function loadContent(lang) {
             currentPlayButton.textContent = pageData.playAudioButton;
             currentPlayButton.dataset.playText = pageData.playAudioButton;
             currentPlayButton.dataset.pauseText = pageData.pauseAudioButton;
-            currentAudioPlayer.src = pageData.audioSource;
+            currentAudioPlayer.src = `Assets/Audio/${pageData.audioSource}`; // <-- CORREZIONE
             currentAudioPlayer.load();
             currentPlayButton.classList.remove('pause-style');
             currentPlayButton.classList.add('play-style');
