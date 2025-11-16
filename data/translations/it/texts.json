@@ -17,7 +17,7 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "it/Home_Bologna.mp3"
+        "audioSource": "it/home_bologna.mp3"
     },
     "nav": {
         "navHome": "Benvenuto",
@@ -50,7 +50,7 @@
         "sourceText": "Settore Musei Civici Bologna | Area Storia e Memoria",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "it/Pugliole.mp3"
+        "audioSource": "it/pugliole.mp3"
     },
     "graziaxx": {
         "pageTitle": "La lapide della grazia",
@@ -90,7 +90,7 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "it/Lastre.mp3"
+        "audioSource": "it/lastre.mp3"
     },
     "carracci": {
         "pageTitle": "Casa di Ludivico Carracci",
@@ -110,7 +110,7 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "it/Carracci.mp3"
+        "audioSource": "it/carracci.mp3"
     },
     "chiesasbene": {
         "pageTitle": "Chiesa di San Benedetto",
@@ -129,7 +129,7 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "it/Chiesa_San_Benedetto.mp3"
+        "audioSource": "it/chiesasbene.mp3"
     },
     "chiesapioggia": {
         "pageTitle": "Chiesa della Pioggia",
@@ -149,7 +149,7 @@
         "sourceText": "Vaticano.com Santuari e Dintorni",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-30",
-        "audioSource": "it/Chiesa_Pioggia.mp3"
+        "audioSource": "it/chiesapioggia.mp3"
     },
     "pioggia1": {
         "pageTitle": "Paesaggio con San Bartolomeo",
@@ -169,7 +169,7 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-26",
-        "audioSource": "it/Chiesa_Pioggia.mp3"
+        "audioSource": "it/pioggia1.mp3"
     },
     "pioggia2": {
         "pageTitle": "Scultura San Bartolomeo",
@@ -189,7 +189,7 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-26",
-        "audioSource": "it/Chiesa_Pioggia.mp3"
+        "audioSource": "it/pioggia2.mp3"
     },
     "pioggia3": {
         "pageTitle": "Adorazione dei pastori",
@@ -209,7 +209,7 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-26",
-        "audioSource": "it/Chiesa_Pioggia.mp3"
+        "audioSource": "it/pioggia3.mp3"
     },
     "manifattura": {
         "pageTitle": "Ex Manifattura Tabacchi",

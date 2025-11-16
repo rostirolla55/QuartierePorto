@@ -17,7 +17,7 @@
         "sourceText": "Archives historiques de la municipalité de Bologne.",
         "creationDate": "30/08/2025",
         "lastUpdate": "01/10/2025",
-        "audioSource": "fr/Home_Bologna.mp3"
+        "audioSource": "fr/home_bologna.mp3"
     },
     "nav": {
         "navHome": "Bienvenue",
@@ -50,7 +50,7 @@
         "sourceText": "Archives historiques de la municipalité de Bologne.",
         "creationDate": "30/08/2025",
         "lastUpdate": "01/10/2025",
-        "audioSource": "fr/Pugliole.mp3"
+        "audioSource": "fr/pugliole.mp3"
     },
     "graziaxx": {
         "pageTitle": "La Pierre Commémorative de la Grâce",
@@ -70,7 +70,7 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "it/Pugliole.mp3"
+        "audioSource": "it/pugliole.mp3"
     },
     "lastre": {
         "pageTitle": "Les dalles et les numéros",
@@ -90,7 +90,7 @@
         "sourceText": "Archives historiques de la municipalité de Bologne.",
         "creationDate": "30/08/2025",
         "lastUpdate": "01/10/2025",
-        "audioSource": "fr/Lastre.mp3"
+        "audioSource": "fr/lastre.mp3"
     },
     "carracci": {
         "pageTitle": "Carracci",
@@ -110,7 +110,7 @@
         "sourceText": "Archives historiques de la municipalité de Bologne.",
         "creationDate": "30/08/2025",
         "lastUpdate": "01/10/2025",
-        "audioSource": "fr/Carracci.mp3"
+        "audioSource": "fr/carracci.mp3"
     },
     "chiesasbene": {
         "pageTitle": "Église San Benedetto",
@@ -130,7 +130,7 @@
         "sourceText": "Archives historiques de la municipalité de Bologne.",
         "creationDate": "30/08/2025",
         "lastUpdate": "01/10/2025",
-        "audioSource": "fr/Carracci.mp3"
+        "audioSource": "fr/chiesasbene.mp3"
     },
     "chiesapioggia": {
         "pageTitle": "Église de la Pluie",
@@ -150,7 +150,7 @@
         "sourceText": "Archives historiques de la municipalité de Bologne.",
         "creationDate": "30/08/2025",
         "lastUpdate": "01/10/2025",
-        "audioSource": "fr/Carracci.mp3"
+        "audioSource": "fr/chiesapioggia.mp3"
     },
     "pioggia1": {
         "pageTitle": "Paysage avec Saint-Barthélemy",
@@ -170,7 +170,7 @@
         "sourceText": "Archives historiques de la municipalité de Bologne.",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-26",
-        "audioSource": "fr/Chiesa_Pioggia.mp3"
+        "audioSource": "fr/pioggia1.mp3"
     },
     "pioggia2": {
         "pageTitle": " Sculpture de Saint Barthélemy ",
@@ -190,7 +190,7 @@
         "sourceText": "Archives historiques de la municipalité de Bologne.",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-26",
-        "audioSource": "fr/Chiesa_Pioggia.mp3"
+        "audioSource": "fr/pioggia2.mp3"
     },
     "pioggia3": {
         "pageTitle": "Adoration des bergers",
@@ -210,7 +210,7 @@
         "sourceText": "Archives historiques de la municipalité de Bologne.",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-26",
-        "audioSource": "fr/Chiesa_Pioggia.mp3"
+        "audioSource": "fr/pioggia3.mp3"
     },
     "manifattura": {
         "pageTitle": "Ancienne Manufacture de Tabac",
