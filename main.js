@@ -5,7 +5,7 @@
 const APP_VERSION = '1.2.15 - inserito directory audio ed images';
 
 const LANGUAGES = ['it', 'en', 'fr', 'es'];
-const LAST_LANG_KEY = 'porticiSanLuca_lastLang'; // Chiave per salvare l'ultima lingua in localStorage (Coerente con index.html)
+const LAST_LANG_KEY = 'Quartiere Porto_lastLang'; // Chiave per salvare l'ultima lingua in localStorage (Coerente con index.html)
 let currentLang = 'it';
 let nearbyPoiButton, nearbyMenuPlaceholder;
 
@@ -13,7 +13,7 @@ let nearbyPoiButton, nearbyMenuPlaceholder;
 // DATI: Punti di Interesse GPS (DA COMPILARE)
 // ===========================================
 // Attenzione le coordinate sono della zona PORTORENO
-// in C:\Users\User\Documents\salvataggi_github\ARCO_LOCATIONS_PORTICISANLUCA_js.txt
+// in C:\Users\User\Documents\salvataggi_github\ARCO_LOCATIONS_Quartiere Porto_js.txt
 const POIS_LOCATIONS = [
     { id: 'manifattura', lat: 44.50085, lon: 11.33610, distanceThreshold: 50 },
     // ** MARKER: START NEW POIS **
