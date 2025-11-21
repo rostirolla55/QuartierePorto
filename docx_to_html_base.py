@@ -1,57 +1,91 @@
+import sys
 import os
-from docx import Document
+# IMPORTANTE: Devi assicurarti che la libreria che usi per la conversione sia installata.
+# Ad esempio, se usi python-docx:
+# from docx import Document 
 
-# --- CONFIGURAZIONE PERCORSI ---
-# ADATTA QUESTO: la directory dove si trovano i tuoi 12 file .docx
-DOCX_DIR = 'C:/Users/User/Documents/GitHub/QuartierePorto/DOCS_DA_CONVERTIRE' 
 
-# ADATTA QUESTO: la directory di output (dove li vuoi salvare, es. la root del progetto)
-HTML_DIR = 'C:/Users/User/Documents/GitHub/QuartierePorto' 
-# -------------------------------
-
-def docx_to_html_base():
+# --- DEFINIZIONE DELLA FUNZIONE docx_to_html ---
+def docx_to_html(docx_path):
     """
-    Converte tutti i file .docx in DOCX_DIR in file .html in HTML_DIR, 
-    usando la formattazione base <p>.
+    Legge un file docx, applica la logica di conversione e restituisce
+    il contenuto formattato in HTML.
+
+    ATTENZIONE: ADATTA QUESTO BLOCCO con il tuo codice REALMENTE FUNZIONANTE
+    che esegue la conversione da docx a stringa HTML.
     """
-    
-    if not os.path.exists(HTML_DIR):
-        print(f"La directory di output non esiste: {HTML_DIR}")
-        os.makedirs(HTML_DIR)
+    if not os.path.exists(docx_path):
+        print(f"ERRORE Python: File .docx non trovato per il percorso: {docx_path}", file=sys.stderr)
+        return None
+
+    try:
+        # --------------------------------------------------------------------
+        # INIZIO: LA TUA LOGICA DI CONVERSIONE (Esempio strutturale)
+        # --------------------------------------------------------------------
         
-    if not os.path.exists(DOCX_DIR):
-        print(f"ERRORE: La directory dei file DOCX sorgente non esiste: {DOCX_DIR}")
-        return
+        # Esempio usando 'docx.Document':
+        # document = Document(docx_path)
+        # html_content = ""
+        # for para in document.paragraphs:
+        #     html_content += f"<p>{para.text}</p>"
+        
+        # Se non hai ancora la logica, puoi usare questa riga per un test:
+        print("ATTENZIONE: Conversione non implementata. Usando testo placeholder.", file=sys.stderr)
+        html_content = ""
+        
+        # --------------------------------------------------------------------
+        # FINE: LA TUA LOGICA DI CONVERSIONE
+        # --------------------------------------------------------------------
+        
+        return html_content
 
-    print(f"Avvio conversione da {DOCX_DIR} a {HTML_DIR}...")
-    
-    for filename in os.listdir(DOCX_DIR):
-        if filename.endswith(".docx") and not filename.startswith('~'):
-            docx_path = os.path.join(DOCX_DIR, filename)
-            
-            # Sostituisci l'estensione .docx con .html
-            html_filename = filename.replace(".docx", ".html")
-            html_path = os.path.join(HTML_DIR, html_filename)
-            
-            try:
-                document = Document(docx_path)
-                html_content = ""
-                
-                for paragraph in document.paragraphs:
-                    text = paragraph.text.strip()
-                    
-                    if text:
-                        # Estrae il testo e lo formatta come un paragrafo HTML
-                        # Nota: Non gestisce grassetti/liste, da fare a mano se necessario
-                        html_content += f"<p>{text}</p>\n"
-                
-                with open(html_path, 'w', encoding='utf-8') as f:
-                    f.write(html_content)
-                
-                print(f"✅ Convertito: {filename} -> {html_filename}")
-                
-            except Exception as e:
-                print(f"ERRORE nella conversione di {filename}: {e}")
+    except Exception as e:
+        print(f"ERRORE grave durante la conversione di {docx_path}: {e}", file=sys.stderr)
+        return None
+# ----------------------------------------------------------------------
+
 
 if __name__ == "__main__":
-    docx_to_html_base()
+    # Verifica il numero di argomenti
+    if len(sys.argv) != 2:
+        print("Uso: python docx_to_html_base.py [ID_pagina]", file=sys.stderr)
+        sys.exit(1)
+
+    PAGE_ID_RAW = sys.argv[1]
+    
+    # Forza l'ID della pagina a MINUSCOLO (protezione dal case-sensitivity)
+    PAGE_ID = PAGE_ID_RAW.lower()
+    
+    # 1. Definizione dei percorsi con la tua directory 'text_files'
+    INPUT_DIR = "DOC_DA_CONVERTIRE"
+    OUTPUT_DIR = "text_files" 
+    
+    INPUT_FILE = f"maintext_{PAGE_ID}.docx"
+    OUTPUT_FILE = f"{PAGE_ID}.html"
+    
+    docx_path = os.path.join(INPUT_DIR, INPUT_FILE)
+    html_path = os.path.join(OUTPUT_DIR, OUTPUT_FILE)
+
+    print(f"Tentativo di conversione: {docx_path}")
+
+    # 2. Esecuzione della Conversione
+    html_content = docx_to_html(docx_path)
+    
+    # 3. Salvataggio
+    if html_content is not None:
+        # Assicura che la directory di output (text_files) esista
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        
+        try:
+            with open(html_path, 'w', encoding='utf-8') as f:
+                f.write(html_content)
+            print(f"SUCCESS: Contenuto salvato in {html_path}")
+            sys.exit(0)
+            
+        except Exception as e:
+            print(f"ERRORE di scrittura: {e}", file=sys.stderr)
+            sys.exit(1)
+            
+    else:
+        # Errore gestito all'interno di docx_to_html
+        sys.exit(1)
