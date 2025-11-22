@@ -30,7 +30,8 @@
         "navPioggia2": "Escultura de San Bartolomé",
         "navPioggia3": "Obra de Agostino Carracci",
         "navGraziaxx": "Placa votiva de Grazia",
-        "navManifattura": "Ex Fabrica de Tabaco"
+        "navManifattura": "Ex Fabrica de Tabaco",
+        "navpittoricarracci": "Ex Fabrica de Tabaco"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -230,5 +231,25 @@
         "creationDate": "2025-11-06",
         "lastUpdate": "2025-11-06",
         "audioSource": "es/manifattura.mp3"
+    },
+    "pittoricarracci": {
+        "pageTitle": "Ex Fabrica de Tabaco",
+        "mainText": "",
+        "mainText1": "",
+        "mainText2": "",
+        "mainText3": "",
+        "mainText4": "",
+        "mainText5": "",
+        "playAudioButton": "Ascolta con le cuffie",
+        "pauseAudioButton": "Pausa",
+        "imageSource1": "",
+        "imageSource2": "",
+        "imageSource3": "",
+        "imageSource4": "",
+        "imageSource5": "",
+        "sourceText": "",
+        "creationDate": "2025-11-22",
+        "lastUpdate": "2025-11-22",
+        "audioSource": "Assets/Audio/es/pittoricarracci.mp3"
     }
 }

@@ -30,7 +30,8 @@
         "navPioggia2": "Sculpture de saint Barthélemy",
         "navPioggia3": "Œuvre d'Agostino Carracci",
         "navGraziaxx": "Plaque votive Grazia",
-        "navManifattura": "Ancienne Manufacture de Tabac"
+        "navManifattura": "Ancienne Manufacture de Tabac",
+        "navpittoricarracci": "Ancienne Manufacture de Tabac"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -94,7 +95,8 @@
     },
     "carracci": {
         "pageTitle": "Carracci",
-        "mainText": "<p>Les résultats de la recherche indiquent que l'adresse <strong>Via San Carlo, 19 à Bologne</strong> est associée à une propriété appelée <strong>\"Casa Carracci\"</strong> ou \"San Carlo Holiday House\" qui est actuellement louée comme appartement de vacances.</p> <p>Certaines sources mentionnent que le bâtiment, un ancien palais du XVIIIe ou XIXe siècle appelé \"Casa Carracci\" et protégé par la Surintendance du patrimoine culturel, serait le lieu où <strong>Ludovico Carracci</strong> a vécu de 1555 à 1609 et où se trouvait l'un des ateliers des cousins ​​Carrache, fondateurs de l'<strong>Accademia degli Incamminati</strong>.</p> <p>Il est important de noter que, historiquement, la maison Carracci (qui fait également référence à Agostino et Annibale) est souvent aussi associée à la <strong>Via Rolandino, 1</strong> (la soi-disant « Casa Berò Gradi » ou « Casa Berò detta dei Carracci »), qui a subi une restauration au XIXe siècle. En bref, la propriété située au <strong>19e Via San Carlo</ strong> est promue comme un appartement de vacances situé dans ce qui est identifié comme le bâtiment où le peintre Ludovico Carracci a vécu et travaillé.",        "mainText1": "",
+        "mainText": "<p>Les résultats de la recherche indiquent que l'adresse <strong>Via San Carlo, 19 à Bologne</strong> est associée à une propriété appelée <strong>\"Casa Carracci\"</strong> ou \"San Carlo Holiday House\" qui est actuellement louée comme appartement de vacances.</p> <p>Certaines sources mentionnent que le bâtiment, un ancien palais du XVIIIe ou XIXe siècle appelé \"Casa Carracci\" et protégé par la Surintendance du patrimoine culturel, serait le lieu où <strong>Ludovico Carracci</strong> a vécu de 1555 à 1609 et où se trouvait l'un des ateliers des cousins ​​Carrache, fondateurs de l'<strong>Accademia degli Incamminati</strong>.</p> <p>Il est important de noter que, historiquement, la maison Carracci (qui fait également référence à Agostino et Annibale) est souvent aussi associée à la <strong>Via Rolandino, 1</strong> (la soi-disant « Casa Berò Gradi » ou « Casa Berò detta dei Carracci »), qui a subi une restauration au XIXe siècle. En bref, la propriété située au <strong>19e Via San Carlo</ strong> est promue comme un appartement de vacances situé dans ce qui est identifié comme le bâtiment où le peintre Ludovico Carracci a vécu et travaillé.",
+        "mainText1": "",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
@@ -230,5 +232,25 @@
         "creationDate": "2025-11-06",
         "lastUpdate": "2025-11-06",
         "audioSource": "fr/manifattura.mp3"
+    },
+    "pittoricarracci": {
+        "pageTitle": "Ancienne Manufacture de Tabac",
+        "mainText": "",
+        "mainText1": "",
+        "mainText2": "",
+        "mainText3": "",
+        "mainText4": "",
+        "mainText5": "",
+        "playAudioButton": "Ascolta con le cuffie",
+        "pauseAudioButton": "Pausa",
+        "imageSource1": "",
+        "imageSource2": "",
+        "imageSource3": "",
+        "imageSource4": "",
+        "imageSource5": "",
+        "sourceText": "",
+        "creationDate": "2025-11-22",
+        "lastUpdate": "2025-11-22",
+        "audioSource": "Assets/Audio/fr/pittoricarracci.mp3"
     }
 }
