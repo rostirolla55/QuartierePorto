@@ -103,7 +103,7 @@ def update_texts_json_nav(repo_root, page_id, nav_key_id, translations):
                 # Creazione del blocco per la nuova pagina (Schema completo)
                 new_block = NEW_PAGE_SCHEMA.copy()
                 new_block['pageTitle'] = translations[lang]
-                new_block['audioSource'] = f"Assets/Audio/{lang}/{page_id}.mp3"
+                new_block['audioSource'] = f"{lang}/{page_id}.mp3"
                 
                 # Aggiungi un placeholder per il testo iniziale
                 if lang == 'it' or lang == 'en':
