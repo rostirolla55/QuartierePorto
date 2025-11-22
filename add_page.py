@@ -8,9 +8,9 @@ import re
 # --- CONFIGURAZIONI GLOBALI ---
 LANGUAGES = ['it', 'en', 'es', 'fr']
 NAV_MARKER = '// ** MARKER: START NEW NAV LINKS **' # Marcatore per main.js
-POI_MARKER = '// ** MARKER: START NEW POIS **'      # Marcatore per main.js
-HTML_NAV_MARKER = '</ul>'                           # Marcatore per i file HTML: USIAMO </ul> per INSERIRE IN FONDO
-HTML_TEMPLATE_NAME = 'template-it.html'             # Nome del file HTML da usare come template
+POI_MARKER = '// ** MARKER: START NEW POIS **'       # Marcatore per main.js
+HTML_NAV_MARKER = '</ul>'                            # Marcatore per i file HTML: USIAMO </ul> per INSERIRE IN FONDO
+HTML_TEMPLATE_NAME = 'template-it.html'              # Nome del file HTML da usare come template
 
 # ----------------------------------------------------------------------------------
 
@@ -21,9 +21,9 @@ def get_translations_for_nav(page_title_it):
     print("ATTENZIONE: Stiamo usando traduzioni placeholder per il menu. AGGIORNARE manualemnte se necessario.")
     return {
         'it': page_title_it,
-        'en': 'Ex Tobacco Factory',
-        'es': 'Ex Fabrica de Tabaco',
-        'fr': 'Ancienne Manufacture de Tabac'
+        'en': 'The Carracci Painters', # Traduzione placeholder EN (Regolare se necessario)
+        'es': 'Los Pintores Carracci', # Traduzione placeholder ES (Regolare se necessario)
+        'fr': 'Les Peintres Carrache'  # Traduzione placeholder FR (Regolare se necessario)
     }
 
 def update_main_js(repo_root, page_id, nav_key_id, lat, lon, distance):
@@ -31,8 +31,8 @@ def update_main_js(repo_root, page_id, nav_key_id, lat, lon, distance):
     js_path = os.path.join(repo_root, 'main.js')
     
     # Linee da iniettare: rimosso eccesso di a capo per evitare righe vuote
-    new_poi = f"    {{ id: '{page_id}', lat: {lat}, lon: {lon}, distanceThreshold: {distance} }},"
-    new_nav = f"    {{ id: '{nav_key_id}', key: '{nav_key_id}', base: '{page_id}' }},"
+    new_poi = f"    {{ id: '{page_id}', lat: {lat}, lon: {lon}, distanceThreshold: {distance} }},"
+    new_nav = f"    {{ id: '{nav_key_id}', key: '{nav_key_id}', base: '{page_id}' }},"
     
     # Le linee saranno inserite prima del marker, mantenendo la formattazione pulita
     new_poi_injection = new_poi + '\n' + POI_MARKER
@@ -76,7 +76,7 @@ def update_texts_json_nav(repo_root, page_id, nav_key_id, translations):
         "mainText4": "",
         "mainText5": "",
         "playAudioButton": "Ascolta con le cuffie", 
-        "pauseAudioButton": "Pausa",               
+        "pauseAudioButton": "Pausa",
         "imageSource1": "",
         "imageSource2": "",
         "imageSource3": "",
@@ -137,17 +137,19 @@ def update_texts_json_nav(repo_root, page_id, nav_key_id, translations):
 def get_target_lang_code(filename):
     """Determina il codice linguistico corretto dal nome del file HTML."""
     parts = filename.split('-')
-    if len(parts) > 1:
+    if len(parts) > 1 and parts[-1].endswith('.html'):
         # File con suffisso: es. index-en.html -> 'en'
         return parts[-1].replace(".html", "")
+    elif filename.endswith('.html') and filename != HTML_TEMPLATE_NAME:
+        # File senza suffisso: es. index.html -> 'it' (presumendo lingua di default/fallback)
+        return 'it_default' # Usiamo un codice fittizio per il file base
     else:
-        # File senza suffisso: es. index.html -> 'it' (presumendo lingua di default)
-        return 'it'
+        return None
 
 def update_html_files(repo_root, page_id, nav_key_id, translations, page_title_it):
     """
-    Crea i nuovi file HTML dal template, aggiorna il menu e il Cache Busting
-    in TUTTI i file HTML esistenti.
+    Crea i nuovi file HTML dal template (inclusa la pagina base senza suffisso), 
+    aggiorna il menu e il Cache Busting in TUTTI i file HTML esistenti.
     """
     
     MARKER = HTML_NAV_MARKER # Il tag </ul> è il marcatore
@@ -159,38 +161,70 @@ def update_html_files(repo_root, page_id, nav_key_id, translations, page_title_i
     ]
     today_version = datetime.datetime.now().strftime("%Y%m%d_%H%M") 
 
+    
+    # ----------------------------------------------
+    # 1. CREAZIONE NUOVO FILE BASE (SENZA SUFFISSO)
+    # ----------------------------------------------
+    new_page_base_filename = f'{page_id}.html'
+    new_page_base_path = os.path.join(repo_root, new_page_base_filename)
+    template_path = os.path.join(repo_root, HTML_TEMPLATE_NAME)
+
+    if os.path.exists(template_path) and not os.path.exists(new_page_base_path):
+        # Copia dal template
+        shutil.copyfile(template_path, new_page_base_path)
+        
+        # Aggiorna il tag <body> id e i link interni nel nuovo file base
+        with open(new_page_base_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Aggiorna l'ID del body della nuova pagina
+        content = content.replace('id="template"', f'id="{page_id}"')
+        
+        # La pagina base deve puntare a se stessa (es. pittoricarracci.html) e gestirà
+        # il reindirizzamento tramite main.js, quindi i link HTML non necessitano di suffisso
+        content = content.replace(f'href="{page_id}-it.html"', f'href="{page_id}.html"')
+        
+        with open(new_page_base_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+            
+        print(f"✅ Creato NUOVO FILE BASE DI REINDIRIZZAMENTO: {new_page_base_filename}")
+        
+    elif not os.path.exists(template_path):
+        print(f"ERRORE: Template HTML non trovato per la creazione del file base: {HTML_TEMPLATE_NAME}")
+
+
     for existing_path in all_html_files:
         try:
             filename = os.path.basename(existing_path)
             target_lang = get_target_lang_code(filename) # Determina la lingua del file corrente
             
-            # --- PARTE A: GESTIONE CREAZIONE NUOVO FILE ---
-            if filename == HTML_TEMPLATE_NAME:
-                # Salta la creazione qui, si passa direttamente all'aggiornamento
-                pass 
-            else:
-                new_page_filename = f'{page_id}-{target_lang}.html'
-                new_page_path = os.path.join(repo_root, new_page_filename)
+            if target_lang is None or filename == HTML_TEMPLATE_NAME:
+                continue # Salta il template e file non pertinenti
+            
+            # --- PARTE A: GESTIONE CREAZIONE NUOVO FILE CON SUFFISSO LINGUA ---
+            # La lingua del file creato deve essere quella del suffisso
+            new_page_filename = f'{page_id}-{target_lang}.html'
+            new_page_path = os.path.join(repo_root, new_page_filename)
 
-                if target_lang in LANGUAGES and not os.path.exists(new_page_path):
-                    template_path = os.path.join(repo_root, HTML_TEMPLATE_NAME)
-                    if os.path.exists(template_path):
-                        # Copia dal template
-                        shutil.copyfile(template_path, new_page_path)
+
+            if target_lang in LANGUAGES and not os.path.exists(new_page_path):
+                # La logica di creazione viene eseguita solo per i file con suffisso lingua
+                if os.path.exists(template_path):
+                    # Copia dal template
+                    shutil.copyfile(template_path, new_page_path)
+                    
+                    # Aggiorna il tag <body> id nel nuovo file
+                    with open(new_page_path, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                    
+                    content = content.replace('id="template"', f'id="{page_id}"')
+                    
+                    with open(new_page_path, 'w', encoding='utf-8') as f:
+                        f.write(content)
                         
-                        # Aggiorna il tag <body> id e i link interni nel nuovo file
-                        with open(new_page_path, 'r', encoding='utf-8') as f:
-                            content = f.read()
-                        
-                        # Aggiorna l'ID del body della nuova pagina
-                        content = content.replace('id="template"', f'id="{page_id}"')
-                        
-                        with open(new_page_path, 'w', encoding='utf-8') as f:
-                            f.write(content)
-                        
-                        print(f"✅ Creato nuovo file: {new_page_filename}")
-                    else:
-                        print(f"ERRORE: Template HTML non trovato: {HTML_TEMPLATE_NAME}")
+                    print(f"✅ Creato nuovo file: {new_page_filename}")
+                else:
+                    print(f"ERRORE: Template HTML non trovato: {HTML_TEMPLATE_NAME}")
 
 
             # --- PARTE B: AGGIORNAMENTO NAVIGAZIONE E CACHE ---
@@ -198,20 +232,25 @@ def update_html_files(repo_root, page_id, nav_key_id, translations, page_title_i
             with open(existing_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
-            # 1. Link da iniettare: PUNTA ALLA PAGINA NUOVA NELLA LINGUA DEL FILE CORRENTE
+            # 1. Link da iniettare: PUNTA AL FILE BASE (page_id.html) per tutte le pagine
+            # Il reindirizzamento alla lingua corretta sarà gestito da main.js
+            
+            # Usiamo sempre il link base (senza suffisso) per la navigazione
+            nav_link_href = f'{page_id}.html'
+            
             nav_link_to_insert = (
-                f'        <li><a id="{nav_key_id}" href="{page_id}-{target_lang}.html">'
+                f'        <li><a id="{nav_key_id}" href="{nav_link_href}">'
                 f'{translations.get(target_lang, page_title_it)}</a></li>'
             )
             
             # Iniezione del link nel menu: SOSTITUIAMO </ul> con [NUOVO LINK] + </ul>
             # Questo mette il link in fondo alla lista
-            injection_string = nav_link_to_insert + '\n        ' + MARKER
+            injection_string = nav_link_to_insert + '\n        ' + MARKER
             
             # Se la riga del link non è già presente E troviamo il marcatore </ul>
             if MARKER in content and nav_link_to_insert not in content:
                 content = content.replace(MARKER, injection_string)
-                print(f"✅ Aggiunto link a {filename} (in fondo, link corretto: {page_id}-{target_lang}.html)")
+                print(f"✅ Aggiunto link a {filename} (in fondo, link corretto: {nav_link_href})")
                 
             # 2. Aggiornamento Cache Busting
             content = re.sub(r'main\.js\?v=([0-9A-Z_]*)', f'main.js?v={today_version}', content)
@@ -247,6 +286,7 @@ def main():
     update_main_js(repo_root, page_id, nav_key_id, lat, lon, distance)
 
     print("\n--- AGGIORNAMENTO HTML E CREAZIONE NUOVE PAGINE ---")
+    # L'aggiornamento HTML ora include la creazione del file base.html
     update_html_files(repo_root, page_id, nav_key_id, translations, page_title_it)
 
 if __name__ == "__main__":
