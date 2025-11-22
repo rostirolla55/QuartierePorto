@@ -1,0 +1,50 @@
+goqrtp
+dir /s /b *.jpg
+goluca
+dir /s /b *.jpg
+goqrtp
+dir /s /b *.jpg
+dir /ad
+dir *-it.html
+dir /b *-it.html
+dir /b *-it.html | cut -d- -f1
+crea_sottocartelle.bat
+cd ..
+cd..
+dir /ad /s /b
+cd data\translations\it
+help findstr 
+findstr /N imageSource1 texts.json
+findstr /N "{" texts.json
+findstr /N imageSource texts.json
+findstr /N imageSource texts.json > \tmp\qrtp_json_image.txt
+cd ..\..\..
+dir /ad /s /b
+dir /ad /b
+dir /b *-it.html | cut -d- -f1
+cd data\translations\it
+findstr /N "{" texts.json >> \tmp\qrtp_json_image.txt
+\tmp\qrtp_json_image.txt
+goqrtp
+cd Assets\images
+cp panorama_bologna.jpg home
+cp panorama_bologna.jpg graziaxx
+cp panorama_bologna.jpg carracci
+cp panorama_bologna.jpg ca
+cp panorama_bologna.jpg chiesapioggia
+cp panorama_bologna.jpg chiesasbene
+dir ca
+del ca
+cp viapolese.jpg pugliole
+cp lapidemariana.jpg graziaxx
+cp foto_targa_t_1202.jpg lastre
+cp chiesapioggia.jpg chiesapioggia
+cp chiesapioggia.jpg pioggia1
+cp chiesapioggia.jpg pioggia2
+cp pioggia3.jpg pioggia3
+cp chiesapioggia.jpg pioggia3
+cp manifattura.jpg manifattura
+cp manifattura0.jpm manifattura
+cp manifattura0.jpg manifattura
+dir /s /b *.jpg
+esci
