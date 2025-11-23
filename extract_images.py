@@ -1,120 +1,106 @@
 import sys
 import os
-from docx import Document
 import re
+from docx import Document
 from PIL import Image
-import io
+from io import BytesIO
 
 # --- CONFIGURAZIONI ---
 DOCX_DIR = "DOCS_DA_CONVERTIRE"
-OUTPUT_BASE_DIR = "Assets/images"
+ASSETS_BASE_DIR = "Assets/images"
 
-# Pattern CORRETTO per il marker: cerca [SPLIT_BLOCK: nomefile.ext]
-# Permette ZERO o più spazi dopo i due punti (per massima flessibilità).
+# Pattern per identificare il marker e catturare il nome del file desiderato
+# Esempio: [SPLIT_BLOCK: nome_file.jpg]
 SPLIT_BLOCK_PATTERN = r'\[SPLIT_BLOCK:\s*(.+?\.(?:jpg|jpeg|png|gif|bmp))\]'
 
-def extract_and_rename_images(page_id, docx_filename):
-    """
-    Estrae le immagini da un documento DOCX e le rinomina in base ai marker [SPLIT_BLOCK:...].
-    Le immagini vengono estratte in ordine e associate ai marker trovati in ordine.
-    """
-    
-    DOCS_DA_CONVERTIRE_DIR = DOCX_DIR 
-    
-    docx_path = os.path.join(DOCS_DA_CONVERTIRE_DIR, docx_filename)
-    output_page_dir = os.path.join(OUTPUT_BASE_DIR, page_id)
+def get_target_filename(paragraph):
+    """Estrae il nome del file immagine dal marker [SPLIT_BLOCK]"""
+    match = re.search(SPLIT_BLOCK_PATTERN, paragraph.text, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+    return None
 
+def extract_images_from_docx(page_id, docx_filename):
+    # 1. Normalizzazione del Page ID
+    # Questo è fondamentale per la robustezza: garantisce che la cartella sia sempre in minuscolo
+    normalized_page_id = page_id.lower()
+    
+    docx_path = os.path.join(DOCX_DIR, docx_filename)
     if not os.path.exists(docx_path):
         print(f"ERRORE: File DOCX non trovato: {docx_path}", file=sys.stderr)
-        return False
-    
-    # Crea la directory di output
-    os.makedirs(output_page_dir, exist_ok=True)
-    print(f"Directory di output creata: {output_page_dir}")
+        return False, 0, 0
+
+    output_dir = os.path.join(ASSETS_BASE_DIR, normalized_page_id)
+    os.makedirs(output_dir, exist_ok=True)
+    print(f"Directory di output creata: {output_dir}")
 
     try:
         document = Document(docx_path)
     except Exception as e:
         print(f"ERRORE: Impossibile aprire il documento DOCX '{docx_path}': {e}", file=sys.stderr)
-        return False
+        return False, 0, 0
+
+    doc_images = []
+    markers_found = 0
+
+    # 2. Scansione dei paragrafi per trovare i marker [SPLIT_BLOCK]
+    for paragraph in document.paragraphs:
+        target_filename = get_target_filename(paragraph)
+        if target_filename:
+            doc_images.append(target_filename)
+            markers_found += 1
+
+    print(f"Numero di immagini trovate nel DOCX: {len(doc_images)}")
+    print(f"Numero di marker [SPLIT_BLOCK: ...] trovati: {markers_found}")
 
     extracted_count = 0
-    
-    # 1. Lista dei nomi di file dai marker nel documento (in ordine)
-    found_marker_names = []
-    for paragraph in document.paragraphs:
-        # Cerchiamo il marker
-        marker_match = re.search(SPLIT_BLOCK_PATTERN, paragraph.text, re.IGNORECASE)
-        if marker_match:
-            found_marker_names.append(marker_match.group(1).strip())
-            
-    # 2. Lista delle immagini estratte con i loro bytes originali (in ordine)
-    all_extracted_media = []
-    
-    # Iteriamo su tutte le 'relationships' (inclusi media) per trovare le immagini
-    for rId, part in document.part.related_parts.items():
-        if part.partname.startswith('/word/media/'):
-            all_extracted_media.append(part.blob)
 
-    print(f"Numero di immagini trovate nel DOCX: {len(all_extracted_media)}")
-    print(f"Numero di marker [SPLIT_BLOCK: ...] trovati: {len(found_marker_names)}")
-        
-    # 3. Associa le immagini ai nomi dei marker e salvale
-    if len(all_extracted_media) != len(found_marker_names):
-        print("!!! AVVISO DI DISCREPANZA !!!", file=sys.stderr)
-        print(f"Il numero di immagini ({len(all_extracted_media)}) NON corrisponde al numero di marker ({len(found_marker_names)}).", file=sys.stderr)
-        print("L'estrazione non sarà precisa. Controlla il file DOCX e i marker.", file=sys.stderr)
-        
-    
-    # Processiamo solo il minimo tra immagini e marker per evitare errori di indice
-    limit = min(len(all_extracted_media), len(found_marker_names))
+    # 3. Estrazione dei dati immagine (blb) dal DOCX
+    for rel_id, rel in document.part.rels.items():
+        if "image" in rel.target_ref:
+            try:
+                # *** CORREZIONE DEL BUG: SINTASSI MODERNA PER RECUPERARE IL BLOB ***
+                image_part = rel.target_part
+                image_bytes = image_part.blob
 
-    for idx in range(limit):
-        image_bytes = all_extracted_media[idx]
-        target_image_name = found_marker_names[idx]
-        output_filename = os.path.join(output_page_dir, target_image_name)
+                # 4. Associa l'immagine al nome desiderato
+                if extracted_count < len(doc_images):
+                    target_filename = doc_images[extracted_count]
+                    output_path = os.path.join(output_dir, target_filename)
 
-        try:
-            # Tentativo di salvare/convertire l'immagine
-            if target_image_name.lower().endswith(('.jpg', '.jpeg')):
-                img = Image.open(io.BytesIO(image_bytes))
-                
-                # Assicuriamo che sia RGB prima di salvare in JPG
-                if img.mode in ('RGBA', 'P'):
-                    img = img.convert("RGB")
+                    # Utilizza Pillow per aprire e salvare come JPG (o mantenere il formato specificato)
+                    with Image.open(BytesIO(image_bytes)) as img:
+                        # Assicurati che l'estensione nel marker corrisponda al formato di salvataggio (se necessario)
+                        # Qui salviamo come JPG per semplificare, ma Pillow gestisce l'estensione nel nome.
+                        img.save(output_path, format=img.format if not target_filename.lower().endswith('.jpg') else 'jpeg')
                     
-                # Sostituiamo l'estensione se necessario (se è .jpeg ma salviamo .jpg)
-                base, ext = os.path.splitext(output_filename)
-                if ext.lower() == '.jpeg':
-                    output_filename = base + '.jpg'
-                    
-                img.save(output_filename)
-                print(f"✅ Immagine estratta e salvata (convertita in JPG): {output_filename}")
-            else:
-                # Altrimenti, salviamo i bytes originali con l'estensione del marker
-                with open(output_filename, 'wb') as img_file:
-                    img_file.write(image_bytes)
-                print(f"✅ Immagine estratta e salvata: {output_filename}")
+                    print(f"✅ Immagine estratta e salvata (formato originale/JPG): {output_path}")
+                    extracted_count += 1
                 
-            extracted_count += 1
-        except Exception as img_e:
-            print(f"❌ ERRORE salvataggio immagine {target_image_name}: {img_e}", file=sys.stderr)
-            
+            except Exception as e:
+                # Logga l'errore specifico, ma continua
+                print(f"ERRORE durante l'estrazione di un'immagine: {e}", file=sys.stderr)
+                # Incrementa extracted_count solo se il marker è stato consumato, ma qui non lo facciamo
+                # per mantenere la sincronizzazione con i marker trovati. Continuiamo solo.
+                continue 
+
     print(f"\nEstrazione immagini completata. Estratte {extracted_count} immagini.")
-    return extracted_count > 0
+    return True, markers_found, extracted_count
 
 if __name__ == '__main__':
-    DOCS_DA_CONVERTIRE_DIR = DOCX_DIR 
-    
     if len(sys.argv) != 3:
         print("Uso: python extract_images.py [ID_pagina] [nome_file_docx]", file=sys.stderr)
-        print("Esempio: python extract_images.py pittoricarracci it_pittoricarracci_maintext.docx", file=sys.stderr)
         sys.exit(1)
         
     PAGE_ID = sys.argv[1]
     DOCX_FILE = sys.argv[2]
     
-    if extract_and_rename_images(PAGE_ID, DOCX_FILE):
+    success, markers, extracted = extract_images_from_docx(PAGE_ID, DOCX_FILE)
+    
+    if success and markers == extracted:
         sys.exit(0)
+    elif success and markers != extracted:
+        print(f"ATTENZIONE: Trovati {markers} marker ma estratte {extracted} immagini.", file=sys.stderr)
+        sys.exit(1)
     else:
         sys.exit(1)
