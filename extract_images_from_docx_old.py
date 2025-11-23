@@ -9,8 +9,8 @@ import io
 DOCX_DIR = "DOCS_DA_CONVERTIRE"
 OUTPUT_BASE_DIR = "Assets/images"
 
-# Pattern CORRETTO per il marker: cerca [SPLIT_BLOCK: nomefile.ext]
-# Permette ZERO o più spazi dopo i due punti (per massima flessibilità).
+# Pattern CORRETTO per il marker: cerca [SPLIT_BLOCK: filename.ext]
+# Non c'è uno spazio tra il punto e l'estensione.
 SPLIT_BLOCK_PATTERN = r'\[SPLIT_BLOCK:\s*(.+?\.(?:jpg|jpeg|png|gif|bmp))\]'
 
 def extract_and_rename_images(page_id, docx_filename):
@@ -19,9 +19,7 @@ def extract_and_rename_images(page_id, docx_filename):
     Le immagini vengono estratte in ordine e associate ai marker trovati in ordine.
     """
     
-    DOCS_DA_CONVERTIRE_DIR = DOCX_DIR 
-    
-    docx_path = os.path.join(DOCS_DA_CONVERTIRE_DIR, docx_filename)
+    docx_path = os.path.join(DOCX_DIR, docx_filename)
     output_page_dir = os.path.join(OUTPUT_BASE_DIR, page_id)
 
     if not os.path.exists(docx_path):
@@ -43,7 +41,7 @@ def extract_and_rename_images(page_id, docx_filename):
     # 1. Lista dei nomi di file dai marker nel documento (in ordine)
     found_marker_names = []
     for paragraph in document.paragraphs:
-        # Cerchiamo il marker
+        # Cerchiamo il marker con il pattern corretto
         marker_match = re.search(SPLIT_BLOCK_PATTERN, paragraph.text, re.IGNORECASE)
         if marker_match:
             found_marker_names.append(marker_match.group(1).strip())
@@ -76,17 +74,13 @@ def extract_and_rename_images(page_id, docx_filename):
 
         try:
             # Tentativo di salvare/convertire l'immagine
+            # Se il nome del target è JPG/JPEG, forziamo la conversione in JPG
             if target_image_name.lower().endswith(('.jpg', '.jpeg')):
                 img = Image.open(io.BytesIO(image_bytes))
                 
                 # Assicuriamo che sia RGB prima di salvare in JPG
                 if img.mode in ('RGBA', 'P'):
                     img = img.convert("RGB")
-                    
-                # Sostituiamo l'estensione se necessario (se è .jpeg ma salviamo .jpg)
-                base, ext = os.path.splitext(output_filename)
-                if ext.lower() == '.jpeg':
-                    output_filename = base + '.jpg'
                     
                 img.save(output_filename)
                 print(f"✅ Immagine estratta e salvata (convertita in JPG): {output_filename}")
@@ -104,8 +98,6 @@ def extract_and_rename_images(page_id, docx_filename):
     return extracted_count > 0
 
 if __name__ == '__main__':
-    DOCS_DA_CONVERTIRE_DIR = DOCX_DIR 
-    
     if len(sys.argv) != 3:
         print("Uso: python extract_images.py [ID_pagina] [nome_file_docx]", file=sys.stderr)
         print("Esempio: python extract_images.py pittoricarracci it_pittoricarracci_maintext.docx", file=sys.stderr)
