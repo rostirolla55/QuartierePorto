@@ -1,0 +1,5 @@
+echo on
+del Assets\images\pittoricarracci\*.jpg
+convert_all.bat PittoriCarracci it_pittoricarracci_maintext.docx
+dir Assets\images\pittoricarracci\*.jpg
+dir HTML_OUTPUT

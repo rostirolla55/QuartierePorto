@@ -1,161 +1,141 @@
-import sys
 import os
 import re
+import unicodedata 
+import sys
 from docx import Document
-from docx.table import Table
 
-# --- CONFIGURAZIONI ---
-DOCS_DIR = "DOCS_DA_CONVERTIRE"
+# --- CONFIGURAZIONI GLOBALI ---
+DOCX_DIR = "DOCS_DA_CONVERTIRE"
 HTML_OUTPUT_DIR = "HTML_OUTPUT"
-ASSETS_BASE_DIR = "Assets/images"
+ASSETS_BASE_DIR = "Assets/images" 
 
-# Pattern per il marker. Usa lo stesso pattern del file di estrazione immagini.
+# Pattern per il marker di divisione
+# NOTA: Qui il pattern è corretto (usa \s* per accettare zero o più spazi, ma il pattern
+# non è la causa dell'errore di indentazione)
 SPLIT_BLOCK_PATTERN = r'\[SPLIT_BLOCK:\s*(.+?\.(?:jpg|jpeg|png|gif|bmp))\]'
 
-def docx_to_html(element, page_id):
-    """
-    Converte un elemento (paragrafo o cella di tabella) in HTML,
-    sostituendo i marker immagine con tag <img>.
-    """
-    html_content = ""
-    
-    # Ignora le tabelle complesse per ora
-    if isinstance(element, Table):
-        return html_content 
-        
-    # --- Gestione dei Paragrafi ---
-    
+# --- FUNZIONI DI SUPPORTO ---
+def sanitize_text(text):
+    """Pulisce il testo e fa l'escape dei caratteri HTML."""
+    content = text
+    content = unicodedata.normalize('NFC', content) 
+    # Pulizia artefatti (spazi non-breaking, trattini, apici, ecc.)
+    content = content.replace('\xa0', ' ').replace('…', '...').replace('–', '-').replace('—', '-')
+    content = content.replace('“', '"').replace('”', '"').replace('‘', "'").replace('’', "'") 
+    # Escape HTML
+    content = content.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;') 
+    content = re.sub(r'[\x00-\x1F\x7F]', '', content)
+    return content
+
+def docx_to_html(paragraph, page_id):
+    """Converte il paragrafo e sostituisce il marker con il tag <img>."""
     text_buffer = []
-    
-    # Costruisce il testo, mantenendo i tag di formattazione inline
-    for run in element.runs:
-        current_text = run.text
-        
-        # Gestione del grassetto e del corsivo
+    for run in paragraph.runs:
+        current_text = sanitize_text(run.text)
         if run.bold:
             current_text = f"<strong>{current_text}</strong>"
         if run.italic:
             current_text = f"<em>{current_text}</em>"
-            
         text_buffer.append(current_text)
 
     raw_text = "".join(text_buffer)
     
-    # 2. Sostituzione del Marker Immagine con Tag <img>
-    
+    # 2. Sostituzione del Marker Immagine
     def replace_marker(match):
-        """Sostituisce il marker con il tag <img> corretto."""
         image_filename = match.group(1).strip()
         
-        # Percorso dell'immagine: Assets/images/page_id/nomefile.jpg
-        # NOTA: Usiamo normalized_page_id che è già in minuscolo
-        img_src = f"{ASSETS_BASE_DIR}/{page_id.lower()}/{image_filename}"
+        # SOLUZIONE PER IL PATH: Assicura l'uso del forward slash (/) per gli URL HTML
+        # 1. Costruisce il percorso nativo usando i separatori del sistema operativo (os.path.join)
+        img_path_native = os.path.join(ASSETS_BASE_DIR, page_id.lower(), image_filename)
+        # 2. Sostituisce i backslashes (\) di Windows con i forward slashes (/) per l'HTML
+        img_src = img_path_native.replace('\\', '/')
         
-        # Restituisce il tag <img> per l'HTML
         return f'<img src="{img_src}" alt="{image_filename}">'
 
-    # Applica la sostituzione
+    # NOTA SULL'INDENTAZIONE: Questa riga è allineata al livello superiore (doc_to_html)
     html_with_images = re.sub(SPLIT_BLOCK_PATTERN, replace_marker, raw_text, flags=re.IGNORECASE)
     
-    # 3. Wrapping del Paragrafo con <p>
-    if html_with_images.strip():
-        # Aggiungi qui eventuali classi HTML se necessario
-        html_content = f"<p>{html_with_images.strip()}</p>"
+    content_stripped = html_with_images.strip()
+    if content_stripped:
+        return f"<p>{content_stripped}</p>"
+    return ""
 
-    return html_content
+# --- FUNZIONE PRINCIPALE DI CONVERSIONE E SPLIT ---
 
 def convert_docx_and_split(page_id, docx_filename):
     """
-    Converte l'intero documento e lo divide in più file HTML
-    ad ogni marker [SPLIT_BLOCK] trovato (logica dinamica).
+    Funzione principale che carica il DOCX, lo converte e lo divide in blocchi HTML.
     """
-    # 1. Normalizzazione del Page ID prima di usarlo
     normalized_page_id = page_id.lower()
-    
-    docx_path = os.path.join(DOCS_DIR, docx_filename)
+    docx_path = os.path.join(DOCX_DIR, docx_filename) 
     
     if not os.path.exists(docx_path):
-        print(f"ERRORE: File DOCX non trovato: {docx_path}", file=sys.stderr)
+        print(f"ERRORE: File DOCX non trovato al percorso: {docx_path}")
         return False
 
     os.makedirs(HTML_OUTPUT_DIR, exist_ok=True)
-    print(f"Directory di output HTML creata: {HTML_OUTPUT_DIR}")
     
     try:
         document = Document(docx_path)
     except Exception as e:
-        print(f"ERRORE: Impossibile aprire il documento DOCX '{docx_path}': {e}", file=sys.stderr)
+        print(f"ERRORE: Impossibile aprire o leggere il file DOCX: {e}")
         return False
 
-    # Inizializziamo con una lista di liste. La prima lista è il primo blocco HTML.
     html_blocks = [[]] 
     current_block_index = 0
-
-    # Iterazione sugli elementi del documento (paragrafi e tabelle)
-    for element in document.element.body.iter():
+    
+    # Iterazione robusta sui Paragrafi (document.paragraphs)
+    for paragraph in document.paragraphs:
         
-        if element.tag.endswith('p'):  # Paragrafo
-            paragraph = document.paragraphs[element.getparent().index(element)]
-            
-            # Controlla se il paragrafo contiene il marker
-            marker_match = re.search(SPLIT_BLOCK_PATTERN, paragraph.text, re.IGNORECASE)
+        marker_match = re.search(SPLIT_BLOCK_PATTERN, paragraph.text, flags=re.IGNORECASE)
+        
+        if marker_match or paragraph.text.strip():
+            html_content = docx_to_html(paragraph, normalized_page_id)
             
             if marker_match:
-                # 1. Converti il paragrafo contenente il marker e aggiungilo al blocco corrente.
-                # In questo modo, il tag <img> viene inserito nel blocco di testo che lo precede.
-                html_content = docx_to_html(paragraph, normalized_page_id)
-                html_blocks[current_block_index].append(html_content)
-                
-                # 2. Aumenta l'indice e crea un nuovo blocco di testo.
+                # Se c'è un contenuto valido prima del marker, aggiungilo al blocco corrente
+                if html_content:
+                    html_blocks[current_block_index].append(html_content)
+                # Passa al blocco successivo
                 current_block_index += 1
                 html_blocks.append([]) 
-                
-                print(f"Punto di split trovato (Marker {current_block_index}). Prossimo contenuto in _{current_block_index + 1}.html.")
-                continue # Passa al prossimo elemento del DOCX
-
-            # Se non è un marker, aggiungi il contenuto al blocco corrente
-            html_content = docx_to_html(paragraph, normalized_page_id)
-            if html_content:
+            elif html_content:
+                # Aggiunge il contenuto al blocco corrente
                 html_blocks[current_block_index].append(html_content)
         
     # --- Salvataggio dei File ---
     
     base_filename = os.path.splitext(docx_filename)[0]
-    
-    # Rimuovi l'ultimo blocco se è vuoto (succede se il DOCX finisce con un marker)
-    if html_blocks and not html_blocks[-1] and len(html_blocks) > 1:
-        html_blocks.pop()
-
+    html_blocks = [block for block in html_blocks if block]
     num_blocks = len(html_blocks)
-    print(f"\n--- Salvataggio di {num_blocks} blocchi HTML ---")
+    success = True
+    
+    if num_blocks == 0:
+        return False
 
     for i, block in enumerate(html_blocks):
-        # I file iniziano da _1.html
         block_number = i + 1 
         html_filename = f"{base_filename}_{block_number}.html"
         html_path = os.path.join(HTML_OUTPUT_DIR, html_filename)
         
-        # Salva solo se il blocco contiene contenuto
-        if block: 
+        try:
             with open(html_path, 'w', encoding='utf-8') as f:
                 f.write("\n".join(block))
-                
-            print(f"✅ Blocco HTML {block_number} salvato: {html_path}")
-        else:
-            print(f"⚠️ Blocco HTML {block_number} vuoto. File non generato.")
+        except Exception as e:
+            print(f"ERRORE GRAVE: Impossibile scrivere il file {html_path}: {e}")
+            success = False
 
+    return success
 
-    return num_blocks > 0
-
-if __name__ == '__main__':
-    if len(sys.argv) != 3:
-        print("Uso: python convert_docx_to_html.py [ID_pagina] [nome_file_docx]", file=sys.stderr)
+# Entry point per l'esecuzione dello script.
+if __name__ == "__main__":
+    if len(sys.argv) < 3:
         sys.exit(1)
         
-    PAGE_ID = sys.argv[1]
-    DOCX_FILE = sys.argv[2]
+    page_id = sys.argv[1]
+    docx_filename = sys.argv[2]
     
-    if convert_docx_and_split(PAGE_ID, DOCX_FILE):
+    if convert_docx_and_split(page_id, docx_filename):
         sys.exit(0)
     else:
         sys.exit(1)
