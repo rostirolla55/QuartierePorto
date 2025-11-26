@@ -1,83 +1,61 @@
 import sys
-import os
-import io
-import unicodedata 
+import re
+import html
 
-def sanitize_for_json(input_filepath):
-    """
-    Converte caratteri speciali, simboli e apici tipografici in forme JSON-safe, 
-    esegue l'escape dei doppi apici e rimuove gli a capo.
-    """
-    if not os.path.exists(input_filepath):
-        print(f"ERRORE: File non trovato: {input_filepath}", file=sys.stderr) 
-        return ""
+def sanitize_html_to_text(html_content):
+    # 1. Decodifica le entity HTML (es. &egrave; -> è)
+    content = html.unescape(html_content)
 
-    try:
-        # Leggiamo esplicitamente in UTF-8
-        with io.open(input_filepath, 'r', encoding='utf-8') as f:
-            content = f.read()
+    # 2. Rimuovi tutti i tag HTML, lasciando solo il testo
+    # Manteniamo i caratteri di a capo per preservare la struttura del testo
+    content = re.sub(r'</p>', '\n', content)
+    content = re.sub(r'<br\s*/?>', '\n', content)
+    content = re.sub(r'<[^>]*>', '', content)
 
-        # 0. NORMALIZZAZIONE UNICODE
-        content = unicodedata.normalize('NFC', content) 
-
-        # 1. CONVERSIONE CARATTERI SPECIALI
-        
-        # Simbolo di Grado (°) in entità HTML
-        content = content.replace('°', '&deg;') 
-        
-        # Punti di Sospensione (ellissi) in tre punti standard
-        content = content.replace('…', '...') 
-        
-        # Trattini lunghi in trattino standard (-)
-        content = content.replace('–', '-') 
-        content = content.replace('—', '-') 
-        
-        # Smart Quotes in apici standard (") e (')
-        content = content.replace('“', '"') 
-        content = content.replace('”', '"')
-        content = content.replace('‘', "'") 
-        content = content.replace('’', "'") 
-        
-        # 2. ESCAPE DOPPI APICI STANDARD (")
-        sanitized_content = content.replace('"', '\\\\"') 
-        
-        # 3. Normalizzazione degli accenti con Entità HTML (per massima sicurezza)
-        # --- Nuove aggiunte per hex(D9), DA, DB, DC, DD ---
-        sanitized_content = sanitized_content.replace('Ù', '&Ugrave;') # D9
-        sanitized_content = sanitized_content.replace('Ú', '&Uacute;') # DA
-        sanitized_content = sanitized_content.replace('Û', '&Ucirc;')  # DB
-        sanitized_content = sanitized_content.replace('Ü', '&Uuml;')   # DC
-        sanitized_content = sanitized_content.replace('Ý', '&Yacute;') # DD
-        
-        # --- Accenti già gestiti ---
-        sanitized_content = sanitized_content.replace('À', '&Agrave;')
-        sanitized_content = sanitized_content.replace('à', '&agrave;')
-        sanitized_content = sanitized_content.replace('è', '&egrave;')
-        sanitized_content = sanitized_content.replace('ì', '&igrave;')
-        sanitized_content = sanitized_content.replace('ò', '&ograve;')
-        sanitized_content = sanitized_content.replace('ù', '&ugrave;')
-        sanitized_content = sanitized_content.replace('é', '&eacute;')
-        
-        # 4. Eliminazione di tutti i caratteri di a capo per una singola riga
-        sanitized_content = sanitized_content.replace('\r\n', ' ')
-        sanitized_content = sanitized_content.replace('\n', ' ')
-        
-        # Pulizia finale degli spazi
-        sanitized_content = " ".join(sanitized_content.split()).strip()
-        
-        return sanitized_content
-
-    except Exception as e:
-        print(f"Si è verificato un errore durante l'elaborazione del file: {e}", file=sys.stderr)
-        return ""
-
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Uso: python sanitize_text.py <percorso_del_file_html>", file=sys.stderr)
-        sys.exit(1)
-
-    input_file = sys.argv[1]
-    result = sanitize_for_json(input_file)
+    # 3. Pulisci spazi bianchi multipli e a capo
+    content = re.sub(r'\s{2,}', ' ', content) # Sostituisce spazi multipli con uno spazio singolo
+    content = re.sub(r'\n{2,}', '\n\n', content).strip() # Sostituisce a capo multipli
     
-    # Stampa solo il risultato finale su stdout per la redirezione nel file batch
-    print(result)
+    # 4. JSON Escape (necessario per inserimento diretto nel JSON)
+    content = content.replace('\\', '\\\\')
+    content = content.replace('"', '\\"')
+    content = content.replace('\n', '\\n')
+
+    # Aggiungi un punto (o un simbolo) per rappresentare la fine di un blocco di testo se necessario
+    # Ad esempio, per la visualizzazione a blocchi, ma di solito si vuole solo il testo pulito.
+    # Non aggiungiamo nulla per mantenere l'output il più fedele possibile.
+    
+    return content
+
+# Assicurati che l'input sia fornito
+if len(sys.argv) < 2:
+    print("ERRORE: Devi passare il nome del file HTML da sanificare come argomento.")
+    sys.exit(1)
+
+input_filename = sys.argv[1]
+output_filename = input_filename.replace('.html', '.txt')
+
+try:
+    # Apri il file HTML di input
+    # Usiamo 'r' per la lettura e specifichiamo 'utf-8' in lettura, che è un buon standard
+    with open(input_filename, 'r', encoding='utf-8') as f:
+        html_content = f.read()
+    
+    # Sanificazione
+    sanitized_text = sanitize_html_to_text(html_content)
+
+    # Scrivi il testo sanificato nel file di output
+    # CRUCIALE: Usiamo 'w' per la scrittura e specifichiamo 'utf-8' per gestire gli emoji e i caratteri speciali
+    with open(output_filename, 'w', encoding='utf-8') as f:
+        f.write(sanitized_text)
+    
+    print(f"Testo sanificato con successo.")
+    print(f"Contenuto salvato in: {output_filename}")
+
+except FileNotFoundError:
+    print(f"ERRORE: File di input non trovato: {input_filename}")
+    sys.exit(1)
+except Exception as e:
+    # Se l'errore Unicode persiste, lo catturiamo e lo stampiamo qui
+    print(f"ERRORE durante l'elaborazione del file: {e}")
+    sys.exit(1)
