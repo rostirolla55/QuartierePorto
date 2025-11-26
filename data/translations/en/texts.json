@@ -30,7 +30,8 @@
         "navPioggia2": "Sculpture of Saint Bartholomew",
         "navPioggia3": "Work by Agostino Carracci",
         "navGraziaxx": "Grazia votive plaque",
-        "navManifattura": "Ex Tobacco Factory"
+        "navManifattura": "Ex Tobacco Factory",
+        "navpittoricarracci": "The Carracci Painters"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -231,5 +232,25 @@
         "creationDate": "2025-11-06",
         "lastUpdate": "2025-11-06",
         "audioSource": "en/manifattura.mp3"
+    },
+    "pittoricarracci": {
+        "pageTitle": "The Carracci Painters",
+        "mainText": "Testo iniziale per la traduzione.",
+        "mainText1": "",
+        "mainText2": "",
+        "mainText3": "",
+        "mainText4": "",
+        "mainText5": "",
+        "playAudioButton": "Ascolta con le cuffie",
+        "pauseAudioButton": "Pausa",
+        "imageSource1": "",
+        "imageSource2": "",
+        "imageSource3": "",
+        "imageSource4": "",
+        "imageSource5": "",
+        "sourceText": "",
+        "creationDate": "2025-11-26",
+        "lastUpdate": "2025-11-26",
+        "audioSource": "en/pittoricarracci.mp3"
     }
 }

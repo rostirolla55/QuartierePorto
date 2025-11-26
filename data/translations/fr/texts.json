@@ -30,7 +30,8 @@
         "navPioggia2": "Sculpture de saint Barthélemy",
         "navPioggia3": "Œuvre d'Agostino Carracci",
         "navGraziaxx": "Plaque votive Grazia",
-        "navManifattura": "Ancienne Manufacture de Tabac"
+        "navManifattura": "Ancienne Manufacture de Tabac",
+        "navpittoricarracci": "Les Peintres Carrache"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -231,5 +232,25 @@
         "creationDate": "2025-11-06",
         "lastUpdate": "2025-11-06",
         "audioSource": "fr/manifattura.mp3"
+    },
+    "pittoricarracci": {
+        "pageTitle": "Les Peintres Carrache",
+        "mainText": "",
+        "mainText1": "",
+        "mainText2": "",
+        "mainText3": "",
+        "mainText4": "",
+        "mainText5": "",
+        "playAudioButton": "Ascolta con le cuffie",
+        "pauseAudioButton": "Pausa",
+        "imageSource1": "",
+        "imageSource2": "",
+        "imageSource3": "",
+        "imageSource4": "",
+        "imageSource5": "",
+        "sourceText": "",
+        "creationDate": "2025-11-26",
+        "lastUpdate": "2025-11-26",
+        "audioSource": "fr/pittoricarracci.mp3"
     }
 }

@@ -30,7 +30,8 @@
         "navPioggia2": "Scultura San Bartolomeo",
         "navPioggia3": "Opera di Agostino Carracci",
         "navGraziaxx": "Lapide votiva Grazia",
-        "navManifattura": "Ex Manifattura Tabacchi"
+        "navManifattura": "Ex Manifattura Tabacchi",
+        "navpittoricarracci": "I pittori Carracci a Bologna"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -230,5 +231,25 @@
         "creationDate": "2025-11-06",
         "lastUpdate": "2025-11-06",
         "audioSource": "it/manifattura.mp3"
+    },
+    "pittoricarracci": {
+        "pageTitle": "I pittori Carracci a Bologna",
+        "mainText": "Testo iniziale per la traduzione.",
+        "mainText1": "",
+        "mainText2": "",
+        "mainText3": "",
+        "mainText4": "",
+        "mainText5": "",
+        "playAudioButton": "Ascolta con le cuffie",
+        "pauseAudioButton": "Pausa",
+        "imageSource1": "",
+        "imageSource2": "",
+        "imageSource3": "",
+        "imageSource4": "",
+        "imageSource5": "",
+        "sourceText": "",
+        "creationDate": "2025-11-26",
+        "lastUpdate": "2025-11-26",
+        "audioSource": "it/pittoricarracci.mp3"
     }
 }
