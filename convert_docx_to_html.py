@@ -6,7 +6,7 @@ from docx import Document
 
 # --- CONFIGURAZIONI GLOBALI ---
 DOCX_DIR = "DOCS_DA_CONVERTIRE"
-HTML_OUTPUT_DIR = "HTML_OUTPUT"
+HTML_OUTPUT_DIR = "text_files"
 ASSETS_BASE_DIR = "Assets/images" 
 
 # Pattern per il marker di divisione
@@ -115,7 +115,7 @@ def convert_docx_and_split(page_id, docx_filename):
 
     for i, block in enumerate(html_blocks):
         block_number = i + 1 
-        html_filename = f"{base_filename}_{block_number}.html"
+        html_filename = f"{base_filename}{block_number}.html"
         html_path = os.path.join(HTML_OUTPUT_DIR, html_filename)
         
         try:
