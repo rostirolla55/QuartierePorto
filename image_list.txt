@@ -1,0 +1,3 @@
+pittoricarracci|imageSource|it/pittoricarracci/immagine_carracci_1.jpg
+pittoricarracci|imageSource1|it/pittoricarracci/immagine_macelleria.jpg
+pittoricarracci|imageSource2|it/pittoricarracci/immagine_accademia.jpg

@@ -243,14 +243,15 @@
         "mainText5": "",
         "playAudioButton": "Listen to the story",
         "pauseAudioButton": "Pausa",
-        "imageSource1": "pittoricarracci/grande_macelleria.jpg",
-        "imageSource2": "pittoricarracci/piccola_macelleria.jpg",
+        "imageSource1": "it/pittoricarracci/immagine_macelleria.jpg",
+        "imageSource2": "it/pittoricarracci/immagine_accademia.jpg",
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-11-26",
         "lastUpdate": "2025-11-26",
-        "audioSource": "en/pittoricarracci.mp3"
+        "audioSource": "en/pittoricarracci.mp3",
+        "imageSource": "it/pittoricarracci/immagine_carracci_1.jpg"
     }
 }
