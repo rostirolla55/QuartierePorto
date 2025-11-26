@@ -1,0 +1,16 @@
+home|imageSource1|index/panorama_bologna.jpg
+pugliole|imageSource1|pugliole/viapolese.jpg
+graziaxx|imageSource1|graziaxx/panorama_bologna.jpg
+graziaxx|imageSource2|graziaxx/lapidemariana.jpg
+lastre|imageSource1|lastre/foto_targa_t_1202.jpg
+carracci|imageSource1|carracci/panorama_bologna.jpg
+chiesasbene|imageSource1|chiesasbene/panorama_bologna.jpg
+chiesapioggia|imageSource1|chiesapioggia.jpg
+pioggia1|imageSource1|pioggia1/chiesapioggia.jpg
+pioggia2|imageSource1|pioggia2/chiesapioggia.jpg
+pioggia3|imageSource1|pioggia3/chiesapioggia.jpg
+pioggia3|imageSource2|pioggia3/pioggia3.jpg
+manifattura|imageSource1|manifattura/manifattura.jpg
+manifattura|imageSource2|manifattura/manifattura0.jpg
+pittoricarracci|imageSource1|pittoricarracci/grande_macelleria.jpg
+pittoricarracci|imageSource2|pittoricarracci/piccola_macelleria.jpg

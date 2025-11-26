@@ -1,2 +1,1 @@
-pittoricarracci|imageSource1|it/pittoricarracci/grande_macelleria.jpg
-pittoricarracci|imageSource2|it/pittoricarracci/piccola_macelleria.jpg
+chiesasbene|imageSource1|chiesasbene/panorama_bologna.jpg
