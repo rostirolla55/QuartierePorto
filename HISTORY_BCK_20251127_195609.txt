@@ -1,0 +1,25 @@
+title QUARTIERE_ROOT
+goqrtp
+convert_all.bat giangiorgi it_giangiorgi_maintext.docx
+dir HTML_OUTPUT
+dir Assets\images\giangiorgi
+del C:\Users\User\Documents\GitHub\QuartierePorto\Assets\images\giangiorgi\pranzonatale.jpg
+convert_all.bat giangiorgi it_giangiorgi_maintext.docx
+dir text_files
+dir text_files /od
+convert_all.bat giangiorgi it_giangiorgi_maintext.docx
+dir /s /b sanit*.py
+dir *list*
+update_json 
+update_json it giangiorgi.pageTitle it_giangiorgi_pagetitle.txt
+update_json en giangiorgi.pageTitle en_giangiorgi_pagetitle.txt
+update_json es giangiorgi.pageTitle es_giangiorgi_pagetitle.txt
+update_json fr giangiorgi.pageTitle fr_giangiorgi_pagetitle.txt
+cls
+caricamento_testi.bat
+cd Assets\images
+cd giangiorgi
+dir
+goqrtp
+update_image.bat giangiorgi
+esci

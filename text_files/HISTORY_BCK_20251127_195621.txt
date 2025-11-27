@@ -1,0 +1,42 @@
+goqrtp
+dir HTML_OUTPUT
+convert_all.bat
+convert_all.bat giangiorgi
+convert_all.bat giangiorgi it_giangiorgi_maintext.docx
+dir DOCS_DA_CONVERTIRE
+mv it_giangiorgi_maintext.docs it_giangiorgi_maintext.docx
+cd DOCS_DA_CONVERTIRE
+mv it_giangiorgi_maintext.docs it_giangiorgi_maintext.docx
+cd ..
+convert_all.bat giangiorgi it_giangiorgi_maintext.docx
+dir text_files
+dir /od text_files 
+dir /od DOCS_DA_CONVERTIRE
+convert_all.bat giangiorgi it_giangiorgi_maintext.docx
+dir /s /b *.err
+cd HTML_OUTPUT
+dir 
+it_giangiorgi_maintext1.html
+cd ..\text_files
+dir
+title text_files
+dir /od
+dir it_giangiorgi_maintext*
+del it_giangiorgi_maintext*
+cat *
+dir
+cat it_gian*
+dir it_gian*
+mv ..\HTML_OUTPUT\it_giangiorgi_maintext*.html .
+dir it_gia*
+cat htmltojson.bat
+htmltojson.bat it_giangiorgi_maintext1.html
+htmltojson.bat it_giangiorgi_maintext2.html
+htmltojson.bat it_giangiorgi_maintext3.html
+head -10 it_giangiorgi_maintext*.txt
+head -10 it_giangiorgi_maintext*.html
+htmltojson.bat it_giangiorgi_maintext1.html
+htmltojson.bat it_giangiorgi_maintext2.html
+htmltojson.bat it_giangiorgi_maintext3.html
+head -10 it_giangiorgi_maintext*.html
+esci

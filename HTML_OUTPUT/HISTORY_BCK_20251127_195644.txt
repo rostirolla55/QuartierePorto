@@ -1,0 +1,6 @@
+goqrtp
+cd HTML_OUTPUT
+title HTML_OUTPUT
+dir /od
+cat it_giangiorgi*
+esci
