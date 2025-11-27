@@ -14,3 +14,5 @@ manifattura|imageSource1|manifattura/manifattura.jpg
 manifattura|imageSource2|manifattura/manifattura0.jpg
 pittoricarracci|imageSource1|pittoricarracci/grande_macelleria.jpg
 pittoricarracci|imageSource2|pittoricarracci/piccola_macelleria.jpg
+giangiorgi|imageSource1|giangiorgi/cantierefontanina.jpg
+giangiorgi|imageSource2|giangiorgi/pranzonatale.jpg

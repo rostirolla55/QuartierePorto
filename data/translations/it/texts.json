@@ -31,7 +31,8 @@
         "navPioggia3": "Opera di Agostino Carracci",
         "navGraziaxx": "Lapide votiva Grazia",
         "navManifattura": "Ex Manifattura Tabacchi",
-        "navpittoricarracci": "I pittori Carracci a Bologna"
+        "navpittoricarracci": "I pittori Carracci a Bologna",
+        "navgiangiorgi": "Prova di nuova pagina"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -252,5 +253,25 @@
         "lastUpdate": "2025-11-26",
         "audioSource": "it/pittoricarracci.mp3",
         "imageSource": "it/pittoricarracci/immagine_carracci_1.jpg"
+    },
+    "giangiorgi": {
+        "pageTitle": "Prova di nuova pagina",
+        "mainText": "Testo iniziale per la traduzione.",
+        "mainText1": "",
+        "mainText2": "",
+        "mainText3": "",
+        "mainText4": "",
+        "mainText5": "",
+        "playAudioButton": "Ascolta con le cuffie",
+        "pauseAudioButton": "Pausa",
+        "imageSource1": "giangiorgi/panorama_bologna.jpg",
+        "imageSource2": "giangiorgi/cantierefontanina.jpg",
+        "imageSource3": "giangiorgi/pranzonatale.jpg",
+        "imageSource4": "",
+        "imageSource5": "",
+        "sourceText": "",
+        "creationDate": "2025-11-27",
+        "lastUpdate": "2025-11-27",
+        "audioSource": "it/giangiorgi.mp3"
     }
 }

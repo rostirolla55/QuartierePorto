@@ -31,7 +31,8 @@
         "navPioggia3": "Obra de Agostino Carracci",
         "navGraziaxx": "Placa votiva de Grazia",
         "navManifattura": "Ex Fabrica de Tabaco",
-        "navpittoricarracci": "Los Pintores Carracci"
+        "navpittoricarracci": "Los Pintores Carracci",
+        "navgiangiorgi": "Los Pintores Carracci"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -252,5 +253,25 @@
         "lastUpdate": "2025-11-26",
         "audioSource": "es/pittoricarracci.mp3",
         "imageSource": "it/pittoricarracci/immagine_carracci_1.jpg"
+    },
+    "giangiorgi": {
+        "pageTitle": "Los Pintores Carracci",
+        "mainText": "",
+        "mainText1": "",
+        "mainText2": "",
+        "mainText3": "",
+        "mainText4": "",
+        "mainText5": "",
+        "playAudioButton": "Ascolta con le cuffie",
+        "pauseAudioButton": "Pausa",
+        "imageSource1": "giangiorgi/panorama_bologna.jpg",
+        "imageSource2": "giangiorgi/cantierefontanina.jpg",
+        "imageSource3": "giangiorgi/pranzonatale.jpg",
+        "imageSource4": "",
+        "imageSource5": "",
+        "sourceText": "",
+        "creationDate": "2025-11-27",
+        "lastUpdate": "2025-11-27",
+        "audioSource": "es/giangiorgi.mp3"
     }
 }
