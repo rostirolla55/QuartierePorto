@@ -5,23 +5,27 @@ import sys
 from docx import Document
 
 # --- CONFIGURAZIONI GLOBALI ---
+# CORRETTO: La variabile è DOCX_DIR, non DOCS_DA_CONVERTIRE
 DOCX_DIR = "DOCS_DA_CONVERTIRE"
-HTML_OUTPUT_DIR = "text_files"
+HTML_OUTPUT_DIR = "HTML_OUTPUT"
 ASSETS_BASE_DIR = "Assets/images" 
 
 # Pattern per il marker di divisione
-# NOTA: Qui il pattern è corretto (usa \s* per accettare zero o più spazi, ma il pattern
-# non è la causa dell'errore di indentazione)
 SPLIT_BLOCK_PATTERN = r'\[SPLIT_BLOCK:\s*(.+?\.(?:jpg|jpeg|png|gif|bmp))\]'
 
 # --- FUNZIONI DI SUPPORTO ---
 def sanitize_text(text):
-    """Pulisce il testo e fa l'escape dei caratteri HTML."""
+    """Pulisce il testo e fa l'escape dei caratteri HTML e rimuove i \n letterali."""
     content = text
     content = unicodedata.normalize('NFC', content) 
-    # Pulizia artefatti (spazi non-breaking, trattini, apici, ecc.)
+    # Pulizia artefatti comuni
     content = content.replace('\xa0', ' ').replace('…', '...').replace('–', '-').replace('—', '-')
     content = content.replace('“', '"').replace('”', '"').replace('‘', "'").replace('’', "'") 
+    
+    # 🚨 AGGIUNTA IMPORTANTE: Rimuove la sequenza di caratteri letterali \n 
+    # che non sono interpretati come newline ma come testo.
+    content = content.replace('\\n', '') 
+    
     # Escape HTML
     content = content.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;') 
     content = re.sub(r'[\x00-\x1F\x7F]', '', content)
@@ -44,15 +48,12 @@ def docx_to_html(paragraph, page_id):
     def replace_marker(match):
         image_filename = match.group(1).strip()
         
-        # SOLUZIONE PER IL PATH: Assicura l'uso del forward slash (/) per gli URL HTML
-        # 1. Costruisce il percorso nativo usando i separatori del sistema operativo (os.path.join)
+        # SOLUZIONE PER IL PATH: crea path nativo e lo standardizza in URL-format
         img_path_native = os.path.join(ASSETS_BASE_DIR, page_id.lower(), image_filename)
-        # 2. Sostituisce i backslashes (\) di Windows con i forward slashes (/) per l'HTML
         img_src = img_path_native.replace('\\', '/')
         
         return f'<img src="{img_src}" alt="{image_filename}">'
 
-    # NOTA SULL'INDENTAZIONE: Questa riga è allineata al livello superiore (doc_to_html)
     html_with_images = re.sub(SPLIT_BLOCK_PATTERN, replace_marker, raw_text, flags=re.IGNORECASE)
     
     content_stripped = html_with_images.strip()
@@ -67,6 +68,8 @@ def convert_docx_and_split(page_id, docx_filename):
     Funzione principale che carica il DOCX, lo converte e lo divide in blocchi HTML.
     """
     normalized_page_id = page_id.lower()
+    
+    # *** CORREZIONE: Usa DOCX_DIR che è definito in alto, non DOCS_DA_CONVERTIRE ***
     docx_path = os.path.join(DOCX_DIR, docx_filename) 
     
     if not os.path.exists(docx_path):
@@ -93,14 +96,11 @@ def convert_docx_and_split(page_id, docx_filename):
             html_content = docx_to_html(paragraph, normalized_page_id)
             
             if marker_match:
-                # Se c'è un contenuto valido prima del marker, aggiungilo al blocco corrente
                 if html_content:
                     html_blocks[current_block_index].append(html_content)
-                # Passa al blocco successivo
                 current_block_index += 1
                 html_blocks.append([]) 
             elif html_content:
-                # Aggiunge il contenuto al blocco corrente
                 html_blocks[current_block_index].append(html_content)
         
     # --- Salvataggio dei File ---
@@ -115,7 +115,7 @@ def convert_docx_and_split(page_id, docx_filename):
 
     for i, block in enumerate(html_blocks):
         block_number = i + 1 
-        html_filename = f"{base_filename}{block_number}.html"
+        html_filename = f"{base_filename}_{block_number}.html"
         html_path = os.path.join(HTML_OUTPUT_DIR, html_filename)
         
         try:
