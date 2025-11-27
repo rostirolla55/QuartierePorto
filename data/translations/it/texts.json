@@ -255,11 +255,11 @@
         "imageSource": "it/pittoricarracci/immagine_carracci_1.jpg"
     },
     "giangiorgi": {
-        "pageTitle": "Prova di nuova pagina",
-        "mainText": "Testo iniziale per la traduzione.",
+        "pageTitle": "Via Fontanina nel tempo",
+        "mainText": "<p>Fontanina nel tempo</p>\\n<p>Buongiorno, vi faccio vedere una foto di via Fontanina a Bologna</p>\\n<p><img src=\\\"Assets/images/giangiorgi/<em>cantierefontanina</em>.jpg\\\" alt=\\\"<em>cantierefontanina</em>.jpg\\\">;</p>",
         "mainText1": "",
-        "mainText2": "",
-        "mainText3": "",
+        "mainText2": "<p>Come vedete il cantiere di <strong>vent'anni fa</strong>.</p>\\n<p><img src=\\\"Assets/images/giangiorgi/<em>serrande</em><em>i</em><em>mbrattate</em>.jpg\\\" alt=\\\"<em>serrande</em><em>i</em><em>mbrattate</em>.jpg\\\">;</p>",
+        "mainText3": "<p>Ma fino a ieri avevamo anche questo</p>\\n<p>Abbiamo fatto a pulizia con il <strong>patto di collaborazione</strong></p>",
         "mainText4": "",
         "mainText5": "",
         "playAudioButton": "Ascolta con le cuffie",
