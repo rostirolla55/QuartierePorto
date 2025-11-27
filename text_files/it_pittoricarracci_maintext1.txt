@@ -1,0 +1,1 @@
+ERRORE durante l'elaborazione del file: [Errno 13] Permission denied: 'it_pittoricarracci_maintext1.txt'
