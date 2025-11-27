@@ -115,7 +115,7 @@ def convert_docx_and_split(page_id, docx_filename):
 
     for i, block in enumerate(html_blocks):
         block_number = i + 1 
-        html_filename = f"{base_filename}_{block_number}.html"
+        html_filename = f"{base_filename}{block_number}.html"
         html_path = os.path.join(HTML_OUTPUT_DIR, html_filename)
         
         try:
