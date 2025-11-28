@@ -6,8 +6,8 @@ import re # Modulo necessario per la pulizia delle stringhe
 def update_json_file(lang_code, key_path, input_txt_file):
     """
     Legge un file JSON, aggiorna un valore basandosi sul contenuto di un file .txt.
-    1. Rimuove le linee di riferimento immagine (.jpg, .png, ecc.).
-    2. Esegue la conversione cruciale: \n -> <br> per il testo puro.
+    1. Rimuove le linee di riferimento immagine (.jpg, .png, ecc.) con regex.
+    2. Esegue la conversione cruciale: \n\n -> <br><br> e \n -> <br> per il testo puro.
     3. Utilizza i percorsi assoluti corretti (data/translations/lang).
     """
     # Ottiene la directory dello script Python.
@@ -33,25 +33,25 @@ def update_json_file(lang_code, key_path, input_txt_file):
     print(f"DEBUG: Valore RAW letto dal TXT (prime 100 char):\n{new_value[:100].replace('\n', '\\n')}")
         
     # --- 2. PULIZIA: Rimuovi i riferimenti a file immagine ---
-    # Pattern: Cerca qualsiasi testo che termina con un'estensione immagine e vari delimitatori.
-    # Usiamo re.MULTILINE e re.IGNORECASE. L'espressione cerca una linea che contenga 
-    # un nome di file immagine (es. .jpg, .png) seguito da apici o da un punto e virgola.
+    # Pattern: Cerca l'intera riga che contiene un riferimento a un'estensione immagine
+    # e la rimuove completamente. Uso di re.MULTILINE è fondamentale per cercare riga per riga.
+    pattern_to_remove = re.compile(r'^.*?\.(jpg|png|gif|jpeg|svg).*$', re.IGNORECASE | re.MULTILINE)
     
-    # Questo pattern cerca una riga intera che contiene un riferimento a un file immagine.
-    # ^.*?\.(jpg|png|gif|jpeg|svg)["'].*
-    pattern_to_remove = re.compile(r'^.*?\.(jpg|png|gif|jpeg|svg)["'].*', re.IGNORECASE | re.MULTILINE)
-    
-    # Sostituiamo le righe contenenti il riferimento all'immagine con una stringa vuota.
+    # Sostituiamo le righe contenenti il riferimento all'immagine con una stringa vuota ('')
     cleaned_value = pattern_to_remove.sub('', new_value)
     
     print(f"DEBUG: Valore dopo la pulizia immagine (prime 100 char):\n{cleaned_value[:100].replace('\n', '\\n')}")
 
     # --- 3. Conversione Cruciale: \n in <br> ---
-    # Prima, rimuoviamo a capo multipli (lasciati dalla pulizia) e poi convertiamo.
-    cleaned_value = re.sub(r'\n\s*\n', '\n', cleaned_value).strip()
     
-    # Convertiamo i restanti a capo in <br>
-    html_ready_value = cleaned_value.replace('\n\n', '<br><br>').replace('\n', '<br>').strip()
+    # Rimuove gli a capo superflui lasciati dalla rimozione della riga dell'immagine
+    cleaned_value = re.sub(r'\n{3,}', '\n\n', cleaned_value)
+    
+    # Convertiamo i restanti a capo in <br>. Dobbiamo eseguire la sostituzione doppia (<br><br>) PRIMA
+    # della sostituzione singola (<br>) per gestire i salti di paragrafo.
+    
+    html_ready_value = cleaned_value.replace('\n\n', '<br><br>')
+    html_ready_value = html_ready_value.replace('\n', '<br>').strip()
     
     print(f"DEBUG: Valore PRONTO per HTML (dopo conversione):\n{html_ready_value}")
 
