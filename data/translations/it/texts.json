@@ -256,10 +256,10 @@
     },
     "giangiorgi": {
         "pageTitle": "Via Fontanina nel tempo",
-        "mainText": "Fontanina nel tempo<br><br>Buongiorno, vi faccio vedere una foto di via Fontanina a Bologna",
+        "mainText": "<p>Fontanina nel tempo</p> <p>Buongiorno, vi faccio vedere una foto di via Fontanina a Bologna</p>",
         "mainText1": "",
-        "mainText2": "Come vedete il cantiere di vent'anni fa.",
-        "mainText3": "Ma fino a ieri avevamo anche questo<br><br>Abbiamo fatto a pulizia con il patto di collaborazione",
+        "mainText2": "<p>Come vedete il cantiere di <strong>vent'anni fa</strong>.</p>",
+        "mainText3": "<p>Ma fino a ieri avevamo anche questo</p> <p>Abbiamo fatto a pulizia con il <strong>patto di collaborazione</strong></p>",
         "mainText4": "",
         "mainText5": "",
         "playAudioButton": "Ascolta con le cuffie",
