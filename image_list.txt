@@ -1,3 +1,3 @@
-giangiorgi|imageSource1|giangiorgi/panorama_bologna.jpg
-giangiorgi|imageSource2|giangiorgi/cantierefontanina.jpg
-giangiorgi|imageSource3|giangiorgi/serrandeImbrattate.jpg
+cavaticcio|imageSource1|cavaticcio/panorama_bologna.jpg
+cavaticcio|imageSource2|cavaticcio/cantierefontanina.jpg
+cavaticcio|imageSource3|cavaticcio/serrandeImbrattate.jpg

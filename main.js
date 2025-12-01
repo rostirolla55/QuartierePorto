@@ -17,7 +17,7 @@ let nearbyPoiButton, nearbyMenuPlaceholder;
 const POIS_LOCATIONS = [
     { id: 'manifattura', lat: 44.498910, lon: 11.342241, distanceThreshold: 50 },
     { id: 'pittoricarracci', lat: 44.50085, lon: 11.33610, distanceThreshold: 50 },
-    { id: 'giangiorgi', lat: 44.50085, lon: 11.33610, distanceThreshold: 50 },
+    { id: 'cavaticcio', lat: 44.50085, lon: 11.33610, distanceThreshold: 50 },
 // ** MARKER: START NEW POIS **
     // Lapide_Grazia.jpg
     { id: 'graziaxx', lat: 44.5006638888889, lon: 11.3407694444444, distanceThreshold: 50 },
@@ -239,7 +239,7 @@ async function loadContent(lang) {
                 { id: 'navPioggia3', key: 'navPioggia3', base: 'pioggia3' },
                 { id: 'navManifattura', key: 'navManifattura', base: 'manifattura' },
                     { id: 'navpittoricarracci', key: 'navpittoricarracci', base: 'pittoricarracci' },
-    { id: 'navgiangiorgi', key: 'navgiangiorgi', base: 'giangiorgi' },
+    { id: 'navcavaticcio', key: 'navcavaticcio', base: 'cavaticcio' },
 // ** MARKER: START NEW NAV LINKS **
             ];
 

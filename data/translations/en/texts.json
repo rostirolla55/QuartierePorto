@@ -32,7 +32,7 @@
         "navGraziaxx": "Grazia votive plaque",
         "navManifattura": "Ex Tobacco Factory",
         "navpittoricarracci": "The Carracci Painters",
-        "navgiangiorgi": "Via Fontanina over time"
+        "navcavaticcio": "Cavaticcio hydroelectric power plant"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -255,8 +255,8 @@
         "audioSource": "en/pittoricarracci.mp3",
         "imageSource": "it/pittoricarracci/immagine_carracci_1.jpg"
     },
-    "giangiorgi": {
-        "pageTitle": "Via Fontanina over time",
+    "cavaticcio": {
+        "pageTitle": "Cavaticcio hydroelectric power plant",
         "mainText": "Testo iniziale per la traduzione.",
         "mainText1": "",
         "mainText2": "",
@@ -265,14 +265,14 @@
         "mainText5": "",
         "playAudioButton": "Ascolta con le cuffie",
         "pauseAudioButton": "Pausa",
-        "imageSource1": "giangiorgi/panorama_bologna.jpg",
-        "imageSource2": "giangiorgi/cantierefontanina.jpg",
-        "imageSource3": "giangiorgi/serrandeImbrattate.jpg",
+        "imageSource1": "",
+        "imageSource2": "",
+        "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-11-27",
         "lastUpdate": "2025-11-27",
-        "audioSource": "en/giangiorgi.mp3"
+        "audioSource": "en/cavaticcio.mp3"
     }
 }

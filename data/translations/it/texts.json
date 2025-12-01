@@ -32,7 +32,7 @@
         "navGraziaxx": "Lapide votiva Grazia",
         "navManifattura": "Ex Manifattura Tabacchi",
         "navpittoricarracci": "I pittori Carracci a Bologna",
-        "navgiangiorgi": "Fontanina nel tempo"
+        "navcavaticcio": "Centrale idroelettrica del Cavaticcio"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -253,24 +253,24 @@
         "lastUpdate": "2025-11-26",
         "audioSource": "it/pittoricarracci.mp3"
     },
-    "giangiorgi": {
-        "pageTitle": "Via Fontanina nel tempo",
-        "mainText": "<p>Fontanina nel tempo</p> <p>Buongiorno, vi faccio vedere una foto di via Fontanina a Bologna</p>",
+    "cavaticcio": {
+        "pageTitle": "Centrale idroelettrica del Cavaticcio",
+        "mainText": "",
         "mainText1": "",
-        "mainText2": "<p>Come vedete il cantiere di <strong>vent'anni fa</strong>.</p>",
-        "mainText3": "<p>Ma fino a ieri avevamo anche questo</p> <p>Abbiamo fatto a pulizia con il <strong>patto di collaborazione</strong></p>",
+        "mainText2": "",
+        "mainText3": "",
         "mainText4": "",
         "mainText5": "",
         "playAudioButton": "Ascolta con le cuffie",
         "pauseAudioButton": "Pausa",
-        "imageSource1": "giangiorgi/panorama_bologna.jpg",
-        "imageSource2": "giangiorgi/cantierefontanina.jpg",
-        "imageSource3": "giangiorgi/serrandeImbrattate.jpg",
+        "imageSource1": "",
+        "imageSource2": "",
+        "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-11-27",
         "lastUpdate": "2025-11-27",
-        "audioSource": "it/giangiorgi.mp3"
+        "audioSource": "it/cavaticcio.mp3"
     }
 }

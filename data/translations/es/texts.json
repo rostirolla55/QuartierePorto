@@ -32,7 +32,7 @@
         "navGraziaxx": "Placa votiva de Grazia",
         "navManifattura": "Ex Fabrica de Tabaco",
         "navpittoricarracci": "Los Pintores Carracci",
-        "navgiangiorgi": "Via Fontanina a lo largo del tiempo"
+        "navgcavaticcio": "Central hidroelectrica de Cavaticcio"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -254,7 +254,7 @@
         "audioSource": "es/pittoricarracci.mp3",
         "imageSource": "it/pittoricarracci/immagine_carracci_1.jpg"
     },
-    "giangiorgi": {
+    "cavaticcio": {
         "pageTitle": "Vía Fontanina a lo largo del tiempo",
         "mainText": "",
         "mainText1": "",
@@ -264,14 +264,14 @@
         "mainText5": "",
         "playAudioButton": "Ascolta con le cuffie",
         "pauseAudioButton": "Pausa",
-        "imageSource1": "giangiorgi/panorama_bologna.jpg",
-        "imageSource2": "giangiorgi/cantierefontanina.jpg",
-        "imageSource3": "giangiorgi/serrandeImbrattate.jpg",
+        "imageSource1": "",
+        "imageSource2": "",
+        "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-11-27",
         "lastUpdate": "2025-11-27",
-        "audioSource": "es/giangiorgi.mp3"
+        "audioSource": "es/cavaticcio.mp3"
     }
 }
