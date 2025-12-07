@@ -68,6 +68,6 @@ if ($LASTEXITCODE -ne 0) { Write-Error "Errore in post_process_html.py. Interruz
 
 
 Write-Host "`n--- Conversione Completata per $PageID_Lower ---"
-Write-Host "File generati in $RootDir:"
+Write-Host "File generati in ${RootDir}:"
 Write-Host " - $PageID_Lower.html"
 Write-Host " - $PageID_Lower_texts.json (o similare)"
