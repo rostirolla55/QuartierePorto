@@ -1,7 +1,7 @@
 {
     "home": {
         "pageTitle": "Bienvenue dans le quartier Porto",
-        "mainText": "<p>Bienvenue sur le site consacré à Bologne. <br />Je vous accompagnerai avec un audio, et pour plus de détails, vous pouvez lire le texte et les images de la page. <br />Je vous ferai voyager dans le temps en fonction de votre arrêt. <br />Si vous trouvez un QR code sur place, vous pourrez accéder directement à une page. <br />Si vous n'avez pas de QR code, en activant le GPS de votre smartphone, vous trouverez un bouton rectangulaire vert en haut à droite qui vous affichera une liste de lieux d'intérêt à proximité. En sélectionnant un élément de la liste, vous ouvrirez la page correspondante. En haut à gauche, trois lignes horizontales vous donnent la liste complète des lieux documentés sur le site.</p>",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -36,7 +36,7 @@
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
-        "mainText": "Il existait à Bologna une rue appelée \"Pugliole di San Bernardino\". Cette rue a disparu suite aux interventions urbanistiques des années 1930 qui ont conduit à la création de la Via Guglielmo Marconi (alors Via Roma).",
+        "mainText": "",
         "mainText1": "Les \"Pugliole di San Bernardino\" tirent leur nom du monastère ou couvent de San Bernardino, situé dans le quartier de l'actuelle Piazza dei Martiri de 1943 à 1945. La rue bifurquait de Borgo Polese (aujourd'hui Via Polese) et serpentait jusqu'à la Via del Porto, suivant en partie le tracé actuel de la Via Marconi.",
         "mainText2": "Le terme \"Pugliola\" (ou, au pluriel, \"Pugliole\") est un terme ancien de la toponymie bolonaise. Il désigne une ruelle, une rue étroite ou un petit groupe de maisons. Il désignait généralement une rue de petite taille ou un quartier résidentiel secondaire, souvent issu d'une ancienne subdivision urbaine. tissu.",
         "mainText3": "De nombreuses rues et ruelles de Bologne, comme les « Pugliole di San Bernardino » ou les « Pugliole dello Spirito Santo », tirent leur nom d'églises ou de monastères voisins, combinant le nom de l'institution religieuse avec le terme « pugliola » pour indiquer la ruelle adjacente.",
@@ -56,7 +56,7 @@
     },
     "graziaxx": {
         "pageTitle": "La Pierre Commémorative de la Grâce",
-        "mainText": "<p>La peste qui frappa Bologne en 1630 fut un événement dramatique, faisant partie de l'épidémie plus vaste qui dévasta l'Italie du Nord, également connue sous le nom de peste de Manzon.</p> <p>En voici les principaux points:</p> <p><b>Diffusion</b>: L'épidémie fut introduite à Bologne en mai 1630 par les soldats lansquenets, venus assiéger Mantova dans le cadre de la guerre de Succession de Mantova.<br>Malgré les efforts du cardinal légat Bernardino Spada et du Sénat bolonais pour contenir la contagion hors des murs, la maladie se propagea.</p> <p><b>Victimes</b>: Ce fut un événement catastrophique pour la démographie de la ville. Dans la ville, 13398 victimes furent recensées entre mai et décembre 1630, sur une population d'environ 61559 habitants du centre urbain. <br>À la campagne, les victimes étaient environ 16300. Au total, on estime que Bologne et ses environs ont perdu environ 40000 personnes.</p> <p><b>Gestion des urgences</b>: La lutte contre l’épidémie fut dirigée par le cardinal Bernardino Spada, qui s’appuya sur l’action des frères camilliens pour venir en aide aux victimes de la peste. Des lazarets furent installés devant la Porta Santo Stefano et à Castelfranco.</p> <p><b>Conséquences</b>: La ville, déjà touchée par les famines du début du siècle, perdit près de la moitié de sa population. L’épidémie eut de graves conséquences sociales.</p> <p><b>Art et mémoire</b>: En souvenir et en remerciement pour la fin du fléau, le célèbre Retable de la Peste (ou «Retable de la Vierge et des saints patrons de Bologne intercédant pour la ville») fut commandé à Guido Reni en 1630. Un précieux baldaquin fut également réalisé. votive.</p>",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -76,7 +76,7 @@
     },
     "lastre": {
         "pageTitle": "Les dalles et les numéros",
-        "mainText": "À Bologne, on trouve des dalles de grès dans plusieurs rues du centre historique. Elles ne sont pas seulement décoratives, mais ont une signification historique très intéressante.",
+        "mainText": "",
         "mainText1": "Ce sont les numéros. Les plus anciens numéros de rue de la ville. Ils ont été introduits à la fin du XVIIIe siècle, lorsque Bologne était sous la domination Sous le régime napoléonien, afin de mieux organiser le service postal et la gestion de la ville.",
         "mainText2": "Avant cette époque, les maisons n'avaient pas de numéro, et les gens s'orientaient parfois grâce à la description de la façade ou au nom de la famille qui y habitait. Les carreaux de grès, que l'on trouve encore aujourd'hui, témoignent de cette évolution.",
         "mainText3": "Nombre de ceux que vous voyez sont en terre cuite et ont été fabriqués au fil des siècles, remplaçant parfois les originaux. Si les carreaux de terre cuite étaient plus faciles à produire en série, la gravure sur pierre était un savoir-faire artisanal qui témoigne de l'importance et de la durabilité que l'on souhaitait donner à ces signes urbains.",
@@ -96,7 +96,7 @@
     },
     "carracci": {
         "pageTitle": "Carracci",
-        "mainText": "<p>Les résultats de la recherche indiquent que l'adresse <strong>Via San Carlo, 19 à Bologne</strong> est associée à une propriété appelée <strong>\"Casa Carracci\"</strong> ou \"San Carlo Holiday House\" qui est actuellement louée comme appartement de vacances.</p> <p>Certaines sources mentionnent que le bâtiment, un ancien palais du XVIIIe ou XIXe siècle appelé \"Casa Carracci\" et protégé par la Surintendance du patrimoine culturel, serait le lieu où <strong>Ludovico Carracci</strong> a vécu de 1555 à 1609 et où se trouvait l'un des ateliers des cousins ​​Carrache, fondateurs de l'<strong>Accademia degli Incamminati</strong>.</p> <p>Il est important de noter que, historiquement, la maison Carracci (qui fait également référence à Agostino et Annibale) est souvent aussi associée à la <strong>Via Rolandino, 1</strong> (la soi-disant « Casa Berò Gradi » ou « Casa Berò detta dei Carracci »), qui a subi une restauration au XIXe siècle. En bref, la propriété située au <strong>19e Via San Carlo</ strong> est promue comme un appartement de vacances situé dans ce qui est identifié comme le bâtiment où le peintre Ludovico Carracci a vécu et travaillé.",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -116,7 +116,7 @@
     },
     "chiesasbene": {
         "pageTitle": "Église San Benedetto",
-        "mainText": "<p>L'église San Benedetto de Bologne, située Via Indipendenza, a une histoire longue et complexe :</p> <ul> <li><strong>Origines :</strong> Ses origines remontent au <strong>XIIIe siècle</strong> (certains documents la mentionnent comme paroisse dès 1202). Initialement, elle était située juste à l'extérieur des deuxièmes remparts de Bologne.</li> <li><strong>Reconstruction du XVIIe siècle :</strong> Elle a été <strong>entièrement reconstruite en 1606</strong> d'après un projet de <strong>Giovanni Battista Ballerini</strong>. Français À cette époque, elle était officiée par les Frères Minimes de San Francesco di Paola (dits \"paolotti\"), à qui elle avait été attribuée en 1529.</li> <li><strong>Orientation d'origine :</strong> Jusqu'à la fin du XIXe siècle, l'église donnait sur la <strong>Via Galliera</strong>, où elle se trouve encore aujourd'hui. On peut voir l'ancienne façade (refaite ultérieurement en 1932) flanquée du clocher.</li> <li><strong>L'ouverture de la Via Indipendenza :</strong> La grande transformation eut lieu en <strong>1892</strong> avec l'ouverture de la nouvelle <strong>Via dell'Indipendenza</strong>. Pour s'adapter au nouveau tracé et à la nouvelle route, l'orientation de l'église a été <strong>inversée</strong> : l'abside est devenue la nouvelle façade, qui a été refaite avec l'ajout d'un portique.</li> <li><strong>Intérieur:</strong> Malgré les transformations extérieures, l'intérieur conserve d'importantes œuvres d'artistes protagonistes du maniérisme et du baroque bolonais, notamment des peintures de <strong>Giacomo Cavedoni</strong>, <strong>Alessandro Tiarini</strong> et <strong>Lucio Massari</strong>.</li> </ul> <p>En résumé, l'aspect actuel de l'église est le résultat de la reconstruction du XVIIe siècle et de la réorientation radicale de la fin du XIXe siècle, lorsqu'elle a été «tournée» pour faire face à la moderne Via Indipendenza.</p>",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -136,7 +136,7 @@
     },
     "chiesapioggia": {
         "pageTitle": "Église de la Pluie",
-        "mainText": "<p>Le <strong>sanctuaire de la Madonna della Pioggia</strong>, dont le nom complet est <strong>église de Santa Maria della Pioggia et San Bartolomeo di Reno</strong>, est situé à l'intersection de la <strong>Via Galliera</strong> et de la <strong>Via Riva di Reno</strong> à Bologne.</p> <p>Voici quelques informations clés :</p> <ul> <li><strong>Origine :</strong> Il était à l'origine connu sous le nom d'<strong>église de San Bartolomeo di Reno</strong> et remonte au 13e siècle en tant qu'oratoire.</li> <li><strong>Nom :</strong> Le nom \"Madonna della Pioggia\" dérive d'un événement survenu en 1561, lorsqu'une procession avec la statue de la Vierge fut associée à la fin d'une grave sécheresse qui avait frappé Bologne, apportant des pluies bénéfiques. Suite à cet événement miraculeux, elle fut doublement dédiée à la Sainte et à la Madone.</li> <li><strong>Structure et travaux :</strong> L'église, qui a subi plusieurs rénovations au cours des siècles, présente une façade précédée d'un portique à trois arches. Il abrite des œuvres d'art d'artistes tels qu'Agostino Carracci, Francesco Monti, Ludovico Mattioli (sa fresque <em>Paysage avec Saint Barthélemy</em> se trouve sur l'escalier du XVIIIe siècle menant à l'oratoire) et une sculpture en terre cuite d'Alfonso Lombardi (<em>Saint Barthélemy</em>).</li> <li><strong>Intérieur :</strong> L'intérieur est composé d'une seule nef avec trois chapelles latérales et une voûte en berceau ornée de fresques.</li> <li><strong>Statue :</strong> Elle abrite la statue du XIIIe siècle de la <strong>Madonna della Provvidenza</strong> (également connue sous le nom de Madonna della Pioggia), située à gauche de l'autel principal et offerte en 1435 par le Sénat de Bologne.<br /><br /></li> </ul>",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -157,7 +157,7 @@
     "pioggia1": {
         "pageTitle": "Paysage avec Saint-Barthélemy",
         "mainText": "",
-        "mainText1": "<p> Le <strong>sanctuaire de la Madonna della Pioggia et de San Bartolomeo di Reno</strong> (Via Riva di Reno,124, à l'angle de la Via Galliera) à Bologne, abrite le « Paysage avec Saint Bartolomeo », une œuvre du peintre bolonais <strong>Ludovico Mattioli</strong>.</p> <p><strong>  Le « Paysage avec Saint Bartolomeo » de Ludovico Mattioli</strong></p> <p>L'œuvre mentionnée se trouve le long de l'escalier menant aux salles supérieures de l'église et n'est pas une peinture d'Annibale, comme elle lui est attribuée à tort, mais d'un de ses successeurs de l'école bolonaise.</p> < ul > <li><strong>Artiste :</strong> Ludovico Mattioli (1662-1747) <li><strong>Titre (probable) :</strong> Paysage avec saint Barthélemy</strong></li> <li><strong>Lieu :</strong> Escalier du sanctuaire de la Madonna della Pioggia et de San Bartolomeo di Reno, Bologne.</li> <li><strong>Dature :</strong> XVIIIe siècle.</li> </ ul > <p><strong>Contexte historique et artistique :</strong></p> < ul > <li><strong>Le paysage au XVIIIe siècle :</strong> Bien qu’Annibale Carracci ait été le pionnier du « paysage idéal » au XVIIe siècle, Ludovico Mattioli a travaillé à une époque ultérieure, le XVIIIe siècle, où le genre du paysage était désormais pleinement développé et autonome. Mattioli, Artiste bolonais actif entre la fin du XVIIe siècle et le début du XVIIIe siècle, Mattioli était connu non seulement pour ses toiles, mais aussi comme graveur et paysagiste . Style : Ses paysages sont typiques du goût baroque tardif et rococo . Contrairement au caractère solennel et « héroïque » d’Annibale, les œuvres de Mattioli présentent un style plus pictural, aérien et moins structuré , avec une prédilection pour l’atmosphère et les effets de lumière . L’église : Le sanctuaire de la Madonna della Pioggia (ou San Bartolomeo di Reno) a subi de nombreuses rénovations au fil des siècles. L’église actuelle date principalement du XVIIIe siècle (reconstruite selon un plan attribué à Alfonso Torreggiani), et des œuvres comme celles de Mattioli s’intègrent parfaitement dans ce contexte décoratif du XVIIIe siècle. <li><strong>Iconographie :</strong>& nbsp;La présence de saint Barthélemy, l’apôtre martyr, fait référence à l’ancienne dédicace de l’église et de l’ hospice adjacent. </li> </ul> ",
+        "mainText1": "",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
@@ -176,7 +176,7 @@
     },
     "pioggia2": {
         "pageTitle": " Sculpture de Saint Barthélemy ",
-        "mainText": "par le sculpteur Alfonso Lombardi",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -196,7 +196,7 @@
     },
     "pioggia3": {
         "pageTitle": "Adoration des bergers",
-        "mainText": " L'auteur est Agostino Carracci",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -216,7 +216,7 @@
     },
     "manifattura": {
         "pageTitle": "Ancienne Manufacture de Tabac",
-        "mainText": "<p>L' ancienne manufacture de tabac de la Via Riva di Reno à Bologne est un lieu d'un grand intérêt historique et architectural, qui connaît une nouvelle vie liée à la culture.</p> <p>Voici les informations essentielles, ainsi que des détails sur son histoire et son apparence actuelle :</p> <p>Histoire et architecture</p> <p>Adresse : Via Riva di Reno, 72, Bologne.</p> <p>Origines : La manufacture de tabac a été fondée au début du XIXe siècle dans la zone qui abritait autrefois le couvent de Santa Maria Nuova.</p> <p>Rénovation de 1906 : Le bâtiment principal de la Via Riva di Reno, où coulait autrefois le canal (désormais recouvert au centre de la rue), conserve la façade historique qui a été entièrement redessinée en 1906 par l'architecte Gaetano De Napoli .</p> <p>Art nouveau : La façade est un exemple remarquable de Jugendstil (Art nouveau), avec une structure et des décorations qui reflètent le goût de l'époque.</p> <p>Main-d'œuvre : Historiquement, l'usine employait principalement des femmes , considérées comme plus habiles que les hommes pour rouler les feuilles de tabac afin de fabriquer des cigares.</p>",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "<p>État actuel et nouvelles fonctionnalités</p> <p>Aujourd’hui, la zone de l’ancienne Manifattura fait partie d’un important projet de réhabilitation architecturale et urbaine connu sous le nom de Manifattura delle Arti .</p> <p>Cineteca di Bologna : Le bâtiment historique situé Via Riva di Reno abrite actuellement la Cineteca di Bologna , un centre culturel de renommée internationale dédié à la préservation et à la promotion du cinéma.</p> <p>Jardins : Près de l'ancienne Manifattura se trouvent également les Giardini ex Manifattura Tabacchi , un espace vert ouvert au public (généralement de 7h00 à 19h00), souvent fréquenté par les familles et équipé d'une aire de jeux pour enfants.</p>",
         "mainText3": "<p>Liens et contenu supplémentaire (photos)</p> <p>Pour les photos, le mieux est de consulter les ressources en ligne qui documentent le bâtiment historique et les projets de restauration :</p> <p>Ex Reale Manifattura dei Tabacchi - Bologna Online : Contient souvent des images historiques ou actuelles du bâtiment et de sa façade Art Nouveau.</p> <p>Manifattura Tabacchi - Histoire et mémoire de Bologne : Une autre ressource qui documente l'histoire et l'apparence du lieu.</p> <p>Je vous recommande tout particulièrement de rechercher des images de la façade de la Via Riva di Reno , qui est la partie la mieux conservée et la plus caractéristique de l'architecture Art nouveau.</p> <p>Si vous vous intéressez particulièrement aux photographies prises dans des zones abandonnées avant leur réaménagement (souvent avec une ambiance d'archéologie industrielle), vous devriez rechercher des expositions ou des projets comme celui mentionné dans l'article : « Spazi vicini. Ex Manifattura Tabacchi. Percorso fotografico verso il recupero » d'Ivano Adversi .</p>",

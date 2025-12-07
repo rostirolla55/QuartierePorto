@@ -1,0 +1,9 @@
+goqrtp
+dir convert_*.bat
+findstr /s convert_step.bat convert_*.bat
+cls
+convert_all.bat
+cls
+convert_all
+powershell convert_all.ps1
+esci

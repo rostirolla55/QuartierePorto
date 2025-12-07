@@ -1,0 +1,5 @@
+goqrtp
+echo %HOMEPATH%
+dir *.bat
+convert_all_ps1.bat
+esci

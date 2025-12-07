@@ -1,0 +1,6 @@
+dir /s /b w*.ps1
+cd C:\Users\User\Documents\WC_PS\Mimiuchi_PowerShell\
+dir
+cat vedi_lista_devices.bat
+goqrtp
+esci

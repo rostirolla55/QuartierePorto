@@ -1,7 +1,7 @@
 {
     "home": {
         "pageTitle": "Welcome to the Porto neighborhood",
-        "mainText": "<p>Welcome to the site about Bologna. <br /> I'll accompany you with audio, and for more details, you can read the text and images on the page. <br /> I'll take you back in time based on the place you stop. <br /> If you find a QR code on the spot, you can access a page directly. <br /> If you don't have a QR code, by activating your smartphone's GPS, you'll find a green rectangular button in the top right that will show you a list of nearby places of interest. <br /> Selecting an item from the list will open the page corresponding to that place. In the top left, there are three horizontal lines that give you the complete list of places documented on the site.</p>",
+        "mainText": "",
         "mainText1": " ",
         "mainText2": " ",
         "mainText3": " ",
@@ -36,7 +36,7 @@
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
-        "mainText": "There was a street in Bologna called Pugliole di San Bernardino. This street disappeared following of the urban planning interventions of the 1930s that led to the creation of Via Guglielmo Marconi (then Via Roma). The Pugliole di San Bernardino took their name from the Monastery or Convent of San Bernardino, which was located in the area of the current Piazza dei Martiri from 1943 to 1945. The street branched off from Borgo Polese (now Via Polese) and wound its way to Via del Porto, partly following the current route of Via Marconi. The term Pugliola (or, in the plural, Pugliole) is an ancient term in Bolognese toponymy. It refers to an alley, a small street, or a small group of houses. Generally, it indicated a small street or a secondary residential area, often deriving from an ancient subdivision of the urban fabric. Many streets and alleys in Bologna, such as Pugliole di San Bernardino or Pugliole dello Spirito Santo, took their names from churches or monasteries that were located nearby, combining the name of the religious institution with the name of the church. Pugliola is a term used to indicate the adjacent alley. In short, Pugliola is a dialectal and historical term meaning alley or street.",
+        "mainText": "",
         "mainText1": " ",
         "mainText2": " ",
         "mainText3": " ",
@@ -56,7 +56,7 @@
     },
     "graziaxx": {
         "pageTitle": "The plaque of grace",
-        "mainText": "<p>The plague that struck Bologna in 1630 was a dramatic event, part of the larger epidemic that devastated Northern Italy, also known as the Manzonian plague.</p> <p>Here are the main points:</p> <p><b>Diffusion</b>: The epidemic was brought to Bologna in May 1630 by the Landsknecht soldiers, who had arrived for the siege of Mantova during the War of the Mantova Succession.<br>Despite the efforts of Cardinal Legate Bernardino Spada and the Bolognese Senate to keep the contagion outside the walls, the disease spread.</p> <p><b>Victim</b>: It was a catastrophic event for the city's demographics. 13,398 victims were recorded in the city between May and December 1630, out of a population of approximately 61,559 inhabitants. of the urban center. <br>In the countryside, the victims were approximately 16,300. In total, it is estimated that Bologna and its countryside lost around 40,000 people.</p> <p><b>Emergency Management</b>: The fight against the epidemic was directed by Cardinal Bernardino Spada, who availed himself of the work of the Camillian friars to assist the plague victims. <<br> Lazarettos were set up outside Porta Santo Stefano and in Castelfranco.</p> <p><b>Consequences</b>: The city, already affected by the famines of the beginning of the century, lost almost half of its population. The epidemic led to serious social consequences.</p> <p><b>Art and Memory</b>: In memory and thanksgiving for the end of the plague, the famous Plague Altarpiece (or \"Altarpiece of the Virgin and the Patron Saints of Bologna Interceding for the City\") was commissioned to Guido Reni in 1630. It was A precious votive baldachin was also created.</p>",
+        "mainText": "",
         "maintext1": "",
         "mainText2": "",
         "mainText3": "",
@@ -76,7 +76,7 @@
     },
     "lastre": {
         "pageTitle": "The Slabs and the Numbers",
-        "mainText": "In Bologna, you'll find sandstone slabs in various streets of the historic center. They're not just decorative, but also have a very interesting historical significance.",
+        "mainText": "",
         "mainText1": "These are the oldest house numbers in the city. They were introduced at the end of the 18th century, when Bologna was under Napoleonic rule, to better organize the postal service and city management.",
         "mainText2": "Before then, houses didn't have numbers, and people sometimes oriented themselves by the description of the facade or the name of the family who lived there. The sandstone tiles, which you still find today, are a testament to this change.",
         "mainText3": "Many of those you see are terracotta and have been made over the centuries, sometimes replacing the original ones. While terracotta tiles were easier to mass-produce, the engraving on the stone was a craft that demonstrates the importance and durability these urban signs were intended to provide.",
@@ -96,7 +96,7 @@
     },
     "carracci": {
         "pageTitle": "Carracci",
-        "mainText": "<p>The search results indicate that the address <strong>Via San Carlo, 19 in Bologna</strong> is associated with a property called <strong>\"Casa Carracci\"</strong> or \"San Carlo Holiday House\" which is currently rented as a holiday apartment.</p> <p>Some sources mention that the building, an ancient 18th or 19th century palace called \"Casa Carracci\" and protected by the Superintendence of Cultural Heritage, is believed to be the place where <strong>Ludovico Carracci</strong> lived from 1555 to 1609 and where one of the workshops of the Carracci cousins, founders of the <strong>Accademia degli Incamminati</strong>, was located.</p> <p>It is important to note that, historically, the Carracci house (also referring to Agostino and Annibale) is It is often also associated with <strong>Via Rolandino, 1</strong> (the so-called \"Casa Beroe Gradi\" or \"Casa Beroe detta dei Carracci\"), which underwent restoration in the 19th century.</p> <p>In short, the property at <strong>Via San Carlo, 19</strong> is promoted as a holiday apartment located in what is identified as the building where the painter Ludovico Carracci lived and worked.</p>",
+        "mainText": "",
         "mainText1": " ",
         "mainText2": " ",
         "mainText3": " ",
@@ -116,7 +116,7 @@
     },
     "chiesasbene": {
         "pageTitle": "Chiesa di San Benedetto",
-        "mainText": "<p>The Church of San Benedetto in Bologna, located in Via Indipendenza, has a long and complex history:</p> <ul> <li><strong>Origins:</strong> Its origins date back to the <strong>13th century</strong> (some documents mention it as a parish as early as 1202). Initially, it was located just outside the second city walls of Bologna.</li> <li><strong>17th-century reconstruction:</strong> It was <strong>completely rebuilt in 1606</strong> based on a design by <strong>Giovanni Battista Ballerini</strong>. At that time, it was officiated by the Minim Friars of San Francesco di Paola (known as \"paolotti\"), to whom it had been assigned in 1529.</li> <li><strong>Original Orientation:</strong> Until the end of the 19th century, the church faced onto <strong>Via Galliera</strong>, where it still stands today. the ancient façade is visible (later redone in 1932) flanked by the bell tower.</li> <li><strong>The opening of Via Indipendenza:</strong> The great transformation took place in <strong>1892</strong> with the opening of the new <strong>Via dell'Indipendenza</strong>. To adapt to the new layout and the new road, the orientation of the church was <strong>inverted</strong>: the apse became the new façade, which was redone with the addition of a portico.</li> <li><strong>Interior:</strong> Despite the external transformations, the interior preserves important works by artists who were protagonists of Mannerism and Bolognese Baroque, including paintings by <strong>Giacomo Cavedoni</strong>, <strong>Alessandro Tiarini</strong> and <strong>Lucio Massari</strong>.</li> </ul> <p>In summary, the current appearance of the church is the result of the seventeenth-century reconstruction and the radical reorientation of the late nineteenth century, when it was \"turned\" to face the modern Via Indipendenza.</p>",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -136,7 +136,7 @@
     },
     "chiesapioggia": {
         "pageTitle": "Chiesa della Pioggia",
-        "mainText": "<p>The <strong>Sanctuary of the Madonna della Pioggia</strong>, whose full name is <strong>Church of Santa Maria della Pioggia and San Bartolomeo di Reno</strong>, is located at the intersection of <strong>Via Galliera</strong> and <strong>Via Riva di Reno</strong> in Bologna.</p> <p>Here is some key information:</p> <ul> <li><strong>Origin:</strong> It was originally known as the <strong>Church of San Bartolomeo di Reno</strong> and dates back to the 13th century as an Oratory.</li> <li><strong>Name:</strong> The name \"Madonna della Pioggia\" derives from an event in 1561, when a procession with the statue of the Madonna was associated with the end of a severe drought that had hit Bologna, bringing beneficial rains. Following this miraculous event, it was double-dedicated to the Saint and the Madonna.</li> <li><strong>Structure and Works:</strong> The church, which has undergone several renovations over the centuries, features a façade preceded by a portico with three arches. It houses works of art by artists such as Agostino Carracci, Francesco Monti, Ludovico Mattioli (his fresco <em>Landscape with Saint Bartholomew</em> is located on the eighteenth-century staircase leading to the oratory) and a terracotta sculpture by Alfonso Lombardi (<em>Saint Bartholomew</em>).</li> <li><strong>Interior:</strong> The interior is It has a single nave with three side chapels and a frescoed barrel vault.</li> <li><strong>Statue:</strong> It houses the 13th-century statue of the <strong>Madonna della Provvidenza</strong> (also known as the Madonna della Pioggia), located to the left of the main altar and donated in 1435 by the Bolognese Senate.<br /><br /></li> </ul>",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -176,7 +176,7 @@
     },
     "pioggia2": {
         "pageTitle": "Saint Bartholomew Sculpture",
-        "mainText": "by the sculptor Alfonso Lombardi",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -196,7 +196,7 @@
     },
     "pioggia3": {
         "pageTitle": "Adoration of the Shepherds",
-        "mainText": " The author is Agostino Carracci",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -216,7 +216,7 @@
     },
     "manifattura": {
         "pageTitle": "Ex Tobacco Factory",
-        "mainText": "<p>The former tobacco factory on Via Riva di Reno in Bologna is a place of great historical and architectural interest, with a new life linked to culture.</p> <p>Here's the key information, along with details about its history and current appearance:</p> <p>History and Architecture</p> <p>Address: Via Riva di Reno, 72, Bologna.</p> <p>Origins: The Tobacco Factory was established at the beginning of the 19th century in the area that was the former convent of Santa Maria Nuova.</p> <p>Renovation of 1906: The main building on Via Riva di Reno, where the canal once flowed (now covered in the centre of the street), retains the historic façade which was completely redesigned in 1906 by the architect Gaetano De Napoli .</p> <p>Art Nouveau: The facade is a notable example of Jugendstil (Art Nouveau), with a structure and decorations that reflect the taste of the time.</p> <p>Workforce: Historically, the factory employed mostly women , who were considered more skilled than men at rolling tobacco leaves to make cigars.</p>",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "<p>Current Status and New Function</p> <p>Today, the area of the former Manifattura is part of a major architectural and urban recovery project known as Manifattura delle Arti .</p> <p>Cineteca di Bologna: The historic building on Via Riva di Reno is the current home of the Cineteca di Bologna , an internationally renowned cultural center for the preservation and promotion of cinema.</p> <p>Gardens: Near the former Manifattura are also the Giardini ex Manifattura Tabacchi , a green area open to the public (generally from 7:00 am to 7:00 pm), often frequented by families and equipped with a play area for children.</p>",
         "mainText3": "<p>Links and Additional Content (Photos)</p> <p>For photos, the best way is to consult online resources that document the historic building and the restoration projects:</p> <p>Ex Reale Manifattura dei Tabacchi - Bologna Online : Often contains historical or current images of the building and its Art Nouveau facade.</p> <p>Manifattura Tabacchi - History and Memory of Bologna : Another resource that documents the history and appearance of the place.</p> <p>I particularly recommend that you look for images of the facade on Via Riva di Reno , which is the best preserved and most characteristic part of the Art Nouveau architecture.</p> <p>If you're specifically interested in photographs taken inside abandoned areas before their redevelopment (often with an industrial archaeology feel), you should look for exhibitions or projects like the one mentioned in the article: \"Spazi vicini. Ex Manifattura Tabacchi. Percorso fotografico verso il recupero\" by Ivano Adversi .</p>",
@@ -236,7 +236,7 @@
     },
     "pittoricarracci": {
         "pageTitle": "The Carracci Painters",
-        "mainText": "Testo iniziale per la traduzione.",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -257,7 +257,7 @@
     },
     "cavaticcio": {
         "pageTitle": "Cavaticcio hydroelectric power plant",
-        "mainText": "Testo iniziale per la traduzione.",
+        "mainText": "",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
