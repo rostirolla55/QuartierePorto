@@ -6,7 +6,7 @@ from typing import Dict, Any, Tuple
 # --- CONFIGURAZIONE GLOBALE ---
 
 # Cartella che contiene i file page_config_*.json generati (con i soli percorsi dei frammenti).
-INPUT_DIR = "text_files" 
+INPUT_DIR = "output_html_fragments" 
 # Nome del file JSON centrale (texts.json) che VERRÀ AGGIORNATO.
 CENTRAL_CONFIG_FILE = "texts.json" 
 
@@ -25,9 +25,6 @@ STATIC_KEYS = (
 
 def get_config_files(directory: str) -> list:
     """Trova tutti i file page_config_*.json nella directory specificata."""
-    if not os.path.exists(directory):
-        print(f"ERRORE: La cartella di input '{directory}' non esiste.")
-        return []
     return [f for f in os.listdir(directory) if f.startswith("page_config_") and f.endswith(".json")]
 
 def load_central_config(filepath: str) -> Dict[str, Any]:
@@ -46,50 +43,14 @@ def load_central_config(filepath: str) -> Dict[str, Any]:
         print(f"ERRORE inatteso durante il caricamento del file centrale: {e}")
         return {}
 
-def save_central_config(filepath: str, data: Dict[str, Any]):
-    """Salva la configurazione centrale aggiornata."""
-    try:
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
-        
-        print(f"\n✅ SINCRONIZZAZIONE COMPLETA E SALVATAGGIO ESEGUITI.")
-        print(f"Il file centrale è stato aggiornato: '{filepath}'")
-        
-    except Exception as e:
-        print(f"\nERRORE FATALE durante il salvataggio del file finale: {e}")
-
 def extract_metadata_from_dynamic_config(config_data: Dict[str, Any]) -> Tuple[str, str] | None:
     """Estrae lingua e ID della pagina dai percorsi dei frammenti HTML."""
     for key, value in config_data.items():
         if key.startswith("mainText") and isinstance(value, str):
             match = FILENAME_PATTERN.search(value)
             if match:
-                # Gruppo 1: lingua, Gruppo 2: page_id
                 return match.group(1).lower(), match.group(2).lower()
     return None
-
-def print_expected_stub(lang: str, page_id: str, num_fragments: int = 1):
-    """
-    Stampa uno stub JSON di esempio basato su lang e page_id per aiutare il debug.
-    Questo JSON è il contenuto atteso del file page_config_*.json mancante.
-    """
-    print("\n" + "="*50)
-    print(f"STRUTTURA PREVISTA PER IL FILE CONFIG MANCANTE ({lang.upper()}/{page_id.upper()})")
-    print("="*50)
-    
-    stub = {}
-    for i in range(1, num_fragments + 1):
-        html_fragment_name = f"{lang.lower()}_{page_id.lower()}_maintext{i}.html"
-        stub[f"mainText{i}"] = html_fragment_name
-        stub[f"imageSource{i}"] = "" 
-
-    expected_filename = f"page_config_{lang.lower()}_{page_id.lower()}.json"
-
-    print(f"Il file JSON di configurazione temporanea atteso sarebbe '{expected_filename}'.")
-    print(f"Dovrebbe essere salvato nella cartella '{INPUT_DIR}' con il seguente contenuto:")
-    print(json.dumps(stub, indent=4))
-    print("\nSuggerimento: Correggi il processo che genera questo file e riprova la sincronizzazione.")
-
 
 def sync_config(input_dir: str, central_config_file: str):
     """
@@ -100,7 +61,7 @@ def sync_config(input_dir: str, central_config_file: str):
     config_files = get_config_files(input_dir)
     
     if not config_files:
-        print(f"ATTENZIONE: Nessun file 'page_config_*.json' trovato nella cartella '{input_dir}'. Nessun aggiornamento eseguito.")
+        print(f"ATTENZIONE: Nessun file 'page_config_*.json' trovato. Nessun aggiornamento eseguito.")
         return
 
     print(f"Trovati {len(config_files)} file di configurazione da sincronizzare...")
@@ -156,11 +117,15 @@ def sync_config(input_dir: str, central_config_file: str):
             print(f"  - ERRORE inatteso durante l'elaborazione di '{filename}': {e}")
 
     # --- SALVATAGGIO DEL FILE FINALE SINCRONIZZATO ---
-    save_central_config(central_config_file, central_config)
+    try:
+        with open(central_config_file, 'w', encoding='utf-8') as f:
+            json.dump(central_config, f, indent=4, ensure_ascii=False)
+        
+        print(f"\n✅ SINCRONIZZAZIONE COMPLETA E SALVATAGGIO ESEGUITI.")
+        print(f"Il file centrale è stato aggiornato: '{central_config_file}'")
+        
+    except Exception as e:
+        print(f"\nERRORE FATALE durante il salvataggio del file finale: {e}")
 
 if __name__ == "__main__":
-    # Esempio di utilizzo della funzione di sincronizzazione
     sync_config(INPUT_DIR, CENTRAL_CONFIG_FILE)
-    
-    # Esempio di utilizzo della nuova funzione di debug
-    print_expected_stub(lang="it", page_id="chiesapioggia", num_fragments=3)

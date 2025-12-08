@@ -63,7 +63,7 @@ def process_document(html_input: str, lang: str, page_id: str) -> Tuple[Dict[str
     print(f"Trovati {len(image_filenames)} nomi file immagine. Lista: {image_filenames}")
 
     if not image_filenames and '[SPLIT_BLOCK:' in html_input:
-        print("ATTENZIONE: Il marker [SPLIT_BLOCK] è presente, ma la REGEX non lo cattura (Controllare encoding/spazi non visibili).")
+        print("ATTENZIONE: Il marker [SPLIT_BLOCK] è presente, ma la REGEX non lo cattura [Controllare encoding/spazi non visibili].")
     print("-----------------------------\n")
 
     # 3. Sostituisce l'intero blocco sporco con un token di split pulito
