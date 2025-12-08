@@ -1,0 +1,40 @@
+goqrtp
+dir /s /b chiesapioggia.html
+dir C:\Users\User\Documents\GitHub\QuartierePorto\DOCS_DA_CONVERTIRE\chiesapioggia.*
+chiesapioggia.html
+DOCS_DA_CONVERTIRE\chiesapioggia.html
+DOCS_DA_CONVERTIRE\chiesapioggia.docx
+dir page*.json /s /b
+cp key_synchronization.py key_synchronization_v1.py
+dir "output_html_fragments"
+check_pagina.bat chiesapioggia
+page_config_chiesapioggia.json
+text_files\page_config_chiesapioggia.json
+manifattura.html
+data\translations\en\texts.json
+HTML_OUTPUT\it-chiesapioggia_maintext5.html
+dir /s /b *chiesapioggia*.html
+C:\Users\User\Documents\GitHub\QuartierePorto\DOCS_DA_CONVERTIRE\chiesapioggia.html
+del C:\Users\User\Documents\GitHub\QuartierePorto\HTML_OUTPUT\it-chiesapioggia_maintext5.html
+cat C:\Users\User\Documents\GitHub\QuartierePorto\chiesapioggia.html
+dir *sinc*
+dir *sinc* /s /b
+dir *.py
+trova key_synchronization.py 
+python key_synchronization.py
+data\translations\it\texts.json
+dir text_files\page_config_chiesapioggia.json
+dir convert_chiesapioggia.bat
+cat convert_chiesapioggia.bat
+trova CONVERT_STEP_SCRIPT
+check_pagina.bat chiesapioggia
+check_pagina.bat manifattura
+cat convert_step.bat
+dir DOCS_DA_CONVERTIRE\*manif*
+manifattura.docx
+DOCS_DA_CONVERTIRE\manifattura.docx
+convert_manifattura.bat
+check_pagina.bat manifattura
+page_config_it_manifattura.json
+text_files\page_config_it_manifattura.json
+esci

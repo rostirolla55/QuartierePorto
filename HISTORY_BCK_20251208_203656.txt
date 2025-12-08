@@ -1,0 +1,34 @@
+goqrtp
+dir
+check_pagina.bat manifattura
+dir DOCS_DA_CONVERTIRE\manifattura.docx
+convert_manifattura.bat
+check_pagina.bat manifattura
+cat page_config_manifattura.json
+cat text_files\page_config_manifattura.json
+DOCS_DA_CONVERTIRE\manifattura.docx
+it_manifattura_maintext1.html
+text_files\it_manifattura_maintext1.html
+convert_manifattura.bat
+text_files\page_config_manifattura.json
+check_pagina.bat manifattura
+dir /s /b *manifattura*.txt
+C:\Users\User\Documents\GitHub\QuartierePorto\text_files\it_manifattura_maintext.txt
+C:\Users\User\Documents\GitHub\QuartierePorto\text_files\it_manifattura_maintext1.txt
+C:\Users\User\Documents\GitHub\QuartierePorto\text_files\it_manifattura_maintext2.txt
+dir /s /b *manifattura*.html
+C:\Users\User\Documents\GitHub\QuartierePorto\OUTPUT_HTML\it_manifattura_mainText1.html
+C:\Users\User\Documents\GitHub\QuartierePorto\OUTPUT_HTML\it_manifattura_mainText2.html
+cd text_files\*manif*
+cd text_files
+dir *manif*
+mv *manif*.txt  C:\Users\User\Documents\salvataggi_github\20251112 
+dir
+dir *manif*
+cd ..
+trova page_config 
+python key_synchronization.py
+trova config_filename
+trova page_config
+trova key_synchronization.py
+esci

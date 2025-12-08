@@ -129,7 +129,8 @@ def process_document(html_input: str, lang: str, page_id: str) -> Tuple[Dict[str
 
     return fragments_html, json_data
 
-def save_results(fragments: Dict[str, str], data_json: Dict[str, str], page_id: str):
+# CORREZIONE 1: Aggiunta di 'lang' alla firma della funzione save_results
+def save_results(fragments: Dict[str, str], data_json: Dict[str, str], page_id: str, lang: str):
     """Salva i frammenti HTML e il file JSON di configurazione nella cartella di output."""
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -145,7 +146,8 @@ def save_results(fragments: Dict[str, str], data_json: Dict[str, str], page_id: 
             print(f"ERRORE nella scrittura del file {filepath}: {e}")
 
     # Salva il file JSON di configurazione della pagina
-    json_filename = f"page_config_{page_id.lower()}.json"
+    # CORREZIONE 2: Uso della variabile 'lang' definita localmente
+    json_filename = f"page_config_{lang}_{page_id}.json"
     json_filepath = os.path.join(OUTPUT_DIR, json_filename)
     try:
         with open(json_filepath, 'w', encoding='utf-8') as f:
@@ -188,4 +190,14 @@ if __name__ == "__main__":
         
     # --- ESECUZIONE ---
     fragments, config_data = process_document(raw_html_content, LANG, PAGE_ID)
-    save_results(fragments, config_data, PAGE_ID)
+    # CORREZIONE 3: Passaggio dell'argomento LANG
+    save_results(fragments, config_data, PAGE_ID, LANG)
+    
+    # --- PULIZIA DEL FILE TEMPORANEO ---
+    # Questa parte era mancante, ma è buona pratica rimuovere il file temporaneo
+    print(f"Pulizia del file temporaneo {TEMP_HTML_FILENAME} in {DOCX_DIR}...")
+    try:
+        os.remove(full_html_path)
+        print("Pulizia completata.")
+    except OSError as e:
+        print(f"ATTENZIONE: Impossibile eliminare il file temporaneo {full_html_path}: {e}")
