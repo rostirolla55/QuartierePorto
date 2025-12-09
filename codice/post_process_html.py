@@ -17,7 +17,6 @@ OUTPUT_DIR = "text_files"
 IMG_TAG_REGEX = re.compile(r'<img[^>]*?>', re.IGNORECASE | re.DOTALL)
 
 # Cattura il contenuto tra le parentesi quadre, es: [SPLIT_BLOCK:nomefile.jpg]
-# NOTA: Questo regex è usato solo per debug, non per lo split effettivo.
 SPLIT_BLOCK_CLEANING_REGEX = re.compile(
     # Cattura TUTTI i caratteri (anche tag HTML e whitespace)
     r'.*?(\[SPLIT_BLOCK:(.*?)\]).*?',
@@ -101,8 +100,7 @@ def process_document(html_input: str, lang: str, page_id: str) -> Tuple[Dict[str
         # 1. GESTIONE TESTO (mainTextX)
         main_text_key = f"mainText{fragment_index}"
         file_base_name = main_text_key.lower()
-        # Assicura che il nome del file includa la lingua
-        html_filepath = f"{lang}_{page_id_lower}_{file_base_name}.html" 
+        html_filepath = f"{lang}_{page_id_lower}_{file_base_name}.html"
 
         fragments_html[html_filepath] = cleaned_html
         json_data[main_text_key] = html_filepath
@@ -131,7 +129,7 @@ def process_document(html_input: str, lang: str, page_id: str) -> Tuple[Dict[str
 
     return fragments_html, json_data
 
-# Questa funzione include la logica di post_process_html_parte2_save_results.py
+# CORREZIONE 1: Aggiunta di 'lang' alla firma della funzione save_results
 def save_results(fragments: Dict[str, str], data_json: Dict[str, str], page_id: str, lang: str):
     """Salva i frammenti HTML e il file JSON di configurazione nella cartella di output."""
 
@@ -147,7 +145,8 @@ def save_results(fragments: Dict[str, str], data_json: Dict[str, str], page_id: 
         except Exception as e:
             print(f"ERRORE nella scrittura del file {filepath}: {e}")
 
-    # Salva il file JSON di configurazione della pagina (page_config_xx_pageID.json)
+    # Salva il file JSON di configurazione della pagina
+    # CORREZIONE 2: Uso della variabile 'lang' definita localmente
     json_filename = f"page_config_{lang}_{page_id}.json"
     json_filepath = os.path.join(OUTPUT_DIR, json_filename)
     try:
@@ -160,9 +159,8 @@ def save_results(fragments: Dict[str, str], data_json: Dict[str, str], page_id: 
         print(f"ERRORE nella scrittura del file JSON {json_filepath}: {e}")
 
 
-# Questa sezione include la logica di post_process_html_parte1.py e post_process_html_parte3_main_call.py
 if __name__ == "__main__":
-    # --- Gestione Argomenti da Linea di Comando ---
+    # CORREZIONE 1: Ora ci si aspetta 4 argomenti: [script] [page_id] [lang] [docx_dir]
     if len(sys.argv) != 4:
         print(f"ERRORE: Argomenti mancanti.")
         print(f"Utilizzo: python {sys.argv[0]} [page_id] [lang] [docx_dir]")
@@ -170,14 +168,13 @@ if __name__ == "__main__":
         sys.exit(1)
 
     PAGE_ID = sys.argv[1].lower()
-    LANG = sys.argv[2].lower() # Argumento lingua
-    DOCX_DIR = sys.argv[3] # Directory contenente il file temporaneo
-    
-    print(f"Inizio elaborazione per ID Pagina: {PAGE_ID}, Lingua: {LANG}")
+    LANG = sys.argv[2].lower()
+    DOCX_DIR = sys.argv[3] # L'argomento 3 è la directory
     
     # --- CARICAMENTO DEL CONTENUTO HTML GREZZO ---
     
     raw_html_content = ""
+    # CORREZIONE 2: Costruisci il percorso completo usando la directory passata come argomento
     full_html_path = os.path.join(DOCX_DIR, TEMP_HTML_FILENAME)
     
     try:
@@ -193,11 +190,11 @@ if __name__ == "__main__":
         
     # --- ESECUZIONE ---
     fragments, config_data = process_document(raw_html_content, LANG, PAGE_ID)
-    
-    # Chiamata alla funzione di salvataggio, passando la lingua
+    # CORREZIONE 3: Passaggio dell'argomento LANG
     save_results(fragments, config_data, PAGE_ID, LANG)
     
     # --- PULIZIA DEL FILE TEMPORANEO ---
+    # Questa parte era mancante, ma è buona pratica rimuovere il file temporaneo
     print(f"Pulizia del file temporaneo {TEMP_HTML_FILENAME} in {DOCX_DIR}...")
     try:
         os.remove(full_html_path)

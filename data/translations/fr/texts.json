@@ -232,7 +232,8 @@
         "sourceText": "",
         "creationDate": "2025-11-06",
         "lastUpdate": "2025-11-06",
-        "audioSource": "fr/manifattura.mp3"
+        "audioSource": "fr/manifattura.mp3",
+        "headImage": "public/images/panorama_bologna.jpg"
     },
     "pittoricarracci": {
         "pageTitle": "Les Peintres Carrache",
