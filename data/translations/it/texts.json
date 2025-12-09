@@ -9,6 +9,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta l'audio in italiano!",
         "pauseAudioButton": "Metti in pausa",
+        "headImage": "panorama_bologna.jpg",
         "imageSource1": "public/images/Panorama_Bologna.jpg",
         "imageSource2": "",
         "imageSource3": "",
@@ -155,8 +156,7 @@
         "sourceText": "Vaticano.com Santuari e Dintorni",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-30",
-        "audioSource": "Assets/Audio/it/Chiesa_Pioggia.mp3",
-        "headImage": "public/images/panorama_bologna.jpg"
+        "audioSource": "Assets/Audio/it/Chiesa_Pioggia.mp3"
     },
     "pioggia1": {
         "pageTitle": "Paesaggio con San Bartolomeo",
@@ -252,7 +252,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Pausa",
-        "headImage": "panorama_bologna.jpg"
+        "headImage": "panorama_bologna.jpg",
         "imageSource1": "pittoricarracci/grande_macelleria.jpg",
         "imageSource2": "pittoricarracci/piccola_macelleria.jpg",
         "imageSource3": "",
@@ -261,7 +261,7 @@
         "sourceText": "",
         "creationDate": "2025-11-26",
         "lastUpdate": "2025-11-26",
-        "audioSource": "fr/pittoricarracci.mp3",
+        "audioSource": "fr/pittoricarracci.mp3"
     },
     "cavaticcio": {
         "pageTitle": "centrale elettrica del Cavaticcio",
@@ -273,7 +273,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta con le cuffie",
         "pauseAudioButton": "Pausa",
-        "headImage": "panorama_bologna.jpg"
+        "headImage": "panorama_bologna.jpg",
         "imageSource1": "",
         "imageSource2": "",
         "imageSource3": "",
