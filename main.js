@@ -344,9 +344,9 @@ async function loadContent(lang) {
         updateHTMLContent('headerTitle', pageData.pageTitle);
 
         // AGGIORNAMENTO IMMAGINE DI FONDO TESTATA
-        const headerImage = document.getElementById('pageImage1');
+        const headerImage = document.getElementById('headImage');
         if (headerImage && pageData.imageSource1) {
-            headerImage.src = `Assets/images/${pageData.imageSource1}`; // CORRETTO
+            headerImage.src = `public/images/${pageData.headImage}`; // CORRETTO
             headerImage.alt = pageData.pageTitle || "Immagine di testata";
         }
 
@@ -391,8 +391,8 @@ async function loadContent(lang) {
             currentPlayButton.style.display = 'none';
         }
 
-        // AGGIORNAMENTO IMMAGINI DINAMICHE (dalla 2 alla 5)
-        for (let i = 2; i <= 5; i++) {
+        // AGGIORNAMENTO IMMAGINI DINAMICHE (dalla 1 alla 5)
+        for (let i = 1; i <= 5; i++) {
             const imageElement = document.getElementById(`pageImage${i}`);
             const imageSource = pageData[`imageSource${i}`]; // Nome file (es. 'manifattura0.jpg')
 
