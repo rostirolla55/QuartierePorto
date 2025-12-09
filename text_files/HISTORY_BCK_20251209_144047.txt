@@ -1,0 +1,50 @@
+gogit
+dir /s /b main*.js
+dir /s /b *main*.js
+trova it_manifattura_mainText1.html
+goqrtp
+trova it_manifattura_mainText1.html
+trova it_chiesepioggia_mainText1.html
+trova it_chiesapioggia_mainText1.html
+dir /s /b *chiesapioggia*
+trova maintext1
+dir /s /b it_manifattura_maintext1.html
+cp main.js codice\main_nohtml.js
+dir *.bat
+cat convert_manifattura.bat
+cp convert_manifattura.bat convert_manifattura_20251209_1300.bat
+convert_manifattura.bat
+cls
+convert_manifattura.bat
+check_pagina.bat manifattura
+convert_manifattura.bat
+cls
+convert_manifattura.bat
+cp convert_manifattura.bat convert_manifattura_20251209_1400.bat
+cd DOCS_DA_CONVERTIRE
+dir *.docx
+dir *.docx | findstr /v -
+dir *.docx | findstr /v \-
+mv manifattura.docx manifattura_it.docx
+mv pioggia3.docx pioggia3_it.docx
+mv chiesapioggia.docx chiesapioggia_it.docx
+cd ..
+dir /od *.bat
+cp convert_manifattura.bat convert_pioggia3.bat
+cp convert_manifattura.bat convert_chiesapioggia.bat
+npa convert_manifattura.bat
+convert_manifattura.bat it
+cls
+convert_manifattura.bat it
+cd DOCS_DA_CONVERTIRE
+dir *manif*
+cd ..
+convert_manifattura.bat fr
+convert_manifattura.bat es
+convert_manifattura.bat en
+dir /od text_files
+dir page_config_*_manifattura.json
+cd text_files
+dir page_config_*_manifattura.json
+dir page_config_*_*.json
+esci
