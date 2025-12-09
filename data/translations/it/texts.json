@@ -1,7 +1,7 @@
 {
     "home": {
         "pageTitle": "Benvenuti al quartiere Porto",
-        "mainText": "",
+        "mainText": "<p>Benvenuto sul sito che parla di Bologna. <br /> Vi accompagno con l'audio e per maggiori dettagli potete leggere il testo e le immagini nella pagina. <br /> Vi porto indietro nel tempo basandomi sul luogo dove vi fermate. <br /> Se sul posto trovate un QR-code potete accedere ad una pagina direttamente. <br /> In assenza del QR-code attivando il GPS del vostro smartphone, in alto a destra trovate un bottone rettangolare verde che vi presenter&agrave; la lista dei posti nelle vicinanze che sono di interesse. <br /> Selezionando una voce della lista vi si aprir&agrave; la pagina corrispondente a quel luogo. In alto a sinistra ci sono tre lineette orizzontali che vi d&agrave; la lista completa dei luoghi che sono documentati nel sito.</p>",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -9,7 +9,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta l'audio in italiano!",
         "pauseAudioButton": "Metti in pausa",
-        "imageSource1": "index/panorama_bologna.jpg",
+        "imageSource1": "public/images/Panorama_Bologna.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -17,7 +17,7 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "it/home_bologna.mp3"
+        "audioSource": "Assets/Audio/it/Home_Bologna.mp3"
     },
     "nav": {
         "navHome": "Benvenuto",
@@ -30,13 +30,11 @@
         "navPioggia2": "Scultura San Bartolomeo",
         "navPioggia3": "Opera di Agostino Carracci",
         "navGraziaxx": "Lapide votiva Grazia",
-        "navManifattura": "Ex Manifattura Tabacchi",
-        "navpittoricarracci": "I pittori Carracci a Bologna",
-        "navcavaticcio": "Centrale idroelettrica del Cavaticcio"
+        "navManifattura": "Ex Manifattura Tabacchi"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
-        "mainText": "",
+        "mainText": "Esisteva una via a Bologna che si chiamava <b>Pugliole di San Bernardino</b>.Questa strada è scomparsa a seguito degli interventi urbanistici degli anni '30 del XX secolo che portarono alla creazione di via Guglielmo Marconi (allora via Roma).",
         "mainText1": "Le \"Pugliole di San Bernardino\" prendevano il nome dal Monastero o Convento di San Bernardino che si trovava nell'area dell'attuale Piazza dei Martiri 1943-1945.La via si diramava da Borgo Polese (l'attuale via Polese) e si snodava fino a via del Porto, seguendo in parte l'attuale percorso di via Marconi.",
         "mainText2": "Il termine \"Pugliola\" (o, al plurale, \"Pugliole\") è un termine antico della toponomastica bolognese.Si riferisce a un vicolo, una stradina o un piccolo gruppo di case.In genere, indicava una via di ridotte dimensioni o un'area residenziale secondaria, spesso derivante da un'antica suddivisione del tessuto urbano.",
         "mainText3": "Molte strade e vicoli a Bologna, come \"Pugliole di San Bernardino\" o \"Pugliole dello Spirito Santo,\" prendevano il nome da chiese o monasteri che si trovavano in prossimità, unendo il nome dell'istituzione religiosa al termine \"pugliola\" per indicare il vicolo adiacente.",
@@ -44,7 +42,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Metti in pausa",
-        "imageSource1": "pugliole/viapolese.jpg",
+        "imageSource1": "public/images/viaPolese.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -52,11 +50,11 @@
         "sourceText": "Settore Musei Civici Bologna | Area Storia e Memoria",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "it/pugliole.mp3"
+        "audioSource": "Assets/Audio/it/Pugliole.mp3"
     },
     "graziaxx": {
         "pageTitle": "La lapide della grazia",
-        "mainText": "",
+        "mainText": "<p>La peste che colpì Bologna nel 1630 fu un evento drammatico, parte della più vasta epidemia che devastò il Nord Italia, nota anche come la peste manzoniana.</p> <p>Ecco i punti principali:</p> <p><b>Diffusione</b>: L'epidemia fu portata a Bologna nel maggio del 1630 dai soldati lanzichenecchi, giunti per l'assedio di Mantova nell'ambito della Guerra di successione di Mantova.<br>Nonostante gli sforzi del cardinale legato Bernardino Spada e del Senato bolognese per tenere il contagio fuori dalle mura, il morbo si diffuse.</p> <p><b>Vittime</b>: Fu un evento catastrofico per la demografia cittadina. In città si registrarono 13.398 vittime tra maggio e dicembre 1630, su una popolazione di circa 61.559 abitanti del centro urbano. <br>Nel contado le vittime furono circa 16.300. In totale, si stima che Bologna e il suo contado persero circa 40.000 persone.</p> <p><b>Gestione dell'emergenza</b>: La lotta contro l'epidemia fu diretta dal cardinale Bernardino Spada, che si avvalse dell'opera dei religiosi Camilliani per l'assistenza agli appestati. <<br> Furono allestiti dei lazzaretti fuori porta Santo Stefano e a Castelfranco.</p> <p><b>Conseguenze</b>: La città, già provata dalle carestie di inizio secolo, perse quasi la metà della sua popolazione cittadina. L'epidemia portò a gravi conseguenze sociali.</p> <p><b>Arte e Memoria</b>: A ricordo e ringraziamento per la fine del flagello, fu commissionata la famosa Pala della peste (o \"Pala della Vergine e i Santi protettori di Bologna che intercedono per la città\") a Guido Reni nel 1630. Fu realizzato anche un prezioso Baldacchino votivo.</p>",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -64,19 +62,19 @@
         "mainText5": "<h3>Fonti Primarie (Originali dell'epoca):</h3> <ol start=\"1\"> <li> <p><strong>Documentazione Ufficiale e Amministrativa:</strong></p> <ul> <li> <p><strong>Bandi e Decretazioni dell'Assunteria di Sanit&agrave; e del Senato bolognese</strong> (a partire dal 1628, per la gestione del contagio, i provvedimenti adottati e l'organizzazione dei servizi). Gran parte di questi documenti si trova conservata presso l'<strong>Archivio di Stato di Bologna</strong>.</p> </li> <li> <p><strong>Registri dei Morti e delle Sepolture</strong> (per i dati sulle vittime, i picchi di mortalit&agrave; e le fosse comuni).</p> </li> <li> <p><strong>Rendiconti di Spesa</strong> (per le somme destinate ai poveri, alla polizia medica, all'espurgazione delle case e alla gestione dei lazzaretti).</p> </li> <li> <p><strong>Cronache coeve e resoconti ufficiali</strong> (ad esempio, il resoconto di <strong>Pietro Moratti</strong> &ndash; <em>Racconto degli ordini e provisioni fatte ne' Lazaretti in Bologna e suo Contado in tempo del contagio dell'Anno 1630</em>).</p> </li> </ul> </li> <li> <p><strong>Testimonianze Artistiche e Votive:</strong></p> <ul> <li> <p><strong>La Pala della peste di Guido Reni</strong> (1630): testimonianza diretta del voto civico e della devozione religiosa.</p> </li> <li> <p><strong>Il Baldacchino votivo del 1634</strong> (utilizzato nelle processioni di ringraziamento).</p> </li> <li> <p><strong>Dipinti e Ex-Voto</strong> (come il dipinto anonimo bolognese sulla peste in Via San Mamolo, spesso citato nelle fonti secondarie).</p> </li> </ul> </li> </ol> <h3>Fonti Secondarie (Studi storici successivi):</h3> <ol start=\"1\"> <li> <p><strong>Studi Storiografici specifici su Bologna e la peste del 1630:</strong></p> <ul> <li> <p>Studi di demografia storica che hanno elaborato i dati sui morti e la popolazione (es. <strong>Marco Poli</strong>, autore di studi sulle epidemie a Bologna, o studi demografici pi&ugrave; datati come quelli di <strong>P.L. Da Gatteo</strong> e <strong>A. Brighetti</strong>).</p> </li> <li> <p>Monografie e saggi che ricostruiscono la diffusione, la gestione sanitaria (il ruolo del Cardinale <strong>Bernardino Spada</strong> e dei <strong>Camilliani</strong>) e le conseguenze sociali dell'epidemia.</p> </li> </ul> </li> <li> <p><strong>Contesto Storico Generale:</strong></p> <ul> <li> <p>Le fonti che trattano la <strong>Guerra di Successione di Mantova</strong> e il passaggio dei <strong>Lanzichenecchi</strong>, responsabili della diffusione del contagio in tutta l'Italia settentrionale (come menzionato anche ne <em>I Promessi Sposi</em> di Alessandro Manzoni, che pur non essendo una fonte storica primaria per Bologna, testimonia il contesto generale dell'epidemia del 1630 nel Nord Italia)</p> </li> </ul> </li> </ol>",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Metti in pausa",
-        "imageSource1": "graziaxx/panorama_bologna.jpg",
-        "imageSource2": "graziaxx/lapidemariana.jpg",
+        "imageSource1": "public/images/Panorama_Bologna.jpg",
+        "imageSource2": "public/images/lapideMariana.jpg",
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "'Archivio di Stato di Bologna.",
         "creationDate": "23-10-2025",
         "lastUpdate": "23-10-2025",
-        "audioSource": "it/graziaxx.mp3"
+        "audioSource": "Assets/Audio/it/lapideMariana.mp3"
     },
     "lastre": {
         "pageTitle": "Le Lastre e i Numeri",
-        "mainText": "",
+        "mainText": "A Bologna, trovi in diverse vie del centro storico delle lastre di arenaria che, non sono solo decorazione, ma hanno un significato storico molto interessante. Si tratta dei numeri civici più antichi della città. Furono introdotti alla fine del Settecento, quando Bologna era sotto il dominio napoleonico, per organizzare meglio il servizio postale e la gestione della città.",
         "mainText1": "Prima di allora, le abitazioni non avevano un numero e ci si orientava a volte con la descrizione della facciata o la famiglia che ci viveva.La mattonella in pietre arenarie, che trovi ancora oggi, sono una testimonianza di questo cambiamento.Molte di quelle che vedi sono in terracotta e sono state realizzate nel corso dei secoli, a volte sostituendo quelle originali. Mentre le mattonelle in terracotta erano più facili da produrre in serie, l'incisione sulla pietra era un lavoro artigianale che dimostra l'importanza e la durabilità che si voleva dare a questi segnali urbani.",
         "mainText2": "",
         "mainText3": "",
@@ -84,19 +82,19 @@
         "mainText5": "In corrispondenza del civico 11 di via Tanari Vecchia troviamo la targhetta di arenaria riportante il numero 1202 (numero pari) mentre il civico attuale è 11 (numero dispari) essendo a destra nel verso di percorrenza dei numeri crescenti, come previsto dall'attuale norma della toponomastica.",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Metti in pausa",
-        "imageSource1": "lastre/panorama_bologna.jpg",
-        "imageSource2": "lastre/foto_targa_t_1202.jpg",
+        "imageSource1": "public/images/foto_targa_T_1202.jpg",
+        "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "it/lastre.mp3"
+        "audioSource": "Assets/Audio/it/Lastre.mp3"
     },
     "carracci": {
         "pageTitle": "Casa di Ludivico Carracci",
-        "mainText": "",
+        "mainText": "<p>I risultati della ricerca indicano che l'indirizzo <strong>Via San Carlo, 19 a Bologna</strong> &egrave; associato a una propriet&agrave; chiamata <strong>\"Casa Carracci\"</strong> o \"San Carlo Holiday House\" che attualmente viene affittata come appartamento vacanze.</p> <p>Alcune fonti menzionano che l'edificio, un antico palazzo del '700 o dell'800 denominato \"Casa Carracci\" e tutelato dalla Soprintendenza dei Beni Culturali, &egrave; ritenuto il luogo dove <strong>Ludovico Carracci</strong> visse dal 1555 al 1609 e dove fu uno dei laboratori dei cugini Carracci, fondatori dell'<strong>Accademia degli Incamminati</strong>.</p> <p>&Egrave; importante notare che, storicamente, la casa dei Carracci (in riferimento anche ad Agostino e Annibale) &egrave; spesso associata anche a <strong>Via Rolandino, 1</strong> (la cosiddetta \"Casa Ber&ograve; Gradi\" o \"Casa Ber&ograve; detta dei Carracci\"), che sub&igrave; restauri nel XIX secolo.</p> <p>In sintesi, l'immobile di <strong>Via San Carlo, 19</strong> &egrave; promosso come un appartamento vacanze sito in quello che viene identificato come il palazzo dove visse e lavor&ograve; il pittore Ludovico Carracci.</p>",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -104,7 +102,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Metti in pausa",
-        "imageSource1": "carracci/panorama_bologna.jpg",
+        "imageSource1": "public/images/Casa_Carracci.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -112,18 +110,18 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "it/carracci.mp3"
+        "audioSource": "Assets/Audio/it/Carracci.mp3"
     },
     "chiesasbene": {
         "pageTitle": "Chiesa di San Benedetto",
-        "mainText": "",
+        "mainText": "<p>La Chiesa di San Benedetto a Bologna, situata in Via Indipendenza, ha una storia lunga e complessa:</p> <ul> <li><strong>Origini:</strong> Le sue origini risalgono al <strong>XIII secolo</strong> (alcuni documenti la citano gi&agrave; nel 1202 come parrocchia). Inizialmente si trovava appena fuori dalla seconda cerchia muraria di Bologna.</li> <li><strong>Ricostruzione Seicentesca:</strong> Fu <strong>completamente riedificata nel 1606</strong> su progetto di <strong>Giovanni Battista Ballerini</strong>. In quel periodo era officiata dai Frati Minimi di San Francesco di Paola (detti \"paolotti\"), a cui era stata assegnata nel 1529.</li> <li><strong>Orientamento Originale:</strong> Fino alla fine dell'Ottocento, la chiesa si affacciava su <strong>Via Galliera</strong>, dove ancora oggi &egrave; visibile l'antica facciata (in seguito rifatta nel 1932) affiancata dal campanile.</li> <li><strong>L'apertura di Via Indipendenza:</strong> La grande trasformazione avvenne nel <strong>1892</strong> con l'apertura della nuova <strong>Via dell'Indipendenza</strong>. Per adeguarsi al nuovo tracciato e alla nuova strada, l'orientamento della chiesa fu <strong>invertito</strong>: l'abside divenne la nuova facciata, la quale fu rifatta con l'aggiunta di un portico.</li> <li><strong>Interno:</strong> Nonostante le trasformazioni esterne, l'interno conserva opere importanti di artisti protagonisti del manierismo e del barocco bolognese, tra cui dipinti di <strong>Giacomo Cavedoni</strong>, <strong>Alessandro Tiarini</strong> e <strong>Lucio Massari</strong>.</li> </ul> <p>In sintesi, l'aspetto attuale della chiesa &egrave; il risultato della ricostruzione seicentesca e del radicale riorientamento di fine Ottocento, quando fu \"girata\" per affacciarsi sulla moderna Via Indipendenza.</p>",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
         "mainText5": "<h2>Fonti Storiche per la Chiesa di San Benedetto</h2> <p>&nbsp;</p> <ol start=\"1\"> <li> <p><strong>Fonti di Toponomastica e Storia Urbana di Bologna:</strong></p> <ul> <li> <p><strong>Archivi e Studi sulla Storia di Via Indipendenza:</strong> Questi documenti (spesso legati all'Archivio di Stato o alla Biblioteca dell'Archiginnasio) sono cruciali per datare con precisione la grande trasformazione del <strong>1892</strong>, l'anno in cui la chiesa fu <strong>\"girata\"</strong> e la facciata riorientata per affacciarsi sulla neonata Via Indipendenza.</p> </li> <li> <p><strong>Studi sulle Chiese Bolognesi:</strong> Testi accademici e monografie che ne attestano le <strong>origini nel XIII secolo</strong> e la successiva <strong>ricostruzione seicentesca</strong> (datata <strong>1606</strong>), specificando il ruolo dell'architetto <strong>Giovanni Battista Ballerini</strong>.</p> </li> </ul> </li> <li> <p><strong>Fonti di Storia dell'Arte e Architettura Bolognese:</strong></p> <ul> <li> <p><strong>Guide e Cataloghi d'Arte:</strong> Per l'elenco delle opere interne e degli artisti. Queste fonti confermano la presenza di dipinti di maestri del barocco e del manierismo, come <strong>Giacomo Cavedoni</strong>, <strong>Alessandro Tiarini</strong> e <strong>Lucio Massari</strong>.</p> </li> <li> <p><strong>Testi sui Complessi Religiosi:</strong> Per identificare l'Ordine che la gestiva, ovvero i <strong>Frati Minimi di San Francesco di Paola</strong> (i \"Paolotti\").</p> </li> </ul> </li> <li> <p><strong>Siti Istituzionali e Portali Culturali (Web):</strong></p> <ul> <li> <p><strong>Portali Ufficiali di Turismo e Cultura del Comune di Bologna (es. <em>Bologna Welcome</em> o <em>Storia e Memoria di Bologna</em>):</strong> Questi siti riassumono e validano i dati storici chiave (XIII secolo, ricostruzione seicentesca, riorientamento di fine Ottocento) per la fruizione pubblica.</p> </li> </ul> </li> </ol> <p>In sintesi, le informazioni derivano dalla concordanza di dati presenti in archivi storici, studi di storia dell'arte e fonti istituzionali che tracciano l'evoluzione di questo importante luogo di culto bolognese.</p>",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Metti in pausa",
-        "imageSource1": "chiesasbene/panorama_bologna.jpg",
+        "imageSource1": "public/images/Panorama_Bologna.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -131,19 +129,19 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "audioSource": "it/chiesasbene.mp3"
+        "audioSource": "Assets/Audio/it/Chiesa_San_Benedetto.mp3"
     },
     "chiesapioggia": {
         "pageTitle": "Chiesa della Pioggia",
-        "mainText": "",
-        "mainText1": "<p>Storia:</p> <p><br /><br /></p> <p>La Chiesa in origine dedicata a San Bartolomeo, ospita un dipinto raffigurante la Madonna col Bambino, l&rsquo;opera &egrave; stata attribuita al pittore bolognese del &lsquo;400 Michele di Matteo. La tavola viene considerata miracolosa sin dal suo rinvenimento, infatti, venne ritrovata completamente integra, sotto le macerie di un edificio distrutto dalle fiamme. Altri prodigi si attribuiscono alla tavola, come la restituzione della vista ad un cieco e l&rsquo;aiuto offerto ai Bolognesi durante un lungo periodo di siccit&agrave; avvenuto nel Cinquecento (da qui la dedica alla Madonna della Pioggia).</p> <p><br /><br /></p> <p>Santuario:</p> <p><br /><br /></p> <p>Inizialmente (1449) l&rsquo;immagine miracolosa venne collocata al primo piano dell&rsquo;oratorio. Qualche secolo dopo (1732) la Chiesa venne ricostruita e la tavola venne collocata nella nicchia sopra l&rsquo;altare, lo stesso anno venne celebrata la processione e venne presenziata dal Cardinale Lambertini, futuro Papa Benedetto XIV.</p> <p><br /><br /></p> <p>La facciata dell&rsquo;edificio &egrave; un alto portico colonnato. L&rsquo;interno &egrave; a navata singola coperta da una volta a botte decorata con affreschi, e con quattro cappelle di modeste dimensioni ai lati. Le decorazioni che adornano sia le cappelle che l&rsquo;altare maggiore, sono figlie dei restauri del 1929-31.</p> <p><br /><br /></p> <p>Nella prima cappella a sinistra &egrave; conservato il dipinto dal pittore e incisore bolognese Agostino Carracci, rappresentante l&rsquo;Adorazione dei Pastori, purtroppo l&rsquo;opera &egrave; stata danneggiata da un incendio divampato durante la Seconda Guerra Mondiale. Nella cappella opposta, si trova il dipinto cinquecentesco attribuito a Lorenzo Sabbatini raffigurante la Madonna col Bambino in trono, fra le Sante Caterina e Lucia.</p> <p><br /><br /></p> <p>Nel Santuario viene anche conservata la veste da infermiere appartenuta a San Camillo de Lellis, che nel 1575, fond&ograve; l&rsquo;ordine dei Camilliani. A sinistra rispetto all&rsquo;altare maggiore &egrave; posta la Statua di origine duecentesca rappresentante la Madonna della Provvidenza, conosciuta anche come Madonna del Serraglio.</p>",
+        "mainText": "<p>Il <strong>Santuario della Madonna della Pioggia</strong>, il cui nome completo &egrave; <strong>Chiesa di Santa Maria della Pioggia e di San Bartolomeo di Reno</strong> si trova all'incrocio tra <strong>via Galliera</strong> e <strong>via Riva di Reno</strong> a Bologna.</p> <p>Ecco alcune informazioni principali:</p> <ul> <li><strong>Origine:</strong> In origine era nota come <strong>Chiesa di San Bartolomeo di Reno</strong> e risale al XIII secolo come Oratorio.</li> <li><strong>Nome:</strong> L'appellativo di \"Madonna della Pioggia\" deriva da un evento del 1561, quando una processione con la statua della Madonna fu associata alla fine di una grave siccit&agrave; che aveva colpito Bologna, portando piogge benefiche. A seguito di questo evento miracoloso ottenne la doppia dedicazione al Santo e alla Madonna.</li> <li><strong>Struttura e Opere:</strong> La chiesa, che ha subito diversi interventi nel corso dei secoli, presenta una facciata preceduta da un portico con tre arcate. Custodisce opere d'arte di artisti come Agostino Carracci, Francesco Monti, Ludovico Mattioli (il suo affresco <em>Paesaggio con San Bartolomeo</em> si trova sulla scalinata settecentesca che porta all'oratorio) e una scultura in terracotta di Alfonso Lombardi (<em>San Bartolomeo</em>).</li> <li><strong>Interni:</strong> L'interno &egrave; a navata unica con tre cappelle laterali e presenta una volta a botte affrescata.</li> <li><strong>Statua:</strong> Conserva la statua duecentesca della <strong>Madonna della Provvidenza</strong> (detta anche Madonna della Pioggia), collocata alla sinistra dell'altare maggiore e donata nel 1435 dal Senato bolognese.<br /><br /></li> </ul>",
+        "mainText1": "it_chiesapioggia_maintext1.html",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
-        "mainText5": "<p>Le fonti pubbliche e istituzionali sulla storia e i luoghi di culto di Bologna:</p> <ul> <li><strong>Siti Ufficiali di Turismo e Cultura:</strong> come <em>Bologna Welcome</em> e <em>BolognaBO</em>, che forniscono dettagli su posizione, orari e storia della chiesa.</li> <li><strong>Enciclopedie e Archivi Storici Online:</strong> come <em>Wikipedia</em> e <em>Bologna Online/Biblioteca Salaborsa</em>, che offrono approfondimenti sulle origini duecentesche, la ricostruzione, il miracolo della pioggia del 1561 che diede il nome al Santuario, e l'elenco delle opere d'arte custodite (come quelle di Agostino Carracci, Francesco Monti, Ludovico Mattioli e Alfonso Lombardi).</li> <li><strong>Guide e Portali d'Arte:</strong> che confermano i nomi completi (Santuario della Madonna della Pioggia, Chiesa di Santa Maria della Pioggia e di San Bartolomeo di Reno) e le opere d'arte pi&ugrave; importanti.</li> </ul> <p>Queste fonti concordano sulle informazioni chiave relative all'ubicazione (all'incrocio tra via Galliera e via Riva di Reno), al nome originale (San Bartolomeo di Reno) e alla doppia dedicazione successiva al miracolo della pioggia.</p>",
+        "mainText5": "",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Metti in pausa",
-        "imageSource1": "chiesapioggia/chiesapioggia.jpg",
+        "imageSource1": "",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -151,7 +149,7 @@
         "sourceText": "Vaticano.com Santuari e Dintorni",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-30",
-        "audioSource": "it/chiesapioggia.mp3"
+        "audioSource": "Assets/Audio/it/Chiesa_Pioggia.mp3"
     },
     "pioggia1": {
         "pageTitle": "Paesaggio con San Bartolomeo",
@@ -163,7 +161,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta con le cuffie",
         "pauseAudioButton": "Metti in pausa",
-        "imageSource1": "pioggia1/chiesapioggia.jpg",
+        "imageSource1": "public/images/ChiesaPioggia.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -171,11 +169,11 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-26",
-        "audioSource": "it/pioggia1.mp3"
+        "audioSource": "Assets/Audio/it/Chiesa_Pioggia.mp3"
     },
     "pioggia2": {
         "pageTitle": "Scultura San Bartolomeo",
-        "mainText": "",
+        "mainText": "dello scultore Alfonso Lombardi",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -183,7 +181,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta con le cuffie",
         "pauseAudioButton": "Metti in pausa",
-        "imageSource1": "pioggia2/chiesapioggia.jpg",
+        "imageSource1": "public/images/ChiesaPioggia.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -191,33 +189,33 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-26",
-        "audioSource": "it/pioggia2.mp3"
+        "audioSource": "Assets/Audio/it/Chiesa_Pioggia.mp3"
     },
     "pioggia3": {
         "pageTitle": "Adorazione dei pastori",
-        "mainText": "",
-        "mainText1": "",
-        "mainText2": "",
+        "mainText": " L'autore è Agostino Carracci",
+        "mainText1": "it_pioggia3_maintext1.html",
+        "mainText2": "it_pioggia3_maintext2.html",
         "mainText3": "",
         "mainText4": "",
         "mainText5": "",
         "playAudioButton": "Ascolta con le cuffie",
         "pauseAudioButton": "Metti in pausa",
-        "imageSource1": "pioggia3/chiesapioggia.jpg",
-        "imageSource2": "pioggia3/pioggia3.jpg",
+        "imageSource1": "pioggia3/AdorazionePastori.jpg",
+        "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-26",
-        "audioSource": "it/pioggia3.mp3"
+        "audioSource": "Assets/Audio/it/Chiesa_Pioggia.mp3"
     },
     "manifattura": {
-        "pageTitle": "Ex Manifattura Tabacchi",
+        "pageTitle": "Ex manifattura Tabacchi",
         "mainText": "",
-        "mainText1": "it_manifattura_mainText1.html",
-        "mainText2": "it_manifattura_mainText2.html",
+        "mainText1": "it_manifattura_maintext1.html",
+        "mainText2": "it_manifattura_maintext2.html",
         "mainText3": "",
         "mainText4": "",
         "mainText5": "",
@@ -231,14 +229,14 @@
         "sourceText": "",
         "creationDate": "2025-11-06",
         "lastUpdate": "2025-11-06",
-        "audioSource": "it/manifattura.mp3"
+        "audioSource": "fr/manifattura.mp3"
     },
     "pittoricarracci": {
-        "pageTitle": "I pittori Carracci a Bologna",
+        "pageTitle": "I pittori Carracci",
         "mainText": "",
         "mainText1": "",
-        "mainText2": "<p>🖼️ <strong>La \"Piccola Macelleria\"</strong></p> <p><strong>Autore:</strong> Annibale Carracci</p> <p><strong>Periodo:</strong> 1582 circa</p> <p><strong>Dimensioni:</strong> Le più piccole (circa 77 x 89 cm)</p> <p><strong>Dove si trova:</strong> Kimbell Art Museum, Fort Worth, Texas (Stati Uniti)</p>",
-        "mainText3": "<p>Entrambe le opere sono considerate esempi fondamentali della pittura di genere (scene di vita quotidiana) nell'arte italiana del tardo Cinquecento.</p> <p><strong>I Carracci: I Padri del Barocco a Bologna</strong></p> <p>​I Carracci sono stati una famiglia di artisti bolognesi composta da tre figure centrali: <strong>Ludovico Carracci</strong> (1555-1619), suo cugino <strong>Agostino Carracci</strong> (1557-1602), e il fratello di Agostino, <strong>Annibale Carracci</strong> (1560-1609).</p> <p>​La loro opera e la loro filosofia artistica sono considerate il fondamento della pittura Barocca, in quanto proposero una \"riforma\" stilistica che superò l'artificiosità del Manierismo per ritornare a un naturalismo vigoroso e a una ripresa dei grandi modelli classici rinascimentali (come Raffaello e Tiziano).</p> <p><strong>​</strong><strong>1. La Fondazione dell'Accademia degli Incamminati</strong></p> <p>​Il contributo più rivoluzionario dei Carracci fu la fondazione a Bologna, intorno al 1582, di una scuola privata che prese il nome di <strong>Accademia dei Desiderosi</strong>, poi ribattezzata <strong>Accademia degli Incamminati</strong> (cioè, \"coloro che sono sulla giusta via dell'arte\").</p> <p>​Questa accademia è considerata la prima istituzione d'arte moderna in Italia per diversi motivi:</p> <p>​<strong>Studio del Vero:</strong> Incoraggiava lo studio diretto della natura e del corpo umano (il \"Disegno dal vero\"), rompendo con la pratica manierista di copiare solo i modelli dei maestri precedenti.</p> <p>​<strong>Formazione Completa:</strong> Oltre al disegno e alla pittura, l'Accademia offriva lezioni di anatomia, geometria, prospettiva e letteratura, elevando l'artista dalla figura di mero artigiano a intellettuale completo.</p> <p>​<strong>Sintesi Stilistica:</strong> I Carracci insegnavano a combinare il <strong>Disegno</strong> rigoroso della tradizione tosco-romana (Michelangelo, Raffaello) con il <strong>Colore</strong> e l'uso della luce propri della scuola veneta (Tiziano, Correggio).</p> <p><strong>​</strong><strong>2. Le Opere Principali</strong></p> <p>​I tre Carracci lavorarono a stretto contatto per molti anni, rendendo spesso difficile distinguere le mani individuali nei cicli di affreschi giovanili a Bologna:</p> <p><strong>​</strong><strong>Periodo Bolognese (Collaborazione)</strong></p> <p>​<strong>Palazzo Fava, Bologna</strong> (1584): Affreschi con le <em>Storie di Giasone e Medea</em> e le <em>Storie di Enea</em>.</p> <p>​<strong>Palazzo Magnani, Bologna</strong> (1589-1592): Il celebre fregio raffigurante la <em>Fondazione di Roma</em>, un capolavoro di chiarezza narrativa.</p> <p><strong>​</strong><strong>La Maturità a Roma (Annibale)</strong></p> <p>​Nel 1595, Annibale e Agostino furono chiamati a Roma dal Cardinale Odoardo Farnese. Annibale in particolare produsse l'opera che sarebbe diventata il manifesto del classicismo barocco:</p> <p>​<strong>Galleria Farnese, Roma</strong> (1597-1601): Gli affreschi raffiguranti <em>Gli amori degli Dei</em>. Questo ciclo è considerato un'opera maestra dell'affresco monumentale e fu un punto di riferimento per intere generazioni di artisti successivi, tra cui Lanfranco e Pietro da Cortona.</p> <p><strong>​</strong><strong>3. I Tre Artisti</strong></p> <p>​<strong>Annibale Carracci (1560-1609):</strong> Il più dotato e innovatore del trio. Eccelse sia negli affreschi mitologici di grande formato (come a Palazzo Farnese) sia nella pittura di genere (come <em>Il Mangiafagioli</em>), mostrando un realismo e una sensibilità verso la vita quotidiana che anticiparono il lavoro di Caravaggio. È sepolto nel Pantheon accanto a Raffaello.</p> <p>​<strong>Ludovico Carracci (1555-1619):</strong> Il più anziano e il leader intellettuale e teorico del gruppo. Rimase prevalentemente a Bologna, concentrandosi soprattutto su opere religiose della Controriforma, caratterizzate da profonda devozione e intensità emotiva.</p> <p>​<strong>Agostino Carracci (1557-1602):</strong> Un artista versatile, noto anche come incisore e teorico. Collaborò attivamente con il fratello e il cugino, contribuendo in modo significativo alle decorazioni bolognesi e romane.</p> <p>Questa casa già nel 1563 era di proprietà di Giovanni Maria Carracci che, proveniente da Cremona, aveva aperto a Bologna una bottega da <em><strong>beccaro</strong></em>.</p> <p>Il Carracci fu il capostipite dell'omonima famiglia dalla quale derivarono le due generazioni di pittori, che per oltre mezzo secolo avrebbero abitato e aperto bottega proprio in questo stabile.</p> <p>Il legame affettivo che i Carracci ebbero per questa loro casa è dimostrato dal fatto che, anche quando la celebrità li portò a lavorare altrove, questo luogo rimase un riferimento al quale fare sempre ritorno.</p> <p>Il 14 dicembre 1619, in questo palazzo dove era nato e che apparteneva ancora a Paolo Carracci, figlio di Vincenzo, anche lui noto come pittore, morì Ludovico, l'artista più celebre della famiglia le cui spoglie furono poi inumate nella chiesa di S. Maria Maggiore di Galliera</p> <p>La fabbrica, nei secoli, subì pesanti rimaneggiamenti e, solo di recente, è stata interessata da una ristrutturazione che ha cancellato tutti i danni subiti con la guerra Con questi lavori, nel fabbricato, sono state riportate alla luce tracce preziose del suo passato.</p> <p>Il portale ha una ghiera strombata e la sua ampiezza, per le caratteristiche della strada, è tuttora inconsueta.</p> <p>La porta, a due ante, è costruita in essenza forte. E opera di buona ebanisteria e in origine aveva un portoncino pedonale che oggi è stato fissato e mimetizzato con modanature. Le maniglie sono in ottone lucido.</p> <p><strong>🥩</strong><strong> Significato di \"Beccaro\"</strong></p> <p>\"Beccaro\" è un termine di origine antica e dialettale (soprattutto <strong>lombardo</strong> e del <strong>Nord Italia</strong>) che significa:</p> <p><strong>Macellaio</strong> (il significato più comune).</p> <p><strong>Beccaio</strong> (sinonimo di macellaio, anche se a volte indicava l'allevatore di bestiame destinato al macello).</p> <p>In sintesi, indicava la persona che per mestiere macellava gli animali o vendeva la carne.</p> <p><strong>🌎</strong><strong> Origine ed Etimologia</strong></p> <p>L'origine della parola \"beccaro\" è di tipo <strong>professionale</strong> ed è legata al mestiere sopra descritto.</p> <p>Deriva dalla parola <strong>\"becco\"</strong> che, in latino (<em>beccus</em>), può significare \"becco\" (dell'uccello), ma nel contesto del macellaio si riferisce al <strong>maschio della capra</strong> o, più in generale, al bestiame.</p> <p>Una delle ipotesi più accreditate è che il termine sia collegato alla carne di <strong>capretto</strong> (becco) o di animali da cortile, che era molto diffusa nel Medioevo.</p> <p>La forma <strong>\"</strong><strong>beccaro</strong><strong>\"</strong> è considerata l'antenata o la forma dialettale (antica o regionale) del moderno <strong>\"beccaio\"</strong> in italiano.</p> <p>Questo termine, come molti nomi di mestieri medievali, è all'origine di numerosi cognomi italiani come <strong>Beccari</strong>, <strong>Beccaro</strong> e l'illustre <strong>Beccaria</strong> (ad esempio, Cesare Beccaria, l'autore di <em>Dei delitti e delle pene</em>).</p>",
+        "mainText2": "",
+        "mainText3": "",
         "mainText4": "",
         "mainText5": "",
         "playAudioButton": "Ascolta la storia",
@@ -251,10 +249,11 @@
         "sourceText": "",
         "creationDate": "2025-11-26",
         "lastUpdate": "2025-11-26",
-        "audioSource": "it/pittoricarracci.mp3"
+        "audioSource": "fr/pittoricarracci.mp3",
+        "imageSource": "it/pittoricarracci/immagine_carracci_1.jpg"
     },
     "cavaticcio": {
-        "pageTitle": "Centrale idroelettrica del Cavaticcio",
+        "pageTitle": "centrale elettrica del Cavaticcio",
         "mainText": "",
         "mainText1": "",
         "mainText2": "",

@@ -1,14 +1,13 @@
 import os
 import json
 import re
-from typing import Dict, Any, Tuple, Set
+from typing import Dict, Any, Tuple
 
 # --- CONFIGURAZIONE GLOBALE ---
 # Cartella che contiene i file page_config_*.json generati (con i soli percorsi dei frammenti).
 INPUT_DIR = "text_files" 
 # Nome del file JSON centrale (texts.json) che VERRÀ AGGIORNATO.
-# *** PERCORSO MODIFICATO: Rimossa la lingua codificata ***
-CENTRAL_CONFIG_BASE_PATH = "data/translations"
+CENTRAL_CONFIG_FILE = "texts.json" 
 
 # Regex per estrarre la lingua (lang) e l'ID della pagina (page_id) 
 # dalla struttura del file fragment, es: "it_manifattura_maintext1.html"
@@ -17,19 +16,10 @@ FILENAME_PATTERN = re.compile(r'(\w+)_(\w+)_maintext\d+\.html', re.IGNORECASE)
 # Prefissi delle chiavi che possono essere generate dinamicamente e che devono essere pulite/aggiornate
 DYNAMIC_KEYS_PREFIXES = ("mainText", "imageSource")
 
-def get_json_path(lang_code: str) -> str:
-    """Costruisce il percorso completo del file texts.json per una data lingua."""
-    return os.path.join(CENTRAL_CONFIG_BASE_PATH, lang_code, 'texts.json')
 
 def load_central_config(filepath: str) -> Dict[str, Any]:
     """Carica la configurazione centrale esistente o ne crea una vuota se non esiste."""
     try:
-        # Assicurati che il percorso esista prima di tentare di aprirlo
-        if not os.path.exists(filepath):
-            # Prova a creare la directory se non esiste (importante per il salvataggio)
-            os.makedirs(os.path.dirname(filepath), exist_ok=True)
-            raise FileNotFoundError # Continua con la creazione di un file vuoto
-            
         with open(filepath, 'r', encoding='utf-8') as f:
             print(f"Caricato file centrale esistente: '{filepath}'")
             return json.load(f)
@@ -43,8 +33,6 @@ def load_central_config(filepath: str) -> Dict[str, Any]:
 def save_central_config(filepath: str, data: Dict[str, Any]):
     """Salva la configurazione centrale aggiornata."""
     try:
-        # Assicurati che la directory esista
-        os.makedirs(os.path.dirname(filepath), exist_ok=True)
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
         print(f"\n✅ SINCRONIZZAZIONE COMPLETA E SALVATAGGIO ESEGUITI.")
@@ -69,12 +57,12 @@ def is_dynamic_key(key: str) -> bool:
     return any(key.startswith(prefix) and key[len(prefix):].isdigit() for prefix in DYNAMIC_KEYS_PREFIXES)
 
 
-def sync_config(input_dir: str, central_config_base_path: str):
+def sync_config(input_dir: str, central_config_file: str):
     """
-    Sincronizza la configurazione centrale: crea nuove chiavi dinamiche
-    e aggiorna quelle esistenti, impostando a stringa vuota quelle obsolete.
+    Sincronizza la configurazione centrale: pulisce le vecchie chiavi dinamiche
+    e aggiorna con le nuove generate.
     """
-    # Lista dei file di input da processare
+    central_config = load_central_config(central_config_file)
     config_files = [f for f in os.listdir(input_dir) if f.startswith("page_config_") and f.endswith(".json")]
     
     if not config_files:
@@ -82,11 +70,7 @@ def sync_config(input_dir: str, central_config_base_path: str):
         return
 
     print(f"\nInizio sincronizzazione di {len(config_files)} file...")
-    
-    # Mappa per tenere traccia delle configurazioni caricate per ogni lingua
-    language_configs: Dict[str, Dict[str, Any]] = {}
 
-    # --- FASE 1: Processamento di tutti i file dinamici per raccogliere gli aggiornamenti ---
     for filename in config_files:
         filepath = os.path.join(input_dir, filename)
         
@@ -97,66 +81,52 @@ def sync_config(input_dir: str, central_config_base_path: str):
             metadata = extract_metadata_from_dynamic_config(page_data_dynamic)
 
             if not metadata:
-                print(f"  - SKIPPED: Impossibile estrarre lang/page_id da '{filename}'. Saltato.")
+                print(f"  - SKIPPED: Impossibile estrarre lang/page_id da '{filename}'. Saltato. Assicurati che contenga chiavi come 'mainText1'.")
                 continue
 
             lang, page_id = metadata
             
-            # Carica la configurazione centrale solo una volta per lingua
-            if lang not in language_configs:
-                json_path = get_json_path(lang)
-                language_configs[lang] = load_central_config(json_path)
-            
-            central_config = language_configs[lang]
-            
+            # Verifichiamo se il file dinamico contiene dati utili per l'aggiornamento
             if not page_data_dynamic:
                 print(f"  - ATTENZIONE: Il file '{filename}' è vuoto. Nessun aggiornamento per {page_id}/{lang}.")
                 continue
 
+            # --- PREPARAZIONE DEL BLOCCO CENTRALE ---
+            if page_id not in central_config:
+                print(f"  - CREAZIONE: Pagina '{page_id}' non trovata nel file centrale. Creata nuova entry vuota.")
+                central_config[page_id] = {} 
+
+            page_block = central_config[page_id]
+
             print(f"\n--- Processando {page_id.upper()} ({lang.upper()}) ---")
             
-            # --- DETERMINAZIONE DEL BLOCCO TARGET all'interno del blocco lingua ---
+            # --- FASE 1: PULIZIA DELLE VECCHIE CHIAVI DINAMICHE ---
+            keys_to_delete = []
             
-            # Se la pagina non esiste, la crea
-            if page_id not in central_config:
-                print(f"  - CREAZIONE: Pagina '{page_id}' non trovata. Creata nuova entry vuota.")
-                central_config[page_id] = {}
-            
-            page_block = central_config[page_id]
-            
-            
-            # --- FASE 2.A: PULIZIA NON DISTRUTTIVA: Reimposta a "" le chiavi obsolete ---
-            new_dynamic_keys: Set[str] = {key for key in page_data_dynamic if is_dynamic_key(key)}
-            keys_cleared = 0
-            
-            # Iteriamo sulle chiavi dinamiche ESISTENTI nel file centrale (copia per evitare problemi durante la modifica)
-            for key in list(page_block.keys()): 
+            # Itera sulle chiavi attuali del blocco centrale
+            for key in list(page_block.keys()): # Usiamo list() per iterare su una copia mentre modifichiamo l'originale
                 if is_dynamic_key(key):
                     # Se la chiave è dinamica E NON è presente nel nuovo set generato
-                    if key not in new_dynamic_keys:
-                        # La impostiamo a stringa vuota, mantenendo la chiave
-                        page_block[key] = "" 
-                        keys_cleared += 1
+                    if key not in page_data_dynamic:
+                        keys_to_delete.append(key)
+                        del page_block[key] # Eliminazione immediata
 
-            if keys_cleared > 0:
-                 print(f"  - PULIZIA NON DISTRUTTIVA: Reimpostate {keys_cleared} chiavi obsolete a stringa vuota ('').")
+            if keys_to_delete:
+                print(f"  - PULIZIA: Eliminate {len(keys_to_delete)} chiavi dinamiche obsolete: {keys_to_delete}")
             else:
-                print("  - PULIZIA NON DISTRUTTIVA: Nessuna chiave dinamica obsoleta trovata o modificata.")
-            
-            
-            # --- FASE 2.B: AGGIORNAMENTO CON LE NUOVE CHIAVI DINAMICHE (Caricamento dei valori) ---
+                print("  - PULIZIA: Nessuna chiave dinamica obsoleta trovata o eliminata.")
+
+            # --- FASE 2: AGGIORNAMENTO CON LE NUOVE CHIAVI DINAMICHE ---
             keys_updated = 0
-            # Le chiavi presenti nel file dinamico vengono usate per aggiungere o sovrascrivere
             for key, value in page_data_dynamic.items():
                 if is_dynamic_key(key):
-                    # Aggiunta/Sovrascrittura garantita
                     page_block[key] = value
                     keys_updated += 1
 
             if keys_updated > 0:
                  print(f"  - AGGIORNAMENTO: Aggiunte/Aggiornate {keys_updated} chiavi dinamiche dal file '{filename}'.")
             else:
-                print("  - AGGIORNAMENTO: Nessuna chiave dinamica aggiunta.")
+                print("  - AGGIORNAMENTO: Nessuna chiave dinamica aggiunta (verifica che il file di input non sia vuoto).")
 
             print(f"--- Fine elaborazione {page_id.upper()} ---\n")
 
@@ -165,12 +135,8 @@ def sync_config(input_dir: str, central_config_base_path: str):
         except Exception as e:
             print(f"  - ERRORE inatteso durante l'elaborazione di '{filename}': {e}")
 
-    # --- FASE 3: SALVATAGGIO FINALE PER OGNI LINGUA AGGIORNATA ---
-    for lang_code, config_data in language_configs.items():
-        json_path = get_json_path(lang_code)
-        save_central_config(json_path, config_data)
-
+    # --- SALVATAGGIO DEL FILE FINALE SINCRONIZZATO ---
+    save_central_config(central_config_file, central_config)
 
 if __name__ == "__main__":
-    # Passiamo la directory base al posto del percorso completo del file
-    sync_config(INPUT_DIR, CENTRAL_CONFIG_BASE_PATH)
+    sync_config(INPUT_DIR, CENTRAL_CONFIG_FILE)
