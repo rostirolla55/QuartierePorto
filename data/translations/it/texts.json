@@ -135,7 +135,7 @@
     },
     "chiesapioggia": {
         "pageTitle": "Chiesa della Pioggia",
-        "mainText": "<p>Il <strong>Santuario della Madonna della Pioggia</strong>, il cui nome completo &egrave; <strong>Chiesa di Santa Maria della Pioggia e di San Bartolomeo di Reno</strong> si trova all'incrocio tra <strong>via Galliera</strong> e <strong>via Riva di Reno</strong> a Bologna.</p> <p>Ecco alcune informazioni principali:</p> <ul> <li><strong>Origine:</strong> In origine era nota come <strong>Chiesa di San Bartolomeo di Reno</strong> e risale al XIII secolo come Oratorio.</li> <li><strong>Nome:</strong> L'appellativo di \"Madonna della Pioggia\" deriva da un evento del 1561, quando una processione con la statua della Madonna fu associata alla fine di una grave siccit&agrave; che aveva colpito Bologna, portando piogge benefiche. A seguito di questo evento miracoloso ottenne la doppia dedicazione al Santo e alla Madonna.</li> <li><strong>Struttura e Opere:</strong> La chiesa, che ha subito diversi interventi nel corso dei secoli, presenta una facciata preceduta da un portico con tre arcate. Custodisce opere d'arte di artisti come Agostino Carracci, Francesco Monti, Ludovico Mattioli (il suo affresco <em>Paesaggio con San Bartolomeo</em> si trova sulla scalinata settecentesca che porta all'oratorio) e una scultura in terracotta di Alfonso Lombardi (<em>San Bartolomeo</em>).</li> <li><strong>Interni:</strong> L'interno &egrave; a navata unica con tre cappelle laterali e presenta una volta a botte affrescata.</li> <li><strong>Statua:</strong> Conserva la statua duecentesca della <strong>Madonna della Provvidenza</strong> (detta anche Madonna della Pioggia), collocata alla sinistra dell'altare maggiore e donata nel 1435 dal Senato bolognese.<br /><br /></li> </ul>",
+        "mainText": "<p><strong>Se siete in chiesa usate le cuffie per ascoltare l'audio. Grazie</strong></p>",
         "mainText1": "it_chiesapioggia_maintext1.html",
         "mainText2": "",
         "mainText3": "",
@@ -155,7 +155,7 @@
     },
     "pioggia1": {
         "pageTitle": "Paesaggio con San Bartolomeo",
-        "mainText": "",
+        "mainText": "<p><strong>Se siete in chiesa usate le cuffie per ascoltare l'audio. Grazie</strong></p>",
         "mainText1": "<p>Il&nbsp;<strong>Santuario della Madonna della Pioggia e di San Bartolomeo di Reno</strong>&nbsp;(Via Riva di Reno, 124, angolo Via Galliera) a Bologna, ospita il \"Paesaggio con Bartolomeo\" che &egrave; un'opera del pittore bolognese&nbsp;<strong>Ludovico Mattioli</strong>.</p> <p><strong>🖼️ Il \"Paesaggio con San Bartolomeo\" di Ludovico Mattioli</strong></p> <p>L'opera menzionata si trova lungo la scalinata che conduce ai locali superiori della chiesa e non &egrave; un dipinto di Annibale, come erroneamente li viene attribuito, &nbsp;ma di un suo successore di scuola bolognese.</p> <ul> <li><strong>Artista:</strong>&nbsp;<strong>Ludovico Mattioli</strong>&nbsp;(1662-1747)</li> <li><strong>Titolo (probabile):</strong>&nbsp;<strong>Paesaggio con San Bartolomeo</strong></li> <li><strong>Collocazione:</strong>&nbsp;Scalinata del Santuario della Madonna della Pioggia e di San Bartolomeo di Reno, Bologna.</li> <li><strong>Datazione:</strong>&nbsp;XVIII secolo.</li> </ul> <p><strong>Contesto Storico e Artistico:</strong></p> <ul> <li><strong>Il Paesaggio nel '700:</strong>&nbsp;Sebbene Annibale Carracci sia stato il pioniere del \"paesaggio ideale\" nel Seicento, Ludovico Mattioli opera in un'epoca successiva, il Settecento, in cui il genere paesaggistico era ormai pienamente sviluppato e autonomo. Mattioli, un artista bolognese attivo tra la fine del Seicento e l'inizio del Settecento, era noto non solo per le sue tele ma anche come&nbsp;<strong>incisore</strong>&nbsp;e&nbsp;<strong>pittore paesaggista</strong>.</li> <li><strong>Lo Stile:</strong>&nbsp;I suoi paesaggi sono tipici del gusto tardo-barocco e rococ&ograve;. A differenza della solenne e \"eroica\" natura di Annibale, le opere di Mattioli presentano uno stile pi&ugrave;&nbsp;<strong>pittorico</strong>,&nbsp;<strong>arioso</strong>&nbsp;e meno strutturato, con una predilezione per l'atmosfera e gli effetti luminosi.</li> <li><strong>La Chiesa:</strong>&nbsp;Il Santuario della Madonna della Pioggia (o San Bartolomeo di Reno) ha subito numerosi rifacimenti nel corso dei secoli. La chiesa attuale &egrave; prevalentemente del&nbsp;<strong>Settecento</strong>&nbsp;(ricostruita su progetto attribuito ad Alfonso Torreggiani), e le opere come quella di Mattioli si inseriscono in questo contesto decorativo settecentesco.</li> <li><strong>Iconografia:</strong>&nbsp;L'inserimento di San Bartolomeo, l'apostolo martirizzato, funge da riferimento all'antica dedicazione della chiesa e dell'annesso ospizio.</li> </ul>",
         "mainText2": "",
         "mainText3": "",
@@ -175,8 +175,8 @@
     },
     "pioggia2": {
         "pageTitle": "Scultura San Bartolomeo",
-        "mainText": "dello scultore Alfonso Lombardi",
-        "mainText1": "",
+        "mainText": "<p>;<strong>Se siete in chiesa usate le cuffie per ascoltare l'audio. Grazie</strong></p>",
+        "maintext1": "dello scultore Alfonso Lombardi",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
@@ -195,7 +195,7 @@
     },
     "pioggia3": {
         "pageTitle": "Adorazione dei pastori",
-        "mainText": "",
+        "mainText": "<p>;<strong>Se siete in chiesa usate le cuffie per ascoltare l'audio. Grazie</strong></p>",
         "mainText1": "it_pioggia3_maintext1.html",
         "mainText2": "it_pioggia3_maintext2.html",
         "mainText3": "",
