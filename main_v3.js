@@ -43,7 +43,7 @@ const POIS_LOCATIONS = [
     { id: 'chiesasbene', lat: 44.501514, lon: 11.343557, distanceThreshold: 120 },
     // Piazzetta Pioggia da Galliera 44.498910, 11.342241
     { id: 'chiesapioggia', lat: 44.498910, lon: 11.342241, distanceThreshold: 120 },
-    // Paesaggio con San Bartolomeo Alfonso Lombardi -  44.498910, 11.342241
+    // Paesaggio con San Bartolomeo Alfonso Lombardi -     44.498910, 11.342241
     { id: 'pioggia1', lat: 44.498910, lon: 11.342241, distanceThreshold: 120 },
     // Scultura San Bartolomeo - 44.498910, 11.342241
     { id: 'pioggia2', lat: 44.498910, lon: 11.342241, distanceThreshold: 120 },

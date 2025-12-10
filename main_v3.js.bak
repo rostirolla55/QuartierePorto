@@ -43,7 +43,7 @@ const POIS_LOCATIONS = [
     { id: 'chiesasbene', lat: 44.501514, lon: 11.343557, distanceThreshold: 120 },
     // Piazzetta Pioggia da Galliera 44.498910, 11.342241
     { id: 'chiesapioggia', lat: 44.498910, lon: 11.342241, distanceThreshold: 120 },
-    // Paesaggio con San Bartolomeo Alfonso Lombardi -  44.498910, 11.342241
+    // Paesaggio con San Bartolomeo Alfonso Lombardi -     44.498910, 11.342241
     { id: 'pioggia1', lat: 44.498910, lon: 11.342241, distanceThreshold: 120 },
     // Scultura San Bartolomeo - 44.498910, 11.342241
     { id: 'pioggia2', lat: 44.498910, lon: 11.342241, distanceThreshold: 120 },
@@ -89,10 +89,10 @@ const updateHTMLContent = (id, htmlContent) => {
 // ===========================================
 
 /**
- * Funzione helper per determinare se una stringa è probabilmente un percorso di file (es. frammento HTML).
- * @param {string} value Il valore della chiave JSON.
- * @returns {boolean} True se sembra un percorso di file.
- */
+    * Funzione helper per determinare se una stringa è probabilmente un percorso di file (es. frammento HTML).
+    * @param {string} value Il valore della chiave JSON.
+    * @returns {boolean} True se sembra un percorso di file.
+    */
 function isFilePath(value) {
     if (typeof value !== 'string') return false;
     // Cerca pattern tipici di file (es. che finiscono con .html, .txt)
@@ -100,10 +100,10 @@ function isFilePath(value) {
 }
 
 /**
- * Carica il contenuto di un file in modo asincrono tramite fetch.
- * @param {string} filePath Il percorso del file da caricare (es. "text_files/it_manifattura_maintext1.html")
- * @returns {Promise<string>} Il contenuto del file come stringa.
- */
+    * Carica il contenuto di un file in modo asincrono tramite fetch.
+    * @param {string} filePath Il percorso del file da caricare (es. "text_files/it_manifattura_maintext1.html")
+    * @returns {Promise<string>} Il contenuto del file come stringa.
+    */
 async function fetchFileContent(filePath) {
     try {
         const response = await fetch(filePath);
@@ -198,12 +198,12 @@ function updatePoiMenu(locations, userLat, userLon, userLang, allPageData) {
             const href = `${poi.id}${langSuffix}.html`;
 
             listItems += `
-                <li>
-                    <a href="${href}">
-                        ${displayTitle} 
-                        <span class="poi-distance">(${poi.distance.toFixed(0)}m)</span>
-                    </a>
-                </li>`;
+                                        <li>
+                                                  <a href="${href}">
+                                                            ${displayTitle} 
+                                                            <span class="poi-distance">(${poi.distance.toFixed(0)}m)</span>
+                                                  </a>
+                                        </li>`;
         });
 
         menuHtml = `<ul class="poi-links">${listItems}</ul>`;
@@ -471,7 +471,7 @@ const checkProximity = (position, allPageData) => {
 const handleGeolocationError = (error) => {
     console.warn(`ERRORE GPS: ${error.code}: ${error.message}`);
     // Nascondi il pulsante in caso di errore non gestito
-    //    if (nearbyPoiButton) { nearbyPoiButton.style.display = 'none'; }
+    //         if (nearbyPoiButton) { nearbyPoiButton.style.display = 'none'; }
 };
 
 // main.js - Modifica la funzione startGeolocation
