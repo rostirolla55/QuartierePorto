@@ -104,6 +104,7 @@ function isFilePath(value) {
  * @param {string} filePath Il percorso del file da caricare (es. "text_files/it_manifattura_maintext1.html")
  * @returns {Promise<string>} Il contenuto del file come stringa.
  */
+
 async function fetchFileContent(filePath) {
     try {
         const response = await fetch(filePath);
@@ -273,10 +274,16 @@ async function loadContent(lang) {
         for (const key of textKeysToUpdate) {
             const value = pageData[key];
             if (value && isFilePath(value)) {
-                // Se è un percorso file (es. 'text_files/...') -> esegui fetch
-                console.log(`Caricamento frammento asincrono per ${key}: ${value}`);
-                const promise = fetchFileContent(value).then(content => ({ key, content }));
-                fragmentPromises.push(promise);
+            // ************************************************************
+            // CORREZIONE CHIAVE: Prependi 'text_files/' al nome del file
+            const fullPath = "text_files/" + value; 
+            // ************************************************************
+
+            console.log(`Caricamento frammento asincrono per ${key}: ${fullPath}`);
+            
+            // Usa il percorso completo per il fetch
+            const promise = fetchFileContent(fullPath).then(content => ({ key, content }));
+            fragmentPromises.push(promise);
             } else if (value !== undefined) {
                 // Se è testo normale o non definito -> risolvi immediatamente
                 fragmentPromises.push(Promise.resolve({ key, content: value }));
