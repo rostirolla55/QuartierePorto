@@ -1,0 +1,43 @@
+gpqrtp
+goqrtp
+dir /b /od convert*
+wc -l convert*
+diff convert_manifattura.bat convert_pioggia3.bat
+cp convert_pioggia3.bat convert_puglile.bat
+mv convert_puglile.bat convert_pugliole.bat
+dir /s *.docx
+text_files\it-pugliole.docx
+it-pugliole_mainText.docx
+cd DOCS_DA_CONVERTIRE\it-pugliole_mainText.docx
+DOCS_DA_CONVERTIRE\it-pugliole_mainText.docx
+mv DOCS_DA_CONVERTIRE\it-pugliole_mainText.docx DOCS_DA_CONVERTIRE\it-pugliole_mainText_old.docx
+   DOCS_DA_CONVERTIRE\it-pugliole_mainText.docx
+convert_pugliole.bat it
+cd DOCS_DA_CONVERTIRE
+dir /b *pugliole*
+cp it-pugliole_mainText.docx pugliole_it.docs
+mv it-pugliole_mainText_old.docx it-pugliole_mainText.docx
+dir /b *pugliole*
+dir  *pugliole*
+del it-pugliole_mainText.docx
+mv it-pugliole_mainText_old.docx it-pugliole_mainText.docx
+dir /b *pugliole*
+mv it-pugliole_mainText_old.docx it-pugliole_mainText.docx
+dir /b *pugliole*
+dir  *pugliole*
+convert_pugliole.bat it
+cd..
+convert_pugliole.bat it
+cdt DOCS_DA_CONVERTIRE
+mv pugliole_it.docs pugliole_it.docx
+cd ..
+convert_pugliole.bat it
+cdt DOCS_DA_CONVERTIRE
+dir  *pugliole*
+pugliole_it_html_87ea5cec.jpg
+cd ..
+sync_config.py
+trova sync_config.py
+trova sync_config.py *
+cat \Utilities\trova.bat
+esci
