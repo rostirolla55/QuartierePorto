@@ -212,6 +212,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta con le cuffie",
         "pauseAudioButton": "Metti in pausa",
+        "headImage": "ChiesaPioggia.jpg",
         "imageSource1": "pioggia3/AdorazionePastori.jpg",
         "imageSource2": "",
         "imageSource3": "",
@@ -220,8 +221,7 @@
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-26",
-        "audioSource": "it/Chiesa_Pioggia.mp3",
-        "headImage": "panorama_bologna.jpg"
+        "audioSource": "it/Chiesa_Pioggia.mp3"
     },
     "manifattura": {
         "pageTitle": "Ex manifattura Tabacchi",
@@ -233,6 +233,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Pausa",
+        "headImage": "Bologna_by_night_1.jpg",
         "imageSource1": "manifattura/manifattura_facciata.jpg",
         "imageSource2": "",
         "imageSource3": "",
@@ -241,8 +242,7 @@
         "sourceText": "",
         "creationDate": "2025-11-06",
         "lastUpdate": "2025-11-06",
-        "audioSource": "it/manifattura.mp3",
-        "headImage": "Bologna_by_night_1.jpg"
+        "audioSource": "it/manifattura.mp3"
     },
     "pittoricarracci": {
         "pageTitle": "I pittori Carracci",
