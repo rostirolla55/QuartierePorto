@@ -1,8 +1,8 @@
 {
     "home": {
         "pageTitle": "Bienvenido al barrio de Porto",
-        "mainText": "<p>Bienvenido al sitio web sobre Bolonia. <br />Te acompañaré con audio y, para más detalles, puedes leer el texto y las imágenes de la página.<br /> Te transportaré al pasado según el lugar donde te detengas. <br />Si encuentras un código QR en la ubicación, puedes acceder directamente a una página. <br />Si no tienes un código QR, al activar el GPS de tu smartphone, encontrarás un botón rectangular verde en la esquina superior derecha que te mostrará una lista de lugares de interés cercanos. <br />Al seleccionar un elemento de la lista, se abrirá la página correspondiente. <br /> En la esquina superior izquierda, hay tres líneas horizontales que muestran la lista completa de lugares documentados en el sitio.</p>",
-        "mainText1": "",
+        "mainText": "",
+        "mainText1": "es_home_maintext1.html",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
@@ -276,5 +276,10 @@
         "creationDate": "2025-11-27",
         "lastUpdate": "2025-11-27",
         "audioSource": "es/cavaticcio.mp3"
+    },
+    "index": {
+        "headImage": "public/images/panorama_bologna.jpg",
+        "audioSource": "Audio/es/index.mp3",
+        "mainText1": "es_index_maintext1.html"
     }
 }

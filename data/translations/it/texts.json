@@ -1,8 +1,8 @@
 {
     "home": {
         "pageTitle": "Benvenuti al quartiere Porto",
-        "mainText": "<p>Benvenuto sul sito che parla di Bologna. <br /> Vi accompagno con l'audio e per maggiori dettagli potete leggere il testo e le immagini nella pagina. <br /> Vi porto indietro nel tempo basandomi sul luogo dove vi fermate. <br /> Se sul posto trovate un QR-code potete accedere ad una pagina direttamente. <br /> In assenza del QR-code attivando il GPS del vostro smartphone, in alto a destra trovate un bottone rettangolare verde che vi presenter&agrave; la lista dei posti nelle vicinanze che sono di interesse. <br /> Selezionando una voce della lista vi si aprir&agrave; la pagina corrispondente a quel luogo. In alto a sinistra ci sono tre lineette orizzontali che vi d&agrave; la lista completa dei luoghi che sono documentati nel sito.</p>",
-        "mainText1": "",
+        "mainText": "",
+        "mainText1": "it_home_maintext1.html",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
@@ -285,5 +285,10 @@
         "creationDate": "2025-11-27",
         "lastUpdate": "2025-11-27",
         "audioSource": "it/cavaticcio.mp3"
+    },
+    "index": {
+        "headImage": "public/images/panorama_bologna.jpg",
+        "audioSource": "Audio/it/index.mp3",
+        "mainText1": "it_index_maintext1.html"
     }
 }

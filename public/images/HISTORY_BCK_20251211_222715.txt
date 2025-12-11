@@ -1,0 +1,50 @@
+convert_pioggia3.bat es
+check_pagina.bat pioggia3
+dir convert*
+npa convert_pugliole.bat
+convert_pugliole.bat it
+check_pagina.bat pugliole
+dir /s page_convert*
+dir /s page_config*
+trova page_config_
+trova post_process_html.py
+trova post_process_html.py | findstr python
+mv DOCS_DA_CONVERTIRE\gemini_input_001.txt ..\..\salvataggi_github\20251201
+trova post_process_html.py | findstr python
+mv convert_manifattura_20251209_1300.bat ..\..\salvataggi_github\20251201
+mv convert_manifattura_20251209_1400.bat ..\..\salvataggi_github\20251201
+trova post_process_html.py | findstr python
+dir page_config* /s
+trova page_config_
+mv key_synchronization_v1.py codice
+mv key_synchronization_v2.py codice
+trova page_config_
+trova post_process_html.py
+npa convert_pugliole.bat
+S
+dir convert*.bat
+npa convert_manifattura.bat
+cp  convert_manifattura.bat convert_pioggia3.bat
+convert_pioggia3.bat
+convert_pioggia3.bat it
+check_pagina.bat pioggia3
+dir /s page_config*
+cdt text_files
+page_config_it_pioggia3.json
+cd ..
+md page_config_processed
+cd page_config_processed
+mv ..\text_files\page_config_* .
+mv page_config_it_pioggia3.json ..\text_files
+cd ..
+sync_config.py 
+python sync_config.py 
+check_pagina.bat pioggia3
+trova text_files
+trova text_files py
+trova sync_config.py 
+dir sync_config.py
+sync_config.py
+cd public\images
+dir
+esci

@@ -1,0 +1,10 @@
+goqrtp
+cdt DOCS_DA_CONVERTIRE
+dir
+dir *.jpg
+del *.jpg
+dir *.jpg
+dir
+dir *index*
+dir /od
+esci

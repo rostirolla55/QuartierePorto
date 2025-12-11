@@ -2,7 +2,7 @@
     "home": {
         "pageTitle": "Bienvenue dans le quartier Porto",
         "mainText": "",
-        "mainText1": "",
+        "mainText1": "fr_home_maintext1.html",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
@@ -285,5 +285,10 @@
         "creationDate": "2025-11-27",
         "lastUpdate": "2025-11-27",
         "audioSource": "fr/cavaticcio.mp3"
+    },
+    "index": {
+        "headImage": "public/images/panorama_bologna.jpg",
+        "audioSource": "Audio/fr/index.mp3",
+        "mainText1": "fr_index_maintext1.html"
     }
 }

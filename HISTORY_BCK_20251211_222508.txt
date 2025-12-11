@@ -1,0 +1,50 @@
+xdiff it-index.docx it-index_mainText.docx
+diff it-index.docx it-index_mainText.docx
+cd C:\Users\User\Documents\GitHub\QuartierePorto\DOCS_DA_CONVERTIRE
+diff it-index.docx it-index_mainText.docx
+dir /b *.docx
+dir /b it-*.docx
+it-index.docx
+cd ..
+dir /s /b *bologna.mp3
+trova navPittoriCarracci
+del *.bak
+mv main_v3.js codice
+trova navPittoriCarracci
+dir /s /b pittoricarracci*.html
+dir /s /b *pittoricarracci*.html
+dir /s /b *-it.html
+dir /s /b it-*.html
+check_pagina.bat pittoricarracci
+check_pagina.bat home
+cd  DOCS_DA_CONVERTIRE
+dir *.docx
+dir *index*.docx
+it-index_mainText.docx
+cd ..
+dir /od *.bat *.py
+trova sync_config.py
+sync_config.py
+trova pioggia3
+cd text_files
+dir page_conf*.json
+page_config_it_pioggia3.json
+title text_files
+cdt ..\DOCS_DA_CONVERTIRE
+dir
+manifattura_it.docx
+cd ..\text_files
+dir it*chiesapioggia*.html
+dir it*pioggia3*.html
+dir *pugliole*
+head -20 ..\convert*
+head -20 ..\convert_manifattura.bat
+cd ..
+esci
+"HISTORY_BCK_20251211_194214.txt"
+trova convert_pioggia3 
+trva manifattura *.bat
+trova manifattura *.bat
+dir conver*
+dir conver* /od
+esci
