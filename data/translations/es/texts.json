@@ -37,7 +37,7 @@
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
-        "mainText": "Había una calle en Bologna llamada \"Pugliole di San Bernardino\". Esta calle desapareció tras las intervenciones urbanísticas de la década de 1930 que dieron lugar a la creación de la Via Guglielmo Marconi (entonces Via Roma).",
+        "mainText": "",
         "mainText1": "es_pugliole_maintext1.html",
         "mainText2": "es_pugliole_maintext2.html",
         "mainText3": "",
@@ -87,7 +87,7 @@
         "mainText5": "",
         "playAudioButton": "Escuchar la historia",
         "pauseAudioButton": "Pausa",
-        "headImage": "public/images/panorama_bologna.jpg",
+        "headImage": "panorama_bologna.jpg",
         "imageSource1": "lastre/civico_arenaria.jpg",
         "imageSource2": "",
         "imageSource3": "",
@@ -286,10 +286,5 @@
         "creationDate": "2025-11-27",
         "lastUpdate": "2025-11-27",
         "audioSource": "es/cavaticcio.mp3"
-    },
-    "index": {
-        "headImage": "public/images/panorama_bologna.jpg",
-        "audioSource": "Audio/es/index.mp3",
-        "mainText1": "es_index_maintext1.html"
     }
 }

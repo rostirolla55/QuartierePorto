@@ -59,7 +59,7 @@
     "graziaxx": {
         "pageTitle": "The plaque of grace",
         "mainText": "",
-        "maintext1": "",
+        "mainText1": "en_graziaxx_maintext1.html",
         "mainText2": "en_graziaxx_maintext2.html",
         "mainText3": "",
         "mainText4": "",
@@ -75,8 +75,7 @@
         "sourceText": "'State Archives of Bologna.'",
         "creationDate": "23-10-2025",
         "lastUpdate": "2025-10-01",
-        "audioSource": "en/graziaxx.mp3",
-        "mainText1": "en_graziaxx_maintext1.html"
+        "audioSource": "en/graziaxx.mp3"
     },
     "lastre": {
         "pageTitle": "The Slabs and the Numbers",
@@ -288,10 +287,5 @@
         "creationDate": "2025-11-27",
         "lastUpdate": "2025-11-27",
         "audioSource": "en/cavaticcio.mp3"
-    },
-    "index": {
-        "headImage": "public/images/panorama_bologna.jpg",
-        "audioSource": "Audio/en/index.mp3",
-        "mainText1": "en_index_maintext1.html"
     }
 }
