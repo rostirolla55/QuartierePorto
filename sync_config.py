@@ -12,6 +12,13 @@ TRANSLATIONS_BASE_DIR = "data/translations"
 # NUOVA COSTANTE: Nome del file di configurazione per lingua (ad esempio texts.json)
 CONFIG_FILENAME = "texts.json"
 
+# Eccezioni di Mapping: Mappa l'ID della pagina estratto dai frammenti al nome 
+# del blocco da usare nel file di configurazione centrale (texts.json)
+PAGE_ID_MAPPING_EXCEPTIONS = {
+    # Risolve la discrepanza: se l'ID della pagina è 'index', il blocco di destinazione è 'home'.
+    "index": "home", 
+}
+
 # Regex per estrarre la lingua (lang) e l'ID della pagina (page_id) 
 # dalla struttura del file fragment, es: "it_manifattura_maintext1.html"
 FILENAME_PATTERN = re.compile(r'(\w+)_(\w+)_maintext\d+\.html', re.IGNORECASE)
@@ -134,20 +141,23 @@ def sync_config(input_dir: str):
             if metadata:
                 lang, page_id = metadata
                 
+                # --- PUNTO CRITICO: APPLICAZIONE DEL MAPPING INDEX -> HOME ---
+                target_key = PAGE_ID_MAPPING_EXCEPTIONS.get(page_id, page_id)
+
                 # 1. Carica la configurazione della lingua se non è già in memoria
                 if lang not in language_configs:
                     language_configs[lang] = load_language_config(lang)
                 
                 lang_config = language_configs[lang] # Riferimento al dict in memoria
 
-                # 2. Assicura che la pagina esista nel file di configurazione della lingua
-                if page_id not in lang_config:
-                    lang_config[page_id] = {}
+                # 2. Assicura che la pagina (target_key) esista nel file di configurazione della lingua
+                if target_key not in lang_config:
+                    lang_config[target_key] = {}
                 
-                # Ottiene il blocco JSON esistente per questa pagina (che è il blocco della lingua)
-                page_block = lang_config[page_id]
+                # Ottiene il blocco JSON esistente per questa pagina
+                page_block = lang_config[target_key]
 
-                print(f"\nProcessing: Pagina '{page_id}' ({lang}) da '{filename}'")
+                print(f"\nProcessing: Pagina '{page_id}' (Target Block: '{target_key}') ({lang}) da '{filename}'")
 
                 # --- FASE 1: GARANZIA DELLE CHIAVI STATICHE ---
                 added_static_keys = []
@@ -159,12 +169,12 @@ def sync_config(input_dir: str):
                     
                 # 2. audioSource
                 if 'audioSource' not in page_block:
-                    page_block['audioSource'] = f"Audio/{lang.lower()}/{page_id.lower()}.mp3"
+                    page_block['audioSource'] = f"Audio/{lang.lower()}/{target_key.lower()}.mp3"
                     added_static_keys.append('audioSource')
 
                 if added_static_keys:
-                     print(f"  - Aggiunte chiavi statiche (se mancanti): {', '.join(added_static_keys)}")
-                
+                    print(f"  - Aggiunte chiavi statiche (se mancanti): {', '.join(added_static_keys)}")
+                    
                 # --- FASE 2: PULIZIA DELLE VECCHIE CHIAVI DINAMICHE ---
                 keys_to_delete = []
                 for key in list(page_block.keys()): # Usiamo list() per iterare su una copia
