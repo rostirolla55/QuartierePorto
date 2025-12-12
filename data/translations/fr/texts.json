@@ -109,7 +109,7 @@
         "playAudioButton": "Écouter l'histoire Histoire",
         "pauseAudioButton": "Pause",
         "headImage": "panorama_bologna.jpg",
-        "imageSource1": "carracci\casacaracci.jpg",
+        "imageSource1": "carracci/casacaracci.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
