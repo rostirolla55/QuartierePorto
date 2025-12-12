@@ -1,3 +1,0 @@
-problemi aperti
-a) i nomi delle immagini debbono essere conveertiti in minuscolo
-b) la pagina index nel json è home. il caricamento non avviene perchè cerca index
