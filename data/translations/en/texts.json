@@ -60,14 +60,14 @@
         "pageTitle": "The plaque of grace",
         "mainText": "",
         "maintext1": "",
-        "mainText2": "",
+        "mainText2": "en_graziaxx_maintext2.html",
         "mainText3": "",
         "mainText4": "",
-        "mainText5": "<h3>Primary Sources (Originals of the time):</h3>  <ol start=\"1\"> <li> <p><strong>Official and Administrative Documentation:</strong></p> <ul> <li> <p><strong>Proclamations and Decrees of the Assunteria di Sanità and the Bolognese Senate</strong> (starting from 1628, for the management of the contagion, the measures adopted and the organization of services). Most of these documents are kept in the <strong>State Archives of Bologna</strong>.</p> </li> <li> <p><strong>Registers of the Dead and Burials</strong> (for data on victims, mortality peaks and mass graves).</p> </li> <li> <p><strong>Expenditure Statements</strong> (for the sums allocated to the poor, to the medical police, to the emptying of houses and to the management of the lazarettos).</p> </li> <li> <p><strong>Contemporary chronicles and official reports</strong> (for example, the report by <strong>Pietro Moratti</strong> – <em>Account of the orders and provisions made in the lazarettos in Bologna and its County during the contagion of the Year 1630</em>).</p> </li> </ul> </li> <li> <p><strong>Artistic and Votive Testimonies:</strong></p> <ul> <li> <p><strong>The Plague Altarpiece by Guido Reni</strong> (1630): direct testimony of the civic vote and religious devotion.</p> </li> <li> <p><strong>The Votive canopy from 1634</strong> (used in thanksgiving processions).</p> </li> <li> <p><strong>Paintings and Ex-Votos</strong> (such as the anonymous Bolognese painting on the plague in Via San Mamolo, often cited in secondary sources).</p> </li> </ul> </li> </ol> <h3>Secondary Sources (Subsequent historical studies):</h3> <ol start=\"1\"> <li> <p><strong>Specific historical studies on Bologna and the plague of 1630:</strong></p> <ul> <li> <p>Historical demography studies that have elaborated data on deaths and population (e.g. <strong>Marco Poli</strong>, author of studies on epidemics in Bologna, or older demographic studies such as those of <strong>P.L. Da Gatteo</strong> and <strong>A. Brighetti</strong>).</p> </li> <li> <p>Monographs and essays that reconstruct the spread, the health management (the role of Cardinal <strong>Bernardino Spada</strong> and the <strong>Camillians</strong>) and the social consequences of the epidemic.</p> </li> </ul> </li> <li> <p><strong>General Historical Context:</strong></p> <ul> <li> <p>Sources that deal with the <strong>War of Succession of Mantova</strong> and the passage of the <strong>Lansquenets</strong>, responsible for the spread of the contagion throughout northern Italy (as also mentioned in <em>The Betrothed</em> by Alessandro Manzoni, which, although not a primary historical source for Bologna, bears witness to the general context of the 1630 epidemic in northern Italy)</p> </li> </ul> </li> </ol>",
+        "mainText5": "",
         "playAudioButton": "Listen to the story",
         "pauseAudioButton": "Pause",
         "headImage": "panorama_bologna.jpg",
-        "imageSource1": "graziaxx/lapidemariana.jpg",
+        "imageSource1": "graziaxx/lapide_votiva.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -75,7 +75,8 @@
         "sourceText": "'State Archives of Bologna.'",
         "creationDate": "23-10-2025",
         "lastUpdate": "2025-10-01",
-        "audioSource": "en/graziaxx.mp3"
+        "audioSource": "en/graziaxx.mp3",
+        "mainText1": "en_graziaxx_maintext1.html"
     },
     "lastre": {
         "pageTitle": "The Slabs and the Numbers",
