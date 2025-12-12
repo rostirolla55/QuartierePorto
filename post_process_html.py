@@ -4,6 +4,9 @@ import sys
 import os
 from typing import Dict, Tuple
 
+# NOTE: Rimozione dell'import di BeautifulSoup, in quanto l'analisi e la pulizia
+# vengono ora gestite con le espressioni regolari (re).
+
 # --- CONFIGURAZIONE GLOBALE ---
 
 # Nome del file HTML grezzo generato dalla conversione DOCX (DA LEGGERE)
@@ -24,6 +27,21 @@ SPLIT_BLOCK_CLEANING_REGEX = re.compile(
     re.IGNORECASE | re.DOTALL
 )
 
+# =========================================================================
+# FUNZIONE DI UTILITY PER DETERMINARE IL PREFISSO DEL NOME DEL FILE
+# =========================================================================
+
+def get_fragment_prefix(page_id: str) -> str:
+    """
+    Determina il prefisso da usare per i nomi dei file frammenti HTML.
+    Se il PAGE_ID è 'home' (chiave JSON), il prefisso del file sarà 'index'.
+    Altrimenti, usa il PAGE_ID stesso.
+    """
+    if page_id.lower() == 'home':
+        # La pagina fisica è index-lang.html, quindi anche il frammento usa index come prefisso
+        return 'index' 
+    return page_id
+
 
 def clean_html_content(html_content: str) -> str:
     """Rimuove i tag <img> e ripulisce le nuove linee/spazi superflui."""
@@ -39,6 +57,11 @@ def process_document(html_input: str, lang: str, page_id: str) -> Tuple[Dict[str
     """
     page_id_lower = page_id.lower()
     print(f"Inizio Elaborazione e Split: Pagina '{page_id.upper()}', Lingua '{lang}'")
+
+    # Determina il prefisso del file (sarà 'index' se page_id è 'home', altrimenti page_id)
+    fragment_file_prefix = get_fragment_prefix(page_id_lower)
+    print(f"DEBUG: Prefisso per i nomi dei file frammento: '{fragment_file_prefix}'")
+
 
     # --- STEP 1: RIMOZIONE E TOKENIZZAZIONE ---
 
@@ -101,8 +124,10 @@ def process_document(html_input: str, lang: str, page_id: str) -> Tuple[Dict[str
         # 1. GESTIONE TESTO (mainTextX)
         main_text_key = f"mainText{fragment_index}"
         file_base_name = main_text_key.lower()
-        # Assicura che il nome del file includa la lingua
-        html_filepath = f"{lang}_{page_id_lower}_{file_base_name}.html" 
+        
+        # *** UTILIZZO DEL PREFISSO CORRETTO ***
+        # Assicura che il nome del file includa la lingua E il prefisso corretto (index o page_id)
+        html_filepath = f"{lang}_{fragment_file_prefix}_{file_base_name}.html" 
 
         fragments_html[html_filepath] = cleaned_html
         json_data[main_text_key] = html_filepath
@@ -131,7 +156,7 @@ def process_document(html_input: str, lang: str, page_id: str) -> Tuple[Dict[str
 
     return fragments_html, json_data
 
-# Questa funzione include la logica di post_process_html_parte2_save_results.py
+# Questa funzione salva i frammenti HTML e il file JSON di configurazione
 def save_results(fragments: Dict[str, str], data_json: Dict[str, str], page_id: str, lang: str):
     """Salva i frammenti HTML e il file JSON di configurazione nella cartella di output."""
 
@@ -160,7 +185,7 @@ def save_results(fragments: Dict[str, str], data_json: Dict[str, str], page_id: 
         print(f"ERRORE nella scrittura del file JSON {json_filepath}: {e}")
 
 
-# Questa sezione include la logica di post_process_html_parte1.py e post_process_html_parte3_main_call.py
+# Sezione principale per l'esecuzione dello script
 if __name__ == "__main__":
     # --- Gestione Argomenti da Linea di Comando ---
     if len(sys.argv) != 4:
@@ -169,6 +194,7 @@ if __name__ == "__main__":
         print("Esempio: python {sys.argv[0]} pioggia3 it DOCS_DA_CONVERTIRE")
         sys.exit(1)
 
+    # Definisce le variabili
     PAGE_ID = sys.argv[1].lower()
     LANG = sys.argv[2].lower() # Argumento lingua
     DOCX_DIR = sys.argv[3] # Directory contenente il file temporaneo
