@@ -122,11 +122,11 @@
     "chiesasbene": {
         "pageTitle": "Chiesa di San Benedetto",
         "mainText": "",
-        "mainText1": "",
+        "mainText1": "en_chiesasbene_maintext1.html",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
-        "mainText5": "<h2>Historical Sources for the Church of San Benedetto</h2> <p>&nbsp;</p> <ol start=\"1\"> <li> <p><strong>Sources of Toponymy and Urban History of Bologna:</strong></p> <ul> <li> <p><strong>Archives and Studies on the History of Via Indipendenza:</strong> These documents (often linked to the State Archives or the Archiginnasio Library) are crucial for precisely dating the great transformation of <strong>1892</strong>, the year in which the church was <strong>\"turned\"</strong> and the facade reoriented to face the newly created Via Indipendenza.</p> </li> <li> <p><strong>Studies on the Churches of Bologna:</strong> Academic texts and monographs that attest to their <strong>origins in the 13th century</strong> and the subsequent <strong>reconstruction in the 17th century</strong> (dated <strong>1606</strong>), specifying the role of the architect <strong>Giovanni Battista Ballerini</strong>.</p> </li> </ul> </li> <li> <p><strong>Sources of the History of Art and Architecture of Bologna:</strong></p> <ul> <li> <p><strong>Art Guides and Catalogues:</strong> For the list of internal works and artists. These sources confirm the presence of paintings by masters of the Baroque and Mannerist periods, such as <strong>Giacomo Cavedoni</strong>, <strong>Alessandro Tiarini</strong> and <strong>Lucio Massari</strong>.</p> </li> <li> <p><strong>Texts on Religious Complexes:</strong> To identify the Order that managed it, namely the <strong>Mini Friars of San Francesco di Paola</strong> (the \"Paolotti\").</p> </li> </ul> </li> <li> <p><strong>Institutional Sites and Cultural Portals (Web):</strong></p> <ul> <li> <p><strong>Official Tourism and Culture Portals of the Municipality of Bologna (e.g. <em>Bologna Welcome</em> or <em>History and Memory of Bologna</em>):</strong> These sites summarize and validate the key historical data (13th century, 17th century reconstruction, late 19th century reorientation) Nineteenth century) for public use.</p> </li> </ul> </li> </ol> <p>In summary, the information comes from the concordance of data present in historical archives, art history studies and institutional sources that trace the evolution of this important Bolognese place of worship.</p>",
+        "mainText5": "",
         "playAudioButton": "Listen to the story",
         "pauseAudioButton": "Pause",
         "headImage": "panorama_bologna.jpg",
@@ -219,7 +219,7 @@
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
-         "sourceText": "Historical Archives of the Municipality of Bologna.",
+        "sourceText": "Historical Archives of the Municipality of Bologna.",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-26",
         "audioSource": "en/pioggia3.mp3"

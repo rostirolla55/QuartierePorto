@@ -122,11 +122,11 @@
     "chiesasbene": {
         "pageTitle": "Iglesia de San Benedicto",
         "mainText": "",
-        "mainText1": "",
+        "mainText1": "es_chiesasbene_maintext1.html",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
-        "mainText5": "Fuentes históricas de la Iglesia de San Benedicto <h2></h2> <p>&nbsp;</p> <ol start=\"1\"> <li> <p><strong>Fuentes de toponimia e historia urbana de Bolonia:</strong></p> <ul> <li> <p><strong>Archivos y estudios sobre la historia de la Via Indipendenza:</strong> Estos documentos (a menudo vinculados al Archivo Estatal o a la Biblioteca Archiginnasio) son cruciales para datar con precisión la gran transformación de <strong>1892</strong>, año en que la iglesia fue <strong>\"girada\"</strong> y la fachada reorientada para dar a la recién creada Via Indipendenza.</p> </li> <li> <p><strong>Estudios sobre las iglesias de Bolonia:</strong> Textos académicos y monografías que dan fe de sus <strong>orígenes en el siglo XIII</strong> y la posterior <strong>reconstrucción en el siglo XVII</strong> (fechado en <strong>1606</strong>), especificando el papel del arquitecto <strong>Giovanni Battista Ballerini</strong>.</p> </li> </ul> </li> <li> <p><strong>Fuentes de la Historia del Arte y la Arquitectura de Bolonia:</strong></p> <ul> <li> <p><strong>Guías y Catálogos de Arte:</strong> Para la lista de obras internas y artistas. Estas fuentes confirman la presencia de pinturas de maestros del Barroco y del Manierismo, como <strong>Giacomo Cavedoni</strong>, <strong>Alessandro Tiarini</strong> y <strong>Lucio Massari</strong>.</p> </li> <li> <p><strong>Textos sobre los Complejos Religiosos:</strong> Para identificar la Orden que los gestionaba, es decir, los <strong>Mini Frailes de San Francesco di Paola</strong> (los \"Paolotti\").</p> </li> </ul> </li> <li> <p><strong>Sitios Institucionales y Portales Culturales (Web):</strong></p> <ul> <li> <p><strong>Portales Oficiales de Turismo y Cultura del Ayuntamiento de Bolonia (p. ej., <em>Bologna Welcome</em> o <em>Historia y Memoria de Bolonia</em>):</strong> Estos sitios resumen y validan los datos históricos clave (siglo XIII, reconstrucción del siglo XVII, finales Reorientación del siglo XIX) Siglo XIX) para uso público.</p> </li> </ul> </li> </ol> <p>En resumen, la información proviene de la concordancia de datos presentes en archivos históricos, estudios de historia del arte y fuentes institucionales que trazan la evolución de este importante lugar de culto boloñés.</p>",
+        "mainText5": "",
         "playAudioButton": "Escucha la historia",
         "pauseAudioButton": "Pausa",
         "headImage": "panorama_bologna.jpg",
