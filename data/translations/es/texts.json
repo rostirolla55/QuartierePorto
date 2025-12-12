@@ -107,8 +107,9 @@
         "mainText4": "",
         "mainText5": "",
         "playAudioButton": "Escucha la historia",
+        "pauseAudioButton": "Pausa",
         "headImage": "panorama_bologna.jpg",
-        "imageSource1": "",
+        "imageSource1": "carracci\casacarracci.jpg",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -116,7 +117,6 @@
         "sourceText": "Archivo Histórico del Ayuntamiento de Bolonia.",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-10-01",
-        "pauseAudioButton": "Pausa",
         "audioSource": "es/carracci.mp3"
     },
     "chiesasbene": {
