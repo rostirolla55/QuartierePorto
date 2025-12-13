@@ -1,6 +1,5 @@
 {
     "description": "Questo file contiene gli override manuali per le chiavi in texts.json. Le modifiche qui definite verranno applicate allo specifico PAGE_ID (es. 'manifattura') solo quando il manual_key_updater.py viene eseguito per quella pagina. le chiavi statiche  cono 'audioSource' 'headImage' 'pageTitle' 'pauseAudioButton' 'playAudioButton' 'sourceText' 'creationDate' 'lastUpdate' 'mainText'",
-    
     "manifattura": {
         "it": {
             "pageTitle": "Ex Manifattura Tabacchi - Titolo Fisso",
@@ -15,17 +14,24 @@
             "headImage": "manifattura.jpg"
         }
     },
-    
     "chiesapioggia": {
         "it": {
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
-            "mainText":"<p>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </p>",
+            "mainText": "<p>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </p>",
             "sourceText": "Vaticano.com Santuari e Dintorni - Controllo Manuale",
-            "headImage": "chiesapioggia.jpg"
+            "headImage": "chiesapioggia.jpg",
+            "audioSource": "it/chiesapioggia.mp3"
+        },
+        "en": {
+            "playAudioButton": "Listen with headphones",
+            "pauseAudioButton": "Pause",
+            "mainText": "<p>If you enter the church, use headphones to listen to the audio</p>",
+            "sourceText": "Vaticano.com Santuari e Dintorni - Manual Override",
+            "headImage": "chiesapioggia.jpg",
+            "audioSource": "en/chiesapioggia.mp3"
         }
     },
-
     "pioggia3": {
         "it": {
             "playAudioButton": "Ascolta con le cuffie",
