@@ -29,8 +29,7 @@ DYNAMIC_KEYS_PREFIXES = ("mainText", "imageSource")
 # NOTA: Queste chiavi non verranno MAI eliminate dalla fase di pulizia dinamica.
 STATIC_KEYS = (
     "pageTitle", "mainText", "playAudioButton", "pauseAudioButton", 
-    "sourceText", "creationDate", "lastUpdate", "audioSource",
-    "headImage" # CORREZIONE: Aggiunto 'headImage' per coerenza con la FASE 1 e garantire la sua preservazione.
+    "sourceText", "creationDate", "lastUpdate", "audioSource"
 )
 
 # NUOVA CONFIGURAZIONE: Immagine di testata unica e percorso comune
@@ -53,16 +52,16 @@ def load_language_config(lang: str) -> Dict[str, Any]:
         # Assicura che la cartella 'data/translations/xx' esista
         os.makedirs(os.path.dirname(filepath), exist_ok=True) 
         with open(filepath, 'r', encoding='utf-8') as f:
-            print(f"  - Caricamento config lingua '{lang}' da: {filepath}")
+            print(f"  - Caricamento config lingua '{lang}' da: {filepath}")
             return json.load(f)
     except FileNotFoundError:
-        print(f"  - ATTENZIONE: File config lingua '{lang}' non trovato. Verrà creato da zero.")
+        print(f"  - ATTENZIONE: File config lingua '{lang}' non trovato. Verrà creato da zero.")
         return {}
     except json.JSONDecodeError:
-        print(f"  - ERRORE: File config lingua '{lang}' non è un JSON valido. Inizializzazione fallita.")
+        print(f"  - ERRORE: File config lingua '{lang}' non è un JSON valido. Inizializzazione fallita.")
         return {}
     except Exception as e:
-        print(f"  - ERRORE inatteso durante il caricamento del config lingua '{lang}': {e}")
+        print(f"  - ERRORE inatteso durante il caricamento del config lingua '{lang}': {e}")
         return {}
 
 def save_language_config(lang: str, data: Dict[str, Any]):
@@ -75,10 +74,10 @@ def save_language_config(lang: str, data: Dict[str, Any]):
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
         
-        print(f"  ✅ SALVATAGGIO COMPLETO: Aggiornato config lingua '{lang}' in: {filepath}")
+        print(f"  ✅ SALVATAGGIO COMPLETO: Aggiornato config lingua '{lang}' in: {filepath}")
         
     except Exception as e:
-        print(f"  ERRORE FATALE durante il salvataggio del file finale per '{lang}': {e}")
+        print(f"  ERRORE FATALE durante il salvataggio del file finale per '{lang}': {e}")
 
 
 def extract_metadata_from_dynamic_config(config_data: Dict[str, Any]) -> Tuple[str, str] | None:
@@ -174,38 +173,36 @@ def sync_config(input_dir: str):
                     added_static_keys.append('audioSource')
 
                 if added_static_keys:
-                    print(f"  - Aggiunte chiavi statiche (se mancanti): {', '.join(added_static_keys)}")
+                    print(f"  - Aggiunte chiavi statiche (se mancanti): {', '.join(added_static_keys)}")
                     
                 # --- FASE 2: PULIZIA DELLE VECCHIE CHIAVI DINAMICHE ---
                 keys_to_delete = []
                 for key in list(page_block.keys()): # Usiamo list() per iterare su una copia
-                    # Se la chiave è dinamica (inizia con un prefisso e ha un suffisso numerico)
+                    # Se la chiave è dinamica
                     is_dynamic = any(key.startswith(prefix) and len(key) > len(prefix) for prefix in DYNAMIC_KEYS_PREFIXES)
                     
                     # E se questa chiave dinamica NON è presente nel nuovo set generato
-                    # Poiché 'headImage' è in STATIC_KEYS, e non ha suffisso numerico, è già esclusa implicitamente dal controllo
-                    # is_dynamic AND key not in page_data_dynamic.
                     if is_dynamic and key not in page_data_dynamic:
                         keys_to_delete.append(key)
 
                 for key in keys_to_delete:
-                    # Imposta la chiave a stringa vuota invece di eliminarla
+                    # CORREZIONE: Imposta la chiave a stringa vuota invece di eliminarla
                     page_block[key] = ""
-                    print(f"  - PULIZIA: Impostata chiave dinamica a vuoto: '{key}'.")
+                    print(f"  - PULIZIA: Impostata chiave dinamica a vuoto: '{key}'.")
 
                 # --- FASE 3: AGGIORNAMENTO CON LE NUOVE CHIAVI DINAMICHE ---
                 # Sovrascrive/Aggiunge i percorsi dei frammenti e delle immagini.
                 page_block.update(page_data_dynamic)
                 
-                print(f"  - Aggiornamento dinamico completato.")
+                print(f"  - Aggiornamento dinamico completato.")
 
             else:
-                print(f"  - SKIPPED: Impossibile estrarre lang/page_id da '{filename}'. Saltato.")
+                print(f"  - SKIPPED: Impossibile estrarre lang/page_id da '{filename}'. Saltato.")
 
         except json.JSONDecodeError:
-            print(f"  - ERRORE: File JSON non valido trovato: '{filename}'. Saltato.")
+            print(f"  - ERRORE: File JSON non valido trovato: '{filename}'. Saltato.")
         except Exception as e:
-            print(f"  - ERRORE inatteso durante l'elaborazione di '{filename}': {e}")
+            print(f"  - ERRORE inatteso durante l'elaborazione di '{filename}': {e}")
 
     # --- SALVATAGGIO DEL FILE FINALE SINCRONIZZATO PER OGNI LINGUA ---
     print("\nInizio fase di salvataggio per tutte le lingue processate...")
