@@ -1,19 +1,5 @@
 {
     "description": "Questo file contiene gli override manuali per le chiavi in texts.json. Le modifiche qui definite verranno applicate allo specifico PAGE_ID (es. 'manifattura') solo quando il manual_key_updater.py viene eseguito per quella pagina. le chiavi statiche  cono 'audioSource' 'headImage' 'pageTitle' 'pauseAudioButton' 'playAudioButton' 'sourceText' 'creationDate' 'lastUpdate' 'mainText'",
-    "manifattura": {
-        "it": {
-            "pageTitle": "Ex Manifattura Tabacchi - Titolo Fisso",
-            "lastUpdate": "2025-11-07",
-            "sourceText": "Archivio Storico del Quartiere Porto - Override Manuale",
-            "headImage": "manifattura/manifattura_head.jpg"
-        },
-        "en": {
-            "pageTitle": "Ex Tobacco Factory - Fixed Title",
-            "lastUpdate": "2025-11-07",
-            "sourceText": "Porto District Historical Archive - Manual Override",
-            "headImage": "manifattura.jpg"
-        }
-    },
     "chiesapioggia": {
         "it": {
             "playAudioButton": "Ascolta la storia",
@@ -29,7 +15,7 @@
             "mainText": "<p>Si entra en la iglesia, use auriculares para escuchar el audio.</p>",
             "sourceText": "Vaticano.com Santuarios y alrededores - Control manual",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "it/chiesapioggia.mp3"
+            "audioSource": "es/chiesapioggia.mp3"
         },
         "fr": {
             "playAudioButton": "Écouter le récit",
@@ -37,7 +23,7 @@
             "mainText": "<p>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</p>",
             "sourceText": "Vaticano.com Sanctuaires et environs - Contrôle manuel",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "it/chiesapioggia.mp3"
+            "audioSource": "fr/chiesapioggia.mp3"
         },
         "en": {
             "playAudioButton": "Listen with headphones",
@@ -48,6 +34,46 @@
             "audioSource": "en/chiesapioggia.mp3"
         }
     },
+    "manifattura": {
+        "it": {
+            "pageTitle": "Ex Manifattura Tabacchi",
+            "headImage": "manifattura.jpg",
+            "playAudioButton": "Ascolta la storia",
+            "pauseAudioButton": "Ferma la riproduzione",
+            "lastUpdate": "2025-11-07",
+            "sourceText": "Archivio Storico del Quartiere Porto",
+            "audioSource": "it/manifattura.mp3"
+        },
+        "es": {
+            "playAudioButton": "Escuchar la historia",
+            "pauseAudioButton": "Detener la reproducción",
+            "mainText": "",
+            "sourceText": "Archivo Histórico del Distrito de Oporto",
+            "lastUpdate": "2025-11-07",
+            "headImage": "manifattura.jpg",
+            "audioSource": "es/manifattura.mp3"
+        },
+        "fr": {
+            "pageTitle": "Ex Tobacco Factory",
+            "playAudioButton": "Écouter le récit",
+            "pauseAudioButton": "Arrêter la lecture",
+            "mainText": "",
+            "sourceText": "Archives historiques du quartier de Porto",
+            "lastUpdate": "2025-11-07",
+            "headImage": "manifattura.jpg",
+            "audioSource": "fr/manifattura.mp3"
+        },
+        "en": {
+            "pageTitle": "Ex Tobacco Factory - Fixed Title",
+            "lastUpdate": "2025-11-07",
+            "sourceText": "Porto District Historical Archive",
+            "headImage": "manifattura.jpg",
+            "playAudioButton": "Listen with headphones",
+            "pauseAudioButton": "Pause",
+            "mainText": "",
+            "audioSource": "en/manifattura.mp3"
+        }
+    },
     "pioggia1": {
         "it": {
             "playAudioButton": "Ascolta la storia",
@@ -56,6 +82,22 @@
             "sourceText": "Vaticano.com Santuari e Dintorni - Controllo Manuale",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "it/chiesapioggia.mp3"
+        },
+        "es": {
+            "playAudioButton": "Escuchar la historia",
+            "pauseAudioButton": "Detener la reproducción",
+            "mainText": "<p>Si entra en la iglesia, use auriculares para escuchar el audio.</p>",
+            "sourceText": "Vaticano.com Santuarios y alrededores - Control manual",
+            "headImage": "chiesapioggia.jpg",
+            "audioSource": "es/chiesapioggia.mp3"
+        },
+        "fr": {
+            "playAudioButton": "Écouter le récit",
+            "pauseAudioButton": "Arrêter la lecture",
+            "mainText": "<p>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</p>",
+            "sourceText": "Vaticano.com Sanctuaires et environs - Contrôle manuel",
+            "headImage": "chiesapioggia.jpg",
+            "audioSource": "fr/chiesapioggia.mp3"
         },
         "en": {
             "playAudioButton": "Listen with headphones",
@@ -68,8 +110,36 @@
     },
     "pioggia3": {
         "it": {
-            "playAudioButton": "Ascolta con le cuffie",
-            "lastUpdate": "2025-10-27"
+            "playAudioButton": "Ascolta la storia",
+            "pauseAudioButton": "Ferma la riproduzione",
+            "mainText": "<p>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </p>",
+            "sourceText": "Vaticano.com Santuari e Dintorni - Controllo Manuale",
+            "headImage": "chiesapioggia.jpg",
+            "audioSource": "it/chiesapioggia.mp3"
+        },
+        "es": {
+            "playAudioButton": "Escuchar la historia",
+            "pauseAudioButton": "Detener la reproducción",
+            "mainText": "<p>Si entra en la iglesia, use auriculares para escuchar el audio.</p>",
+            "sourceText": "Vaticano.com Santuarios y alrededores - Control manual",
+            "headImage": "chiesapioggia.jpg",
+            "audioSource": "es/chiesapioggia.mp3"
+        },
+        "fr": {
+            "playAudioButton": "Écouter le récit",
+            "pauseAudioButton": "Arrêter la lecture",
+            "mainText": "<p>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</p>",
+            "sourceText": "Vaticano.com Sanctuaires et environs - Contrôle manuel",
+            "headImage": "chiesapioggia.jpg",
+            "audioSource": "fr/chiesapioggia.mp3"
+        },
+        "en": {
+            "playAudioButton": "Listen with headphones",
+            "pauseAudioButton": "Pause",
+            "mainText": "<p>If you enter the church, use headphones to listen to the audio</p>",
+            "sourceText": "Vaticano.com Santuari e Dintorni - Manual Override",
+            "headImage": "chiesapioggia.jpg",
+            "audioSource": "en/chiesapioggia.mp3"
         }
     }
 }
