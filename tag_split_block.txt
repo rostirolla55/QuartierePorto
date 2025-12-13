@@ -1,0 +1,5 @@
+Paesaggio_con_San_Bartolomeo.jpg
+
+[SPLIT_BLOCK:San_Bartolomeo.jpg];
+
+[SPLIT_BLOCK:Turbina_Centrale_Cavaticcio];

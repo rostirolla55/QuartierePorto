@@ -43,7 +43,7 @@ const POIS_LOCATIONS = [
     { id: 'chiesasbene', lat: 44.501514, lon: 11.343557, distanceThreshold: 120 },
     // Piazzetta Pioggia da Galliera 44.498910, 11.342241
     { id: 'chiesapioggia', lat: 44.498910, lon: 11.342241, distanceThreshold: 120 },
-    // Paesaggio con San Bartolomeo Alfonso Lombardi -  44.498910, 11.342241
+    // Paesaggio con San Bartolomeo Alfonso Lombardi -  44.498910, 11.342241
     { id: 'pioggia1', lat: 44.498910, lon: 11.342241, distanceThreshold: 120 },
     // Scultura San Bartolomeo - 44.498910, 11.342241
     { id: 'pioggia2', lat: 44.498910, lon: 11.342241, distanceThreshold: 120 },
@@ -191,20 +191,16 @@ function updatePoiMenu(locations, userLat, userLon, userLang, allPageData) {
         uniquePois.forEach(poi => {
             const poiContent = allPageData ? allPageData[poi.id] : null;
 
+            // CORREZIONE 1: Aggiungi .trim() per pulire gli spazi bianchi e rimuovi l'indentazione del template literal
             const displayTitle = (poiContent && poiContent.pageTitle)
-                ? poiContent.pageTitle
+                ? poiContent.pageTitle.trim() // Rimuovi spazi all'inizio/fine
                 : `[Titolo mancante: ${poi.id}]`;
 
             const langSuffix = userLang === 'it' ? '-it' : `-${userLang}`;
             const href = `${poi.id}${langSuffix}.html`;
 
-            listItems += `
-                <li>
-                    <a href="${href}">
-                        ${displayTitle} 
-                        <span class="poi-distance">(${poi.distance.toFixed(0)}m)</span>
-                    </a>
-                </li>`;
+            // CORREZIONE 2: Rimuovi gli a capo e l'indentazione eccessiva
+            listItems += `<li><a href="${href}">${displayTitle} <span class="poi-distance">(${poi.distance.toFixed(0)}m)</span></a></li>`;
         });
 
         menuHtml = `<ul class="poi-links">${listItems}</ul>`;
@@ -215,7 +211,9 @@ function updatePoiMenu(locations, userLat, userLon, userLang, allPageData) {
 
         let noPoiMessage;
         switch (userLang) {
+            case 'es': noPoiMessage = `No se encontraron puntos de interés dentro ${maxThreshold}m.`; break;
             case 'en': noPoiMessage = `No Points of Interest found within ${maxThreshold}m.`; break;
+            case 'fr': noPoiMessage = `Aucun point d'interet trouve dans les environs ${maxThreshold}m.`; break;
             case 'it':
             default: noPoiMessage = `Nessun Punto di Interesse trovato entro ${maxThreshold}m.`; break;
         }
@@ -478,7 +476,7 @@ const checkProximity = (position, allPageData) => {
 const handleGeolocationError = (error) => {
     console.warn(`ERRORE GPS: ${error.code}: ${error.message}`);
     // Nascondi il pulsante in caso di errore non gestito
-    //    if (nearbyPoiButton) { nearbyPoiButton.style.display = 'none'; }
+    //    if (nearbyPoiButton) { nearbyPoiButton.style.display = 'none'; }
 };
 
 // main.js - Modifica la funzione startGeolocation
