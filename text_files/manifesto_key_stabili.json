@@ -1,0 +1,10 @@
+    "paginaxy": {
+        "pageTitle": "",  // testo per testata che va sopra all'immagine della testata
+        "mainText": ""  // informazioni di carattere temporaneo, come aperture, chiusure, orari che vengo presentate subito sotto  il bottone dell'audio ed è un testo html
+        "playAudioButton": "",  //il testo dentro al bottone audio quando è di colore blue per Ascolta
+        "pauseAudioButton": "", //il testo dentro al bottone audio quando è di colore arancione per Pausa
+        "sourceText": "", // il testo delle fonti delle informazioni riportate nella pagina
+        "creationDate": "2025-08-30",  // data creazione della pagina
+        "lastUpdate": "2025-10-01", // data dell'ultimo aggiornamento 
+        "audioSource": "[lang]/paginaxy.mp3" // nome del file mp3 che si trova in Assets\Audio
+    },

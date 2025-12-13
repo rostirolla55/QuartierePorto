@@ -1,0 +1,35 @@
+{
+    "description": "Questo file contiene gli override manuali per le chiavi in texts.json. Le modifiche qui definite verranno applicate allo specifico PAGE_ID (es. 'manifattura') solo quando il manual_key_updater.py viene eseguito per quella pagina. le chiavi statiche  cono 'audioSource' 'pageTitle' 'pauseAudioButton' 'playAudioButton' 'sourceText' 'creationDate' 'lastUpdate' 'mainText'",
+    
+    "manifattura": {
+        "it": {
+            "pageTitle": "Ex Manifattura Tabacchi - Titolo Fisso",
+            "lastUpdate": "2025-11-07",
+            "sourceText": "Archivio Storico del Quartiere Porto - Override Manuale",
+            "headImage": "manifattura/manifattura_head.jpg"
+        },
+        "en": {
+            "pageTitle": "Ex Tobacco Factory - Fixed Title",
+            "lastUpdate": "2025-11-07",
+            "sourceText": "Porto District Historical Archive - Manual Override",
+            "headImage": "manifattura/manifattura_head.jpg"
+        }
+    },
+    
+    "chiesapioggia": {
+        "it": {
+            "playAudioButton": "Ascolta la storia",
+            "pauseAudioButton": "Ferma la riproduzione",
+            "mainText":"<p>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </p>",
+            "sourceText": "Vaticano.com Santuari e Dintorni - Controllo Manuale",
+            "headImage": "chiesapioggia/chiesapioggia.jpg"
+        }
+    },
+
+    "pioggia3": {
+        "it": {
+            "playAudioButton": "Ascolta con le cuffie",
+            "lastUpdate": "2025-10-27"
+        }
+    }
+}
