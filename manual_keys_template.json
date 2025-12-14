@@ -180,7 +180,7 @@
         "it": {
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
-            "mainText": "<p>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </p>",
+            "mainText": "",
             "sourceText": "Settore Musei Civici Bologna | Area Storia e Memoria",
             "headImage": "panorama_bologna.jpg",
             "audioSource": "it/pugliole.mp3"
@@ -188,7 +188,7 @@
         "es": {
             "playAudioButton": "Escuchar la historia",
             "pauseAudioButton": "Detener la reproducción",
-            "mainText": "<p>Si entra en la iglesia, use auriculares para escuchar el audio.</p>",
+            "mainText": "",
             "sourceText": "Settore Musei Civici Bologna | Area Storia e Memoria",
             "headImage": "panorama_bologna.jpg",
             "audioSource": "es/pugliole.mp3"
@@ -196,7 +196,7 @@
         "fr": {
             "playAudioButton": "Écouter le récit",
             "pauseAudioButton": "Arrêter la lecture",
-            "mainText": "<p>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</p>",
+            "mainText": "",
             "sourceText": "Settore Musei Civici Bologna | Area Storia e Memoria",
             "headImage": "panorama_bologna.jpg",
             "audioSource": "fr/pugliole.mp3"
@@ -204,7 +204,7 @@
         "en": {
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
-            "mainText": "<p>If you enter the church, use headphones to listen to the audio</p>",
+            "mainText": "",
             "sourceText": "Settore Musei Civici Bologna | Area Storia e Memoria",
             "headImage": "panorama_bologna.jpg",
             "audioSource": "en/pugliole.mp3"
