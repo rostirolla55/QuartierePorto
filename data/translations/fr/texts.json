@@ -206,7 +206,7 @@
     "pioggia3": {
         "pageTitle": "Adoration des bergers",
         "mainText": "<p>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</p>",
-        "mainText1": "",
+        "mainText1": "fr_pioggia3_maintext1.html",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
@@ -214,7 +214,7 @@
         "playAudioButton": "Écouter le récit",
         "pauseAudioButton": "Arrêter la lecture",
         "headImage": "chiesapioggia.jpg",
-        "imageSource1": "pioggia3/AdorazionePastori.jpg",
+        "imageSource1": "",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
