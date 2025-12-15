@@ -146,7 +146,7 @@
         "it": {
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
-            "mainText": "<p><font color=\"#3465a4\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio</b></font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio</b></font> </p>",
             "sourceText": "Vaticano.com Santuari e Dintorni - Controllo Manuale",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "it/chiesapioggia.mp3"
