@@ -205,7 +205,7 @@
     },
     "pioggia3": {
         "pageTitle": "Adorazione dei pastori",
-        "mainText": "<p><font color=\"#3465a4\"> Se entri in chiesa, usa gli auricolari per ascoltare l'audio</font> </p>",
+        "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio</b></font> </p>",
         "mainText1": "it_pioggia3_maintext1.html",
         "mainText2": "it_pioggia3_maintext2.html",
         "mainText3": "",
