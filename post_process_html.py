@@ -39,7 +39,7 @@ def get_fragment_prefix(page_id: str) -> str:
     """
     if page_id.lower() == 'home':
         # La pagina fisica è index-lang.html, quindi anche il frammento usa index come prefisso
-        return 'index' 
+        return 'index'
     return page_id
 
 
@@ -49,6 +49,43 @@ def clean_html_content(html_content: str) -> str:
     # Rimuove le doppie nuove righe/spazi e tag <p> e </p> vuoti dopo la rimozione immagini.
     cleaned = re.sub(r'(<p[^>]*>\s*</p>|\n\s*\n)', '\n', cleaned).strip()
     return cleaned
+
+# =========================================================================
+# FUNZIONE PER PULIZIA SPECIFICA DEI MARCATORI SPLIT
+# =========================================================================
+
+def sanitize_split_markers(html_content: str) -> str:
+    """
+    Applica una pre-pulizia all'HTML per rimuovere i tag HTML indesiderati 
+    (come <u>, <strong>, <span>) che il convertitore DOCX introduce all'interno 
+    del marker [SPLIT_BLOCK:...], che altrimenti impedirebbero il riconoscimento 
+    della RegEx principale.
+    
+    Il pattern cerca il marcatore contaminato e rimuove tutti i tag <...> al suo interno.
+    """
+    print("DEBUG: Pre-pulizia dei marcatori SPLIT...")
+    
+    # Pattern per trovare l'intera area che va da '[' a ']' contenente SPLIT_BLOCK
+    contamination_area_pattern = re.compile(r'\[[^\]]*?SPLIT_BLOCK[^\]]*?\]', re.IGNORECASE | re.DOTALL)
+    
+    def clean_match(match):
+        # Prende il testo trovato (es. [<u>SPLIT</u>_BLOCK:AdorazionePastori.jpg])
+        contaminated_text = match.group(0)
+        
+        # Rimuove tutti i tag HTML dall'interno (es. <u>, </u>)
+        cleaned_text = re.sub(r'<\/?\w+[^>]*?>', '', contaminated_text)
+        
+        # Rimuove spazi extra e ritorna la stringa pulita (es. [SPLIT_BLOCK:AdorazionePastori.jpg])
+        return cleaned_text.strip()
+
+    # Sostituisce tutte le aree contaminate con la versione pulita
+    sanitized_content = contamination_area_pattern.sub(clean_match, html_content)
+    
+    if sanitized_content != html_content:
+        print("DEBUG: Trovati e puliti marcatori SPLIT contaminati da HTML.")
+    
+    return sanitized_content
+
 
 def process_document(html_input: str, lang: str, page_id: str) -> Tuple[Dict[str, str], Dict[str, str]]:
     """
@@ -62,6 +99,9 @@ def process_document(html_input: str, lang: str, page_id: str) -> Tuple[Dict[str
     fragment_file_prefix = get_fragment_prefix(page_id_lower)
     print(f"DEBUG: Prefisso per i nomi dei file frammento: '{fragment_file_prefix}'")
 
+    # --- STEP 0: PRE-PULIZIA DEL MARKER SPLIT ---
+    # Risolve il problema del markup indesiderato (es. <u>) all'interno di [SPLIT_BLOCK:...]
+    html_input = sanitize_split_markers(html_input)
 
     # --- STEP 1: RIMOZIONE E TOKENIZZAZIONE ---
 
