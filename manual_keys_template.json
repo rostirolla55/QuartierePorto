@@ -1,5 +1,5 @@
 {
-    "description": "Questo file contiene gli override manuali per le chiavi in texts.json. Le modifiche qui definite verranno applicate allo specifico PAGE_ID (es. 'manifattura') solo quando il manual_key_updater.py viene eseguito per quella pagina. le chiavi statiche  cono 'audioSource' 'headImage' 'pageTitle' 'pauseAudioButton' 'playAudioButton' 'sourceText' 'creationDate' 'lastUpdate' 'mainText'",
+    "description": "<font color=\"#ff0000\">rosso</font>, <font color=\"#3465a4\">blu</font> Questo file contiene gli override manuali per le chiavi in texts.json. Le modifiche qui definite verranno applicate allo specifico PAGE_ID (es. 'manifattura') solo quando il manual_key_updater.py viene eseguito per quella pagina. le chiavi statiche  cono 'audioSource' 'headImage' 'pageTitle' 'pauseAudioButton' 'playAudioButton' 'sourceText' 'creationDate' 'lastUpdate' 'mainText'",
     "chiesapioggia": {
         "it": {
             "playAudioButton": "Ascolta la storia",
@@ -146,7 +146,7 @@
         "it": {
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
-            "mainText": "<p>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </p>",
+            "mainText": "<p><font color=\"#3465a4\"> Se entri in chiesa, usa gli auricolari per ascoltare l'audio</font> </p>",
             "sourceText": "Vaticano.com Santuari e Dintorni - Controllo Manuale",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "it/chiesapioggia.mp3"

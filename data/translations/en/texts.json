@@ -205,7 +205,7 @@
     },
     "pioggia3": {
         "pageTitle": "Adoration of the Shepherds",
-        "mainText": "",
+        "mainText": "<p>If you enter the church, use headphones to listen to the audio</p>",
         "mainText1": "",
         "mainText2": "",
         "mainText3": "",
@@ -219,10 +219,10 @@
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
-        "sourceText": "Historical Archives of the Municipality of Bologna.",
+        "sourceText": "Vaticano.com Santuari e Dintorni - Manual Override",
         "creationDate": "2025-10-26",
         "lastUpdate": "2025-10-26",
-        "audioSource": "en/pioggia3.mp3"
+        "audioSource": "en/chiesapioggia.mp3"
     },
     "manifattura": {
         "pageTitle": "Ex Tobacco Factory - Fixed Title",
