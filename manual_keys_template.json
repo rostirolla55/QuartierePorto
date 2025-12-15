@@ -78,7 +78,7 @@
         "it": {
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
-            "mainText": "<p><font color=\"#ff0000\"><b><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio</b></font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio</b></font> </p>",
             "sourceText": "Vaticano.com Santuari e Dintorni - Controllo Manuale",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "it/chiesapioggia.mp3"
@@ -94,7 +94,7 @@
         "fr": {
             "playAudioButton": "Écouter le récit",
             "pauseAudioButton": "Arrêter la lecture",
-            "mainText": "<p><font color=\"#ff0000\"><b><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p>",
             "sourceText": "Vaticano.com Sanctuaires et environs - Contrôle manuel",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "fr/chiesapioggia.mp3"
@@ -102,7 +102,7 @@
         "en": {
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
-            "mainText": "<p><font color=\"#ff0000\"><b><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p>",
             "sourceText": "Vaticano.com Santuari e Dintorni - Manual Override",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "en/chiesapioggia.mp3"
@@ -146,7 +146,7 @@
         "it": {
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
-            "mainText": "<p><font color=\"#ff0000\"><b><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio</b></font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio</b></font> </p>",
             "sourceText": "Vaticano.com Santuari e Dintorni - Controllo Manuale",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "it/chiesapioggia.mp3"
