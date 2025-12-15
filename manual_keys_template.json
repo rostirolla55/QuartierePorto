@@ -2,6 +2,7 @@
     "description": "<font color=\"#ff0000\">rosso</font>, <font color=\"#3465a4\">blu</font> Questo file contiene gli override manuali per le chiavi in texts.json. Le modifiche qui definite verranno applicate allo specifico PAGE_ID (es. 'manifattura') solo quando il manual_key_updater.py viene eseguito per quella pagina. le chiavi statiche  cono 'audioSource' 'headImage' 'pageTitle' 'pauseAudioButton' 'playAudioButton' 'sourceText' 'creationDate' 'lastUpdate' 'mainText'",
     "chiesapioggia": {
         "it": {
+            "pageTitle": "Chiesa della Pioggia",
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
             "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p>",
@@ -10,6 +11,7 @@
             "audioSource": "it/chiesapioggia.mp3"
         },
         "es": {
+            "pageTitle": "Iglesia de Pioggia",
             "playAudioButton": "Escuchar la historia",
             "pauseAudioButton": "Detener la reproducción",
             "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p>",
@@ -18,6 +20,7 @@
             "audioSource": "es/chiesapioggia.mp3"
         },
         "fr": {
+            "pageTitle": "Église de la Pluie",
             "playAudioButton": "Écouter le récit",
             "pauseAudioButton": "Arrêter la lecture",
             "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p>",
@@ -26,6 +29,7 @@
             "audioSource": "fr/chiesapioggia.mp3"
         },
         "en": {
+            "pageTitle": "Church of the Rain",
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
             "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p>",
@@ -45,6 +49,7 @@
             "audioSource": "it/manifattura.mp3"
         },
         "es": {
+            "pageTitle": "Ex Manifattura Tabacchi",
             "playAudioButton": "Escuchar la historia",
             "pauseAudioButton": "Detener la reproducción",
             "mainText": "",
@@ -76,6 +81,7 @@
     },
     "pioggia1": {
         "it": {
+            "pageTitle": "Paesaggio con San Bartolomeo",
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
             "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio</b></font> </p>",
@@ -84,6 +90,7 @@
             "audioSource": "it/chiesapioggia.mp3"
         },
         "es": {
+            "pageTitle": "Landscape with St. Bartholomew",
             "playAudioButton": "Escuchar la historia",
             "pauseAudioButton": "Detener la reproducción",
             "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p>",
@@ -92,6 +99,7 @@
             "audioSource": "es/chiesapioggia.mp3"
         },
         "fr": {
+            "pageTitle": "Paysage avec Saint-Barthélemy",
             "playAudioButton": "Écouter le récit",
             "pauseAudioButton": "Arrêter la lecture",
             "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p>",
@@ -100,6 +108,7 @@
             "audioSource": "fr/chiesapioggia.mp3"
         },
         "en": {
+            "pageTitle": "Landscape with St. Bartholomew",
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
             "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p>",
@@ -110,6 +119,7 @@
     },
     "pioggia2": {
         "it": {
+            "pageTitle": "Scultura San Bartolomeo",
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
             "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </b></font> </p>",
@@ -118,6 +128,7 @@
             "audioSource": "it/chiesapioggia.mp3"
         },
         "es": {
+            "pageTitle": "Escultura de San Bartolomé",
             "playAudioButton": "Escuchar la historia",
             "pauseAudioButton": "Detener la reproducción",
             "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p>",
@@ -126,6 +137,7 @@
             "audioSource": "es/chiesapioggia.mp3"
         },
         "fr": {
+            "pageTitle": "Sculpture de Saint Barthélemy",
             "playAudioButton": "Écouter le récit",
             "pauseAudioButton": "Arrêter la lecture",
             "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p>",
@@ -134,6 +146,7 @@
             "audioSource": "fr/chiesapioggia.mp3"
         },
         "en": {
+            "pageTitle": "Saint Bartholomew Sculpture",
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
             "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p>",
@@ -144,6 +157,7 @@
     },
     "pioggia3": {
         "it": {
+            "pageTitle": "Adorazione dei pastori",
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
             "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio</b></font> </p>",
@@ -152,6 +166,7 @@
             "audioSource": "it/chiesapioggia.mp3"
         },
         "es": {
+            "pageTitle": "Adoración de los pastores",
             "playAudioButton": "Escuchar la historia",
             "pauseAudioButton": "Detener la reproducción",
             "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p>",
@@ -160,6 +175,7 @@
             "audioSource": "es/chiesapioggia.mp3"
         },
         "fr": {
+            "pageTitle": "Adoration des bergers",
             "playAudioButton": "Écouter le récit",
             "pauseAudioButton": "Arrêter la lecture",
             "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p>",
@@ -168,6 +184,7 @@
             "audioSource": "fr/chiesapioggia.mp3"
         },
         "en": {
+            "pageTitle": "Adoration of the Shepherds",
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
             "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p>",
