@@ -163,7 +163,7 @@
             "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio</b></font> </p>",
             "sourceText": "Vaticano.com Santuari e Dintorni - Controllo Manuale",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "it/chiesapioggia.mp3"
+            "audioSource": "it/pioggia3.mp3"
         },
         "es": {
             "pageTitle": "Adoración de los pastores",
@@ -172,7 +172,7 @@
             "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p>",
             "sourceText": "Vaticano.com Santuarios y alrededores - Control manual",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "es/chiesapioggia.mp3"
+            "audioSource": "es/pioggia3.mp3"
         },
         "fr": {
             "pageTitle": "Adoration des bergers",
@@ -181,7 +181,7 @@
             "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p>",
             "sourceText": "Vaticano.com Sanctuaires et environs - Contrôle manuel",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "fr/chiesapioggia.mp3"
+            "audioSource": "fr/pioggia3.mp3"
         },
         "en": {
             "pageTitle": "Adoration of the Shepherds",
@@ -190,7 +190,7 @@
             "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p>",
             "sourceText": "Vaticano.com Santuari e Dintorni - Manual Override",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "en/chiesapioggia.mp3"
+            "audioSource": "en/pioggia3.mp3"
         }
     },
     "pugliole": {
