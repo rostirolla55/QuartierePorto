@@ -142,7 +142,7 @@
     },
     "chiesapioggia": {
         "pageTitle": "Église de la Pluie",
-        "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font></p>",
+        "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Horaires d'ouverture : Mar 16/12 - Sam 20/12 : 9h15-12h00, 15h00-18h00 ; Dim 21/12 : 10h00-12h00 ; Mar 23/12, Mer 24/12 : 9h15-12h00, 15h00-18h00</font> </p>",
         "mainText1": "fr_chiesapioggia_maintext1.html",
         "mainText2": "",
         "mainText3": "",

@@ -142,7 +142,7 @@
     },
     "chiesapioggia": {
         "pageTitle": "Chiesa della Pioggia",
-        "mainText": "<p>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </p>",
+        "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Orari di apertura: mar 16/12 - sab 20/12: 9:15-12:00, 15:00-18:00 dom 21/12: 10:00-12:00 mar 23/12, mer 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
         "mainText1": "it_chiesapioggia_maintext1.html",
         "mainText2": "",
         "mainText3": "",
