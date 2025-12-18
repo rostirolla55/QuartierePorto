@@ -1,0 +1,29 @@
+goqrtp
+cdt DOCS_DA_CONVERTIRE
+dir
+dir *html_*.jpg
+del *html_*.jpg
+dir
+mv "Revisione Finale.docx" ..\ricerche
+dir his*
+del his*
+dir
+dir *html_*.png
+del *html_*.png
+carracci_it.docx
+cavaticcio.docx
+del cavaticcio.docx
+mv cavaticcio_informazioni.docx ..\ricerche
+cavaticcio_it.docx
+cavaticcio_en.docx
+cavaticcio_es.docx
+cavaticcio_fr.docx
+cd ..
+convert_page.bat it cavaticcio
+convert_page.bat en cavaticcio
+convert_page.bat es cavaticcio
+convert_page.bat fr cavaticcio
+convert_page.bat es cavaticcio
+convert_page.bat it cavaticcio
+convert_page.bat fr cavaticcio
+esci

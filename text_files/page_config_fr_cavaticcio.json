@@ -1,5 +1,7 @@
 {
     "mainText1": "fr_cavaticcio_maintext1.html",
     "imageSource1": "cavaticcio/Turbina_Centrale_Cavaticcio.jpg",
-    "mainText2": "fr_cavaticcio_maintext2.html"
+    "mainText2": "fr_cavaticcio_maintext2.html",
+    "imageSource2": "cavaticcio/Edificio_Centrale_Cavaticcio.jpg",
+    "mainText3": "fr_cavaticcio_maintext3.html"
 }
