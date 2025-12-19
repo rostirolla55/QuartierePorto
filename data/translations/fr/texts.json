@@ -120,25 +120,25 @@
         "audioSource": "fr/carracci.mp3"
     },
     "chiesasbene": {
-        "pageTitle": "Église San Benedetto",
-        "mainText": "",
+        "pageTitle": "Église de la Pluie",
+        "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Pour connaître les horaires d'ouverture, veuillez consulter la page https://dindondan.app/orarimesse/San-Benedetto-Bologna-602DC </font> </p>",
         "mainText1": "fr_chiesasbene_maintext1.html",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
         "mainText5": "",
-        "playAudioButton": "Écouter l'histoire Histoire",
-        "pauseAudioButton": "Pause",
-        "headImage": "panorama_bologna.jpg",
+        "playAudioButton": "Écouter le récit",
+        "pauseAudioButton": "Arrêter la lecture",
+        "headImage": "chiesapioggia.jpg",
         "imageSource1": "",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
-        "sourceText": "Archives historiques de la municipalité de Bologne.",
+        "sourceText": "",
         "creationDate": "30/08/2025",
-        "lastUpdate": "01/10/2025",
-        "audioSource": "fr/chiesasbene.mp3"
+        "lastUpdate": "2025-12-19",
+        "audioSource": "fr/chiesapioggia.mp3"
     },
     "chiesapioggia": {
         "pageTitle": "Église de la Pluie",

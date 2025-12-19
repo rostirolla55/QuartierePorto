@@ -42,6 +42,48 @@
             "audioSource": "en/chiesapioggia.mp3"
         }
     },
+    "chiesasbene": {
+        "it": {
+            "pageTitle": "Chiesa di San Benedetto",
+            "playAudioButton": "Ascolta la storia",
+            "pauseAudioButton": "Ferma la riproduzione",
+            "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consultare la pagina https://dindondan.app/orarimesse/San-Benedetto-Bologna-602DC </font> </p>",
+            "sourceText": "",
+            "lastUpdate": "2025-12-19",
+            "headImage": "chiesapioggia.jpg",
+            "audioSource": "it/chiesapioggia.mp3"
+        },
+        "es": {
+            "pageTitle": "Iglesia de Pioggia",
+            "playAudioButton": "Escuchar la historia",
+            "pauseAudioButton": "Detener la reproducción",
+            "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p><p><font color=\"#3465a4\">Para conocer el horario de apertura, visite la página https://dindondan.app/orarimesse/San-Benedetto-Bologna-602DC </font> </p>",
+            "sourceText": " ",
+            "lastUpdate": "2025-12-19",
+            "headImage": "chiesapioggia.jpg",
+            "audioSource": "es/chiesapioggia.mp3"
+        },
+        "fr": {
+            "pageTitle": "Église de la Pluie",
+            "playAudioButton": "Écouter le récit",
+            "pauseAudioButton": "Arrêter la lecture",
+            "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Pour connaître les horaires d'ouverture, veuillez consulter la page https://dindondan.app/orarimesse/San-Benedetto-Bologna-602DC </font> </p>",
+            "sourceText": "",
+            "lastUpdate": "2025-12-19",
+            "headImage": "chiesapioggia.jpg",
+            "audioSource": "fr/chiesapioggia.mp3"
+        },
+        "en": {
+            "pageTitle": "Church of the Rain",
+            "playAudioButton": "Listen with headphones",
+            "pauseAudioButton": "Pause",
+            "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p><p><font color=\"#3465a4\">To find out the opening hours, please visit the page https://dindondan.app/orarimesse/San-Benedetto-Bologna-602DC </font> </p>",
+            "sourceText": "",
+            "lastUpdate": "2025-12-19",
+            "headImage": "chiesapioggia.jpg",
+            "audioSource": "en/chiesapioggia.mp3"
+        }
+    },
     "cavaticcio": {
         "it": {
             "pageTitle": "Centrale Idroelettrica del Cavaticcio",
