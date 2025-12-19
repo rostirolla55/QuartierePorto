@@ -45,7 +45,7 @@
     "cavaticcio": {
         "it": {
             "pageTitle": "Centrale Idroelettrica del Cavaticcio",
-            "headImage": "cavaticcio.jpg",
+            "headImage": "panorama_bologna.jpg",
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
             "mainText": "",
@@ -60,7 +60,7 @@
             "mainText": "",
             "sourceText": "Archivo Histórico del Distrito de Oporto",
             "lastUpdate": "2025-12-19",
-            "headImage": "cavaticcio.jpg",
+            "headImage": "panorama_bologna.jpg",
             "audioSource": "es/centraleidroelettricacavaticcio.mp3"
         },
         "fr": {
@@ -70,14 +70,14 @@
             "mainText": "",
             "sourceText": "Archives historiques du quartier de Porto",
             "lastUpdate": "2025-12-19",
-            "headImage": "cavaticcio.jpg",
+            "headImage": "panorama_bologna.jpg",
             "audioSource": "fr/centraleidroelettricacavaticcio.mp3"
         },
         "en": {
             "pageTitle": "Cavaticcio hydroelectric power plant",
             "lastUpdate": "2025-12-19",
             "sourceText": "Porto District Historical Archive",
-            "headImage": "cavaticcio.jpg",
+            "headImage": "panorama_bologna.jpg",
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
             "mainText": "",
