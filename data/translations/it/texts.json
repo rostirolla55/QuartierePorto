@@ -129,7 +129,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Ferma la riproduzione",
-        "headImage": "chiesapioggia.jpg",
+        "headImage": "panorama_bologna.jpg",
         "imageSource1": "",
         "imageSource2": "",
         "imageSource3": "",
@@ -138,7 +138,7 @@
         "sourceText": "",
         "creationDate": "2025-08-30",
         "lastUpdate": "2025-12-19",
-        "audioSource": "it/chiesapioggia.mp3"
+        "audioSource": "it/chiesasbene.mp3"
     },
     "chiesapioggia": {
         "pageTitle": "Chiesa della Pioggia",
