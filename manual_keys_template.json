@@ -42,6 +42,48 @@
             "audioSource": "en/chiesapioggia.mp3"
         }
     },
+    "cavaticcio": {
+        "it": {
+            "pageTitle": "Centrale Idroelettrica del Cavaticcio",
+            "headImage": "cavaticcio.jpg",
+            "playAudioButton": "Ascolta la storia",
+            "pauseAudioButton": "Ferma la riproduzione",
+            "mainText": "",
+            "lastUpdate": "2025-12-19",
+            "sourceText": "Archivio Storico del Quartiere Porto",
+            "audioSource": "it/centraleidroelettricacavaticcio.mp3"
+        },
+        "es": {
+            "pageTitle": "Central hidroeléctrica de Cavaticcio",
+            "playAudioButton": "Escuchar la historia",
+            "pauseAudioButton": "Detener la reproducción",
+            "mainText": "",
+            "sourceText": "Archivo Histórico del Distrito de Oporto",
+            "lastUpdate": "2025-12-19",
+            "headImage": "cavaticcio.jpg",
+            "audioSource": "es/centraleidroelettricacavaticcio.mp3"
+        },
+        "fr": {
+            "pageTitle": "centrale hydroélectrique de Cavaticcio",
+            "playAudioButton": "Écouter le récit",
+            "pauseAudioButton": "Arrêter la lecture",
+            "mainText": "",
+            "sourceText": "Archives historiques du quartier de Porto",
+            "lastUpdate": "2025-12-19",
+            "headImage": "cavaticcio.jpg",
+            "audioSource": "fr/centraleidroelettricacavaticcio.mp3"
+        },
+        "en": {
+            "pageTitle": "Cavaticcio hydroelectric power plant",
+            "lastUpdate": "2025-12-19",
+            "sourceText": "Porto District Historical Archive",
+            "headImage": "cavaticcio.jpg",
+            "playAudioButton": "Listen with headphones",
+            "pauseAudioButton": "Pause",
+            "mainText": "",
+            "audioSource": "en/centraleidroelettricacavaticcio.mp3"
+        }
+    },    
     "manifattura": {
         "it": {
             "pageTitle": "Ex Manifattura Tabacchi",

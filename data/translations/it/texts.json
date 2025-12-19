@@ -274,17 +274,17 @@
         "mainText3": "it_cavaticcio_maintext3.html",
         "mainText4": "",
         "mainText5": "",
-        "playAudioButton": "Ascolta con le cuffie",
-        "pauseAudioButton": "Pausa",
-        "headImage": "panorama_bologna.jpg",
+        "playAudioButton": "Ascolta la storia",
+        "pauseAudioButton": "Ferma la riproduzione",
+        "headImage": "cavaticcio.jpg",
         "imageSource1": "cavaticcio/Turbina_Centrale_Cavaticcio.jpg",
         "imageSource2": "cavaticcio/Edificio_Centrale_Cavaticcio.jpg",
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
-        "sourceText": "",
+        "sourceText": "Archivio Storico del Quartiere Porto",
         "creationDate": "2025-11-27",
-        "lastUpdate": "2025-11-27",
-        "audioSource": "it/cavaticcio.mp3"
+        "lastUpdate": "2025-12-19",
+        "audioSource": "it/centraleidroelettricacavaticcio.mp3"
     }
 }
