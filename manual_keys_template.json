@@ -5,8 +5,9 @@
             "pageTitle": "Chiesa della Pioggia",
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
-            "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Orari di apertura: mar 16/12 - sab 20/12: 9:15-12:00, 15:00-18:00 dom 21/12: 10:00-12:00 mar 23/12, mer 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consulatare la pagina https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "it/chiesapioggia.mp3"
         },
@@ -14,8 +15,9 @@
             "pageTitle": "Iglesia de Pioggia",
             "playAudioButton": "Escuchar la historia",
             "pauseAudioButton": "Detener la reproducción",
-            "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p><p><font color=\"#3465a4\">Horario de apertura: Mar 16/12 - Sáb 20/12: 9:15-12:00, 15:00-18:00 Dom 21/12: 10:00-12:00 Mar 23/12, Mié 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p><p><font color=\"#3465a4\">Horario de apertura: </font> </p>",
             "sourceText": " ",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "es/chiesapioggia.mp3"
         },
@@ -23,8 +25,9 @@
             "pageTitle": "Église de la Pluie",
             "playAudioButton": "Écouter le récit",
             "pauseAudioButton": "Arrêter la lecture",
-            "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Horaires d'ouverture : Mar 16/12 - Sam 20/12 : 9h15-12h00, 15h00-18h00 ; Dim 21/12 : 10h00-12h00 ; Mar 23/12, Mer 24/12 : 9h15-12h00, 15h00-18h00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Horaires d'ouverture : </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "fr/chiesapioggia.mp3"
         },
@@ -32,8 +35,9 @@
             "pageTitle": "Church of the Rain",
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
-            "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p><p><font color=\"#3465a4\">Opening hours: Tue 16/12 - Sat 20/12: 9:15-12:00, 15:00-18:00 Sun 21/12: 10:00-12:00 Tue 23/12, Wed 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p><p><font color=\"#3465a4\">Opening hours: </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "en/chiesapioggia.mp3"
         }
@@ -84,8 +88,9 @@
             "pageTitle": "Paesaggio con San Bartolomeo",
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
-            "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Orari di apertura: mar 16/12 - sab 20/12: 9:15-12:00, 15:00-18:00 dom 21/12: 10:00-12:00 mar 23/12, mer 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consulatare la pagina https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "it/chiesapioggia.mp3"
         },
@@ -93,8 +98,9 @@
             "pageTitle": "Landscape with St. Bartholomew",
             "playAudioButton": "Escuchar la historia",
             "pauseAudioButton": "Detener la reproducción",
-            "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p><p><font color=\"#3465a4\">Horario de apertura: Mar 16/12 - Sáb 20/12: 9:15-12:00, 15:00-18:00 Dom 21/12: 10:00-12:00 Mar 23/12, Mié 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p><p><font color=\"#3465a4\">Horario de apertura: </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "es/chiesapioggia.mp3"
         },
@@ -102,8 +108,9 @@
             "pageTitle": "Paysage avec Saint-Barthélemy",
             "playAudioButton": "Écouter le récit",
             "pauseAudioButton": "Arrêter la lecture",
-            "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Horaires d'ouverture : Mar 16/12 - Sam 20/12 : 9h15-12h00, 15h00-18h00 ; Dim 21/12 : 10h00-12h00 ; Mar 23/12, Mer 24/12 : 9h15-12h00, 15h00-18h00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Horaires d'ouverture : </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "fr/chiesapioggia.mp3"
         },
@@ -111,8 +118,9 @@
             "pageTitle": "Landscape with St. Bartholomew",
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
-            "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p><p><font color=\"#3465a4\">Opening hours: Tue 16/12 - Sat 20/12: 9:15-12:00, 15:00-18:00 Sun 21/12: 10:00-12:00 Tue 23/12, Wed 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p><p><font color=\"#3465a4\">Opening hours: </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "en/chiesapioggia.mp3"
         }
@@ -122,8 +130,9 @@
             "pageTitle": "Scultura San Bartolomeo",
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
-            "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Orari di apertura: mar 16/12 - sab 20/12: 9:15-12:00, 15:00-18:00 dom 21/12: 10:00-12:00 mar 23/12, mer 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consulatare la pagina https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "it/chiesapioggia.mp3"
         },
@@ -131,8 +140,9 @@
             "pageTitle": "Escultura de San Bartolomé",
             "playAudioButton": "Escuchar la historia",
             "pauseAudioButton": "Detener la reproducción",
-            "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p><p><font color=\"#3465a4\">Horario de apertura: Mar 16/12 - Sáb 20/12: 9:15-12:00, 15:00-18:00 Dom 21/12: 10:00-12:00 Mar 23/12, Mié 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p><p><font color=\"#3465a4\">Horario de apertura: </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "es/chiesapioggia.mp3"
         },
@@ -140,8 +150,9 @@
             "pageTitle": "Sculpture de Saint Barthélemy",
             "playAudioButton": "Écouter le récit",
             "pauseAudioButton": "Arrêter la lecture",
-            "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Horaires d'ouverture : Mar 16/12 - Sam 20/12 : 9h15-12h00, 15h00-18h00 ; Dim 21/12 : 10h00-12h00 ; Mar 23/12, Mer 24/12 : 9h15-12h00, 15h00-18h00</font> </p>",
-           "sourceText": "",
+            "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Horaires d'ouverture : </font> </p>",
+            "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "fr/chiesapioggia.mp3"
         },
@@ -149,8 +160,9 @@
             "pageTitle": "Saint Bartholomew Sculpture",
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
-             "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p><p><font color=\"#3465a4\">Opening hours: Tue 16/12 - Sat 20/12: 9:15-12:00, 15:00-18:00 Sun 21/12: 10:00-12:00 Tue 23/12, Wed 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p><p><font color=\"#3465a4\">Opening hours: </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "en/chiesapioggia.mp3"
         }
@@ -160,8 +172,9 @@
             "pageTitle": "Adorazione dei pastori",
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
-            "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Orari di apertura: mar 16/12 - sab 20/12: 9:15-12:00, 15:00-18:00 dom 21/12: 10:00-12:00 mar 23/12, mer 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consulatare la pagina https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "it/pioggia3.mp3"
         },
@@ -169,8 +182,9 @@
             "pageTitle": "Adoración de los pastores",
             "playAudioButton": "Escuchar la historia",
             "pauseAudioButton": "Detener la reproducción",
-            "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p><p><font color=\"#3465a4\">Horario de apertura: Mar 16/12 - Sáb 20/12: 9:15-12:00, 15:00-18:00 Dom 21/12: 10:00-12:00 Mar 23/12, Mié 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p><p><font color=\"#3465a4\">Horario de apertura: </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "es/pioggia3.mp3"
         },
@@ -178,8 +192,9 @@
             "pageTitle": "Adoration des bergers",
             "playAudioButton": "Écouter le récit",
             "pauseAudioButton": "Arrêter la lecture",
-            "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Horaires d'ouverture : Mar 16/12 - Sam 20/12 : 9h15-12h00, 15h00-18h00 ; Dim 21/12 : 10h00-12h00 ; Mar 23/12, Mer 24/12 : 9h15-12h00, 15h00-18h00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Horaires d'ouverture : </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "fr/pioggia3.mp3"
         },
@@ -187,8 +202,9 @@
             "pageTitle": "Adoration of the Shepherds",
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
-            "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p><p><font color=\"#3465a4\">Opening hours: Tue 16/12 - Sat 20/12: 9:15-12:00, 15:00-18:00 Sun 21/12: 10:00-12:00 Tue 23/12, Wed 24/12: 9:15-12:00, 15:00-18:00</font> </p>",
+            "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p><p><font color=\"#3465a4\">Opening hours: </font> </p>",
             "sourceText": "",
+            "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "en/pioggia3.mp3"
         }
