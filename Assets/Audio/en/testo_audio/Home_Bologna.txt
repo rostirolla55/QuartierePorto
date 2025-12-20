@@ -1,5 +1,5 @@
 Welcome. This page will allow you to access information about the interesting places you encounter while walking through the streets of the Porto neighborhood.
-Here's how to use the pages in this app.
+Here's how to use the pages on this site.
 At the top left, you'll see three horizontal lines representing the menu button for all the pages you can browse.
 On the left, a few seconds after opening the page, a green rectangular button appears, presenting a menu of pages about places near you.
 To the left of the green button are flags that allow you to choose your language.

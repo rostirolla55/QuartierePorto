@@ -1,5 +1,5 @@
 Bienvenido. Esta página te permitirá acceder a información sobre los lugares interesantes que encontrarás mientras paseas por las calles del barrio de Porto.
-Aquí te explicamos cómo usar las páginas de esta app.
+Aquí te explicamos cómo usar las páginas de este sitio.
 En la esquina superior izquierda, verás tres líneas horizontales que representan el botón de menú para todas las páginas que puedes explorar.
 A la izquierda, unos segundos después de abrir la página, aparece un botón rectangular verde que presenta un menú de páginas sobre lugares cerca de ti.
 A la izquierda del botón verde hay banderas que te permiten elegir tu idioma.
