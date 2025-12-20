@@ -181,7 +181,7 @@
             "sourceText": "",
             "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "it/chiesapioggia.mp3"
+            "audioSource": "it/pioggia1.mp3"
         },
         "es": {
             "pageTitle": "Landscape with St. Bartholomew",
@@ -191,7 +191,7 @@
             "sourceText": "",
             "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "es/chiesapioggia.mp3"
+            "audioSource": "es/pioggia1.mp3"
         },
         "fr": {
             "pageTitle": "Paysage avec Saint-Barthélemy",
@@ -201,7 +201,7 @@
             "sourceText": "",
             "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "fr/chiesapioggia.mp3"
+            "audioSource": "fr/pioggia1.mp3"
         },
         "en": {
             "pageTitle": "Landscape with St. Bartholomew",
@@ -211,7 +211,7 @@
             "sourceText": "",
             "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "en/chiesapioggia.mp3"
+            "audioSource": "en/pioggia1.mp3"
         }
     },
     "pioggia2": {
@@ -223,7 +223,7 @@
             "sourceText": "",
             "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "it/chiesapioggia.mp3"
+            "audioSource": "it/pioggia2.mp3"
         },
         "es": {
             "pageTitle": "Escultura de San Bartolomé",
@@ -233,7 +233,7 @@
             "sourceText": "",
             "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "es/chiesapioggia.mp3"
+            "audioSource": "es/pioggia2.mp3"
         },
         "fr": {
             "pageTitle": "Sculpture de Saint Barthélemy",
@@ -243,7 +243,7 @@
             "sourceText": "",
             "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "fr/chiesapioggia.mp3"
+            "audioSource": "fr/pioggia2.mp3"
         },
         "en": {
             "pageTitle": "Saint Bartholomew Sculpture",
@@ -253,7 +253,7 @@
             "sourceText": "",
             "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
-            "audioSource": "en/chiesapioggia.mp3"
+            "audioSource": "en/pioggia2.mp3"
         }
     },
     "pioggia3": {
