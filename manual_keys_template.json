@@ -84,7 +84,12 @@
             "audioSource": "en/chiesasbene.mp3"
         }
     },
-    "cavaticcio": {
+    "lastre": {
+        "it": {
+            "audioSource": "it/lastre.mp3"
+        }
+    },   
+     "cavaticcio": {
         "it": {
             "pageTitle": "Centrale Idroelettrica del Cavaticcio",
             "headImage": "panorama_bologna.jpg",
