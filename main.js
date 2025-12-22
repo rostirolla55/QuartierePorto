@@ -320,7 +320,7 @@ async function loadContent(lang) {
                 { id: 'navPioggia3', key: 'navPioggia3', base: 'pioggia3' },
                 { id: 'navManifattura', key: 'navManifattura', base: 'manifattura' },
                 { id: 'navPittoriCarracci', key: 'navPittoriCarracci', base: 'pittoricarracci' },
-                { id: 'navCavaticcio', key: 'navCavaticcio', base: 'cavaticcio' },
+                { id: 'navCavaticcio', key: 'navCavaticcio', base: 'cavaticcio' }
                 // ** MARKER: START NEW NAV LINKS **
             ];
 
