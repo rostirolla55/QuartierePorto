@@ -211,11 +211,11 @@ function updatePoiMenu(locations, userLat, userLon, userLang, allPageData) {
 
         let noPoiMessage;
         switch (userLang) {
-            case 'es': noPoiMessage = `No se encontraron puntos de interés dentro ${maxThreshold}m.`; break;
-            case 'en': noPoiMessage = `No Points of Interest found within ${maxThreshold}m.`; break;
-            case 'fr': noPoiMessage = `Aucun point d'interet trouve dans les environs ${maxThreshold}m.`; break;
+            case 'es': noPoiMessage = `No se encontraron puntos de interés dentro ${maxThreshold}m. Pulse de nuevo el botón verde para cerrar la lista.`; break;
+            case 'en': noPoiMessage = `No Points of Interest found within ${maxThreshold}m. Press the green button again to close the list.`; break;
+            case 'fr': noPoiMessage = `Aucun point d'interet trouve dans les environs ${maxThreshold}m. Appuyez à nouveau sur le bouton vert pour fermer la liste.`; break;
             case 'it':
-            default: noPoiMessage = `Nessun Punto di Interesse trovato entro ${maxThreshold}m.`; break;
+            default: noPoiMessage = `Nessun Punto di Interesse trovato entro ${maxThreshold}m. Premere di nuovo il bottone verde per chiudere la lista.`; break;
         }
 
         // Uso colore giallo per i test
