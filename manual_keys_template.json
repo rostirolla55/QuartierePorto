@@ -171,6 +171,20 @@
             "mainText": "",
             "audioSource": "en/manifattura.mp3"
         }
+    },    
+    "graziaxx": {
+        "it": {
+            "audioSource": "it/graziaxx.mp3"
+        },
+        "es": {
+            "audioSource": "es/graziaxx.mp3"
+        },
+        "fr": {
+            "audioSource": "fr/graziaxx.mp3"
+        },
+        "en": {
+            "audioSource": "en/graziaxx.mp3"
+        }
     },
     "pioggia1": {
         "it": {
