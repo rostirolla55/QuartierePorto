@@ -20,40 +20,21 @@ LANGUAGE_NAMES = {'it': 'Italiano', 'en': 'English', 'es': 'Español', 'fr': 'Fr
 
 def get_translations_for_nav(page_title_it):
     """
-    Genera traduzioni per il link di navigazione basandosi sul titolo italiano.
-    Invece di placeholder fissi, cerchiamo di mappare termini comuni o mantenere
-    il nome proprio se non identificato.
+    Ritorna le traduzioni hardcoded per il link di navigazione.
     """
-    print(f"DEBUG: Generazione traduzioni dinamiche per: '{page_title_it}'")
-    
-    # Dizionario di mappatura per termini comuni nei titoli (espandibile)
-    mapping = {
-        "Template": {"en": "Template", "es": "Plantilla", "fr": "Modèle"},
-        "Portico": {"en": "Portico", "es": "Pórtico", "fr": "Portique"},
-        "Chiesa": {"en": "Church", "es": "Iglesia", "fr": "Église"},
-        "San": {"en": "Saint", "es": "San", "fr": "Saint"},
-        "Centrale": {"en": "Power Station", "es": "Central", "fr": "Centrale"}
+    print("ATTENZIONE: Stiamo usando traduzioni placeholder per il menu. AGGIORNARE manualemnte se necessario.")
+    return {
+        'it': page_title_it,
+        'en': 'The Carracci Painters', # Traduzione placeholder EN (Regolare se necessario)
+        'es': 'Los Pintores Carracci', # Traduzione placeholder ES (Regolare se necessario)
+        'fr': 'Les Peintres Carache' # Traduzione placeholder FR (Regolare se necessario)
     }
 
-    translations = {'it': page_title_it}
-    
-    for lang in ['en', 'es', 'fr']:
-        translated_title = page_title_it
-        for word_it, trans_dict in mapping.items():
-            if word_it.lower() in page_title_it.lower():
-                reg = re.compile(re.escape(word_it), re.IGNORECASE)
-                translated_title = reg.sub(trans_dict[lang], translated_title)
-        
-        translations[lang] = translated_title
-
-    print(f"✅ Traduzioni generate: {translations}")
-    return translations
-
 def update_main_js(repo_root, page_id, nav_key_id, lat, lon, distance):
-    """Aggiorna POIS_LOCATIONS e navLinksData in main.js aggiungendo la virgola finale."""
+    """Aggiorna POIS_LOCATIONS e navLinksData in main.js."""
     js_path = os.path.join(repo_root, 'main.js')
     
-    # AGGIUNTA VIRGOLA FINALE: Assicura che la sintassi dell'array JS rimanga valida
+    # Linee da iniettare: rimosso eccesso di a capo per evitare righe vuote
     new_poi = f"    {{ id: '{page_id}', lat: {lat}, lon: {lon}, distanceThreshold: {distance} }},"
     new_nav = f"    {{ id: '{nav_key_id}', key: '{nav_key_id}', base: '{page_id}' }},"
     
@@ -86,7 +67,7 @@ def update_main_js(repo_root, page_id, nav_key_id, lat, lon, distance):
         print(f"ERRORE aggiornando main.js: {e}")
 
 def update_texts_json_nav(repo_root, page_id, nav_key_id, translations):
-    """Aggiorna i file JSON di traduzione."""
+    """Aggiorna il blocco nav e inizializza il blocco della pagina con tutte le chiavi (SCHEMA COMPLETO)."""
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
     
     # SCHEMA COMPLETO (tutte le chiavi inizializzate)
