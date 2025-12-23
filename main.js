@@ -222,13 +222,12 @@ function updatePoiMenu(locations, userLat, userLon, userLang, allPageData) {
         menuHtml = `<div style="color:red; padding: 20px; text-align: center; font-size: 1em;">${noPoiMessage}</div>`;
     }
 
-}
 
     // 4. Inietta l'HTML nel placeholder
     if (nearbyMenuPlaceholder) {
         nearbyMenuPlaceholder.innerHTML = menuHtml;
     }
-
+}
 
 // BLOCCO DUE - FINE 
 // BLOCCO TRE - INIZIO 
@@ -274,16 +273,16 @@ async function loadContent(lang) {
         for (const key of textKeysToUpdate) {
             const value = pageData[key];
             if (value && isFilePath(value)) {
-            // ************************************************************
-            // CORREZIONE CHIAVE: Prependi 'text_files/' al nome del file
-            const fullPath = "text_files/" + value; 
-            // ************************************************************
+                // ************************************************************
+                // CORREZIONE CHIAVE: Prependi 'text_files/' al nome del file
+                const fullPath = "text_files/" + value;
+                // ************************************************************
 
-            console.log(`Caricamento frammento asincrono per ${key}: ${fullPath}`);
-            
-            // Usa il percorso completo per il fetch
-            const promise = fetchFileContent(fullPath).then(content => ({ key, content }));
-            fragmentPromises.push(promise);
+                console.log(`Caricamento frammento asincrono per ${key}: ${fullPath}`);
+
+                // Usa il percorso completo per il fetch
+                const promise = fetchFileContent(fullPath).then(content => ({ key, content }));
+                fragmentPromises.push(promise);
             } else if (value !== undefined) {
                 // Se è testo normale o non definito -> risolvi immediatamente
                 fragmentPromises.push(Promise.resolve({ key, content: value }));
