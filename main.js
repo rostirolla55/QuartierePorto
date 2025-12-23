@@ -228,7 +228,7 @@ function updatePoiMenu(locations, userLat, userLon, userLang, allPageData) {
     if (nearbyMenuPlaceholder) {
         nearbyMenuPlaceholder.innerHTML = menuHtml;
     }
-}
+
 
 // BLOCCO DUE - FINE 
 // BLOCCO TRE - INIZIO 
