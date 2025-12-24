@@ -1,0 +1,16 @@
+goqrtp
+dir /s /b *cavaticcio*.docx
+C:\Users\User\Documents\GitHub\QuartierePorto\ricerche\cavaticcio_informazioni.docx
+"C:\Users\User\Documents\GitHub\QuartierePorto\ricerche\Cavaticcio e dintorni nel tempo.docx"
+dir /od *.py
+add_page.py
+cdt DOCS_DA_CONVERTIRE
+dir /od
+cd ..
+convert_page.bat it basilica_santa_maria_maggiore
+convert_page.bat en basilica_santa_maria_maggiore
+convert_page.bat es basilica_santa_maria_maggiore
+convert_page.bat fr basilica_santa_maria_maggiore
+cp add_template.bat add_basilica_santa_maria_maggiore.bat
+del                 add_basilica_santa_maria_maggiore.bat
+esci
