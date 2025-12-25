@@ -289,7 +289,7 @@
         "audioSource": "fr/centraleidroelettricacavaticcio.mp3"
     },
     "bsmariamaggiore": {
-        "headImage": "public/images/panorama_bologna.jpg",
+        "headImage": "panorama_bologna.jpg",
         "audioSource": "fr/bsmariamaggiore.mp3",
         "mainText1": "fr_bsmariamaggiore_maintext1.html",
         "pageTitle": "Basilique de Santa Maria Maggiore",
