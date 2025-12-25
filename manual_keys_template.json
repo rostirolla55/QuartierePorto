@@ -129,8 +129,8 @@
         "it": {
             "audioSource": "it/lastre.mp3"
         }
-    },   
-     "cavaticcio": {
+    },
+    "cavaticcio": {
         "it": {
             "pageTitle": "Centrale Idroelettrica del Cavaticcio",
             "headImage": "panorama_bologna.jpg",
@@ -171,7 +171,7 @@
             "mainText": "",
             "audioSource": "en/centraleidroelettricacavaticcio.mp3"
         }
-    },    
+    },
     "manifattura": {
         "it": {
             "pageTitle": "Ex Manifattura Tabacchi",
@@ -212,7 +212,7 @@
             "mainText": "",
             "audioSource": "en/manifattura.mp3"
         }
-    },    
+    },
     "graziaxx": {
         "it": {
             "audioSource": "it/graziaxx.mp3"
@@ -351,6 +351,20 @@
             "lastUpdate": "2025-12-19",
             "headImage": "chiesapioggia.jpg",
             "audioSource": "en/pioggia3.mp3"
+        }
+    },
+    "carracci": {
+        "it": {
+            "audioSource": "it/carracci.mp3"
+        },
+        "en": {
+            "audioSource": "en/carracci.mp3"
+        },
+        "es": {
+            "audioSource": "es/carracci.mp3"
+        },
+        "fr": {
+            "audioSource": "fr/carracci.mp3"
         }
     },
     "pugliole": {
