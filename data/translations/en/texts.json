@@ -34,7 +34,7 @@
         "navManifattura": "Ex Tobacco Factory",
         "navpittoricarracci": "The Carracci Painters",
         "navcavaticcio": "Cavaticcio hydroelectric power plant",
-        "navbsmariamaggiore": "Basilica Saintta Maria Maggiore"
+        "navbsmariamaggiore": "Basilica Saint Maria Maggiore"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -300,17 +300,17 @@
         "audioSource": "en/chiesapioggia.mp3"
     },
     "bsmariamaggiore": {
-        "headImage": "panorama_bologna.jpg",
-        "audioSource": "en/bsmariamaggiore.mp3",
+        "headImage": "public/images/panorama_bologna.jpg",
+        "audioSource": "Audio/en/bsmariamaggiore.mp3",
         "mainText1": "en_bsmariamaggiore_maintext1.html",
-        "pageTitle": "Basilica of Santa Maria Maggiore",
-        "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p><p><font color=\"#3465a4\">To find out the opening hours, please visit the page https://dindondan.app/orarimesse/Santa-Maria-Maggiore-Bologna-54DB1 </font> </p>",
+        "pageTitle": "Basilica Saint Maria Maggiore",
+        "mainText": "",
         "mainText2": "",
         "mainText3": "",
         "mainText4": "",
         "mainText5": "",
-        "playAudioButton": "Listen with headphones",
-        "pauseAudioButton": "Pause",
+        "playAudioButton": "Ascolta con le cuffie",
+        "pauseAudioButton": "Pausa",
         "imageSource1": "",
         "imageSource2": "",
         "imageSource3": "",
