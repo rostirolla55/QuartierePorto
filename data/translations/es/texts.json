@@ -33,7 +33,8 @@
         "navGraziaxx": "Placa votiva de Grazia",
         "navManifattura": "Ex Fabrica de Tabaco",
         "navpittoricarracci": "Los Pintores Carracci",
-        "navgcavaticcio": "Central hidroelectrica de Cavaticcio"
+        "navgcavaticcio": "Central hidroelectrica de Cavaticcio",
+        "navbsmariamaggiore": "Basílica Santa Maria Maggiore"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -287,5 +288,26 @@
         "creationDate": "2025-11-27",
         "lastUpdate": "2025-12-19",
         "audioSource": "es/centraleidroelettricacavaticcio.mp3"
+    },
+    "bsmariamaggiore": {
+        "headImage": "public/images/panorama_bologna.jpg",
+        "audioSource": "Audio/es/bsmariamaggiore.mp3",
+        "mainText1": "es_bsmariamaggiore_maintext1.html",
+        "pageTitle": "Basílica Santa Maria Maggiore",
+        "mainText": "",
+        "mainText2": "",
+        "mainText3": "",
+        "mainText4": "",
+        "mainText5": "",
+        "playAudioButton": "Ascolta con le cuffie",
+        "pauseAudioButton": "Pausa",
+        "imageSource1": "",
+        "imageSource2": "",
+        "imageSource3": "",
+        "imageSource4": "",
+        "imageSource5": "",
+        "sourceText": "",
+        "creationDate": "2025-12-23",
+        "lastUpdate": "2025-12-23"
     }
 }

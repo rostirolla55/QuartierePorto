@@ -31,7 +31,11 @@ def get_translations_for_nav(page_title_it):
         "Template": {"en": "Template", "es": "Plantilla", "fr": "Modèle"},
         "Portico": {"en": "Portico", "es": "Pórtico", "fr": "Portique"},
         "Chiesa": {"en": "Church", "es": "Iglesia", "fr": "Église"},
-        "San": {"en": "Saint", "es": "San", "fr": "Saint"},
+        "Basilica": {"en": "Basilica", "es": "Basílica", "fr": "Basilique"},
+        "Statua": {"en": "Statue", "es": "Estatua", "fr": "Statue"},
+        "Canale": {"en": "Channel", "es": "Canal", "fr": "Canal"},
+        "Santo": {"en": "Saint", "es": "San", "fr": "Saint"},
+        "Santa": {"en": "Saint", "es": "San", "fr": "Saint"},
         "Centrale": {"en": "Power Station", "es": "Central", "fr": "Centrale"}
     }
 
