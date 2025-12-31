@@ -1,11 +1,15 @@
-Benvenuto. Questa pagina ti permetterà di accedere alle informazioni sui luoghi interessanti che incontrerai passeggiando per le strade del quartiere Porto.
-Ecco come utilizzare le pagine di questo sito.
-In alto a sinistra, vedrai tre linee orizzontali che rappresentano il pulsante del menu per tutte le pagine che puoi consultare.
-A destra, pochi secondi dopo l'apertura della pagina, appare un pulsante rettangolare verde che premuto, presenta un menu di pagine sui luoghi vicino a te.
-A sinistra del pulsante verde ci sono i bottoni con le bandierine che ti permettono di scegliere la lingua.
+Benvenuto. 
+Questa pagina ti permetterà di accedere alle informazioni sui luoghi interessanti che incontrerai passeggiando per le strade del quartiere Porto. 
+Ecco come utilizzare le pagine di questo sito. 
+In alto a sinistra, vedrai tre linee nere orizzontali che rappresentano il pulsante del menu per tutte le pagine che puoi consultare. 
+A destra, pochi secondi dopo l'apertura della pagina, appare un pulsante rettangolare verde. 
+Se viene selezionato, presenta un menu di pagine sui luoghi interessanti vicino a te. 
+Qualora nel vicinanze non ci siano luoghi descritti nel sito, comparirà un messaggio in rosso "Nessun Punto di Interesse trovato entro 20 metri" e ti invita a premere il bottone verde per chiudere il menu. 
+Se tieni aperto il menu verde, l'elenco delle pagine cambierà dinamicamente mentre cammini. 
+A sinistra del pulsante verde ci sono i bottoni con le bandierine che ti permettono di scegliere la lingua. 
 Sotto il titolo della pagina, troverai un bottone blu che ti permette di ascoltare una breve descrizione del contenuto della pagina.
-Quando l'audio è avviato, il pulsante diventa arancione e premendolo l'audio viene messo in pausa, ritornando blu.
-Premendo di nuovo il bottone blu, l'audio riprende da dove si era interrotto. Se tieni aperto il menu verde, l'elenco delle pagine cambierà dinamicamente mentre cammini. Nel caso che non ci siano luoghi che sono descritti nel sito comparirà la scritta in giallo "Nessun Punto di Interesse trovato entro 20 metri". 
-L'audio dura circa due minuti, mentre la pagina è più dettagliata e potrebbe richiedere più tempo per essere letta interamente.
-Nelle prime righe potete trovare informazioni specifiche per quel luogo, come quando poter accedere al  posto, l'uso delle cuffie per ascoltare l'audio in un luogo chiuso. 
-Buona fortuna! Tieni l'app aperta quando sei nel quartiere!
+Quando l'audio è avviato, il pulsante diventa arancione e premendolo l'audio viene messo in pausa, ritornando blu. 
+Premendo di nuovo il bottone blu, l'audio riprende da dove si era interrotto. 
+L'audio dura circa due minuti, mentre la pagina è più dettagliata e potrebbe richiedere più tempo per essere letta interamente; potrete leggere in maniera più confortevole la pagina in un altro momento su tablet o desktop. 
+Nelle prime righe potete trovare informazioni specifiche per quel luogo, come quando poter accedere al posto, l'uso delle cuffie per ascoltare l'audio in un luogo chiuso. 
+Buona passeggiata! Tieni l'app aperta se sei nel quartiere!

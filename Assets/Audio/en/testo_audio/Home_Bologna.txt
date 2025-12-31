@@ -1,10 +1,15 @@
-Welcome. This page will allow you to access information about the interesting places you encounter while walking through the streets of the Porto neighborhood.
+Welcome.
+This page will allow you to access information about the interesting places you'll encounter while strolling through the streets of the Porto neighborhood.
 Here's how to use the pages on this site.
-At the top left, you'll see three horizontal lines representing the menu button for all the pages you can browse.
-On the left, a few seconds after opening the page, a green rectangular button appears, presenting a menu of pages about places near you.
-To the left of the green button are flags that allow you to choose your language.
-Below the page title, you'll find a blue button that lets you listen to a brief description of the page's content.
-When pressed, the button turns orange, and pressing it pauses the audio, turning it blue.
-When you press the blue button again, it resumes where it left off. If you keep the green menu open, the menu will change the list of pages dynamically as you walk.
-The page has more details than the audio.
-Good luck! Keep the app open when you're in the neighborhood!
+At the top left, you'll see three horizontal black lines representing the menu buttons for all the pages you can browse.
+On the right, a few seconds after opening the page, a green rectangular button appears.
+When selected, it presents a menu of pages about interesting places near you.
+If there are no places described on the site nearby, a red message "No Points of Interest found within 50 meters" will appear, prompting you to press the green button to close the menu.
+If you keep the green menu open, the list of pages will change dynamically as you walk.
+To the left of the green button are the flag buttons that allow you to choose your language.
+Below the page title, you'll find a blue button that allows you to listen to a brief description of the page's content.
+When the audio is started, the button turns orange, and pressing it pauses the audio, turning it back to blue.
+Pressing the blue button again resumes the audio where it left off.
+The audio is about two minutes long, while the page is more detailed and may take longer to read in its entirety; you can read the page more comfortably at a later time on a tablet or desktop.
+The first few lines contain specific information for that location, such as when you can access the site and how to use headphones to listen to the audio indoors.
+Enjoy your walk! Keep the app open if you're in the neighborhood!
