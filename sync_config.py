@@ -34,7 +34,7 @@ STATIC_KEYS = (
 )
 
 # NUOVA CONFIGURAZIONE: Immagine di testata unica e percorso comune
-DEFAULT_HEAD_IMAGE = 'panorama_bologna.jpg' 
+DEFAULT_HEAD_IMAGE = 'public/images/panorama_bologna.jpg' 
 
 
 def get_config_files(directory: str) -> list:
@@ -170,7 +170,7 @@ def sync_config(input_dir: str):
                     
                 # 2. audioSource
                 if 'audioSource' not in page_block:
-                    page_block['audioSource'] = f"{lang.lower()}/{target_key.lower()}.mp3"
+                    page_block['audioSource'] = f"Audio/{lang.lower()}/{target_key.lower()}.mp3"
                     added_static_keys.append('audioSource')
 
                 if added_static_keys:
