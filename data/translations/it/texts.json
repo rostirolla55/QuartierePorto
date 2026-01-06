@@ -286,5 +286,10 @@
         "creationDate": "2025-11-27",
         "lastUpdate": "2025-12-19",
         "audioSource": "it/centraleidroelettricacavaticcio.mp3"
+    },
+    "bsmariamaggiore": {
+        "headImage": "panorama_bologna.jpg",
+        "audioSource": "it/bsmariamaggiore.mp3",
+        "mainText1": "it_bsmariamaggiore_maintext1.html"
     }
 }
