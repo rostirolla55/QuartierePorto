@@ -33,7 +33,7 @@
         "navGraziaxx": "Grazia votive plaque",
         "navManifattura": "Ex Tobacco Factory",
         "navpittoricarracci": "The Carracci Painters",
-        "navcavaticcio": "Cavaticcio hydroelectric power plant"
+        "navcavaticcio": "Centrale Idroelettrica del cavaticcio"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -268,7 +268,7 @@
         "imageSource": "it/pittoricarracci/immagine_carracci_1.jpg"
     },
     "cavaticcio": {
-        "pageTitle": "Cavaticcio hydroelectric power plant",
+        "pageTitle": "Centrale Idroelettrica del cavaticcio",
         "mainText": "",
         "mainText1": "en_cavaticcio_maintext1.html",
         "mainText2": "en_cavaticcio_maintext2.html",
@@ -285,7 +285,7 @@
         "imageSource5": "",
         "sourceText": "Porto District Historical Archive",
         "creationDate": "2025-11-27",
-        "lastUpdate": "2025-12-19",
+        "lastUpdate": "2026-01-06",
         "audioSource": "en/centraleidroelettricacavaticcio.mp3"
     },
     "chiesasbenedetto": {
@@ -301,6 +301,12 @@
     "bsmariamaggiore": {
         "headImage": "panorama_bologna.jpg",
         "audioSource": "en/bsmariamaggiore.mp3",
-        "mainText1": "en_bsmariamaggiore_maintext1.html"
+        "mainText1": "en_bsmariamaggiore_maintext1.html",
+        "pageTitle": "Basilica of Santa Maria Maggiore",
+        "playAudioButton": "Listen with headphones",
+        "pauseAudioButton": "Pause",
+        "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p>",
+        "sourceText": "",
+        "lastUpdate": "2025-12-23"
     }
 }

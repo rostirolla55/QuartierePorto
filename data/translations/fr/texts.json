@@ -33,7 +33,7 @@
         "navGraziaxx": "Plaque votive Grazia",
         "navManifattura": "Ancienne Manufacture de Tabac",
         "navpittoricarracci": "Les Peintres Carrache",
-        "navcavaticcio": "Centrale hydroélectrique de Cavaticcio"
+        "navcavaticcio": "Centrale Idroelettrica del cavaticcio"
     },
     "pugliole": {
         "pageTitle": "Le Pugliole",
@@ -267,7 +267,7 @@
         "audioSource": "fr/pittoricarracci.mp3"
     },
     "cavaticcio": {
-        "pageTitle": "centrale hydroélectrique de Cavaticcio",
+        "pageTitle": "Centrale Idroelettrica del cavaticcio",
         "mainText": "",
         "mainText1": "fr_cavaticcio_maintext1.html",
         "mainText2": "fr_cavaticcio_maintext2.html",
@@ -284,7 +284,7 @@
         "imageSource5": "",
         "sourceText": "Archives historiques du quartier de Porto",
         "creationDate": "2025-11-27",
-        "lastUpdate": "2025-12-19",
+        "lastUpdate": "2026-01-06",
         "audioSource": "fr/centraleidroelettricacavaticcio.mp3"
     },
     "bsmariamaggiore": {
