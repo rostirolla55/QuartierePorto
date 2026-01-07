@@ -413,6 +413,7 @@
     },
     "pugliole": {
         "it": {
+            "pageTitle": "Le Pugliole",
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
             "mainText": "",
@@ -421,6 +422,7 @@
             "audioSource": "it/pugliole.mp3"
         },
         "es": {
+            "pageTitle": "El Pugliole",
             "playAudioButton": "Escuchar la historia",
             "pauseAudioButton": "Detener la reproducción",
             "mainText": "",
@@ -429,6 +431,7 @@
             "audioSource": "es/pugliole.mp3"
         },
         "fr": {
+            "pageTitle": "Les Pugliole",
             "playAudioButton": "Écouter le récit",
             "pauseAudioButton": "Arrêter la lecture",
             "mainText": "",
@@ -437,6 +440,7 @@
             "audioSource": "fr/pugliole.mp3"
         },
         "en": {
+            "pageTitle": "The Pugliole",
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
             "mainText": "",
