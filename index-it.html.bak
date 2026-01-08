@@ -4,9 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quartiere Porto</title>
+    <title id="pageTitle">Caricamento...</title>
     <link rel="stylesheet" href="style.css">
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E57BP15BBX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        // CONFIGURAZIONE: Associa 'dimension1' al nome parametro 'lingua_pagina'
+        gtag('config', 'G-E57BP15BBX', {
+            'custom_map': { 'dimension1': 'lingua_pagina' }
+        });
+    </script>
 </head>
 
 <body>
@@ -47,7 +58,7 @@
                     <li><a id="navGraziaxx" href="graziaxx-it.html">Grazia Mariana</a></li>
                     <li><a id="navChiesaSBene" href="chiesasbene-it.html">Chiesa San Benedetto</a></li>
                     <li><a id="navChiesaPioggia" href="chiesapioggia-it.html">Chiesa della Pioggia</a></li>
-                    <li><a id="navPioggia1" href="pioggia1-it.html">Paesaggio con San Bartolomeo</a></li>
+                    <li><a id="navPioggia1" href="pioggia1-it.html">Paesaggio con San Bartolomeo</a></li>>
                     <li><a id="navPioggia2" href="pioggia2-it.html">Scultura San Bartolomeo</a></li>>
                     <li><a id="navPioggia3" href="pioggia3-it.html">Adorazione dei pastori</a></li>
                     <li><a id="navManifattura" href="manifattura-it.html">Ex Manifattura Tabacchi</a></li>
