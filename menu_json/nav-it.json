@@ -54,6 +54,21 @@
             "id": "navManifattura",
             "href": "manifattura-it.html",
             "text": "Ex Manifattura Tabacchi"
+        },
+        {
+            "id": "navPittoriCarracci",
+            "href": "pittoricarracci-it.html",
+            "text": "I pittori Carracci a Bologna"
+        },
+        {
+            "id": "navCavaticcio",
+            "href": "cavaticcio-it.html",
+            "text": "Centrale idroelettrica del Cavaticcio"
+        },
+        {
+            "id": "navBSMariaMaggiore",
+            "href": "bsmariamaggiore-it.html",
+            "text": "Basilica di Santa Maria Maggiore"
         }
     ]
 }
