@@ -2,7 +2,7 @@
     "description": "<font color=\"#ff0000\">rosso</font>, <font color=\"#3465a4\">blu</font> Questo file contiene gli override manuali per le chiavi in texts.json. Le modifiche qui definite verranno applicate allo specifico PAGE_ID (es. 'manifattura') solo quando il manual_key_updater.py viene eseguito per quella pagina. le chiavi statiche  cono 'audioSource' 'headImage' 'pageTitle' 'pauseAudioButton' 'playAudioButton' 'sourceText' 'creationDate' 'lastUpdate' 'mainText'",
     "chiesapioggia": {
         "it": {
-            "pageTitle": "Chiesa della Pioggia",
+            "pageTitle": "Santuario della Pioggia",
             "playAudioButton": "Ascolta la storia",
             "pauseAudioButton": "Ferma la riproduzione",
             "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consultare la pagina https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
@@ -12,7 +12,7 @@
             "audioSource": "it/chiesapioggia.mp3"
         },
         "es": {
-            "pageTitle": "Iglesia de Pioggia",
+            "pageTitle": "Santuario de la Lluvia",
             "playAudioButton": "Escuchar la historia",
             "pauseAudioButton": "Detener la reproducción",
             "mainText": "<p><font color=\"#ff0000\"><b>Si entra en la iglesia, use auriculares para escuchar el audio.</b></font> </p><p><font color=\"#3465a4\">Para conocer el horario de apertura, visite la página https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
@@ -22,7 +22,7 @@
             "audioSource": "es/chiesapioggia.mp3"
         },
         "fr": {
-            "pageTitle": "Église de la Pluie",
+            "pageTitle": "Sanctuaire de la pluie",
             "playAudioButton": "Écouter le récit",
             "pauseAudioButton": "Arrêter la lecture",
             "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Pour connaître les horaires d'ouverture, veuillez consulter la page https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
@@ -32,7 +32,7 @@
             "audioSource": "fr/chiesapioggia.mp3"
         },
         "en": {
-            "pageTitle": "Church of the Rain",
+            "pageTitle": "Sanctuary of the Rain",
             "playAudioButton": "Listen with headphones",
             "pauseAudioButton": "Pause",
             "mainText": "<p><font color=\"#ff0000\"><b>If you enter the church, use headphones to listen to the audio</b></font> </p><p><font color=\"#3465a4\">To find out the opening hours, please visit the page https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
