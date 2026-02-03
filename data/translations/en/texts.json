@@ -32,8 +32,9 @@
         "navPioggia3": "The Adoration of the Shepherds Agostino Carracci",
         "navGraziaxx": "Grazia votive plaque",
         "navManifattura": "Ex Tobacco Factory",
-        "navpittoricarracci": "The Carracci Painters",
-        "navcavaticcio": "Centrale Idroelettrica del cavaticcio"
+        "navPittoriCarracci": "The Carracci Painters",
+        "navCavaticcio": "Cavaticcio hydroelectric power plant",
+        "navBSMariaMaggiore": "Basilica Saint Mary Major"
     },
     "pugliole": {
         "pageTitle": "The Pugliole",

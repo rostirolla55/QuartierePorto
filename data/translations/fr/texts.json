@@ -32,8 +32,9 @@
         "navPioggia3": "L'Adoration des bergersAgostino Carracci",
         "navGraziaxx": "Plaque votive Grazia",
         "navManifattura": "Ancienne Manufacture de Tabac",
-        "navpittoricarracci": "Les Peintres Carrache",
-        "navcavaticcio": "Centrale Idroelettrica del cavaticcio"
+        "navPittoriCarracci": "Les Peintres Carrache",
+        "navCavaticcio": "Centrale hydroélectrique de Cavaticcio",
+        "navBSMariaMaggiore": "Basilique Saint Marie Majeure",
     },
     "pugliole": {
         "pageTitle": "Les Pugliole",
