@@ -143,7 +143,7 @@
     },
     "chiesapioggia": {
         "pageTitle": "Santuario della Pioggia",
-        "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consultare la pagina https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
+        "mainText": "<p><font color=\"#ff0000\"><b>Se entri nel santuario, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consultare la pagina https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
         "mainText1": "it_chiesapioggia_maintext1.html",
         "mainText2": "",
         "mainText3": "",
@@ -159,12 +159,12 @@
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-10-26",
-        "lastUpdate": "2025-12-19",
+        "lastUpdate": "2026-02-03",
         "audioSource": "it/chiesapioggia.mp3"
     },
     "pioggia1": {
         "pageTitle": "Paesaggio con San Bartolomeo",
-        "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consultare la pagina https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
+        "mainText": "",
         "mainText1": "it_pioggia1_maintext1.html",
         "mainText2": "it_pioggia1_maintext2.html",
         "mainText3": "",
@@ -180,12 +180,12 @@
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-10-26",
-        "lastUpdate": "2025-12-19",
+        "lastUpdate": "2026-02-03",
         "audioSource": "it/pioggia1.mp3"
     },
     "pioggia2": {
         "pageTitle": "Scultura San Bartolomeo",
-        "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consultare la pagina https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
+        "mainText": "",
         "mainText1": "it_pioggia2_maintext1.html",
         "mainText2": "it_pioggia2_maintext2.html",
         "mainText3": "",
@@ -201,12 +201,12 @@
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-10-26",
-        "lastUpdate": "2025-12-19",
+        "lastUpdate": "2026-02-03",
         "audioSource": "it/pioggia2.mp3"
     },
     "pioggia3": {
         "pageTitle": "Adorazione dei pastori",
-        "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consultare la pagina https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
+        "mainText": "",
         "mainText1": "it_pioggia3_maintext1.html",
         "mainText2": "it_pioggia3_maintext2.html",
         "mainText3": "",
@@ -222,7 +222,7 @@
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-10-26",
-        "lastUpdate": "2025-12-19",
+        "lastUpdate": "2026-02-03",
         "audioSource": "it/pioggia3.mp3"
     },
     "manifattura": {
