@@ -1,0 +1,59 @@
+{
+    "items": [
+        {
+            "id": "navHome",
+            "href": "index-it.html",
+            "text": "Benvenuto"
+        },
+        {
+            "id": "navPugliole",
+            "href": "pugliole-it.html",
+            "text": "Le Pugliole"
+        },
+        {
+            "id": "navLastre",
+            "href": "lastre-it.html",
+            "text": "Le Lastre"
+        },
+        {
+            "id": "navCarracci",
+            "href": "carracci-it.html",
+            "text": "Casa di Ludovico Carracci"
+        },
+        {
+            "id": "navGraziaxx",
+            "href": "graziaxx-it.html",
+            "text": "Grazia Mariana"
+        },
+        {
+            "id": "navChiesaSBene",
+            "href": "chiesasbene-it.html",
+            "text": "Chiesa San Benedetto"
+        },
+        {
+            "id": "navChiesaPioggia",
+            "href": "chiesapioggia-it.html",
+            "text": "Chiesa della Pioggia"
+        },
+        {
+            "id": "navPioggia1",
+            "href": "pioggia1-it.html",
+            "text": "Paesaggio con San Bartolomeo"
+        },
+        {
+            "id": "navPioggia2",
+            "href": "pioggia2-it.html",
+            "text": "Scultura San Bartolomeo"
+        },
+        {
+            "id": "navPioggia3",
+            "href": "pioggia3-it.html",
+            "text": "Adorazione dei pastori"
+        },
+        {
+            "id": "navManifattura",
+            "href": "manifattura-it.html",
+            "text": "Ex Manifattura Tabacchi"
+        }
+    ]
+}

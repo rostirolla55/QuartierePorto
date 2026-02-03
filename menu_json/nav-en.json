@@ -1,0 +1,74 @@
+{
+    "items": [
+        {
+            "id": "navHome",
+            "href": "index-en.html",
+            "text": "Welcome"
+        },
+        {
+            "id": "navPugliole",
+            "href": "pugliole-en.html",
+            "text": "The Pugliole"
+        },
+        {
+            "id": "navLastre",
+            "href": "lastre-en.html",
+            "text": "The Lastre"
+        },
+        {
+            "id": "navCarracci",
+            "href": "carracci-en.html",
+            "text": "House of Ludovico Carracci"
+        },
+        {
+            "id": "navGraziaxx",
+            "href": "graziaxx-en.html",
+            "text": "Grazia Mariana"
+        },
+        {
+            "id": "navChiesaSBene",
+            "href": "chiesasbene-en.html",
+            "text": "Church of San Benedetto"
+        },
+        {
+            "id": "navChiesaPioggia",
+            "href": "chiesapioggia-en.html",
+            "text": "Church of Pioggia"
+        },
+        {
+            "id": "navPioggia1",
+            "href": "pioggia1-en.html",
+            "text": "Landscape with Saint Bartholomew"
+        },
+        {
+            "id": "navPioggia2",
+            "href": "pioggia2-en.html",
+            "text": "Sculpture of Saint Bartholomew"
+        },
+        {
+            "id": "navPioggia3",
+            "href": "pioggia3-en.html",
+            "text": "Adoration of the Shepherds"
+        },
+        {
+            "id": "navManifattura",
+            "href": "manifattura-en.html",
+            "text": "Ex Tobacco Factory"
+        },
+        {
+            "id": "navPittoriCarracci",
+            "href": "pittoricarracci-en.html",
+            "text": "The Carracci Painters"
+        },
+        {
+            "id": "navCavaticcio",
+            "href": "cavaticcio-en.html",
+            "text": "Cavaticcio hydroelectric power plant"
+        },
+        {
+            "id": "navbsmariamaggiore",
+            "href": "bsmariamaggiore-en.html",
+            "text": "Basilica Saint Mary Major\""
+        }
+    ]
+}

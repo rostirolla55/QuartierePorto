@@ -1,0 +1,108 @@
+{
+  "pois": [
+    {
+      "id": "manifattura",
+      "lat": 44.49891,
+      "lon": 11.342241,
+      "threshold": 50,
+      "nav_id": "navManifattura",
+      "base_name": "manifattura"
+    },
+    {
+      "id": "pittoricarracci",
+      "lat": 44.50085,
+      "lon": 11.3361,
+      "threshold": 50,
+      "nav_id": "navPittoriCarracci",
+      "base_name": "pittoricarracci"
+    },
+    {
+      "id": "cavaticcio",
+      "lat": 44.50018,
+      "lon": 11.33807,
+      "threshold": 50,
+      "nav_id": "navCavaticcio",
+      "base_name": "cavaticcio"
+    },
+    {
+      "id": "bsmariamaggiore",
+      "lat": 44.49806368372069,
+      "lon": 11.34192628931731,
+      "threshold": 50,
+      "nav_id": "navbsmariamaggiore",
+      "base_name": "bsmariamaggiore"
+    },
+    {
+      "id": "graziaxx",
+      "lat": 44.5006638888889,
+      "lon": 11.3407694444444,
+      "threshold": 50,
+      "nav_id": "navGraziaxx",
+      "base_name": "graziaxx"
+    },
+    {
+      "id": "pugliole",
+      "lat": 44.5001944444444,
+      "lon": 11.3399861111111,
+      "threshold": 50,
+      "nav_id": "navPugliole",
+      "base_name": "pugliole"
+    },
+    {
+      "id": "carracci",
+      "lat": 44.4999972222222,
+      "lon": 11.3403888888889,
+      "threshold": 50,
+      "nav_id": "navCarracci",
+      "base_name": "carracci"
+    },
+    {
+      "id": "lastre",
+      "lat": 44.49925278,
+      "lon": 11.34074444,
+      "threshold": 50,
+      "nav_id": "navLastre",
+      "base_name": "lastre"
+    },
+    {
+      "id": "chiesasbene",
+      "lat": 44.501514,
+      "lon": 11.343557,
+      "threshold": 120,
+      "nav_id": "navChiesaSBene",
+      "base_name": "chiesasbene"
+    },
+    {
+      "id": "chiesapioggia",
+      "lat": 44.49891,
+      "lon": 11.342241,
+      "threshold": 120,
+      "nav_id": "navChiesapioggia",
+      "base_name": "chiesapioggia"
+    },
+    {
+      "id": "pioggia1",
+      "lat": 44.49891,
+      "lon": 11.342241,
+      "threshold": 120,
+      "nav_id": "navPioggia1",
+      "base_name": "pioggia1"
+    },
+    {
+      "id": "pioggia2",
+      "lat": 44.49891,
+      "lon": 11.342241,
+      "threshold": 120,
+      "nav_id": "navPioggia2",
+      "base_name": "pioggia2"
+    },
+    {
+      "id": "pioggia3",
+      "lat": 44.49891,
+      "lon": 11.342241,
+      "threshold": 120,
+      "nav_id": "navPioggia3",
+      "base_name": "pioggia3"
+    }
+  ]
+}

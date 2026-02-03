@@ -1,0 +1,74 @@
+{
+    "items": [
+        {
+            "id": "navHome",
+            "href": "index-es.html",
+            "text": "Bienvenido"
+        },
+        {
+            "id": "navPugliole",
+            "href": "pugliole-es.html",
+            "text": "El Pugliole"
+        },
+        {
+            "id": "navLastre",
+            "href": "lastre-es.html",
+            "text": "El Lastre"
+        },
+        {
+            "id": "navCarracci",
+            "href": "carracci-es.html",
+            "text": "Casa de Ludovico Carracci"
+        },
+        {
+            "id": "navGraziaxx",
+            "href": "graziaxx-es.html",
+            "text": "Grazia Mariana"
+        },
+        {
+            "id": "navChiesaSBene",
+            "href": "chiesasbene-es.html",
+            "text": "Iglesia de San Benedetto"
+        },
+        {
+            "id": "navChiesaPioggia",
+            "href": "chiesapioggia-es.html",
+            "text": "Iglesia de Pioggia"
+        },
+        {
+            "id": "navPioggia1",
+            "href": "pioggia1-es.html",
+            "text": "Paisaje con San Bartolomé"
+        },
+        {
+            "id": "navPioggia2",
+            "href": "pioggia2-es.html",
+            "text": "Escultura de San Bartolomé"
+        },
+        {
+            "id": "navPioggia3",
+            "href": "pioggia3-es.html",
+            "text": "Adoración de los Pastores"
+        },
+        {
+            "id": "navManifattura",
+            "href": "manifattura-es.html",
+            "text": "Ex Fabrica de Tabaco"
+        },
+        {
+            "id": "navPittoriCarracci",
+            "href": "pittoricarracci-es.html",
+            "text": "Los Pintores Carracci"
+        },
+        {
+            "id": "navCavaticcio",
+            "href": "cavaticcio-es.html",
+            "text": "Central hidroelctrica de Cavaticcio"
+        },
+        {
+            "id": "navbsmariamaggiore",
+            "href": "bsmariamaggiore-es.html",
+            "text": "Basílica San María Mayor"
+        }
+    ]
+}

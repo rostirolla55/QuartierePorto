@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="it">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="pageTitle">Caricamento...</title>
-    <link rel="stylesheet" href="style.css">
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E57BP15BBX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title id="pageTitle">
+   Caricamento...
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-E57BP15BBX">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
@@ -17,102 +18,149 @@
         gtag('config', 'G-E57BP15BBX', {
             'custom_map': { 'dimension1': 'lingua_pagina' }
         });
-    </script>
-</head>
-
-<body>
-    <div id="loading-message">
-        <p>Caricamento dell'applicazione in corso...</p>
+  </script>
+ </head>
+ <body>
+  <div id="loading-message">
+   <p>
+    Caricamento dell'applicazione in corso...
+   </p>
+  </div>
+  <div id="app-wrapper">
+   <header class="main-header">
+    <button aria-label="Apri menu" class="menu-toggle">
+     <span class="bar">
+     </span>
+     <span class="bar">
+     </span>
+     <span class="bar">
+     </span>
+    </button>
+    <div class="right-header-group">
+     <div class="language-selector">
+      <button data-lang="it">
+       <img alt="Italiano" src="public/flag/it.png"/>
+      </button>
+      <button data-lang="en">
+       <img alt="English" src="public/flag/en.png"/>
+      </button>
+      <button data-lang="es">
+       <img alt="Espa&ntilde;ol" src="public/flag/es.png"/>
+      </button>
+      <button data-lang="fr">
+       <img alt="Fran&ccedil;ais" src="public/flag/fr.png"/>
+      </button>
+     </div>
+     <button aria-label="Punti di interesse vicini" id="nearbyPoiButton" style="display:none;">
+     </button>
     </div>
-
-    <div id="app-wrapper">
-        <header class="main-header">
-
-            <button class="menu-toggle" aria-label="Apri menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-
-            <div class="right-header-group">
-
-                <div class="language-selector">
-                    <button data-lang="it"><img src="public/flag/it.png" alt="Italiano"></button>
-                    <button data-lang="en"><img src="public/flag/en.png" alt="English"></button>
-                    <button data-lang="es"><img src="public/flag/es.png" alt="Español"></button>
-                    <button data-lang="fr"><img src="public/flag/fr.png" alt="Français"></button>
-                </div>
-
-                <button id="nearbyPoiButton" style="display:none;" aria-label="Punti di interesse vicini"></button>
-            </div>
-
-        </header>
-
-        <nav class="nav-bar-main" id="navBarMain">
-            <div class="nav-bar-content">
-                <ul>
-                    <li><a id="navHome" href="index-it.html">Benvenuto</a></li>
-                    <li><a id="navPugliole" href="pugliole-it.html">Le Pugliole</a></li>
-                    <li><a id="navLastre" href="lastre-it.html">Le Lastre</a></li>
-                    <li><a id="navCarracci" href="carracci-it.html">Casa di Ludovico Carracci</a></li>
-                    <li><a id="navGraziaxx" href="graziaxx-it.html">Grazia Mariana</a></li>
-                    <li><a id="navChiesaSBene" href="chiesasbene-it.html">Chiesa San Benedetto</a></li>
-                    <li><a id="navChiesaPioggia" href="chiesapioggia-it.html">Chiesa della Pioggia</a></li>
-                    <li><a id="navPioggia1" href="pioggia1-it.html">Paesaggio con San Bartolomeo</a></li>></li>
-                    <li><a id="navPioggia2" href="pioggia2-it.html">Scultura San Bartolomeo</a></li>></li>
-                    <li><a id="navPioggia3" href="pioggia3-it.html">Adorazione dei pastori</a></li>
-                    <li><a id="navManifattura" href="manifattura-it.html">Ex Manifattura Tabacchi</a></li>
-                    <li><a id="navPittoriCarracci" href="pittoricarracci-it.html">I pittori Carracci a Bologna</a></li>
-                    <li><a id="navCavaticcio" href="cavaticcio-it.html">Centrale idroelettrica del Cavaticcio</a></li>
-                    <li><a id="navbsmariamaggiore" href="bsmariamaggiore-it.html"> Basilica Santa Maria Maggiore</a></li>
-				</ul>
-            </div>
-        </nav>
-        <div id="nearbyMenuPlaceholder" class="nav-bar-nearby"></div>
-
-
-    <main class="content-body">
-
-      <div class="header-image-container">
-        <!-- MODIFICA 1: L'immagine di testata usa ora ID="headImage" -->
-        <img id="headImage" src="" alt="Immagine di sfondo testata">
-        <h1 class="header-title" id="headerTitle"></h1>
-      </div>
-
-      <div class="main-content-area">
-
-        <audio id="audioPlayer"></audio>
-        <button id="playAudio" class="play-style">Ascolta</button>
-
-        <p id="mainText"></p>
-
-        <p id="mainText1"></p>
-        <!-- MODIFICA 2: L'immagine di contenuto 1 usa ora ID="pageImage1" -->
-        <img id="pageImage1" src="" style="display: none;" alt="Immagine 1 corpo">
-
-        <p id="mainText2"></p>
-        <img id="pageImage2" src="" style="display: none;" alt="Immagine 2 corpo">
-
-        <p id="mainText3"></p>
-        <img id="pageImage3" src="" style="display: none;" alt="Immagine 3 corpo">
-
-        <p id="mainText4"></p>
-        <img id="pageImage4" src="" style="display: none;" alt="Immagine 4 corpo">
-
-        <p id="mainText5"></p>
-        <img id="pageImage5" src="" style="display: none;" alt="Immagine 5 corpo">
-
-      </div>
-
-            <footer class="info-footer">
-                <p id="infoSource"></p>
-                <p Data Creazione id="infoCreatedDate"></p>
-                <p Data ultimo aggiornamento id="infoUpdatedDate"></p>
-            </footer>
-
-        </main>
+   </header>
+   <nav class="nav-bar-main" id="navBarMain">
+    <div class="nav-bar-content">
+     <ul>
+      <li>
+       <a href="index-it.html" id="navHome">
+        Benvenuto
+       </a>
+      </li>
+      <li>
+       <a href="pugliole-it.html" id="navPugliole">
+        Le Pugliole
+       </a>
+      </li>
+      <li>
+       <a href="lastre-it.html" id="navLastre">
+        Le Lastre
+       </a>
+      </li>
+      <li>
+       <a href="carracci-it.html" id="navCarracci">
+        Casa di Ludovico Carracci
+       </a>
+      </li>
+      <li>
+       <a href="graziaxx-it.html" id="navGraziaxx">
+        Grazia Mariana
+       </a>
+      </li>
+      <li>
+       <a href="chiesasbene-it.html" id="navChiesaSBene">
+        Chiesa San Benedetto
+       </a>
+      </li>
+      <li>
+       <a href="chiesapioggia-it.html" id="navChiesaPioggia">
+        Chiesa della Pioggia
+       </a>
+      </li>
+      <li>
+       <a href="pioggia1-it.html" id="navPioggia1">
+        Paesaggio con San Bartolomeo
+       </a>
+      </li>
+      <li>
+       <a href="pioggia2-it.html" id="navPioggia2">
+        Scultura San Bartolomeo
+       </a>
+      </li>
+      <li>
+       <a href="pioggia3-it.html" id="navPioggia3">
+        Adorazione dei pastori
+       </a>
+      </li>
+      <li>
+       <a href="manifattura-it.html" id="navManifattura">
+        Ex Manifattura Tabacchi
+       </a>
+      </li>
+     </ul>
     </div>
-    <script type="module" src="main.js"></script>
-</body>
-
+   </nav>
+   <div class="nav-bar-nearby" id="nearbyMenuPlaceholder">
+   </div>
+   <main class="content-body">
+    <div class="header-image-container">
+     <!-- MODIFICA 1: L'immagine di testata usa ora ID="headImage" -->
+     <img alt="Immagine di sfondo testata" id="headImage" src=""/>
+     <h1 class="header-title" id="headerTitle">
+     </h1>
+    </div>
+    <div class="main-content-area">
+     <audio id="audioPlayer">
+     </audio>
+     <button class="play-style" id="playAudio">
+      Ascolta
+     </button>
+     <p id="mainText">
+     </p>
+     <p id="mainText1">
+     </p>
+     <!-- MODIFICA 2: L'immagine di contenuto 1 usa ora ID="pageImage1" -->
+     <img alt="Immagine 1 corpo" id="pageImage1" src="" style="display: none;"/>
+     <p id="mainText2">
+     </p>
+     <img alt="Immagine 2 corpo" id="pageImage2" src="" style="display: none;"/>
+     <p id="mainText3">
+     </p>
+     <img alt="Immagine 3 corpo" id="pageImage3" src="" style="display: none;"/>
+     <p id="mainText4">
+     </p>
+     <img alt="Immagine 4 corpo" id="pageImage4" src="" style="display: none;"/>
+     <p id="mainText5">
+     </p>
+     <img alt="Immagine 5 corpo" id="pageImage5" src="" style="display: none;"/>
+    </div>
+    <footer class="info-footer">
+     <p id="infoSource">
+     </p>
+     <p creazione="" data="" id="infoCreatedDate">
+     </p>
+     <p aggiornamento="" data="" id="infoUpdatedDate" ultimo="">
+     </p>
+    </footer>
+   </main>
+  </div>
+  <script src="main.js" type="module">
+  </script>
+ </body>
 </html>

@@ -1,0 +1,74 @@
+{
+    "items": [
+        {
+            "id": "navHome",
+            "href": "index-fr.html",
+            "text": "Bienvenue"
+        },
+        {
+            "id": "navPugliole",
+            "href": "pugliole-fr.html",
+            "text": "Les Pouilles"
+        },
+        {
+            "id": "navLastre",
+            "href": "lastre-fr.html",
+            "text": "Le Lastre"
+        },
+        {
+            "id": "navCarracci",
+            "href": "carracci-fr.html",
+            "text": "Maison de Ludovico Carracci"
+        },
+        {
+            "id": "navGraziaxx",
+            "href": "graziaxx-fr.html",
+            "text": "Grazia Mariana"
+        },
+        {
+            "id": "navChiesaSBene",
+            "href": "chiesasbene-fr.html",
+            "text": "Église de San Benedetto"
+        },
+        {
+            "id": "navChiesaPioggia",
+            "href": "chiesapioggia-fr.html",
+            "text": "Église de la Pluie"
+        },
+        {
+            "id": "navPioggia1",
+            "href": "pioggia1-fr.html",
+            "text": "Paysage avec saint Barthélemy"
+        },
+        {
+            "id": "navPioggia2",
+            "href": "pioggia2-fr.html",
+            "text": "Sculpture de saint Barthélemy"
+        },
+        {
+            "id": "navPioggia3",
+            "href": "pioggia3-fr.html",
+            "text": "Adoration des bergers"
+        },
+        {
+            "id": "navManifattura",
+            "href": "manifattura-fr.html",
+            "text": "Ancienne Manufacture de Tabac"
+        },
+        {
+            "id": "navPittoriCarracci",
+            "href": "pittoricarracci-fr.html",
+            "text": "Les Peintres Carrache"
+        },
+        {
+            "id": "navCavaticcio",
+            "href": "cavaticcio-fr.html",
+            "text": "centrale hydroélectrique de Cavaticcio"
+        },
+        {
+            "id": "navbsmariamaggiore",
+            "href": "bsmariamaggiore-fr.html",
+            "text": "Basilique Saint Marie Majeure"
+        }
+    ]
+}

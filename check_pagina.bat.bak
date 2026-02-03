@@ -1,0 +1,11 @@
+echo off
+SET SITO=QuartierePorto
+dir C:\Users\User\Documents\GitHub\%SITO%\OUTPUT_HTML\*%1*
+dir C:\Users\User\Documents\GitHub\%SITO%\DOCS_DA_CONVERTIRE\*%1*
+dir C:\Users\User\Documents\GitHub\%SITO%\%1*
+dir C:\Users\User\Documents\GitHub\%SITO%\Assets\Audio\it\%1*
+dir C:\Users\User\Documents\GitHub\%SITO%\Assets\Audio\en\%1*
+dir C:\Users\User\Documents\GitHub\%SITO%\Assets\Audio\es\%1*
+dir C:\Users\User\Documents\GitHub\%SITO%\Assets\Audio\fr\%1*
+dir /s C:\Users\User\Documents\GitHub\%SITO%\Assets\images\%1
+dir C:\Users\User\Documents\GitHub\%SITO%\text_files\*%1*
