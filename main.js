@@ -369,13 +369,13 @@ async function loadContent(lang) {
 
         // AGGIORNAMENTO INFORMAZIONI SULLA FONTE E DATA
         if (pageData.sourceText) {
-            updateTextContent('infoSource', `Fonte: ${pageData.sourceText}`);
+            updateHTMLContent('infoSource', `Fonte: ${pageData.sourceText}`);
         }
         if (pageData.creationDate) {
-            updateTextContent('infoCreatedDate', `Data Creazione: ${pageData.creationDate}`);
+            updateHTMLContent('infoCreatedDate', `Data Creazione: ${pageData.creationDate}`);
         }
         if (pageData.lastUpdate) {
-            updateTextContent('infoUpdatedDate', `Ultimo Aggiornamento: ${pageData.lastUpdate}`);
+            updateHTMLContent('infoUpdatedDate', `Ultimo Aggiornamento: ${pageData.lastUpdate}`);
         }
 
         // AGGIORNAMENTO AUDIO E BOTTONE
