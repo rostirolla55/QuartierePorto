@@ -28,16 +28,22 @@
   </div>
   <div id="app-wrapper">
    <header class="main-header">
-    <button aria-label="Apri menu" class="menu-toggle">
-     <span class="bar">
-     </span>
-     <span class="bar">
-     </span>
-     <span class="bar">
-     </span>
-    </button>
+<div class="left-header-group">
+        <button aria-label="Apri menu" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        
+        <a href=" mappa-en.html" id="mapNavLink" class="map-link" title="Mappa">
+            <svg viewBox="0 0 24 24" class="pin-icon">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+        </a>
+    </div>
+
     <div class="right-header-group">
-     <div class="language-selector">
+     <div class="language-selector"> 
       <button data-lang="it">
        <img alt="Italiano" src="public/flag/it.png"/>
       </button>
@@ -57,76 +63,57 @@
    </header>
    <nav class="nav-bar-main" id="navBarMain">
     <div class="nav-bar-content">
-     <ul>
+                                                                 <ul>
       <li>
-       <a href="index-en.html" id="navHome">
-        Welcome
-       </a>
+       <a href="index-en.html" id="navHome">Welcome</a>
       </li>
       <li>
-       <a href="pugliole-en.html" id="navPugliole">
-        The Pugliole
-       </a>
+       <a href="manifattura-en.html" id="navManifattura">Ex Tobacco Factory</a>
       </li>
       <li>
-       <a href="lastre-en.html" id="navLastre">
-        The Lastre
-       </a>
+       <a href="pittoricarracci-en.html" id="navPittoricarracci">The Carracci Painters</a>
       </li>
       <li>
-       <a href="carracci-en.html" id="navCarracci">
-        House of Ludovico Carracci
-       </a>
+       <a href="cavaticcio-en.html" id="navCavaticcio">Cavaticcio hydroelectric power plant</a>
       </li>
       <li>
-       <a href="graziaxx-en.html" id="navGraziaxx">
-        Grazia Mariana
-       </a>
+       <a href="bsmariamaggiore-en.html" id="navBsmariamaggiore">Basilica Saint Mary Major</a>
       </li>
       <li>
-       <a href="chiesasbene-en.html" id="navChiesaSBene">
-        Church of San Benedetto
-       </a>
+       <a href="graziaxx-en.html" id="navGraziaxx">Grazia votive plaque</a>
       </li>
       <li>
-       <a href="chiesapioggia-en.html" id="navChiesaPioggia">
-        Sanctuary of the Rain
-       </a>
+       <a href="pugliole-en.html" id="navPugliole">The pugliole</a>
       </li>
       <li>
-       <a href="pioggia1-en.html" id="navPioggia1">
-        Landscape with Saint Bartholomew
-       </a>
+       <a href="carracci-en.html" id="navCarracci">House of Ludovico Carracci</a>
       </li>
       <li>
-       <a href="pioggia2-en.html" id="navPioggia2">
-        Sculpture of Saint Bartholomew
-       </a>
+       <a href="lastre-en.html" id="navLastre">House numbers on sandstone slabs</a>
       </li>
       <li>
-       <a href="pioggia3-en.html" id="navPioggia3">
-        Adoration of the Shepherds
-       </a>
+       <a href="chiesasbene-en.html" id="navChiesasbene">Church of San Benedetto</a>
       </li>
       <li>
-       <a href="manifattura-en.html" id="navManifattura">
-        Ex Tobacco Factory
-       </a>
+       <a href="santuariopioggia-en.html" id="navSantuariopioggia">Sanctuary of the Rain</a>
       </li>
       <li>
-       <a href="pittoricarracci-en.html" id="navPittoriCarracci">
-        The Carracci Painters
-       </a>
+       <a href="pioggia1-en.html" id="navPioggia1">Landscape with Saint Bartholomew Alfonso Lombardi</a>
       </li>
       <li>
-       <a href="cavaticcio-en.html" id="navCavaticcio">
-        Cavaticcio hydroelectric power plant
-       </a>
+       <a href="pioggia2-en.html" id="navPioggia2">Sculpture of Saint Bartholomew Ludovico Mattioli</a>
       </li>
       <li>
-       <a href="bsmariamaggiore-en.html" id="navbsmariamaggiore">
-        Basilica Saint Mary Major"
-       </a>
+       <a href="pioggia3-en.html" id="navPioggia3">The Adoration of the Shepherds Agostino Carracci</a>
+      </li>
+      <li>
+       <a href="chiesasancarlo-en.html" id="navChiesasancarlo">Church San Carlo Borromeo al Porto</a>
+      </li>
+      <li>
+       <a href="stabile_legno_vandini-en.html" id="navStabilevandini">Vandini wooden stable</a>
+      </li>
+      <li>
+       <a href="edicola_votiva-en.html" id="navEdicolavotiva">Votive shrine with Madonna and Child</a>
       </li>
      </ul>
     </div>
@@ -148,21 +135,22 @@
      </button>
      <p id="mainText">
      </p>
-     <img alt="Immagine 1 corpo" id="pageImage1" src="" style="display: none;"/>
      <p id="mainText1">
      </p>
-     <img alt="Immagine 2 corpo" id="pageImage2" src="" style="display: none;"/>
+     <!-- MODIFICA 2: L'immagine di contenuto 1 usa ora ID="pageImage1" -->
+     <img alt="Immagine 1 corpo" id="pageImage1" src="" style="display: none;"/>
      <p id="mainText2">
      </p>
-     <img alt="Immagine 3 corpo" id="pageImage3" src="" style="display: none;"/>
+     <img alt="Immagine 2 corpo" id="pageImage2" src="" style="display: none;"/>
      <p id="mainText3">
      </p>
-     <img alt="Immagine 4 corpo" id="pageImage4" src="" style="display: none;"/>
+     <img alt="Immagine 3 corpo" id="pageImage3" src="" style="display: none;"/>
      <p id="mainText4">
      </p>
-     <img alt="Immagine 5 corpo" id="pageImage5" src="" style="display: none;"/>
+     <img alt="Immagine 4 corpo" id="pageImage4" src="" style="display: none;"/>
      <p id="mainText5">
      </p>
+     <img alt="Immagine 5 corpo" id="pageImage5" src="" style="display: none;"/>
     </div>
     <footer class="info-footer">
      <p id="infoSource">
@@ -174,6 +162,11 @@
     </footer>
    </main>
   </div>
+  <!-- Carica prima i dati di configurazione (GPS e Navigazione) -->
+  <!-- <script src="config.js"> -->
+  <!-- </script> -->
+  <!-- Carica poi il motore dell'applicazione che userà quei dati -->
+
   <script src="main.js" type="module">
   </script>
  </body>

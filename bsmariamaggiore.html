@@ -3,10 +3,22 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Quartiere Porto
+  <title id="pageTitle">
+   Caricamento...
   </title>
   <link href="style.css" rel="stylesheet"/>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-E57BP15BBX">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        // CONFIGURAZIONE: Associa 'dimension1' al nome parametro 'lingua_pagina'
+        gtag('config', 'G-E57BP15BBX', {
+            'custom_map': { 'dimension1': 'lingua_pagina' }
+        });
+  </script>
  </head>
  <body>
   <div id="loading-message">
@@ -16,16 +28,22 @@
   </div>
   <div id="app-wrapper">
    <header class="main-header">
-    <button aria-label="Apri menu" class="menu-toggle">
-     <span class="bar">
-     </span>
-     <span class="bar">
-     </span>
-     <span class="bar">
-     </span>
-    </button>
+<div class="left-header-group">
+        <button aria-label="Apri menu" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        
+        <a href="mappa-it.html" id="mapNavLink" class="map-link" title="Mappa">
+            <svg viewBox="0 0 24 24" class="pin-icon">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+        </a>
+    </div>
+
     <div class="right-header-group">
-     <div class="language-selector">
+     <div class="language-selector"> 
       <button data-lang="it">
        <img alt="Italiano" src="public/flag/it.png"/>
       </button>
@@ -45,76 +63,57 @@
    </header>
    <nav class="nav-bar-main" id="navBarMain">
     <div class="nav-bar-content">
-     <ul>
+                                   <ul>
       <li>
-       <a href="index-it.html" id="navHome">
-        Benvenuto
-       </a>
+       <a href="index-it.html" id="navHome">Benvenuto</a>
       </li>
       <li>
-       <a href="pugliole-it.html" id="navPugliole">
-        Le Pugliole
-       </a>
+       <a href="manifattura-it.html" id="navManifattura">Ex Manifattura Tabacchi</a>
       </li>
       <li>
-       <a href="lastre-it.html" id="navLastre">
-        Le Lastre
-       </a>
+       <a href="pittoricarracci-it.html" id="navPittoricarracci">I Pittori Carracci</a>
       </li>
       <li>
-       <a href="carracci-it.html" id="navCarracci">
-        Casa di Ludovico Carracci
-       </a>
+       <a href="cavaticcio-it.html" id="navCavaticcio">La Centrale Idroelettrica del Cavaticcio</a>
       </li>
       <li>
-       <a href="graziaxx-it.html" id="navGraziaxx">
-        Grazia Mariana
-       </a>
+       <a href="bsmariamaggiore-it.html" id="navBsmariamaggiore">Basilica Santa Maria Maggiore</a>
       </li>
       <li>
-       <a href="chiesasbene-it.html" id="navChiesaSBene">
-        Chiesa San Benedetto
-       </a>
+       <a href="graziaxx-it.html" id="navGraziaxx">Lapide votiva Grazia</a>
       </li>
       <li>
-       <a href="chiesapioggia-it.html" id="navChiesaPioggia">
-        Santuario della Pioggia
-       </a>
+       <a href="pugliole-it.html" id="navPugliole">Le pugliole</a>
       </li>
       <li>
-       <a href="pioggia1-it.html" id="navPioggia1">
-        Paesaggio con San Bartolomeo
-       </a>
+       <a href="carracci-it.html" id="navCarracci">Casa di Ludovico Carracci</a>
       </li>
       <li>
-       <a href="pioggia2-it.html" id="navPioggia2">
-        Scultura San Bartolomeo
-       </a>
+       <a href="lastre-it.html" id="navLastre">Numeri civici su lastre in arenaria</a>
       </li>
       <li>
-       <a href="pioggia3-it.html" id="navPioggia3">
-        Adorazione dei pastori
-       </a>
+       <a href="chiesasbene-it.html" id="navChiesasbene">Chiesa San Benedetto</a>
       </li>
       <li>
-       <a href="manifattura-it.html" id="navManifattura">
-        Ex Manifattura Tabacchi
-       </a>
+       <a href="santuariopioggia-it.html" id="navSantuariopioggia">Santuario della Pioggia</a>
       </li>
       <li>
-       <a href="pittoricarracci-it.html" id="navPittoriCarracci">
-        I pittori Carracci a Bologna
-       </a>
+       <a href="pioggia1-it.html" id="navPioggia1">Paesaggio con San Bartolomeo Alfonso Lombardi</a>
       </li>
       <li>
-       <a href="cavaticcio-it.html" id="navCavaticcio">
-        Centrale idroelettrica del Cavaticcio
-       </a>
+       <a href="pioggia2-it.html" id="navPioggia2">Scultura San Bartolomeo Ludovico Mattioli</a>
       </li>
       <li>
-       <a href="bsmariamaggiore-it.html" id="navBSMariaMaggiore">
-        Basilica di Santa Maria Maggiore
-       </a>
+       <a href="pioggia3-it.html" id="navPioggia3">Adorazione dei pastori Agostino Carracci</a>
+      </li>
+      <li>
+       <a href="chiesasancarlo-it.html" id="navChiesasancarlo">Chiesa San Carlo Borromeo al Porto</a>
+      </li>
+      <li>
+       <a href="stabile_legno_vandini-it.html" id="navStabilevandini">Edificio Vandini in legno</a>
+      </li>
+      <li>
+       <a href="edicola_votiva-it.html" id="navEdicolavotiva">Edicola votiva con Madonna col Bambino</a>
       </li>
      </ul>
     </div>
@@ -163,6 +162,11 @@
     </footer>
    </main>
   </div>
+  <!-- Carica prima i dati di configurazione (GPS e Navigazione) -->
+  <!-- <script src="config.js"> -->
+  <!-- </script> -->
+  <!-- Carica poi il motore dell'applicazione che userà quei dati -->
+
   <script src="main.js" type="module">
   </script>
  </body>

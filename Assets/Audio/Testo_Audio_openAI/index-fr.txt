@@ -1,0 +1,7 @@
+"Bienvenue à Bologne ! Ce site est votre guide personnel pour découvrir les secrets de la ville. Tout en m'écoutant, vous pouvez approfondir chaque détail en lisant les textes et en regardant les images sur cette page.
+
+Pour commencer votre voyage... activez le GPS de votre smartphone. Dès que vous serez à proximité d'un lieu historique, vous verrez apparaître un bouton vert... en haut à droite. Sélectionnez-le pour afficher la liste des points d'intérêt autour de vous. Un clic sur le nom, et vous serez immédiatement plongé dans l'histoire de ce lieu.
+
+Vous souhaitez explorer l'ensemble des archives ? En haut à gauche, vous trouverez l'icône avec les trois lignes horizontales, contenant la liste complète des trésors documentés. Et pour une vue d'ensemble, cliquez sur le symbole du repère vert en haut : il vous mènera directement à la Carte. Ici, les repères rouges indiquent les sites individuels, tandis que les cercles verts numérotés regroupent les lieux les plus proches. Cliquez sur les cercles pour découvrir ce qu'il y a à voir dans cette zone.
+
+Bonne promenade !"

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Firebase Connection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .status-dot { height: 10px; width: 10px; border-radius: 50%; display: inline-block; }
+        .bg-pending { background-color: #fbbf24; }
+        .bg-success { background-color: #10b981; }
+        .bg-error { background-color: #ef4444; }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl p-6">
+        <h1 class="text-2xl font-bold mb-4">Debug Console Firebase</h1>
+        
+        <div id="status-container" class="space-y-4">
+            <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                <span>Stato Autenticazione:</span>
+                <div class="flex items-center">
+                    <span id="auth-dot" class="status-dot bg-pending mr-2"></span>
+                    <span id="auth-text">In corso...</span>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                <span>Connessione Database:</span>
+                <div class="flex items-center">
+                    <span id="db-dot" class="status-dot bg-pending mr-2"></span>
+                    <span id="db-text">In attesa di auth...</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6">
+            <button id="test-write" disabled class="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed transition">
+                Prova Scrittura di Test
+            </button>
+            <p id="log-message" class="mt-4 text-sm text-gray-600 italic text-center"></p>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+        import { getFirestore, doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+
+        // Configurazione fornita dall'ambiente
+        const firebaseConfig = JSON.parse(__firebase_config);
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'test-app';
+
+        // Elementi DOM
+        const authDot = document.getElementById('auth-dot');
+        const authText = document.getElementById('auth-text');
+        const dbDot = document.getElementById('db-dot');
+        const dbText = document.getElementById('db-text');
+        const testBtn = document.getElementById('test-write');
+        const logMsg = document.getElementById('log-message');
+
+        // 1. Inizializzazione
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // Funzione per aggiornare UI
+        function updateStatus(element, dot, status, message) {
+            dot.className = `status-dot bg-${status} mr-2`;
+            element.innerText = message;
+        }
+
+        // 2. Gestione Autenticazione (Fondamentale per Firestore)
+        async function startApp() {
+            try {
+                // Autenticazione Anonima
+                await signInAnonymously(auth);
+                
+                onAuthStateChanged(auth, (user) => {
+                    if (user) {
+                        updateStatus(authText, authDot, 'success', 'Autenticato (' + user.uid.substring(0,8) + '...)');
+                        updateStatus(dbText, dbDot, 'pending', 'Pronto per test');
+                        testBtn.disabled = false;
+                        testBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                        logMsg.innerText = "Puoi provare a scrivere nel database.";
+                    }
+                });
+            } catch (error) {
+                updateStatus(authText, authDot, 'error', 'Errore Auth: ' + error.message);
+            }
+        }
+
+        // 3. Test Scrittura su Firestore (Percorso obbligatorio /artifacts/...)
+        testBtn.onclick = async () => {
+            if (!auth.currentUser) return;
+            
+            logMsg.innerText = "Tentativo di scrittura...";
+            testBtn.disabled = true;
+
+            try {
+                // RULE: Usare sempre il percorso specificato per evitare errori di permessi
+                const testDoc = doc(db, 'artifacts', appId, 'public', 'data', 'connection_test');
+                
+                await setDoc(testDoc, {
+                    lastUpdate: serverTimestamp(),
+                    status: 'online',
+                    userId: auth.currentUser.uid
+                });
+
+                updateStatus(dbText, dbDot, 'success', 'Scrittura Riuscita!');
+                logMsg.innerText = "Dati salvati con successo nel percorso artifacts.";
+            } catch (error) {
+                console.error(error);
+                updateStatus(dbText, dbDot, 'error', 'Errore Scrittura');
+                logMsg.innerText = "Errore: " + error.message;
+            } finally {
+                testBtn.disabled = false;
+            }
+        };
+
+        // Avvio
+        startApp();
+    </script>
+</body>
+</html>

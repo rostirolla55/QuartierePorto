@@ -1,0 +1,7 @@
+"Benvenuti a Bologna! Questo sito è la vostra guida personale per scoprire i segreti della città. Mentre mi ascoltate, potete approfondire ogni dettaglio leggendo i testi e osservando le immagini in questa pagina.
+
+Per iniziare il viaggio... attivate il GPS del vostro smartphone. Non appena sarete vicini a un luogo storico, vedrete apparire un bottone verde... in alto a destra. Selezionatelo per vedere la lista dei punti di interesse intorno a voi. Un clic sul nome, e sarete subito dentro la storia di quel luogo.
+
+Volete esplorare tutto l'archivio? In alto a sinistra troverete l'icona con le tre linee orizzontali, con l'elenco completo dei tesori documentati. E per una visione d'insieme, cliccate sul simbolo del pin verde in alto: vi porterà direttamente sulla Mappa. Qui, i pin rossi indicano i singoli siti, mentre i cerchi verdi numerati raggruppano i luoghi più vicini. Cliccate sui cerchi per scoprire cosa vedere in quella zona.
+
+Buona passeggiata!"

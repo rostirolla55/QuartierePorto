@@ -29,6 +29,37 @@ body {
     box-sizing: border-box;
 }
 
+.left-header-group {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Spazio tra il menu hamburger e l'icona mappa */
+}
+
+/* Correzione posizione e colore icona mappa nell'header */
+.map-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #28a745 !important; /* Forza il colore verde */
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pin-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px; /* Spazio tra icona e parola "Mappa" */
+    fill: #28a745 !important; /* Forza il colore del SVG */
+}
+
+/* Assicura che il gruppo di sinistra non collassi */
+.left-header-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 100px; 
+}
+
 .content-body {
     padding: 20px;
     max-width: 800px;
@@ -424,8 +455,145 @@ body.content-loaded #app-wrapper {
     .info-footer {
         font-size: 0.9em; /* Mantienilo piccolo, ma aumentalo leggermente per leggibilità */
     }
+
+    #map {
+        height: 600px; /* Altezza fissa generosa per desktop */
+        border-radius: 8px; /* Arrotondata come piace a te */
+        margin-top: 10px;
+        width: 100%;
+    }
+
 }
 
 /* =========================================== */
 /* FINE BLOCCO: OTTIMIZZAZIONE DESKTOP (Tipografia) */
 /* =========================================== */
+
+/* ============================================================ */
+/* BLOCCHI ESCLUSIVI PER LA PAGINA MAPPA (NON TOCCARE IL RESTO) */
+/* ============================================================ */
+
+/* Il contenitore della mappa */
+/* BASE: Mobile (Sotto i 992px) */
+#map {
+    width: 100%;
+    height: 70vh; /* Più alta su mobile per facilitare il tocco */
+    border-radius: 0; /* Estesa ai bordi */
+    margin: 0;
+    z-index: 1;
+}
+
+/* Forza il colore dell'icona mappa se appare nera */
+.map-link {
+    color: #28a745 !important; /* Verde come lo volevi */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.pin-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor; /* Prende il verde dal map-link */
+}
+/* Pin di Gruppo (Cluster Verde) */
+.cluster-pin {
+    background-color: #28a745 !important;
+    border: 2px solid #ffffff !important;
+    border-radius: 50% !important;
+    color: white !important;
+    font-weight: bold !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4) !important;
+    cursor: pointer !important;
+    z-index: 1000 !important;
+}
+
+/* Nuovi ID con suffisso -map per non disturbare le altre pagine */
+#close-cluster-btn-map {
+    display: none; 
+    position: fixed;
+    top: 75px; 
+    right: 15px;
+    z-index: 2100;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    max-width: calc(100vw - 30px);
+}
+
+#nearbyMenuPlaceholder-map {
+    display: none; 
+    position: fixed;
+    top: 125px; 
+    right: 15px; 
+    width: 280px;
+    max-width: calc(100vw - 30px);
+    background: #000000 !important; /* Fondo Nero richiesto */
+    padding: 12px;
+    border-radius: 8px;
+    z-index: 2050;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+}
+
+#nearbyMenuPlaceholder-map.active {
+    display: flex !important;
+}
+
+/* Stile voci lista (Bianco su Nero) */
+.cluster-menu-item-map {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+    border: 1px solid #333 !important;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: normal;
+    word-wrap: break-word;
+}
+#menu-vicini li a {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Crea lo spazio corretto tra icona e testo */
+    text-decoration: none;
+}
+
+/* Impedisce alle icone del menu di sparire o rimpicciolirsi */
+#menu-vicini li a img, 
+.left-header-group svg, 
+.map-link img {
+    width: 24px !important;
+    height: 24px !important;
+    flex-shrink: 0 !important; /* Questo è il comando chiave */
+    display: inline-block;
+}
+
+#menu-vicini li a, 
+.cluster-menu-item-map {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important; /* Spazio tra icona e testo [cite: 13] */
+    text-align: left;
+}
+
+/* Protezione per le icone/emoji */
+#menu-vicini li a span:first-child,
+.cluster-menu-item-map span:first-child {
+    flex-shrink: 0 !important; /* IMPEDISCE all'icona di sparire */
+    min-width: 25px;
+    display: inline-block;
+}

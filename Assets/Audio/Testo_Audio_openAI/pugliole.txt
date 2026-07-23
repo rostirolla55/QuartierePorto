@@ -1,0 +1,69 @@
+Ecco i testi pronti per essere salvati in un unico file di testo sul tuo desktop e passati al tuo script Python `divi_lingue`.
+
+Ho applicato una regia audio specifica per la sintesi vocale di OpenAI: ho inserito una formattazione generosa con frequenti interruzioni di riga (andare a capo) e una punteggiatura accurata (virgole e punti fermi) per garantire che l'algoritmo generi le giuste pause naturali, respiri e un ritmo di lettura fluido e coinvolgente. Tutti i numeri e le sigle sono stati convertiti interamente in lettere.
+
+---
+
+[ITALIANO]
+
+Benvenuti.
+
+Oggi ci troviamo in un angolo nascosto e affascinante di Bologna, dove il passato medievale dialoga con l'antica anima d'acqua della città.
+
+Ci troviamo nell'area delle antiche pugliole. Questo termine, un tempo diffuso in diverse contrade della città, indicava terreni un tempo prativi o piccoli poderi.
+
+In questo specifico quadrante, compreso tra Borgo Polese, Via del Porto e la Riva di Reno, le pugliole erano strettamente legate alla vita del canale e del vicino porto fluviale.
+
+Pensate che proprio qui, nel tredicesimo secolo, sorgeva la prima chiesa di Santa Maria delle Pugliole, prima che i frati si trasferissero per fondare il grande complesso di San Francesco.
+
+Camminando lungo queste vie, tra Via San Carlo e Via Azzogardino, l'andamento delle strade ricalca gli antichi passaggi che costeggiavano i condotti e il serraglio del Poggiale.
+
+Un frammento di storia bolognese, che custodisce il segreto della nostra identità, un passo alla volta.
+
+[INGLESE]
+
+Welcome.
+
+Today we find ourselves in a hidden and fascinating corner of Bologna, where the medieval past dialogues with the city's ancient water soul.
+
+We are in the area of the ancient pugliole. This term, once widespread in various districts of the city, indicated lands that were once meadows or small farms.
+
+In this specific quadrant, enclosed between Borgo Polese, Via del Porto, and the Riva di Reno, the pugliole were closely linked to the life of the canal and the nearby river port.
+
+Just think that right here, in the thirteenth century, stood the first church of Santa Maria delle Pugliole, before the friars moved to fund the great complex of San Francesco.
+
+Walking along these streets, between Via San Carlo and Via Azzogardino, the flow of the roads follows the ancient passages that ran alongside the conduits and the Poggiale stronghold.
+
+A fragment of Bolognese history, which guards the secret of our identity, one step at a time.
+
+[SPAGNOLO]
+
+Bienvenidos.
+
+Hoy nos encontramos en un rincón oculto y fascinante de Bolonia, donde el pasado medieval dialoga con la antigua alma de agua de la ciudad.
+
+Nos encontramos en la zona de las antiguas pugliole. Este término, en su momento difundido en varios barrios de la ciudad, indicaba terrenos que alguna vez fueron praderas o pequeñas fincas.
+
+En este cuadrante específico, comprendido entre Borgo Polese, Via del Porto y la Riva di Reno, las pugliole estaban estrechamente vinculadas a la vida del canal y del cercano puerto fluvial.
+
+Piensen que precisamente aquí, en el siglo decimotercero, se levantaba la primera iglesia de Santa Maria delle Pugliole, antes de que los frailes se trasladaran para fundar el gran complejo de San Francesco.
+
+Caminando por estas calles, entre Via San Carlo y Via Azzogardino, el trazado de las vías sigue los antiguos pasos que bordeaban los conductos y el baluarte del Poggiale.
+
+Un fragmento de la historia de Bolonia, que custodia el secreto de nuestra identidad, un paso a la vez.
+
+[FRANCESE]
+
+Bienvenue.
+
+Aujourd'hui, nous nous trouvons dans un coin caché et fascinant de Bologne, où le passé médiéval dialogue avec l'ancienne âme d'eau de la ville.
+
+Nous sommes dans le quartier des anciennes pugliole. Ce terme, autrefois répandu dans plusieurs districts de la ville, désignait des terres autrefois formées de prairies ou de petits domaines.
+
+Dans ce quadrant spécifique, compris entre Borgo Polese, Via del Porto et la Riva di Reno, les pugliole étaient étroitement liées à la vie du canal et du port fluvial voisin.
+
+Songez que c'est précisément ici, au treizième siècle, que s'élevait la première église de Santa Maria delle Pugliole, avant que les frères ne déménagent pour fonder le grand complexe de San Francesco.
+
+En marchant le long de ces rues, entre la Via San Carlo et la Via Azzogardino, le tracé des voies suit les anciens passages qui longeaient les conduits et le bastion du Poggiale.
+
+Un fragment de l'histoire de Bologne, qui garde le secret de notre identité, un pas après l'autre.

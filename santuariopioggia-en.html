@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title id="pageTitle">
+   Caricamento...
+  </title>
+  <!-- Carichiamo il tuo stile originale -->
+  <link href="style.css" rel="stylesheet"/>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-E57BP15BBX">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        // CONFIGURAZIONE: Associa 'dimension1' al nome parametro 'lingua_pagina'
+        gtag('config', 'G-E57BP15BBX', {
+            'custom_map': { 'dimension1': 'lingua_pagina' }
+        });
+  </script>
+ </head>
+ <body>
+  <div id="loading-message">
+   <p>
+    Caricamento dell'applicazione in corso...
+   </p>
+  </div>
+  <div id="app-wrapper">
+   <header class="main-header">
+<div class="left-header-group">
+        <button aria-label="Apri menu" class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        
+        <a href=" mappa-en.html" id="mapNavLink" class="map-link" title="Mappa">
+            <svg viewBox="0 0 24 24" class="pin-icon">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+        </a>
+    </div>
+
+    <div class="right-header-group">
+     <div class="language-selector"> 
+      <button data-lang="it">
+       <img alt="Italiano" src="public/flag/it.png"/>
+      </button>
+      <button data-lang="en">
+       <img alt="English" src="public/flag/en.png"/>
+      </button>
+      <button data-lang="es">
+       <img alt="Espa&ntilde;ol" src="public/flag/es.png"/>
+      </button>
+      <button data-lang="fr">
+       <img alt="Fran&ccedil;ais" src="public/flag/fr.png"/>
+      </button>
+     </div>
+     <button aria-label="Punti di interesse vicini" id="nearbyPoiButton" style="display:none;">
+     </button>
+    </div>
+   </header>
+   <nav class="nav-bar-main" id="navBarMain">
+    <div class="nav-bar-content">
+                                                                 <ul>
+      <li>
+       <a href="index-en.html" id="navHome">Welcome</a>
+      </li>
+      <li>
+       <a href="manifattura-en.html" id="navManifattura">Ex Tobacco Factory</a>
+      </li>
+      <li>
+       <a href="pittoricarracci-en.html" id="navPittoricarracci">The Carracci Painters</a>
+      </li>
+      <li>
+       <a href="cavaticcio-en.html" id="navCavaticcio">Cavaticcio hydroelectric power plant</a>
+      </li>
+      <li>
+       <a href="bsmariamaggiore-en.html" id="navBsmariamaggiore">Basilica Saint Mary Major</a>
+      </li>
+      <li>
+       <a href="graziaxx-en.html" id="navGraziaxx">Grazia votive plaque</a>
+      </li>
+      <li>
+       <a href="pugliole-en.html" id="navPugliole">The pugliole</a>
+      </li>
+      <li>
+       <a href="carracci-en.html" id="navCarracci">House of Ludovico Carracci</a>
+      </li>
+      <li>
+       <a href="lastre-en.html" id="navLastre">House numbers on sandstone slabs</a>
+      </li>
+      <li>
+       <a href="chiesasbene-en.html" id="navChiesasbene">Church of San Benedetto</a>
+      </li>
+      <li>
+       <a href="santuariopioggia-en.html" id="navSantuariopioggia">Sanctuary of the Rain</a>
+      </li>
+      <li>
+       <a href="pioggia1-en.html" id="navPioggia1">Landscape with Saint Bartholomew Alfonso Lombardi</a>
+      </li>
+      <li>
+       <a href="pioggia2-en.html" id="navPioggia2">Sculpture of Saint Bartholomew Ludovico Mattioli</a>
+      </li>
+      <li>
+       <a href="pioggia3-en.html" id="navPioggia3">The Adoration of the Shepherds Agostino Carracci</a>
+      </li>
+      <li>
+       <a href="chiesasancarlo-en.html" id="navChiesasancarlo">Church San Carlo Borromeo al Porto</a>
+      </li>
+      <li>
+       <a href="stabile_legno_vandini-en.html" id="navStabilevandini">Vandini wooden stable</a>
+      </li>
+      <li>
+       <a href="edicola_votiva-en.html" id="navEdicolavotiva">Votive shrine with Madonna and Child</a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+   <div class="nav-bar-nearby" id="nearbyMenuPlaceholder">
+   </div>
+   <main class="content-body">
+    <div class="header-image-container">
+     <!-- MODIFICA 1: L'immagine di testata usa ora ID="headImage" -->
+     <img alt="Immagine di sfondo testata" id="headImage" src=""/>
+     <h1 class="header-title" id="headerTitle">
+     </h1>
+    </div>
+    <div class="main-content-area">
+     <audio id="audioPlayer">
+     </audio>
+     <button class="play-style" id="playAudio">
+      Ascolta
+     </button>
+     <p id="mainText">
+     </p>
+     <p id="mainText1">
+     </p>
+     <!-- MODIFICA 2: L'immagine di contenuto 1 usa ora ID="pageImage1" -->
+     <img alt="Immagine 1 corpo" id="pageImage1" src="" style="display: none;"/>
+     <p id="mainText2">
+     </p>
+     <img alt="Immagine 2 corpo" id="pageImage2" src="" style="display: none;"/>
+     <p id="mainText3">
+     </p>
+     <img alt="Immagine 3 corpo" id="pageImage3" src="" style="display: none;"/>
+     <p id="mainText4">
+     </p>
+     <img alt="Immagine 4 corpo" id="pageImage4" src="" style="display: none;"/>
+     <p id="mainText5">
+     </p>
+     <img alt="Immagine 5 corpo" id="pageImage5" src="" style="display: none;"/>
+    </div>
+    <footer class="info-footer">
+     <p id="infoSource">
+     </p>
+     <p creazione="" data="" id="infoCreatedDate">
+     </p>
+     <p aggiornamento="" data="" id="infoUpdatedDate" ultimo="">
+     </p>
+    </footer>
+   </main>
+  </div>
+  <!-- Carica prima i dati di configurazione (GPS e Navigazione) -->
+  <!-- <script src="config.js"> -->
+  <!-- </script> -->
+  <!-- Carica poi il motore dell'applicazione che userà quei dati -->
+
+  <script src="main.js" type="module">
+  </script>
+ </body>
+</html>

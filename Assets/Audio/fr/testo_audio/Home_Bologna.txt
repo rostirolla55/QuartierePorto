@@ -1,16 +1,27 @@
-Bienvenue. Cette page vous permettra d'accéder à des informations sur les lieux intéressants que vous découvrirez en vous promenant dans les rues du quartier portuaire.
-Voici comment utiliser les pages de cette application :
+Bienvenue.
 
-En haut à gauche, vous verrez trois lignes horizontales représentant le menu des pages consultables.
+Cette page vous permettra d'accéder à des informations sur les lieux intéressants que vous croiserez en flânant dans les rues du quartier de Porto.
 
-À gauche, quelques secondes après l'ouverture de la page, un bouton rectangulaire vert apparaît, présentant un menu de pages sur les lieux proches de chez vous.
-À gauche du bouton vert se trouvent des drapeaux vous permettant de choisir votre langue.
+Voici comment utiliser les pages de ce site.
 
-Sous le titre de la page, vous trouverez un bouton bleu qui vous permet d'écouter une brève description du contenu.
+En haut à gauche, vous verrez trois lignes noires horizontales représentant les boutons du menu.
 
-Appuyer dessus fait passer le son en orange et le bouton en pause.
-Appuyer à nouveau sur le bouton bleu reprend là où vous l'aviez laissé. Si vous laissez le menu vert ouvert, la liste des pages changera dynamiquement au fil de votre promenade.
+À droite, quelques secondes après l'ouverture de la page, un bouton rectangulaire vert apparaît.
 
-La page est plus détaillée que le son.
+En cliquant dessus, vous accéderez à un menu de pages présentant les lieux intéressants à proximité.
 
-Amusez-vous ! Gardez l'application ouverte lorsque vous êtes dans le quartier !
+S'il n'y a aucun lieu décrit à proximité, un message rouge « Aucun point d'intérêt trouvé dans un rayon de 50 mètres » s'affichera. Cliquez alors sur le bouton vert pour fermer le menu.
+
+Si vous laissez le menu vert ouvert, la liste des pages se mettra à jour automatiquement pendant votre promenade.
+
+À gauche du bouton vert se trouvent les drapeaux qui vous permettent de choisir votre langue.
+
+Sous le titre de la page, vous trouverez un bouton bleu qui vous permet d'écouter une brève description de son contenu. Lorsque l'audio démarre, le bouton devient orange. Appuyer dessus met la lecture en pause et le bouton redevient bleu.
+
+Appuyer à nouveau sur le bouton bleu reprend la lecture là où elle s'était arrêtée.
+
+L'audio dure environ deux minutes, tandis que la page est plus détaillée et sa lecture complète peut prendre plus de temps. Vous pouvez la lire plus confortablement ultérieurement sur une tablette ou un ordinateur.
+
+Les premières lignes contiennent des informations spécifiques à ce lieu, comme les horaires d'accès au site et la procédure pour utiliser des écouteurs afin d'écouter l'audio à l'intérieur.
+
+Bonne promenade ! Gardez l'application ouverte si vous êtes dans le quartier !

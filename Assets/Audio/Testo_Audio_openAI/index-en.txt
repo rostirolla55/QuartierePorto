@@ -1,0 +1,7 @@
+"Welcome to Bologna! This website is your personal guide to discovering the secrets of the city. While listening to me, you can explore every detail by reading the texts and looking at the images on this page.
+
+To start your journey... please activate the GPS on your smartphone. As soon as you are near a historical site, you will see a green button appear... in the top right corner. Select it to view the list of points of interest around you. Just one click on the name, and you will instantly step into the history of that place.
+
+Would you like to explore the entire archive? In the top left corner, you will find the icon with three horizontal lines, containing the complete list of documented treasures. And for an overview, click on the green pin symbol at the top: it will take you directly to the Map. Here, the red pins indicate individual sites, while the numbered green circles group together the closest locations. Click on the circles to discover what to see in that area.
+
+Enjoy your walk!"

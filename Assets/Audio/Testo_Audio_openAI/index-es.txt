@@ -1,0 +1,7 @@
+"¡Bienvenidos a Bolonia! Este sitio es vuestra guía personal para descubrir los secretos de la ciudad. Mientras me escucháis, podéis profundizar en cada detalle leyendo los textos y observando las imágenes de esta página.
+
+Para comenzar el viaje... activad el GPS de vuestro smartphone. En cuanto estéis cerca de un lugar histórico, veréis aparecer un botón verde... en la parte superior derecha. Seleccionadlo para ver la lista de los puntos de interés a vuestro alrededor. Un clic en el nombre, y estaréis de inmediato dentro de la historia de ese lugar.
+
+¿Queréis explorar todo el archivo? En la parte superior izquierda encontraréis el icono con las tres líneas horizontales, con la lista completa de los tesoros documentados. Y para una visión general, haced clic en el símbolo del pin verde en la parte superior: os llevará directamente al Mapa. Aquí, los pines rojos indican los sitios individuales, mientras que los círculos verdes numerados agrupan los lugares más cercanos. Haced clic en los círculos para descubrir qué ver en esa zona.
+
+¡Buen paseo!"
