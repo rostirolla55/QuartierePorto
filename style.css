@@ -1,15 +1,24 @@
 /* style.css - Versione Finale Completa con Doppio Menu Hamburger e FIX Caricamento */
 
-/* -------------------- RESET & BASE (AGGIORNATO) -------------------- */
+/* -------------------- RESET & BASE (AGGIORNATO FIX MOBILE) -------------------- */
+html {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    /* Spazio per l'header fisso */
     padding-top: 60px;
     background-color: #f4f4f4;
-    /* RIMOSSO: opacity: 0; e transition: opacity... - Ora gestiti da #app-wrapper */
+    max-width: 100vw;
+    overflow-x: hidden; /* Blocca qualsiasi fuoriuscita orizzontale */
 }
 
+/* Assicura che i calcoli di larghezza includano il padding */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 /* RIMOSSO: body.content-loaded { opacity: 1; } - Ora gestito da #app-wrapper */
 
 .main-header {
@@ -183,6 +192,8 @@ body.menu-open {
 .right-header-group {
     display: flex;
     align-items: center;
+    max-width: 60%; /* Mantiene il gruppo a destra contenuto */
+    justify-content: flex-end;
 }
 
 /* Bottone POI Verde */
@@ -256,8 +267,9 @@ body.menu-open {
 
 .language-selector {
     display: flex;
-    gap: 5px;
-    margin-right: 15px;
+    gap: 3px; /* Ridotto leggermente il gap per schermi piccoli */
+    margin-right: 5px;
+    flex-shrink: 1; /* Permette alle bandiere di adattarsi */
 }
 
 .language-selector button {
@@ -274,10 +286,11 @@ body.menu-open {
 }
 
 .language-selector img {
-    width: 24px;
-    height: 16px;
+    width: 22px; /* Ridotto di 2px per farle stare comode su tutti i telefoni */
+    height: 15px;
     vertical-align: middle;
     border: 1px solid #ccc;
+    flex-shrink: 0;
 }
 
 
@@ -289,6 +302,7 @@ body.menu-open {
 .header-image-container {
     position: relative;
     width: 100%;
+    max-width: 100%; /* FIX MOBILE: Impedisce l'allargamento del contenitore */
 
     /* 🔥 FIX: Usa aspect-ratio per mantenere la proporzione 16:9 su tutti i dispositivi. */
     aspect-ratio: 16 / 9;
@@ -305,6 +319,7 @@ body.menu-open {
     /* L'immagine deve occupare il 100% dell'area definita dall'aspect-ratio */
     width: 100%;
     height: 100%;
+    max-width: 100%; /* FIX MOBILE: Impedisce l'allargamento del contenitore */
     object-fit: cover;
     display: block;
 }
