@@ -1,3 +1,7 @@
 {
-    "mainText1": "it_carracci_maintext1.html"
+    "mainText1": "it_carracci_maintext1.html",
+    "imageSource1": "carracci/casa_sanCarlo_19.jpg",
+    "mainText2": "it_carracci_maintext2.html",
+    "imageSource2": "carracci/casa_rolandino_1.jpg",
+    "mainText3": "it_carracci_maintext3.html"
 }
