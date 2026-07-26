@@ -9,3 +9,11 @@ data/translations/**/*.pdf
 # Ignora i file di placeholder vuoti
 .gitkeep
 sessione
+# Credenziali e Token di autenticazione Google
+DOCS_DA_CONVERTIRE/token.json
+DOCS_DA_CONVERTIRE/credentials.json
+token.json
+credentials.json
+# file temporanei per google drive
+.tmp.driveupload*
+.tmp.drivedownload*
