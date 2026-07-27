@@ -612,3 +612,36 @@ body.content-loaded #app-wrapper {
     min-width: 25px;
     display: inline-block;
 }
+
+/* --- OTTIMIZZAZIONE TABELLE FONTI PER MOBILE (FIX SCORRIMENTO) --- */
+
+/* 1. Il contenitore della pagina intercetta la tabella più larga e abilita lo scroll */
+.content-body {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch; /* Scroll fluido su iOS */
+}
+
+/* 2. La tabella mantiene la struttura table e si estende oltre lo schermo */
+table, .table {
+    display: table !important;
+    width: 100% !important;
+    min-width: 600px !important; /* FORZA la tabella ad essere più larga dello schermo smartphone */
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* 3. Regolazione celle: impedisce il collasso del testo */
+table th, table td, .table th, .table td {
+    white-space: normal !important;
+    word-break: break-word;
+    padding: 8px 10px;
+}
+
+/* 4. Larghezze bilanciate per le colonne su mobile */
+table th:first-child, table td:first-child {
+    min-width: 120px;
+}
+
+table td:last-child {
+    min-width: 280px; /* Garantisce ampio spazio leggibile alla colonna di destra */
+}
