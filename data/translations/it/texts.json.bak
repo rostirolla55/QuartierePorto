@@ -60,7 +60,7 @@
         "imageSource5": "",
         "sourceText": "Settore Musei Civici Bologna | Area Storia e Memoria",
         "creationDate": "2025-08-30",
-        "lastUpdate": "2026-07-31",
+        "lastUpdate": "2025-10-01",
         "audioSource": "it/pugliole.mp3"
     },
     "graziaxx": {
@@ -81,7 +81,7 @@
         "imageSource5": "",
         "sourceText": "'Archivio di Stato di Bologna.",
         "creationDate": "23-10-2025",
-        "lastUpdate": "2026-08-26",
+        "lastUpdate": "23-10-2025",
         "audioSource": "it/graziaxx.mp3"
     },
     "lastre": {
@@ -123,7 +123,7 @@
         "imageSource5": "",
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-08-30",
-        "lastUpdate": "2026-08-01",
+        "lastUpdate": "2026-07-21",
         "audioSource": "it/carracci.mp3"
     },
     "chiesasbene": {
@@ -149,28 +149,28 @@
     },
     "santuariopioggia": {
         "pageTitle": "Santuario della Pioggia",
-        "mainText": "<p><font color=\"#ff0000\"><b>Se entri nel santuario, usa gli auricolari per ascoltare l'audio </b></font></p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consultare la pagina <a href=\"https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2\" target=\"_blank\" rel=\"noopener noreferrer\">dindondan.app</a></font></p><p><a href=\"indicazioni_edicola_votiva.html\" style=\"color: #0056b3; font-weight: bold; text-decoration: underline;\">Come raggiungere l'edicola votiva della Madonna con il Bambino</a></p>",
+        "mainText": "<p><font color=\"#ff0000\"><b>Se entri nel santuario, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consultare la pagina https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
         "mainText1": "it_santuariopioggia_maintext1.html",
-        "mainText2": "it_santuariopioggia_maintext2.html",
+        "mainText2": "",
         "mainText3": "",
         "mainText4": "",
         "mainText5": "",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Ferma la riproduzione",
-        "headImage": "chiesapioggia.jpg",
-        "imageSource1": "santuariopioggia/ovale_santuario_pioggia.jpg",
+        "headImage": "santuariopioggia.jpg",
+        "imageSource1": "",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-10-26",
-        "lastUpdate": "2026-08-24",
-        "audioSource": "it/chiesapioggia.mp3"
+        "lastUpdate": "2026-01-27",
+        "audioSource": "it/santuariopioggia.mp3"
     },
     "pioggia1": {
         "pageTitle": "Paesaggio con San Bartolomeo",
-        "mainText": "<p><font color=\"#ff0000\"><b>L'affresco si vede lungo la scalinata in via Riva Reno 124 e non nel santuario!</b></font></p><p><font color=\"#3465a4\">Il luogo non accessibile al pubblico. In corrispondenza di certe manifestazioni, è possibile accedere alla scalinata</b></font></p>",
+        "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consultare la pagina https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
         "mainText1": "it_pioggia1_maintext1.html",
         "mainText2": "it_pioggia1_maintext2.html",
         "mainText3": "",
@@ -178,7 +178,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Ferma la riproduzione",
-        "headImage": "chiesapioggia.jpg",
+        "headImage": "santuariopioggia.jpg",
         "imageSource1": "pioggia1/Paesaggio_con_San_Bartolomeo.jpg",
         "imageSource2": "",
         "imageSource3": "",
@@ -186,12 +186,12 @@
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-10-26",
-        "lastUpdate": "2026-08-27",
+        "lastUpdate": "2025-12-19",
         "audioSource": "it/pioggia1.mp3"
     },
     "pioggia2": {
         "pageTitle": "Scultura San Bartolomeo",
-        "mainText": "<p><font color=\"#ff0000\"><b>La statua si vede a piano superiore di via Riva Reno 124 e non nel santuario!</b></font></p><p><font color=\"#3465a4\">Il luogo non accessibile al pubblico, ma solo in corrispondenza di certe manifestazioni,</b></font></p>",
+        "mainText": "<p><font color=\"#ff0000\"><b>La statua si trova al civico 124 di via Riva Reno. Visitabile in occasioni di certe manifestazioni con la presenza di una guida</b></font> </p><p>",
         "mainText1": "it_pioggia2_maintext1.html",
         "mainText2": "it_pioggia2_maintext2.html",
         "mainText3": "",
@@ -199,7 +199,7 @@
         "mainText5": "",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Ferma la riproduzione",
-        "headImage": "chiesapioggia.jpg",
+        "headImage": "panorama_bologna.jpg",
         "imageSource1": "pioggia2/San_Bartolomeo.jpg",
         "imageSource2": "",
         "imageSource3": "",
@@ -207,7 +207,7 @@
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-10-26",
-        "lastUpdate": "2026-08-27",
+        "lastUpdate": "2025-12-19",
         "audioSource": "it/pioggia2.mp3"
     },
     "pioggia3": {
@@ -249,7 +249,7 @@
         "imageSource5": "",
         "sourceText": "Archivio Storico del Quartiere Porto",
         "creationDate": "2025-11-06",
-        "lastUpdate": "2026-08-01",
+        "lastUpdate": "2025-11-07",
         "audioSource": "it/manifattura.mp3"
     },
     "pittoricarracci": {
@@ -284,31 +284,31 @@
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Ferma la riproduzione",
         "headImage": "panorama_bologna.jpg",
-        "imageSource1": "cavaticcio/Turbina_Centrale_Cavaticcio.jpg",
+        "imageSource1": "cavaticcio/turbina_centrale_cavaticcio.jpg",
         "imageSource2": "cavaticcio/Edificio_Centrale_Cavaticcio.jpg",
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "Archivio Storico del Quartiere Porto",
         "creationDate": "2025-11-27",
-        "lastUpdate": "2026-08-01",
+        "lastUpdate": "2025-12-19",
         "audioSource": "it/centraleidroelettricacavaticcio.mp3"
     },
     "bsmariamaggiore": {
         "headImage": "panorama_bologna.jpg",
         "audioSource": "it/bsmariamaggiore.mp3",
         "mainText1": "it_bsmariamaggiore_maintext1.html",
-        "lastUpdate": "2026-08-21",
+        "lastUpdate": "2026-01-03",
         "pageTitle": "Basilica Santa Maria Maggiore",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Ferma la riproduzione",
-        "mainText": "<p><font color=\"#ff0000\"><b>Attualmente nella chiesa non vengono più svolte funzioni religiose.</b></font> </p><p><font color=\"#3465a4\">Per poter visitare la basilica contattare ...</font> </p>",
+        "mainText": "<p><font color=\"#ff0000\"><b>Se entri in chiesa, usa gli auricolari per ascoltare l'audio </b></font> </p><p><font color=\"#3465a4\">Per conoscere gli orari di apertura consultare la pagina https://dindondan.app/orarimesse/Santa-Maria-Maggiore-Bologna-54DB1 </font> </p>",
         "sourceText": "",
-        "mainText2": "it_bsmariamaggiore_maintext2.html",
+        "mainText2": "",
         "mainText3": "",
         "mainText4": "",
         "mainText5": "",
-        "imageSource1": "bsmariamaggiore/basilica.jpg",
+        "imageSource1": "",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -344,11 +344,10 @@
         "audioSource": "it/stabile_legno_vandini.mp3",
         "imageSource1": "stabile_legno_vandini/stabile-legno-vandini-uno.jpg",
         "imageSource2": "stabile_legno_vandini/stabile-legno-vandini-due.jpg",
-        "imageSource3": "stabile_legno_vandini/tecnologia_x-lam.jpg",
-        "lastUpdate": "2026-08-27"
+        "imageSource3": "stabile_legno_vandini/tecnologia_x-lam.jpg"
     },
     "edicola_votiva": {
-        "headImage": "chiesapioggia.jpg",
+        "headImage": "panorama_bologna.jpg",
         "audioSource": "it/edicola_votiva.mp3",
         "mainText1": "it_edicola_votiva_maintext1.html",
         "imageSource1": "edicola_votiva/edicola_madonna_con_bambino.jpg",
@@ -359,15 +358,9 @@
         "headerTitle": "Votiva Madonna con Bambino",
         "playAudioButton": "Ascolta la storia",
         "pauseAudioButton": "Ferma la riproduzione",
-        "mainText": "<p><font color=\"#ff0000\"><b>Se ti trovi nella piazzetta del Santuario della Pioggia vedi </b></font><a href=\"indicazioni_edicola_votiva_it.html\" style=\"color: #0056b3; font-weight: bold; text-decoration: underline;\">Come raggiungere l'edicola votiva della Madonna con il Bambino</a></p>",
+        "mainText": "",
         "sourceText": "",
         "imageSource3": "edicola_votiva/edicola_san_antonio.jpg",
-        "mainText4": "it_edicola_votiva_maintext4.html",
-        "lastUpdate": "2026-08-24"
-    },
-    "chiesapioggia": {
-        "headImage": "public/images/panorama_bologna.jpg",
-        "audioSource": "it/chiesapioggia.mp3",
-        "mainText1": "it_chiesapioggia_maintext1.html"
+        "mainText4": "it_edicola_votiva_maintext4.html"
     }
 }

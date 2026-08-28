@@ -43,7 +43,7 @@
         "headImage": "panorama_bologna.jpg"
     },
     "pugliole": {
-        "pageTitle": "Les Pugliole",
+        "pageTitle": "Le Pugliole",
         "mainText": "",
         "mainText1": "fr_pugliole_maintext1.html",
         "mainText2": "fr_pugliole_maintext2.html",
@@ -60,7 +60,7 @@
         "imageSource5": "",
         "sourceText": "Settore Musei Civici Bologna | Area Storia e Memoria",
         "creationDate": "30/08/2025",
-        "lastUpdate": "2026-07-31",
+        "lastUpdate": "01/10/2025",
         "audioSource": "fr/pugliole.mp3"
     },
     "graziaxx": {
@@ -81,7 +81,7 @@
         "imageSource5": "",
         "sourceText": "Archivio Storico del Comune di Bologna.",
         "creationDate": "2025-08-30",
-        "lastUpdate": "2026-08-26",
+        "lastUpdate": "2025-10-01",
         "audioSource": "fr/graziaxx.mp3"
     },
     "lastre": {
@@ -123,7 +123,7 @@
         "imageSource5": "",
         "sourceText": "Archives historiques de la municipalité de Bologne.",
         "creationDate": "30/08/2025",
-        "lastUpdate": "2026-08-01",
+        "lastUpdate": "2026-07-21",
         "audioSource": "fr/carracci.mp3"
     },
     "chiesasbene": {
@@ -151,26 +151,26 @@
         "pageTitle": "Sanctuaire de la pluie",
         "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans le sanctuaire, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Pour connaître les horaires d'ouverture, veuillez consulter la page https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
         "mainText1": "fr_santuariopioggia_maintext1.html",
-        "mainText2": "fr_santuariopioggia_maintext2.html",
+        "mainText2": "",
         "mainText3": "",
         "mainText4": "",
         "mainText5": "",
         "playAudioButton": "Écouter le récit",
         "pauseAudioButton": "Arrêter la lecture",
-        "headImage": "chiesapioggia.jpg",
-        "imageSource1": "santuariopioggia/ovale_santuario_pioggia.jpg",
+        "headImage": "santuariopioggia.jpg",
+        "imageSource1": "",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "30/08/2025",
-        "lastUpdate": "2026-08-24",
-        "audioSource": "fr/chiesapioggia.mp3"
+        "lastUpdate": "2026-01-27",
+        "audioSource": "fr/santuariopioggia.mp3"
     },
     "pioggia1": {
         "pageTitle": "Paysage avec Saint-Barthélemy",
-        "mainText": "<p><font color=\"#ff0000\"><b>La fresque est visible le long des marches au 124, Via Riva Reno, et non dans le sanctuaire!</b></font></p><p><font color=\"#3465a4\">Le site n'est pas accessible au public. L'accès aux marches est toutefois possible lors de certains événements.</b></font></p>",
+        "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Pour connaître les horaires d'ouverture, veuillez consulter la page https://dindondan.app/orarimesse/Santa-Maria-della-Pioggia-Bologna-06BE2 </font> </p>",
         "mainText1": "fr_pioggia1_maintext1.html",
         "mainText2": "fr_pioggia1_maintext2.html",
         "mainText3": "",
@@ -178,7 +178,7 @@
         "mainText5": "",
         "playAudioButton": "Écouter le récit",
         "pauseAudioButton": "Arrêter la lecture",
-        "headImage": "chiesapioggia.jpg",
+        "headImage": "santuariopioggia.jpg",
         "imageSource1": "pioggia1/Paesaggio_con_San_Bartolomeo.jpg",
         "imageSource2": "",
         "imageSource3": "",
@@ -186,12 +186,12 @@
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-10-26",
-        "lastUpdate": "2026-08-27",
+        "lastUpdate": "2025-12-19",
         "audioSource": "fr/pioggia1.mp3"
     },
     "pioggia2": {
         "pageTitle": "Sculpture de Saint Barthélemy",
-        "mainText": "<p><font color=\"#ff0000\"><b>La statue se trouve à l'étage du 124, Via Riva Reno, et non dans le sanctuaire !</b></font></p><p><font color=\"#3465a4\"> <b>Le site n'est pas accessible au public, sauf lors de certains événements.</b></font></p>",
+        "mainText": "<p><font color=\"#ff0000\"><b>La statue se trouve au numéro 124 de la Via Riva Reno. Elle peut être visitée lors de certains événements en compagnie d'un guide.</b></font> </p><p>",
         "mainText1": "fr_pioggia2_maintext1.html",
         "mainText2": "fr_pioggia2_maintext2.html",
         "mainText3": "",
@@ -199,7 +199,7 @@
         "mainText5": "",
         "playAudioButton": "Écouter le récit",
         "pauseAudioButton": "Arrêter la lecture",
-        "headImage": "chiesapioggia.jpg",
+        "headImage": "panorama_bologna.jpg",
         "imageSource1": "pioggia2/San_Bartolomeo.jpg",
         "imageSource2": "",
         "imageSource3": "",
@@ -207,7 +207,7 @@
         "imageSource5": "",
         "sourceText": "",
         "creationDate": "2025-10-26",
-        "lastUpdate": "2026-08-27",
+        "lastUpdate": "2025-12-19",
         "audioSource": "fr/pioggia2.mp3"
     },
     "pioggia3": {
@@ -249,7 +249,7 @@
         "imageSource5": "",
         "sourceText": "Archives historiques du quartier de Porto",
         "creationDate": "2025-11-06",
-        "lastUpdate": "2026-08-01",
+        "lastUpdate": "2025-11-07",
         "audioSource": "fr/manifattura.mp3"
     },
     "pittoricarracci": {
@@ -284,31 +284,31 @@
         "playAudioButton": "Écouter le récit",
         "pauseAudioButton": "Arrêter la lecture",
         "headImage": "panorama_bologna.jpg",
-        "imageSource1": "cavaticcio/Turbina_Centrale_Cavaticcio.jpg",
+        "imageSource1": "cavaticcio/turbina_centrale_cavaticcio.jpg",
         "imageSource2": "cavaticcio/Edificio_Centrale_Cavaticcio.jpg",
         "imageSource3": "",
         "imageSource4": "",
         "imageSource5": "",
         "sourceText": "Archives historiques du quartier de Porto",
         "creationDate": "2025-11-27",
-        "lastUpdate": "2026-08-01",
+        "lastUpdate": "2025-12-19",
         "audioSource": "fr/centraleidroelettricacavaticcio.mp3"
     },
     "bsmariamaggiore": {
         "headImage": "panorama_bologna.jpg",
         "audioSource": "fr/bsmariamaggiore.mp3",
         "mainText1": "fr_bsmariamaggiore_maintext1.html",
-        "lastUpdate": "2026-08-21",
+        "lastUpdate": "2026-01-03",
         "pageTitle": "Basilique Saint Marie Majeure",
         "playAudioButton": "Écouter le récit",
         "pauseAudioButton": "Arrêter la lecture",
-        "mainText": "<p><font color=\"#ff0000\"><b>Actuellement, aucun office religieux n'est plus célébré dans l'église.</b></font> </p><p><font color=\"#3465a4\">Pour visiter la basilique, contactez…</font> </p>",
+        "mainText": "<p><font color=\"#ff0000\"><b>Si vous entrez dans l'église, utilisez des écouteurs pour écouter l'audio.</b></font> </p><p><font color=\"#3465a4\">Pour connaître les horaires d'ouverture, veuillez consulter la page https://dindondan.app/orarimesse/Santa-Maria-Maggiore-Bologna-54DB1 </font> </p>",
         "sourceText": "",
-        "mainText2": "fr_bsmariamaggiore_maintext2.html",
+        "mainText2": "",
         "mainText3": "",
         "mainText4": "",
         "mainText5": "",
-        "imageSource1": "bsmariamaggiore/basilica.jpg",
+        "imageSource1": "",
         "imageSource2": "",
         "imageSource3": "",
         "imageSource4": "",
@@ -343,13 +343,12 @@
         "sourceText": "",
         "headImage": "panorama_bologna.jpg",
         "audioSource": "fr/stabile_legno_vandini.mp3",
-        "imageSource1": "stabile_legno_vandini/stabile-legno-vandini-uno.jpg",
-        "imageSource2": "stabile_legno_vandini/stabile-legno-vandini-due.jpg",
-        "imageSource3": "stabile_legno_vandini/tecnologia_x-lam.jpg",
-        "lastUpdate": "2026-08-27"
+        "imageSource1": "stabile_legno_vandini/stabile_legno_vandini-uno.jpg",
+        "imageSource2": "stabile_legno_vandini/stabile_legno_vandini-due.jpg",
+        "imageSource3": "stabile_legno_vandini/tecnologia_x-lam.jpg"
     },
     "edicola_votiva": {
-        "headImage": "chiesapioggia.jpg",
+        "headImage": "panorama_bologna.jpg",
         "audioSource": "fr/edicola_votiva.mp3",
         "mainText1": "fr_edicola_votiva_maintext1.html",
         "imageSource1": "edicola_votiva/edicola_madonna_con_bambino.jpg",
@@ -358,17 +357,11 @@
         "mainText3": "fr_edicola_votiva_maintext3.html",
         "pageTitle": "Littoral votif de la Vierge à l'Enfant",
         "headerTitle": "Littoral votif de la Vierge à l'Enfant",
-        "playAudioButton": "Écouter le récit",
+        "playAudioButton": "Écouter l'histoire",
         "pauseAudioButton": "Arrêter la lecture",
-        "mainText": "<p><font color=\"#ff0000\"><b>Si vous vous trouvez sur la place du Sanctuaire de la Pioggia, consultez </b></font><a href=\"indicazioni_edicola_votiva_fr.html\" style=\"color: #0056b3; font-weight: bold; text-decoration: underline;\">Comment se rendre à l'édicule votif de la Vierge à l'Enfant</a></p>",
+        "mainText": "",
         "sourceText": "",
         "imageSource3": "edicola_votiva/edicola_san_antonio.jpg",
-        "mainText4": "fr_edicola_votiva_maintext4.html",
-        "lastUpdate": "2026-08-24"
-    },
-    "chiesapioggia": {
-        "headImage": "public/images/panorama_bologna.jpg",
-        "audioSource": "fr/chiesapioggia.mp3",
-        "mainText1": "fr_chiesapioggia_maintext1.html"
+        "mainText4": "fr_edicola_votiva_maintext4.html"
     }
 }
