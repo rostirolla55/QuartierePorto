@@ -34,7 +34,6 @@ const POIS_LOCATIONS = [
     { id: 'graziaxx', lat: 44.500594, lon: 11.340758, distanceThreshold: 50, categoria: 'esterno' },
     { id: 'pugliole', lat: 44.500071, lon: 11.339805, distanceThreshold: 50, categoria: 'esterno' },
     { id: 'carracci', lat: 44.499912, lon: 11.34041, distanceThreshold: 50, categoria: 'edificio' },
-    { id: 'intervista_ludovico', lat: 44.499993, lon: 11.340385, distanceThreshold: 50, categoria: 'arte' },
     { id: 'lastre', lat: 44.499312, lon: 11.340714, distanceThreshold: 50, categoria: 'esterno' },
     { id: 'chiesasbene', lat: 44.5019, lon: 11.343843, distanceThreshold: 120, categoria: 'edificio' },
     { id: 'santuariopioggia', lat: 44.498891, lon: 11.342148, distanceThreshold: 120, categoria: 'edificio' },
@@ -45,42 +44,6 @@ const POIS_LOCATIONS = [
     { id: 'stabile_legno_vandini', lat: 44.502054, lon: 11.338546, distanceThreshold: 120, categoria: 'edificio' },
     { id: 'edicola_votiva', lat: 44.499137, lon: 11.341797, distanceThreshold: 120, categoria: 'edificio' }
 ];
-
-// ===========================================
-// CONFIGURAZIONE GOOGLE MAPS PER POI CORRENTE
-// ===========================================
-function setupGoogleMapsButton(lang) {
-    const pageId = getCurrentPageId();
-    const gmapsBtn = document.getElementById('gmapsLink');
-    if (!gmapsBtn) return;
-
-    // Cerca il POI corrispondente alla pagina corrente
-    const currentPoi = POIS_LOCATIONS.find(p => p.id.toLowerCase() === pageId.toLowerCase());
-
-    if (currentPoi && currentPoi.lat && currentPoi.lon) {
-        // Costruisci l'URL di Google Maps per la navigazione a piedi
-        const gmapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${currentPoi.lat},${currentPoi.lon}&travelmode=walking`;
-        gmapsBtn.href = gmapsUrl;
-
-        // Testo del bottone tradotto nelle varie lingue
-        const labels = {
-            'it': '🧭 Portami qui',
-            'en': '🧭 Navigate here',
-            'fr': '🧭 Y aller',
-            'es': '🧭 Llevarme aquí'
-        };
-
-        const btnText = gmapsBtn.querySelector('.gmaps-btn');
-        if (btnText) {
-            btnText.textContent = labels[lang] || labels['it'];
-        }
-
-        gmapsBtn.style.display = 'inline-flex';
-    } else {
-        // Se siamo nella Home/Index o in una pagina senza coordinate GPS, nascondiamo il pulsante
-        gmapsBtn.style.display = 'none';
-    }
-}
 
 // ===========================================
 // UTILITY
@@ -197,7 +160,6 @@ async function loadContent(lang) {
         }
 
         updateNavigation(data.nav, lang);
-        setupGoogleMapsButton(lang);
         startGeolocation(data);
         document.body.classList.add('content-loaded');
         if (isAuthReady) logAccess(pageId, lang);
@@ -221,7 +183,6 @@ function updateNavigation(navData, lang) {
     { id: 'navGraziaxx', key: 'navGraziaxx', base: 'graziaxx' },
     { id: 'navPugliole', key: 'navPugliole', base: 'pugliole' },
     { id: 'navCarracci', key: 'navCarracci', base: 'carracci' },
-    { id: 'navIntervista_ludovico', key: 'navIntervista_ludovico', base: 'intervista_ludovico' },
     { id: 'navLastre', key: 'navLastre', base: 'lastre' },
     { id: 'navChiesasbene', key: 'navChiesasbene', base: 'chiesasbene' },
     { id: 'navSantuariopioggia', key: 'navSantuariopioggia', base: 'santuariopioggia' },
